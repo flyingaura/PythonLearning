@@ -6,6 +6,8 @@
       <change type="NEW" beforePath="" afterPath="$PROJECT_DIR$/.idea/learning2017.iml" />
       <change type="NEW" beforePath="" afterPath="$PROJECT_DIR$/.idea/misc.xml" />
       <change type="NEW" beforePath="" afterPath="$PROJECT_DIR$/.idea/modules.xml" />
+      <change type="NEW" beforePath="" afterPath="$PROJECT_DIR$/.idea/vcs.xml" />
+      <change type="NEW" beforePath="" afterPath="$PROJECT_DIR$/.idea/workspace.xml" />
       <change type="NEW" beforePath="" afterPath="$PROJECT_DIR$/LearnModule/Func_StringSpilt.py" />
       <change type="NEW" beforePath="" afterPath="$PROJECT_DIR$/LearnModule/Module_test.py" />
       <change type="NEW" beforePath="" afterPath="$PROJECT_DIR$/LearnModule/StringAddValue.py" />
@@ -65,7 +67,7 @@
         <entry file="file://$PROJECT_DIR$/Module_Use.py">
           <provider selected="true" editor-type-id="text-editor">
             <state relative-caret-position="900">
-              <caret line="20" column="0" lean-forward="false" selection-start-line="20" selection-start-column="0" selection-end-line="20" selection-end-column="0" />
+              <caret line="20" column="0" lean-forward="true" selection-start-line="20" selection-start-column="0" selection-end-line="20" selection-end-column="0" />
               <folding>
                 <element signature="e#36#46#0" expanded="true" />
               </folding>
@@ -640,7 +642,7 @@
     <entry file="file://$PROJECT_DIR$/Module_Use.py">
       <provider selected="true" editor-type-id="text-editor">
         <state relative-caret-position="900">
-          <caret line="20" column="0" lean-forward="false" selection-start-line="20" selection-start-column="0" selection-end-line="20" selection-end-column="0" />
+          <caret line="20" column="0" lean-forward="true" selection-start-line="20" selection-start-column="0" selection-end-line="20" selection-end-column="0" />
           <folding>
             <element signature="e#36#46#0" expanded="true" />
           </folding>
