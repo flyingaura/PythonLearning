@@ -8,8 +8,8 @@ from LearnModule import Module_test
 from LearnModule import Func_StringSpilt
 from LearnModule import StringAddValue
 
-# print('the module\'s note is :',Module_test.__doc__)
-# print('the module\'s author is :',Module_test.__author__)
+print('the module\'s note is :',Module_test.__doc__)
+print('the module\'s author is :',Module_test.__author__)
 # Module_test.test()
 StrList = 'aaa,acb.923asd,88sdfffdd.,sdfk__sldf,1sdfjjj,asiw2,ddd,AFD'
 # 先进行字符串拆分
