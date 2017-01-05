@@ -2,6 +2,7 @@
 # -*- coding: utf-8 -*-
 
 __author__ = 'Flyingaura_wl'
+__edittime__ = '20170101'
 
 import math
 import functools
