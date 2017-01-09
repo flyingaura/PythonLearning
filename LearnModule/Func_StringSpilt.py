@@ -17,10 +17,11 @@ def stringsplit(strN,splitN):
             if(i != n):       # 抛掉空串
                 strL.append(strN[i:n])
             i = n+1
-    strL.append(strN[i:])
+    if(i < n):
+        strL.append(strN[i:])
     return strL
 
-# stringOrigin = 'asdkfj,as23lwj,0129,ddd,1iasdfj,83484,sdkf,aaaddd,kfjdk'
+# stringOrigin = 'asdkfj,as23lwj,0129,ddd,1iasdfj,83484,sdkf,aaaddd,kfjdkj,'
 # stringSP = stringsplit(stringOrigin,['j',','])
 # print(stringSP)
 # print('the origin string is :',stringOrigin)

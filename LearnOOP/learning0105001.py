@@ -9,21 +9,21 @@ from LearnModule import Dict_deal
 # 学生基本信息类
 class students(object):
     def __init__(self,studentID,name,grade,subject,province):
-        self.__studentID = studentID
-        self.__name = name
+        self.studentID = studentID
+        self.name = name
         self.grade = grade
         self.subject = subject
         self.province = province
 
     def get_SID(self):
-        return self.__studentID
+        return self.studentID
 
     def get_name(self):
-        return self.__name
+        return self.name
 
     # 根据学号确定在专业中的位置
     def get_position(self):
-        print('Your Poistion in Subjcet %s is %s' %(self.subject,self.__studentID))
+        print('Your Poistion in Subjcet %s is %s' %(self.subject,self.studentID))
 
 
 
@@ -37,23 +37,30 @@ class scores(students):
         self.__physics = physics
         self.__chemistry = chemistry
 
-
-
     # 输出一个学生成绩单
     def out_scores(self):
         AddScores = AdditionalScore(get_area(self.province))
-        print('Student\'s name : %s | Student\'s ID : %s | Subject : %s ' %(self.name,self.studentID,self.subject))
+        print('Student\'s name : %s | Student\'s ID : %s | Subject %s ' %(self.name,self.studentID,self.subject))
         print('Origin Score:')
         print('linguistic: %d | math: %d  | english: %d  | physics: %d  | chemistry: %d ' %(self.__linguistic,self.__math,self.__english,self.__physics,self.__chemistry))
         print('Student\'s province %s in %s,it\'s Additional Score: %d' %(self.province,get_area(self.province),AddScores))
-        print('linguistic: %d | math: %d  | english: %d  | physics: %d  | chemistry: %d ' % (
-        self.__linguistic + AddScores, self.__math + AddScores, self.__english + AddScores, self.__physics + AddScores, self.__chemistry + AddScores))
+        print('linguistic: %d | math: %d  | english: %d  | physics: %d  | chemistry: %d ' % (self.__linguistic + AddScores, self.__math + AddScores, self.__english + AddScores, self.__physics + AddScores, self.__chemistry + AddScores))
     # 根据总成绩确定在专业中的位置
     def get_position(self):
         AddScores = AdditionalScore(get_area(self.province))
+        # print(AddScores)
         Total_Score = self.__linguistic + AddScores + self.__math + AddScores + self.__english + AddScores + self.__physics + AddScores + self.__chemistry + AddScores
         print('Your total Scores in Subjcet %s is %d ' %(self.subject,Total_Score))
 
+# 定义一个类似的类Teachers
+class Teachers(object):
+    def __init__(self,TeacherNo,Teacher_name,Teacher_sub):
+        self.TeacherNo = TeacherNo
+        self.Teacher_name = Teacher_name
+        self.Teacher_sub = Teacher_sub
+
+    def get_position(self):
+        print('你在%s老师排行榜的位置是%s' %(self.subject,self.TeacherNo))
 
 # 定义一个判断学生所在区域的函数
 def get_area(province):
@@ -83,7 +90,9 @@ def AdditionalScore(area):
 Wanghd = students('110011f','wanghd','grade3','Software','zhejiang')
 Wanghd.get_position()
 
-Wanghd_score = scores('110011f','wanghd','grade3','Software','zhejiang',110,135,94,88,121)
+Wanghd_score = scores('1100123','wanghd','grade3','Software','zhejiang',110,135,94,88,121)
 Wanghd_score.get_position()
 
 Wanghd_score.out_scores()
+
+print(type(Wanghd_score))
