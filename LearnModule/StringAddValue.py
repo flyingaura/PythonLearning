@@ -1,4 +1,4 @@
-'1、给每个字符串加上一个默认串的函数  2、把大写字母统一转换成小写字母的函数'
+'1、给每个字符串加上一个默认串的函数  2、把大写字母统一转换成小写字母的函数 3、删除字符串中指定位置的字符'
 # -*- coding: utf-8 -*-
 import functools
 
@@ -24,6 +24,21 @@ def StringLower(StrN):
 
     return StrTemp
 
-# print(StringLower('AAbbCCdd'))
+def Str_del_letter(Sindex,StrList):
+    StrTemp = []
+    Astring = ''
+    if(Sindex > len(StrList)):
+        print('The Position index is more longer than the length of String, cannot process!')
+        return None
+    else:
+        for skey in StrList:
+            StrTemp.append(skey)
+    StrTemp.pop(Sindex)
+    for skey in StrTemp:
+        Astring = Astring + skey
+    return Astring
+
+
+# print(Str_del_letter(-1,'18408300'))
 
 
