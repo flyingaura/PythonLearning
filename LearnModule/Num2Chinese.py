@@ -104,10 +104,10 @@ def Num2Chinese(Num):
     # 合并整数和小数部分，并输出
     return int_string + dec_string
 
-# Anum = 67231232849210943.2145
+Anum = 193900000300410
 # print(str(Anum))
-# print(Num2Chinese(Anum))
-print(Num2Chinese('6380002812300230000943.214534546'))
+print(Num2Chinese(Anum))
+# print(Num2Chinese('6380002812300230000943.214534546'))
 # print(str(123422))
 
 
