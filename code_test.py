@@ -1,6 +1,7 @@
 # # -*- coding: utf-8 -*-
 #
-# from LearnModule import Func_StringSplit
+import time
+#  from LearnModule import Func_StringSplit
 # fline_split = []
 # with open('C:/Users/flyingaura/Desktop/ZT_classNO.txt','rb') as init_file:
 #     for fline in init_file.readlines():
@@ -91,9 +92,14 @@ SurName_List = ['赵', '钱', '孙', '李', '周', '吴', '郑', '王', '冯', '
                 '壤驷', '乐正', '漆雕', '公西', '巫马', '端木', '颛孙', '子车', '督', '仉', '司寇', '亓官', '三小', '鲜于', '锺离', '盖', '逯', '库',
                 '郏', '逢', '阴', '薄', '厉', '稽', '闾丘', '公良', '段干', '开', '光', '操', '瑞', '眭', '泥', '运', '摩', '伟', '铁', '迮']
 
-print('老' in SurName_List)
+# print('老' in SurName_List)
 
+# print('functions end at ',time.strftime('%Y-%m-%d %H:%M:%S',time.localtime(time.time())))
 
+with open('C:/Users/flyingaura/Desktop/stringsplit_log.txt', 'w') as logfile:
+    logfile.write('functions end at ')
+    logfile.write(time.strftime('%Y-%m-%d %H:%M:%S',time.localtime(time.time())))
+    logfile.write('\n')
 
 
 

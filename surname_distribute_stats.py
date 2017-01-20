@@ -67,6 +67,7 @@ with open('C:/Users/flyingaura/Desktop/Chinese_surname.txt','rb') as person_file
             Pinfo_temp[i] = OnePerson[i]
         personinfo = person_info(Pinfo_temp[0],Pinfo_temp[1],Pinfo_temp[2],Pinfo_temp[3])
         person_list.append(personinfo)
+
 person_list.pop(0)
 # 开始分析
 sur_list = []
@@ -108,9 +109,10 @@ while(istep < len(index_sur)):
         index_sur.pop(sorted_index)
         index_sur.insert(istep,sorted_sur)
     istep = istep + 1
-print(index_sur)
+# print(index_sur)
 
 # 开始统计
+print('被统计人员总数：',person_total)
 for sur_key in index_sur:
     per_values = float(list(sur_key.values())[0]/person_total)
     outstr = graphic_out(per_values)
