@@ -10,7 +10,7 @@ import math
 
 class HumanP(object):
     def __init__(self,name,sex,age,weight):
-        self.__name = name
+        self.name = name
         self.sex = sex
         self.age = age
         self.weight = weight
