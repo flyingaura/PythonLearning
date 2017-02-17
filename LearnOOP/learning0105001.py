@@ -1,6 +1,6 @@
 # -*- coding: utf-8 -*-
 # 引入自定义的字符串处理模块
-from LearnModule import StringAddValue
+from LearnModule import String_func
 # 引入自定义的字典类型数据处理模块
 from LearnModule import Dict_deal
 # 学习类的继承与多态
@@ -72,7 +72,7 @@ def get_area(province):
     for key in DisArea:
         # 把省份都转成小写字母并比较
         # print(key, DisArea[key])
-        if (StringAddValue.StringLower(province) == key):
+        if (String_func.StringLower(province) == key):
             YourArea = DisArea[key]
     return YourArea
 

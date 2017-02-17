@@ -2,7 +2,7 @@
 
 __author__ = 'weil'
 # -*-coding: utf-8 -*-
-from LearnModule import StringAddValue
+from LearnModule import String_func
 from LearnModule import str2int
 
 # 定义单个数字与汉字对应字典
@@ -24,7 +24,7 @@ def Numin4(Num,zerotag = 0):
     deltag = 0
     while(1):
         if(NumString[0] == '0'):
-            NumString = StringAddValue.Str_del_letter(0,NumString)
+            NumString = String_func.Str_del_letter(0, NumString)
             deltag = 1
         else:
             break
@@ -89,7 +89,7 @@ def Num2Chinese(Num):
             dec_string = Num_List['.']
             while (1):
                 if (Num_dec[-1] == '0'):
-                    Num_dec = StringAddValue.Str_del_letter(-1, Num_dec)
+                    Num_dec = String_func.Str_del_letter(-1, Num_dec)
                 else:
                     break
             for strN in Num_dec:
