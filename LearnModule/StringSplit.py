@@ -28,7 +28,7 @@ def log(func):
         return ret
     return wrapper
 
-@log
+# @log
 def stringsplit(strN,splitN):
     # strN:待拆分字符串
     # splitN:分隔符,可以多个

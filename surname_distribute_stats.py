@@ -1,6 +1,6 @@
 # 对一堆人群中的姓进行分布分析，并输出分析结果
 # -*- coding: utf-8 -*-
-from LearnModule import Func_StringSplit
+from LearnModule import StringSplit
 
 # # 从文本中读取出所有的姓氏字词
 # SurName_List = []
@@ -61,7 +61,7 @@ person_list = []
 with open('C:/Users/flyingaura/Desktop/Chinese_surname.txt','rb') as person_file:
     # 按行读取每个人的基本信息，并保存到person_list列表里
     for one in person_file.readlines():
-        OnePerson = Func_StringSplit.stringsplit(one.strip().decode('utf-8'),'\t')
+        OnePerson = StringSplit.stringsplit(one.strip().decode('utf-8'), '\t')
         Pinfo_temp = ['','','','']
         for i in range(len(OnePerson)):
             Pinfo_temp[i] = OnePerson[i]

@@ -6,7 +6,7 @@
 from urllib import parse
 import httplib2
 import json
-from LearnModule import Func_StringSplit
+from LearnModule import StringSplit
 
 # # 定义一个保存分类号数据源的类
 class ZTNo_source(object):
@@ -42,16 +42,16 @@ with open('C:/Users/flyingaura/Desktop/test.txt','rb') as init_file:
 # 对从文件中读出来的数据做处理
 test_txt_temp.pop(0)
 for key in test_txt_temp:
-    fline_split.append(Func_StringSplit.stringsplit(key,'\t'))
+    fline_split.append(StringSplit.stringsplit(key, '\t'))
 for Kstring in fline_split:
     if(len(Kstring) == 1):
         ZTNo_List.append(ZTNo_source(Kstring[0],'',''))
     elif(len(Kstring) == 2):
-        for ZTkey in Func_StringSplit.stringsplit(Kstring[1],';'):
+        for ZTkey in StringSplit.stringsplit(Kstring[1], ';'):
             ZTNo_List.append(ZTNo_source(Kstring[0],ZTkey,''))
     else:
-        ZTNo_temp = Func_StringSplit.stringsplit(Kstring[1], ';')
-        ZTNo_name = Func_StringSplit.stringsplit(Kstring[2], ';')
+        ZTNo_temp = StringSplit.stringsplit(Kstring[1], ';')
+        ZTNo_name = StringSplit.stringsplit(Kstring[2], ';')
         for i in range(len(ZTNo_temp)):
             if (i < len(ZTNo_name)):
                 ZTNo_List.append(ZTNo_source(Kstring[0],ZTNo_temp[i],ZTNo_name[i]))
@@ -69,7 +69,7 @@ data = {
         'field': 'keyword_list'
     }
 # 把要取值的字段名称取出来
-field_query = Func_StringSplit.stringsplit(data['field'], ':')[0]
+field_query = StringSplit.stringsplit(data['field'], ':')[0]
 
  # 把结果写回到文件
 ZT_query = []
@@ -79,7 +79,7 @@ with open('C:/Users/flyingaura/Desktop/CNKI_Keywords.txt', 'w') as result_file:
     i = 1  #计数器
     for ZTvalue in ZTNo_List:
         if(ZTvalue.get_ZTNo() == ''):
-            ZT_query.append((Func_StringSplit.stringsplit(ZTvalue.get_kw(),';')[0],'--无分类号--'))
+            ZT_query.append((StringSplit.stringsplit(ZTvalue.get_kw(), ';')[0], '--无分类号--'))
         else:
             # 把分类号和分类名称放入一个dict，是为了对分类号去重
             ZTNo_Name[ZTvalue.get_ZTNo()] = ZTvalue.get_ZTName()
