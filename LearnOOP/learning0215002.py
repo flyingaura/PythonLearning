@@ -51,12 +51,8 @@ class YHtriangle(object):
 
 def YH_format(n,YH_list):    #定义一个杨辉三角格式化输出的方法
 
-    # def __init__(self,n):
-    #     self.YH_temp = [0, 1, 0]
-    #     self.n = n
-    #     self.YH_list = []
-    #     # self.Num = Num
     L_temp = []
+
     L_index = int(len(YH_list) / 2)
     # print('***:', n, len(YH_list),YH_list, L_index)
     if(n + 2 >= len(YH_list)):
@@ -90,12 +86,33 @@ def YH_format(n,YH_list):    #定义一个杨辉三角格式化输出的方法
     else:
         raise ValueError('format list length cannot less than YHtriangle list length !')
 
+#打印在屏幕上
+class YH_print(object):    #打印杨辉三角的类
+    def __init__(self,YH_list):
+        # self.n = n
+        self.YH_list = YH_list
+
+    def print_method(self):  #打印的方法
+        for n in self.YH_list:
+            print(n, end='\t')
+        print('\n')
 
 
 
-fn = YHtriangle(5)
-for i in fn:
-    print(YH_format(9,i))
+n = 10
+fn = YHtriangle(n)
+YHlist = []
+with open('C:/Users/flyingaura/Desktop/YH%d.txt' % n, 'w') as YH_file:
+    for YHdate in fn:
+        YHlist = YH_format(n+1,YHdate)
+        YH_print(YHlist).print_method()
+        for nd in YHlist:
+            YH_file.write(str(nd))
+        YH_file.write('\n')
+
+
+
+
     # print(YH_format(5,i))
 # print(fn[0])
 # # print(fn)

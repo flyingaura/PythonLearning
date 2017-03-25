@@ -1,56 +1,14 @@
-# # # -*- coding: utf-8 -*-
-# #
-# # # L1 = [1,3,5]
-# # # L2 = [2,4,6,8,10]
-# # #
-# # # print(list(L1))
-# # # print(list(L2))
-# # #
-# # # L1 = L2
-# # # print(list(L1))
-# #
-# # # print(list(range(2)))
-# # #
-# # # for x in range(0):
-# # #     print(x)
-# #
-# # alist = [1,2,3,4,5,6,7]
-# # print(alist[1:1])
-# #
-# # print(int(len(alist)/2))
-# #
-# # SH_CN = {'鼠':'shu','牛':'niu','虎':'hu', '兔':'tu', '龙':'long', '蛇':'she', '马':'ma', '羊':'yang', '猴':'hou', '鸡':'ji', '狗':'gou', '猪':'zhu'}
-# # #
-# # for key in SH_CN.items():
-# #     print(key)
-#
-# # print(list(SH_CN.items()))
-# from enum import Enum,unique
-# import time
-# shenxiao = Enum('生肖',('鼠','牛','虎','兔','龙','蛇','马','羊','猴','鸡','狗','猪'))
-#
-#
-# print(shenxiao['猴'].value)
-#
-# n = 2011
-# one_sh = shenxiao((n+8)%12+1)
-# for key in shenxiao.__members__:
-#     print(key)
-# print(one_sh.name ,'==>',one_sh.value)
-# print(list(shenxiao.__members__))
-# print(shenxiao((n+8)%12+1).name)
-#
-# strings = '123456789'
-# print(strings[2:6])
+# -*- coding: utf-8 -*-
+"""
+用于日期计算的模块，包含几个函数：
+1、用于判断是否为闰年的函数 if_leapyear(year)
+2、判断当前输入年份格式是否正确的函数（标准格式为：19000101） if_yearformat(data)
+3、定义一个当前日期在当前年（从1月1日算起）已过天数的函数 pass_days(data)
+4、计算从初始年份起到这个整数天数的年份日期的函数  Cal_Data(init_year,days)
+"""
 
-# #
-#
-# Mydata = 12210329
-#
-# str_data = str(Mydata)
-# print(str_data[4:6])
-#
-# print(int('0010'))
+__author__ = 'Flyingaura_wl'
+__edittime__ = '20170322'
 
 # 定义一个判断是否闰年的函数
 def if_leapyear(year_data):
@@ -106,8 +64,11 @@ def pass_days(init_data):
     sum_passdays = sum_passdays + data0[2]
     return sum_passdays
 
+
+
+#定义计算从初始年份起到这个整数天数的年份日期的函数
 def Cal_Data(init_year,days):
-    # """the format of init_year：19000101"""
+    """the format of init_year：19000101"""
 
     #对输入参数做校验
     if(not if_yearformat(init_year)):
@@ -144,7 +105,7 @@ def Cal_Data(init_year,days):
         else:
             init_mon = int(Amon)
             for mons in range(init_mon+1,13):
-                int_days = int_days - (mon2days[Amon]-int(Aday))
+                int_days = int_days -(mon2days[Amon]-int(Aday))
                 if(mons < 10):
                     Amon = '0' + str(mons)
                 else:
@@ -166,7 +127,3 @@ def Cal_Data(init_year,days):
         rest_days = pass_days(init_year) + int_days - yeardays - 1  #扣除1月1日这一天
         furday = Cal_Data(next_data,rest_days)   #递归调用计算日期函数
     return furday
-
-
-furday = Cal_Data(20101022,130)
-print(furday)

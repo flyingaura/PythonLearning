@@ -2,7 +2,7 @@
 
 __author__ = 'weil'
 # -*-coding: utf-8 -*-
-from LearnModule import StringAddValue
+from LearnModule import String_func
 from LearnModule import str2int
 
 # 定义单个数字与汉字对应字典
@@ -24,7 +24,7 @@ def Numin4(Num,zerotag = 0):
     deltag = 0
     while(1):
         if(NumString[0] == '0'):
-            NumString = StringAddValue.Str_del_letter(0,NumString)
+            NumString = String_func.Str_del_letter(0, NumString)
             deltag = 1
         else:
             break
@@ -77,19 +77,20 @@ def Num2Chinese(Num):
     else:
         NumString = str(Num)
         # 如果是小数，则将整数部分与小数部分分开
+        Num_int = NumString
+        Num_dec = ''
         for i in range(len(NumString)):
             if(NumString[i] == '.'):
                 Num_int = NumString[0:i]
                 Num_dec = NumString[i+1:]
                 break
-            Num_int = NumString
-            Num_dec = ''
+
         # 输出小数部分
         if(Num_dec != ''):
             dec_string = Num_List['.']
             while (1):
                 if (Num_dec[-1] == '0'):
-                    Num_dec = StringAddValue.Str_del_letter(-1, Num_dec)
+                    Num_dec = String_func.Str_del_letter(-1, Num_dec)
                 else:
                     break
             for strN in Num_dec:
@@ -104,9 +105,9 @@ def Num2Chinese(Num):
     # 合并整数和小数部分，并输出
     return int_string + dec_string
 
-Anum = 193900000300410
-# print(str(Anum))
-print(Num2Chinese(Anum))
+# Anum = 203685477.625000
+# # print(str(Anum))
+# print(Num2Chinese(Anum))
 # print(Num2Chinese('6380002812300230000943.214534546'))
 # print(str(123422))
 

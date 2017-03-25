@@ -1,56 +1,14 @@
-# # # -*- coding: utf-8 -*-
-# #
-# # # L1 = [1,3,5]
-# # # L2 = [2,4,6,8,10]
-# # #
-# # # print(list(L1))
-# # # print(list(L2))
-# # #
-# # # L1 = L2
-# # # print(list(L1))
-# #
-# # # print(list(range(2)))
-# # #
-# # # for x in range(0):
-# # #     print(x)
-# #
-# # alist = [1,2,3,4,5,6,7]
-# # print(alist[1:1])
-# #
-# # print(int(len(alist)/2))
-# #
-# # SH_CN = {'鼠':'shu','牛':'niu','虎':'hu', '兔':'tu', '龙':'long', '蛇':'she', '马':'ma', '羊':'yang', '猴':'hou', '鸡':'ji', '狗':'gou', '猪':'zhu'}
-# # #
-# # for key in SH_CN.items():
-# #     print(key)
-#
-# # print(list(SH_CN.items()))
-# from enum import Enum,unique
-# import time
-# shenxiao = Enum('生肖',('鼠','牛','虎','兔','龙','蛇','马','羊','猴','鸡','狗','猪'))
-#
-#
-# print(shenxiao['猴'].value)
-#
-# n = 2011
-# one_sh = shenxiao((n+8)%12+1)
-# for key in shenxiao.__members__:
-#     print(key)
-# print(one_sh.name ,'==>',one_sh.value)
-# print(list(shenxiao.__members__))
-# print(shenxiao((n+8)%12+1).name)
-#
-# strings = '123456789'
-# print(strings[2:6])
+# -*- coding: utf-8 -*-
 
-# #
-#
-# Mydata = 12210329
-#
-# str_data = str(Mydata)
-# print(str_data[4:6])
-#
-# print(int('0010'))
+
+
+#Chapter 1
+#Program 2
+
+"""旅行者1号到哪儿了"""
+# 1、输入一个整数，计算从初始年份起到这个整数天数的年份日期
+# 2、计算这个时间段内旅行者1号离开太阳的距离
+# 3、以小时为单位计算无线电通信在同样距离内的通信往返时间
 
 # 定义一个判断是否闰年的函数
 def if_leapyear(year_data):
@@ -106,8 +64,11 @@ def pass_days(init_data):
     sum_passdays = sum_passdays + data0[2]
     return sum_passdays
 
+
+
+#定义计算从初始年份起到这个整数天数的年份日期的函数
 def Cal_Data(init_year,days):
-    # """the format of init_year：19000101"""
+    """the format of init_year：19000101"""
 
     #对输入参数做校验
     if(not if_yearformat(init_year)):
@@ -144,7 +105,7 @@ def Cal_Data(init_year,days):
         else:
             init_mon = int(Amon)
             for mons in range(init_mon+1,13):
-                int_days = int_days - (mon2days[Amon]-int(Aday))
+                int_days = int_days -(mon2days[Amon]-int(Aday))
                 if(mons < 10):
                     Amon = '0' + str(mons)
                 else:
@@ -167,6 +128,33 @@ def Cal_Data(init_year,days):
         furday = Cal_Data(next_data,rest_days)   #递归调用计算日期函数
     return furday
 
+while(True):
+    init_data = input('请输入任意一个日期，格式为19000101 （q退出）：')
+    if(str.lower(init_data) == 'q'):
+        print('程序结束 !')
+        break
+    elif(not if_yearformat(init_data)):
+        print('日期格式不正确，请重新输入！')
+    else:
+        fur_data = None
+        end_tag = 0
+        while(fur_data == None):
+            days = input('请输入任意整数做为间隔天数（q退出）：')
+            if(str.lower(days) == 'q'):
+                end_tag = 1
+                break
+            else:
+                fur_data = Cal_Data(init_data, days)
+        if(end_tag):
+            print('程序结束 !')
+            break
+        else:
+            print('距离超始日期 %s-%s-%s 为 %s 天的最终日期为：%s-%s-%s'
+                  %(init_data[:4],init_data[4:6],init_data[6:],days,fur_data[:4],fur_data[4:6],fur_data[6:]))
 
-furday = Cal_Data(20101022,130)
-print(furday)
+
+
+
+
+
+
