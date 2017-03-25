@@ -1,6 +1,9 @@
 # -*- coding: utf-8 -*-
 
-"定义一个全奇数生成器,可以支持全序列和切片序列"
+"""
+1、定义一个全奇数生成器,可以支持全序列和切片序列
+2、定义一个判断是否为回数的函数
+"""
 
 def oddNum(n = None):
     Num = 1
@@ -77,8 +80,22 @@ def primesNum(n = None):  #定义一个素数生成器
             outnum = next(it)
 
 
+def if_synnum(n):
+    try:
+        int_num = int(n)
+    except ValueError as e:
+        raise ValueError('输入参数错误：%s' %e)
 
-L = []
+    reserve_num = ''
+    for astr in str(n):
+        reserve_num = astr + reserve_num
+    if(reserve_num == str(n)):
+        return True
+    else:
+        return False
+
+
+# L = []
 # for n in oddNum:
 #     if(n < 100):
 #         L.append(n)
@@ -87,11 +104,11 @@ L = []
 # print(list(L))
 
 # # print(list(evenNum('1000')))
-for n in primesNum():
-    if (n < 100):
-        L.append(n)
-    else:
-        break
-#
-print(list(L))
-print(list(primesNum(100)))
+# for n in primesNum():
+#     if (n < 100):
+#         L.append(n)
+#     else:
+#         break
+# #
+# print(list(L))
+# print(list(primesNum(100)))

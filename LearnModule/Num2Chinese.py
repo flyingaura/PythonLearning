@@ -77,13 +77,14 @@ def Num2Chinese(Num):
     else:
         NumString = str(Num)
         # 如果是小数，则将整数部分与小数部分分开
+        Num_int = NumString
+        Num_dec = ''
         for i in range(len(NumString)):
             if(NumString[i] == '.'):
                 Num_int = NumString[0:i]
                 Num_dec = NumString[i+1:]
                 break
-            Num_int = NumString
-            Num_dec = ''
+
         # 输出小数部分
         if(Num_dec != ''):
             dec_string = Num_List['.']
@@ -104,9 +105,9 @@ def Num2Chinese(Num):
     # 合并整数和小数部分，并输出
     return int_string + dec_string
 
-Anum = 193900000300410
-# print(str(Anum))
-print(Num2Chinese(Anum))
+# Anum = 203685477.625000
+# # print(str(Anum))
+# print(Num2Chinese(Anum))
 # print(Num2Chinese('6380002812300230000943.214534546'))
 # print(str(123422))
 

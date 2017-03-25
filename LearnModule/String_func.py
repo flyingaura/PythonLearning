@@ -1,4 +1,12 @@
-'1、给每个字符串加上一个默认串的函数  2、把大写字母统一转换成小写字母的函数 3、删除字符串中指定位置的字符 4、字符串反转 5、字符串拆分（支持多个分隔符）'
+"""
+1、给每个字符串加上一个默认串的函数
+2、把大写字母统一转换成小写字母的函数
+3、删除字符串中指定位置的字符
+4、字符串反转
+5、字符串拆分（支持多个分隔符）
+6、在字符串指定位置插入一个字符串
+7、替换字符串指定位置中的字符或字符串
+"""
 # -*- coding: utf-8 -*-
 import functools
 
@@ -39,16 +47,17 @@ def Str_del_letter(Sindex,StrList):
     return Astring
 
 # 定义一个字符串反转的函数。 str_reverse('123456') = '654321'
-def str_reverse(s):
-    if (not isinstance(s,str)):
-        istr = str(s)
-    else:
-        istr = s
-    # rev_strL = []
-    rev_str = ''
-    for astr in istr:
-        rev_str = astr + rev_str
-    return rev_str
+# str_reverse(s) = s[::-1]
+# def str_reverse(s):
+#     # if (not isinstance(s,str)):
+#     #     istr = str(s)
+#     # else:
+#     #     istr = s
+#     # rev_strL = []
+#     rev_str = ''
+#     for astr in istr:
+#         rev_str = astr + rev_str
+#     return rev_str
 
 # ======================================================================================
 # 增加日志输出功能
@@ -71,6 +80,9 @@ def log(func):
         return ret
     return wrapper
 
+
+# 5、字符串拆分（支持多个分隔符）
+
 @log
 def stringsplit(strN,splitN):
     # strN:待拆分字符串
@@ -89,6 +101,21 @@ def stringsplit(strN,splitN):
     return strL
 
 
-# print(Str_del_letter(-1,'18408300'))
+# 6、在字符串指定位置插入一个字符串
+# def addstring(sindex,strN,addstr):
+#     str_temp = []
+#     result_str = ''
+#     for astr in strN:
+#         str_temp.append(astr)
+#     str_temp.insert(sindex,addstr)
+#     for astr in str_temp:
+#         result_str = result_str + astr
+#     return result_str
 
+# print(addstring(-1,'123456','a'))
 
+# strlist = ['1','2','3']
+# strlist.insert(-1,'a')
+# print(list(strlist))
+
+# 7、替换字符串指定位置中的字符或字符串

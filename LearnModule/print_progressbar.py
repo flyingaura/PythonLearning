@@ -15,9 +15,11 @@ import time, os
 
 import time
 
-for i in range(1000):
-    percent = 1.0 * i / 1000 * 100
+for i in range(100):
+    # percent = 1.0 * i / 1000 * 100
 
-    print('complete percent:%10.8s%s' % (str(percent), '%'))
-
+    # print('complete percent:%10.8s%s' % (str(percent), '%'))
+    # print('complete progress:', end = '')
+    # print('= %d' %i,end = '')
+    print('= %d' %i)
     time.sleep(0.5)
