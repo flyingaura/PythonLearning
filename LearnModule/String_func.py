@@ -6,6 +6,7 @@
 5、字符串拆分（支持多个分隔符）
 6、在字符串指定位置插入一个字符串
 7、替换字符串指定位置中的字符或字符串
+8、删除字符串中的指定字符
 """
 # -*- coding: utf-8 -*-
 import functools
@@ -119,3 +120,87 @@ def stringsplit(strN,splitN):
 # print(list(strlist))
 
 # 7、替换字符串指定位置中的字符或字符串
+def MY_replace(strN,exp_str,rep_str,rep_count = None):
+    '''
+    ************* 重构str.replace函数 *************
+    :param strN: 原字符串
+    :param rep_str:希望被替换的字符串
+    :param rep_str: 替换用字符串
+    :param rep_count: 替换次数，默认为全部替换
+    :return: replaced_str 替换后字符串
+    '''
+
+    if(not isinstance(strN,str)):
+        raise ValueError('参数错误--->第一个参数必须为字符串')
+    if(not isinstance(exp_str,str)):
+        raise ValueError('参数错误--->第二个参数必须为字符串')
+    if (not isinstance(rep_str, str)):
+        raise ValueError('参数错误--->第三个参数必须为字符串')
+    if(rep_count):
+        if(not isinstance(rep_count,int)):
+            raise ValueError('参数错误---> 第三个参数必须为整数')
+
+    length_exp = len(exp_str)
+    i_count = 1
+    replaced_str = ''
+    if(rep_count):
+        while(len(strN) - length_exp >= 0 and i_count <= rep_count):
+            stop_tag = 1
+            for i in range(len(strN) - length_exp + 1):
+                if(strN[i:i + length_exp] == exp_str):
+                    replaced_str = replaced_str + strN[:i] + rep_str
+                    strN = strN[i + length_exp:]
+                    i_count = i_count + 1
+                    stop_tag = 0
+                    break
+
+            if(stop_tag):
+                break
+
+    else:
+        while (len(strN) - length_exp >= 0):
+            stop_tag = 1
+            for i in range(len(strN) - length_exp + 1):
+                if (strN[i:i + length_exp] == exp_str):
+                    replaced_str = replaced_str + strN[:i] + rep_str
+                    strN = strN[i + length_exp:]
+                    stop_tag = 0
+                    break
+            if (stop_tag):
+                break
+
+    replaced_str = replaced_str + strN
+    return replaced_str
+
+# 8、删除字符串中的指定字符
+def str_delstr(str1,delstr,ignor_cap = False):
+    #str1为原字符串，delstr为希望删除的字符串，ignor_cap：是否忽略要删除字符串大小写。默认False区分大小写
+    if(not isinstance(str1,str)):
+        raise ValueError('参数错误：%s --> 第1个参数必须为字符串类型')
+    if (not isinstance(delstr, str)):
+        raise ValueError('参数错误：%s --> 第2个参数必须为字符串类型')
+    if (not isinstance(ignor_cap, bool)):
+        raise ValueError('参数错误：%s --> 第3个参数必须为布尔值类型')
+
+    start_index = 0
+    str_temp = []
+    if(ignor_cap):
+        str2 = str1.lower()
+    else:
+        str2 = str1
+    while(True):
+        del_index = str2.find(delstr,start_index)
+        if(del_index == -1):
+            str_temp.append(str1[start_index:])
+            break
+        str_temp.append(str1[start_index:del_index])
+        start_index = del_index + len(delstr)
+
+    out_str = ''
+    for astr in str_temp:
+        out_str = out_str + astr
+
+    return out_str
+
+
+

@@ -6,6 +6,8 @@
 3、定义一个阶乘函数  factorial(n)
 4、定义一个组合函数  combination（n,m）
 5、定义一个从N个数的序列中取出M个数字的所有情况组合函数  fetch_in_list(n,m)
+6、定义一个从N个数的序列中取出M个数字的所有情况排列函数  array_in_list(n,m)
+7、定义一个从N个数的序列中遍历取M次的所有情况排列函数（M可大于N）　through_in_list(n,m)
 """
 
 def oddNum(n = None):
@@ -85,14 +87,14 @@ def primesNum(n = None):  #定义一个素数生成器
 
 def if_synnum(n):
     try:
-        int_num = int(n)
+        str_n = str(n)
     except ValueError as e:
         raise ValueError('输入参数错误：%s' %e)
 
-    reserve_num = ''
-    for astr in str(n):
-        reserve_num = astr + reserve_num
-    if(reserve_num == str(n)):
+    # reserve_num = ''
+    # for astr in str(n):
+    #     reserve_num = astr + reserve_num
+    if(str_n[::-1] == str_n):
         return True
     else:
         return False
@@ -132,18 +134,21 @@ def combination(n,m):
     return int(factorial(n)/(factorial(m) * factorial(n-m)))
 
 def fetch_in_list(nlist,m):
+    """
+    定义一个从N个数的序列中取出M个数字的所有情况组合函数  NewFetch_in_list(nlist,m)
+    """
     # ============参数校验=============
-    if(not isinstance(nlist,(list,tuple))):
+    if(not isinstance(nlist,(str,list,tuple))):
         raise ValueError('参数错误 --> 第一个输入参数必须为序列类型（list或者tuple）')
 
     try:
         # int_n = int(n)
         int_m = int(m)
     except ValueError as e:
-        raise ValueError('参数错误 ：%s --> 两个输入参数都必须为正整数' % e)
+        raise ValueError('参数错误 ：%s --> 输入取数数量参数都必须为正整数' % e)
 
     if(len(nlist) < int_m):
-        raise ValueError('参数错误 --> 输入的序列长度不能小于第二个值')
+        raise ValueError('参数错误 --> 输入的取数数量参数不能大于序列长度')
 
     if(int_m < 1):
         raise ValueError('参数错误 --> 输入参数必须为正整数')
@@ -170,20 +175,66 @@ def fetch_in_list(nlist,m):
 
     return num_list
 
-# L = []
-# for n in oddNum:
-#     if(n < 100):
-#         L.append(n)
-#     else:
-#         break
-# print(list(L))
 
-# # print(list(evenNum('1000')))
-# for n in primesNum():
-#     if (n < 100):
-#         L.append(n)
-#     else:
-#         break
-# #
-# print(list(L))
-# print(list(primesNum(100)))
+# 6、定义一个从N个数的序列中取出M个数字的所有情况排列函数  array_in_list(n,m)
+
+def array_in_list(nlist,m):
+    # ============参数校验=============
+    if(not isinstance(nlist,(str,list,tuple))):
+        raise ValueError('参数错误 --> 第一个输入参数必须为序列类型（list或者tuple）')
+
+    try:
+        # int_n = int(n)
+        int_m = int(m)
+    except ValueError as e:
+        raise ValueError('参数错误 ：%s --> 两个输入参数都必须为正整数' % e)
+
+    if(len(nlist) < int_m):
+        raise ValueError('参数错误 --> 输入的序列长度不能小于第二个值')
+
+    if(int_m < 1):
+        raise ValueError('参数错误 --> 输入参数必须为正整数')
+
+    # ============开始计算=============
+    # ============定义退出条件=============
+    num_list = []
+    if (m == 1):
+        for n in nlist:
+            num_list.append([n])
+        return num_list
+
+        # ============递归计算=============
+    for i in range(len(nlist)):
+        temp_num = nlist[i]
+        temp_numlist = nlist.copy()
+        temp_numlist.pop(i)
+        for temp_list in array_in_list(temp_numlist, m - 1):  # 从序列中取一个，从剩下序列中取剩下几个
+            temp_list.insert(0, temp_num)
+            num_list.append(temp_list)
+
+    return num_list
+
+# 7、定义一个从N个数的序列中遍历取M次的所有情况排列函数（M可大于N）　through_in_list(n,m)
+def through_in_list(strlist,m):
+    if (not isinstance(strlist, (str, list, tuple))):
+        raise ValueError('参数错误 --> 第一个输入参数必须为序列类型（list或者tuple）')
+
+    try:
+        # int_n = int(n)
+        int_m = int(m)
+    except ValueError as e:
+        raise ValueError('参数错误 ：%s --> 第二个参数必须为正整数' % e)
+
+    result_list = []
+    if(m == 1):
+        for astr in strlist:
+            result_list.append([astr])
+        return result_list
+
+    for astr in strlist:
+        for aresult in through_in_list(strlist,m - 1):
+            aresult.insert(0,astr)
+            result_list.append(aresult)
+
+    return result_list
+

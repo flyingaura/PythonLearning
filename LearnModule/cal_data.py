@@ -12,8 +12,13 @@ __edittime__ = '20170322'
 
 # 定义一个判断是否闰年的函数
 def if_leapyear(year_data):
-    if(int(year_data) % 4 == 0):
-        return True
+    if(int(year_data) % 4 == 0 ):
+        if(int(year_data) % 100 != 0):
+            return True
+        elif(int(year_data) % 400 == 0):
+            return True
+        else:
+            return False
     else:
         return False
 
