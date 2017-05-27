@@ -5,6 +5,7 @@ import time
 from LearnModule import MY_math
 from LearnModule import cal_data
 import random
+import os
 #
 # print(MY_math.combination(52,5))
 
@@ -156,21 +157,68 @@ from LearnModule import MY_math
 #
 # print(string1.strip('\"'))
 
-filter_wordlist = ('省', '市', '自治区', '区', '县', '街道', '社区', '镇', '乡', '村', '回民乡')
+# filter_wordlist = ('省', '市', '自治区', '区', '县', '街道', '社区', '镇', '乡', '村', '回民乡')
+#
+# def alias_province(string1):
+#     alias_province_list = []
+#     for astr in filter_wordlist:
+#         if (len(string1) > len(astr)):
+#             filter_index = len(string1) - len(astr)
+#             if (string1.find(astr) == filter_index):
+#                 print(string1.find(astr))
+#                 alias_province_list.append(string1[:filter_index])
+#     if (alias_province_list):
+#         return alias_province_list
+#     else:
+#         return None
+#
+#
+# string1 = '北京市'
+# print(alias_province(string1))
+#
+#
+# phnum_letter = {'2': 'abc', '3': 'def', '4': 'ghi', '5': 'jkl', '6': 'mno', '7': 'pqrs', '8': 'tuv', '9': 'wxyz'}
+# # 将上面的对应表转换成字母与数字的对应函数
+# letter_phnum = {}
+# for key,values in phnum_letter.items():
+#     for letter in values:
+#         letter_phnum[letter] = key
+#
+# print(letter_phnum)
+#
+# file_path = 'F:/documents/python/测试数据/root/python数据类型判断及类型转换.txt'
+# print(os.path.splitext(os.path.split(file_path)[1]))
+#
+# Astr = '我爱北京天安门'
+# print(Astr.find('北京'))
 
-def alias_province(string1):
-    alias_province_list = []
-    for astr in filter_wordlist:
-        if (len(string1) > len(astr)):
-            filter_index = len(string1) - len(astr)
-            if (string1.find(astr) == filter_index):
-                print(string1.find(astr))
-                alias_province_list.append(string1[:filter_index])
-    if (alias_province_list):
-        return alias_province_list
+def search_text(keywords,fileobject):
+    with open(fileobject, mode = 'rb') as init_file:
+        try:
+            fulltext = init_file.read().decode('utf-8')
+        except UnicodeDecodeError:
+            fulltext = init_file.read().decode('gbk')
+    print(fulltext)
+    # try:
+    #     search_tag = fulltext.find(keywords)
+    # except UnicodeEncodeError:
+    #     print(fileobject)
+    #     search_tag = 0
+    if(fulltext.find(keywords) >= 0):
+        print(fulltext.find(keywords))
+        return True
     else:
-        return None
+        return False
 
 
-string1 = '北京市'
-print(alias_province(string1))
+# rec = search_text('数据','F:\documents\python\测试数据\使用Notepad++编辑运行Python程序.txt')
+# print(rec)
+#
+with open('F:\documents\python\测试数据\使用Notepad++编辑运行Python程序.txt', mode = 'rb') as init_file:
+    try:
+        fulltext = init_file.read().decode('utf-8')
+    except UnicodeDecodeError:
+        init_file.seek(0)
+        fulltext = init_file.read().decode('gbk')
+print(fulltext)
+# print(type(text))

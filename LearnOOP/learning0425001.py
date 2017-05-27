@@ -28,6 +28,7 @@ class EnglishWord(object):
 def readWords(filepath):
     with open(filepath,mode = 'rb') as read_file:
         Words_list = []
+        BOM = read_file.read(3)
         for word_rec in read_file.readlines():
             Aword = StringSplit.stringsplit(word_rec.decode('utf-8').strip(',').strip(),',')
             # print(Aword)
@@ -43,26 +44,29 @@ def readWords(filepath):
 
     return Words_list
 
-with open('C:/Users/flyingaura/Desktop/eng_words.dat', mode = 'w') as out_file:
-    out_file.write('%20s|%20s|%20s\n' %('单词','音标','词性&词义'))
+
+with open('C:/Users/flyingaura/Desktop/eng_words.dat', mode = 'w',encoding = 'utf-8') as out_file:
+    out_file.write('%-20s|%-20s|%-20s\n' %('单词','音标','词性&词义'))
     out_file.write('-' * 80)
     out_file.write('\n')
     for word_rec in readWords('C:/Users/flyingaura/Desktop/english words.csv'):
+        # print('<-- %s -->' %word_rec.symbol)
+
         try:
-            out_file.write('%20s' %word_rec.name)
+            out_file.write('%-22s|' %word_rec.name)
         except UnicodeEncodeError:
             print(word_rec.name)
-            out_file.write('%20s' % (word_rec.name.encode('utf-8')))
+            out_file.write('%-22s|' % (word_rec.name))
         try:
-            out_file.write('%20s' %word_rec.symbol.encode('utf-8').decode('utf-8'))
-        except UnicodeEncodeError:
-            out_file.write('%20s' % ('******'))
+            out_file.write('%-22s|' %word_rec.symbol)
+        except UnicodeEncodeError as e:
+            out_file.write('%-22s|' % word_rec.symbol)
         for key,value in word_rec.nominal_meaning.items():
             try:
-                out_file.write('    < %s > - %s ;' %(key,value))
+                out_file.write('< %s > - %s ;' %(key,value))
             except UnicodeEncodeError:
                 print('< %s > - %s ;' %(key,value))
-                out_file.write('    < %8s > - %s ;' % (key, '******'))
+                out_file.write('< %8s > - %s ;' % (key, '******'))
         out_file.write('\n')
 
 
