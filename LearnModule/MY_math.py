@@ -1,4 +1,5 @@
 # -*- coding: utf-8 -*-
+import random
 
 """
 1、定义一个全奇数生成器,可以支持全序列和切片序列
@@ -237,4 +238,25 @@ def through_in_list(strlist,m):
             result_list.append(aresult)
 
     return result_list
+
+#8、定义一个从0~N数据范围中随机取出指定M个数据的随机数函数
+def RandomFetch(N,M):
+    """
+    从0~N数据范围中随机取出指定M个数据的随机数函数，如果 N <= M，则直接返回set(range(N + 1))
+    """
+    try:
+        N = int(N)
+        M = int(M)
+    except ValueError as e:
+        raise ValueError('%s --> 参数错误，无法转换为整数' %e)
+
+    RandomSet = set()
+
+    if(N <= M):
+        RandomSet = set(range(N + 1))
+    else:
+        while(len(RandomSet) < M):
+            RandomSet.add(random.randint(0,N))
+
+    return RandomSet
 

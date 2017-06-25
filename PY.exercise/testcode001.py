@@ -2,6 +2,7 @@
 #
 import os
 import random
+from LearnModule import MY_math
 #
 #
 # # exclude = ['','','”','“','，','：','；','）','（', '《','》','～','【','】','、','。','①','③','②','④','⑤','⑥','⑦','⑧','⑨']
@@ -65,9 +66,24 @@ import random
 #
 # # print(GoodDiag_wrong)
 
-ran_int = set()
-while(len(ran_int) != 20):
-    ran_int.add(random.randint(0,100))
+# ran_int = set()
+# while(len(ran_int) != 20):
+#     ran_int.add(random.randint(0,100))
+#
+# print(sorted(ran_int))
+# print(set(range(60,90)).difference(ran_int))
 
-print(sorted(ran_int))
-print(set(range(60,90)).difference(ran_int))
+# def fn(x):
+#     return x * x
+# Nlist = [x for x in range(10)]
+# print(list(map(fn,Nlist)))
+
+# print([[0,'-']] * 9)
+# print(list(range(9))[1:-1])
+# breastAttrList = [[int(x),' '] for x in range(9)[1:-1]]
+# print(breastAttrList)
+# Myset = set([1,2,3])
+# a = Myset.add(4)
+# print(a)
+Astr = ''
+print('%s' %Astr)
