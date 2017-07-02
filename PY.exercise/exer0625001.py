@@ -25,19 +25,22 @@ class breast_patients(object):
         # self.tagI = [VtagI,TtagI]
         self.diagResult = diagResult
 
-    定义一个输出指标值列表的方法
+    # 定义一个输出指标值列表的方法
+    # @classmethod
     def BattrList(self):
         return [x[0] for x in self.breastAttrList]
 
-    定义一个打印所有数据的方法
+    # 定义一个打印所有数据的方法
+    # @classmethod
     def dataOutput(self):
         print('Patient ID : %10s' %self.patientID)
         # print('%10s | %10s | %10s | %10s | %10s | %10s | %10s | %10s | %10s '
         #       %('tagA','tagB','tagC','tagD','tagE','tagF','tagG','tagH','tagI'))
         for Attr in self.breastAttrList:
-            print('%.3f (%s)[%.3f]' %(Attr[0],Attr[1],Attr[2]) , end = '\t')
+            print('%.3f (%s)[%.3f] ||' %(Attr[0],Attr[1],Attr[2]) , end = '\t')
+        print('\nDiagnosis Result: %s' %(self.diagResult))
         print('\n')
-        print('Diagnosis Result: %s' %(self.diagResult))
+
 
 #定义一个分类器，通过对分类语料数据的学习，找出某种诊断结论的分类特征值,输出分类特征值列表
 def Classifier(TrainingDataList):
@@ -47,7 +50,7 @@ def Classifier(TrainingDataList):
     # 计算每个训练数据的肿瘤指标数值之和
     for AtrainingData in TrainingDataList:
         for i in range(AttrData_length):
-            Classifier_data[i] = Classifier_data[i] + AtrainingData.breastAttrList[i]
+            Classifier_data[i] = Classifier_data[i] + AtrainingData.breastAttrList[i][0]
 
     #返回肿瘤指标数值的平均值
     return [(x / TrainingList_length) for x in Classifier_data]
@@ -125,7 +128,7 @@ def AnalysisWD(WrongdataList,Sep_Data):
 # AllData = []
 breastPatientList = []
 # 从文件中读取所有学习数据
-with open('C:/Users/flyingaura/Desktop/breast-cancer-wisconsin.data', mode = 'rb') as Datafile:
+with open('G:/memory/python-learning/learning2017/program data/breast-cancer-wisconsin.data', mode = 'rb') as Datafile:
 
     for Aline in Datafile.readlines():
         # breastAttrList = []
@@ -138,17 +141,21 @@ with open('C:/Users/flyingaura/Desktop/breast-cancer-wisconsin.data', mode = 'rb
             print('ValueError --> 参数错误，该参数无法转换为数值')
             continue
 
-        breast_patients.patientID = APatientData[0]
-        breast_patients.breastAttrList = breastAttrList
+        ABpatient = breast_patients(0,[],'')
+        ABpatient.patientID = APatientData[0]
+        ABpatient.breastAttrList = breastAttrList
         if(APatientData[-1] == '2'):
-            breast_patients.diagResult = 'Good'
+            ABpatient.diagResult = 'Good'
         elif(APatientData[-1] == '4'):
-            breast_patients.diagResult = 'Bad'
+            ABpatient.diagResult = 'Bad'
         else:
-            breast_patients.diagResult = 'UnKnown'
+            ABpatient.diagResult = 'UnKnown'
 
-        breastPatientList.append(breast_patients)
+        # breast_patients.dataOutput()
+        breastPatientList.append(ABpatient)
 
+for ABBpatient in breastPatientList:
+    ABBpatient.dataOutput()
 
 # 随机选取400组做为训练语料，剩下的做为测试语料
 TrainingNum = 400
@@ -160,13 +167,19 @@ while(AllCount - 1 <= TrainingNum):
 TrainingIndexSet = MY_math.RandomFetch(AllCount - 1 ,TrainingNum)
 TestIndexSet = set(range(AllCount)).difference(TrainingIndexSet)
 
+# print(TrainingIndexSet)
+# print(TestIndexSet)
+
 Good_DiagData = []  #学习数据中的良性数据集
-Bad_DiagData = [] #学习数据中的恶性数据集
+Bad_DiagData = []  #学习数据中的恶性数据集
 for i in TrainingIndexSet:
     if(breastPatientList[i].diagResult == 'Good'):
         Good_DiagData.append(breastPatientList[i])
     elif(breastPatientList[i].diagResult == 'Bad'):
         Bad_DiagData.append(breastPatientList[i])
+    # breastPatientList[i].dataOutput()
+
+
 
 # 计算良性的分类特征值
 Good_Classify = Classifier(Good_DiagData)
@@ -193,8 +206,8 @@ test_result = ClassifyTest(Test_datalist,Sep_data)
 print('测试数据数量为： %d ' %(len(TestIndexSet)))
 print('测试精度为：%f' %test_result[1])
 print('测试错误数据共 %d 个，具体如下表：' %(len(test_result[0])))
-count_GW = 0   #良性判断为恶性的出错数
-count_BW = 0   #恶性判断为良性的出错数
+# count_GW = 0   #良性判断为恶性的出错数
+# count_BW = 0   #恶性判断为良性的出错数
 
 for WrongData in test_result[0]:
     WrongData.dataOutput()
