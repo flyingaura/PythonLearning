@@ -88,22 +88,23 @@ from LearnModule import MY_math
 # Astr = ''
 # print('%s' %Astr)
 
-class aaa(object):
-    def __init__(self,value):
-        self.value = value
-
-    # @classmethod
-    def aaa_out(self):
-        print('NO.%3d ,hello world!' %self.value)
-
-aalist = []
-
-for i in range(10):
-    bbb = aaa(i)
-    bbb.key = str(i)
-    aalist.append(bbb)
-
-for abc in aalist:
-    abc.aaa_out()
-    print('----> %s' %abc.key)
-
+# class aaa(object):
+#     def __init__(self,value):
+#         self.value = value
+#
+#     # @classmethod
+#     def aaa_out(self):
+#         print('NO.%3d ,hello world!' %self.value)
+#
+# aalist = []
+#
+# for i in range(10):
+#     bbb = aaa(i)
+#     bbb.key = str(i)
+#     aalist.append(bbb)
+#
+# for abc in aalist:
+#     abc.aaa_out()
+#     print('key:----> %s' %abc.key)
+#
+print('*'.join(['1','2','434']))
