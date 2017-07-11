@@ -107,4 +107,10 @@ from LearnModule import MY_math
 #     abc.aaa_out()
 #     print('key:----> %s' %abc.key)
 #
-print('*'.join(['1','2','434']))
+# # print('*'.join(['1','2','434']))
+# Nlist = list(range(4))
+# print(MY_math.through_in_list(Nlist,2))
+# print(MY_math.fetch_in_list(Nlist,2))
+# print(MY_math.array_in_list(Nlist,2))
+
+print(12.5 / 2.0)
