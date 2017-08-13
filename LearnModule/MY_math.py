@@ -9,6 +9,8 @@ import random
 5、定义一个从N个数的序列中取出M个数字的所有情况组合函数  fetch_in_list(n,m)
 6、定义一个从N个数的序列中取出M个数字的所有情况排列函数  array_in_list(n,m)
 7、定义一个从N个数的序列中遍历取M次的所有情况排列函数（M可大于N）　through_in_list(n,m)
+8、定义一个从0~N数据范围中随机取出指定M个数据的随机数函数
+
 """
 
 def oddNum(n = None):

@@ -112,5 +112,35 @@ from LearnModule import MY_math
 # print(MY_math.through_in_list(Nlist,2))
 # print(MY_math.fetch_in_list(Nlist,2))
 # print(MY_math.array_in_list(Nlist,2))
+# apoker =  '(Q,红桃)'
+# print('=' * 48 + '||' + '=' * 48)
+# print('临时区' + ' '* 42 +'||' + '结果区')
+# for i in range(4):
+#     print('|' + apoker + '|', end = '\t')
+# print('||', end = '')
+# for i in range(4):
+#     print('|' + apoker + '|', end = '\t')
+#
+# # TempPokersList = [[]] * 4
+# # print(TempPokersList == None)
+#
+# while(True):
+#     N = input('输入一个数字')
+#     try:
+#         N = int(N)
+#     except ValueError as e:
+#         print('%s -- >输入类型错误' %e)
+#         continue
+#     print(N + 1)
 
-print(12.5 / 2.0)
+menu = ' ' * 2 + '1.输入1（列号A，列号B），表示将A列最下面的一张或一组牌移动到B列最下面　\n'  + \
+       ' ' * 2 + '2.输入2（列号A），表示将A列最下面的一张牌移动到临时区空位置处　\n' + \
+       ' ' * 2 + '3.输入3（列号A），表示将A列最下面的一张牌移动到结果区对应位置处　\n' +\
+       ' ' * 2 + '4.输入4（列号A，列号B），表示从临时区将第A列牌移动到游戏区第B列最下面　\n' +\
+       ' ' * 2 + '5.输入R，重新进行一局游戏　\n' +\
+       ' ' * 2 + '6.输入Q，退出游戏　\n'
+
+aa = [x for x in 'menu']
+aa.extend([1,2,3])
+bb = [1]
+print(bb[-1])
