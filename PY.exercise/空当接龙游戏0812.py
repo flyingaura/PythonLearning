@@ -408,7 +408,3 @@ while (not ifVictory(CurrentTable.GamePokersList)):
 
 print('你赢了，游戏结束')
 # 游戏初始化
-
-
-
-
