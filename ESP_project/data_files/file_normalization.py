@@ -29,13 +29,13 @@ def SetFileFormat(FileSuffix):
                    'audio':['CD','OGG','MP3','ASF','WMA','WAV','RM','REAL','APE','MIDI','VQF'],
                    'video':['aiff','avi','mov','mpeg','mpg','qt','ram','viv','ra','rmvb','asf','wmv','flv'],
                    'txt':['txt','rtf'],'webpage':['html','htm','asp','jsp','php','css','xml','xhtml','aspx'],
-                   'Email':['eml']
+                   'Email':['eml'],'PDF':['pdf']
                    }
     for key in fformatdict:
         if(FileSuffix in fformatdict[key]):
             return key
-        else:
-            return 'others'
+
+    return 'others'
 
 # ===============================================================
 def FormatTime(xtime):
@@ -64,8 +64,8 @@ with open('F:/documents/python/learning2017/ESP_project/data_files/origin_files.
             alineJson = json.loads(aline_decode)
             for key in alineJson:
                 if(key == '全文内容'):
-                    pass
-                    # FileRecord['content'] = alineJson[key].strip()
+                    # pass
+                    FileRecord['content'] = alineJson[key].strip()
                 elif(key == '作者'):
                     FileRecord['authors'] = alineJson[key]
                 elif(key == '文件大小'):
@@ -101,13 +101,13 @@ with open('F:/documents/python/learning2017/ESP_project/data_files/origin_files.
         else:
             break
 
-# with open('F:/documents/python/learning2017/ESP_project/data_files/files_normalized.json', mode = 'wb') as outfile:
-#     for arecord in FileDataList:
-#         outfile.write(json.dumps(arecord, ensure_ascii= False).encode('utf-8'))
-#         outfile.write('\n'.encode('utf-8'))
-
-
 with open('F:/documents/python/learning2017/ESP_project/data_files/files_normalized.json', mode = 'wb') as outfile:
-    for i in range(20):
-        outfile.write(json.dumps(FileDataList[i], ensure_ascii= False).encode('utf-8'))
+    for arecord in FileDataList:
+        outfile.write(json.dumps(arecord, ensure_ascii= False).encode('utf-8'))
         outfile.write('\n'.encode('utf-8'))
+
+
+# with open('F:/documents/python/learning2017/ESP_project/data_files/files_normalized.json', mode = 'wb') as outfile:
+#     for i in range(20):
+#         outfile.write(json.dumps(FileDataList[i], ensure_ascii= False).encode('utf-8'))
+#         outfile.write('\n'.encode('utf-8'))
