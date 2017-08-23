@@ -24,8 +24,15 @@ def SetAppendixFiles(FilesPathList,n):   #从附件列表中分配一个第n个�
     if(n >= len(FilesPathList)):
         n = n % len(FilesPathList)
     randNum = random.randint(1,12)
-    if(randNum > 10):
-        return FilesPathList[n]
+    if(randNum > 9):
+        AppendixFilesList = []
+        fileindexset = set()
+        for i in range(3):
+            fileindexset.add(random.randint(0,2))
+        for i in fileindexset:
+            if(n + i < len(FilesPathList)):
+                AppendixFilesList.append(FilesPathList[n + i])
+        return AppendixFilesList
     else:
         return ''
 
@@ -81,7 +88,7 @@ with open('F:/documents/python/learning2017/ESP_project/data_news/origin_news.js
             if(appendixFilePath != ''):
                 n = n + 1
             AnormalData['appendix_URL'] = appendixFilePath
-            AnormalData['appendix_filenames'] = os.path.basename(appendixFilePath)
+            AnormalData['appendix_filenames'] = [os.path.basename(x) for x in appendixFilePath]
 
         datalist.append(AnormalData.copy())
 
