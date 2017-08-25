@@ -9,6 +9,7 @@ from LearnModule import StringSplit
 
 datalist = []
 AnormalData = {}
+title_tail = ['','(1)','(2)','(3)','_转载','研究报告','【供参考】','[内部资料]','（个人心得）','【来自XXXX】']
 
 def SetDepartment(deplist):   #从部门列表中随机分配一个所属部门
     index = random.randint(0,len(deplist) - 1)
@@ -92,6 +93,35 @@ with open('F:/documents/python/learning2017/ESP_project/data_news/origin_news.js
 
         datalist.append(AnormalData.copy())
 
+        # ============以下为随机复制该条新闻=====================
+        CopyIndex = random.randint(1, 15)
+        if (CopyIndex % 5 == 0):
+            CopyCount = random.randint(1, 4)
+            # KLTailList = []
+            # KLCopyNum = 0
+            for i in range(CopyCount):
+                NewsTailIndex = random.randint(0, len(title_tail) + 4)
+                if (NewsTailIndex >= len(title_tail)):
+                    NewsTailIndex = 0
+                # if (KLTailIndex not in KLTailList):
+                ANewsCopy = AnormalData.copy()
+                ANewsCopy['title'] = AnormalData['title'] + title_tail[NewsTailIndex]
+                ANewsCopy['belongdep'] = SetDepartment(deplist)
+                if (AnormalData['pubtime']):
+                    init_year = ''
+                    for Adata in AnormalData['pubtime'].split(' ')[0].split('-'):
+                        init_year = init_year + Adata
+                    ANewsCopy['pubtime'] = SetPubtime(int(init_year), AnormalData['pubtime'].split(' ')[1], random.randint(0, 365),
+                                                    random.randint(0, 24 * 3600))
+                else:
+                    ANewsCopy['pubtime'] = SetPubtime(20150101, '00:00:00', random.randint(0, 730),
+                                                    random.randint(0, 24 * 3600))
+
+                ANewsCopy['source'] = SetSource(sourcelist)
+                ANewsCopy['viewcounts'] = random.randint(0, 83)
+                datalist.append(ANewsCopy.copy())
+
+print(len(datalist))
 # 把规范化处理后的新闻数据写入到json文件中，用来导入数据库
 with open('F:/documents/python/learning2017/ESP_project/data_news/normalized_news.json',mode = 'wb') as outfile:
     for Adata in datalist:
