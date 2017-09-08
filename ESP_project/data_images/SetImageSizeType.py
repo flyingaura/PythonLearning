@@ -21,7 +21,7 @@ def SetImageSizeType(width,height):
             and (height >= VPair[1] - Dvalue and height <= VPair[1] + Dvalue)):
             IStype.append('壁纸尺寸')
             break
-        if(width <=  VPair[0] + Dvalue or height <= VPair[1] + Dvalue):
+        if(width <=  VPair[0] - Dvalue or height <= VPair[1] - Dvalue):
             break
 
     return IStype
@@ -32,7 +32,8 @@ with open(r'F:\documents\python\learning2017\ESP_project\data_images\images_norm
     for aline in infile.readlines():
         alineJson = json.loads(aline.decode('utf-8').strip())
         # print(alineJson['imagePixel'])
-        if(alineJson['imagePixel'] != '未知'):
-            width = int(alineJson['imagePixel'][0].split(' ')[0])
-            height = int(alineJson['imagePixel'][1].split(' ')[0])
+        if(alineJson['imagePixel'] != []):
+            print(alineJson['imagePixel'])
+            width = int(alineJson['imagePixel'][0])
+            height = int(alineJson['imagePixel'][1])
             print(SetImageSizeType(width,height))
