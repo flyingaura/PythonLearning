@@ -1,14 +1,8 @@
 <?xml version="1.0" encoding="UTF-8"?>
 <project version="4">
   <component name="ChangeListManager">
-    <list default="true" id="286e034b-b797-4eff-86da-0c5c650473df" name="默认的" comment="Merge branch 'master' of https://git.oschina.net/flyingaura/learning2017&#10;&#10;# Conflicts:&#10;#&#9;.idea/workspace.xml&#10;">
-      <change type="NEW" beforePath="" afterPath="$PROJECT_DIR$/LearnModule/CardsGame.py" />
-      <change type="NEW" beforePath="" afterPath="$PROJECT_DIR$/PY.exercise/exer0708002.py" />
-      <change type="NEW" beforePath="" afterPath="$PROJECT_DIR$/PY.exercise/exer0718003.py" />
-      <change type="NEW" beforePath="" afterPath="$PROJECT_DIR$/PY.exercise/空当接龙游戏0812.py" />
+    <list default="true" id="286e034b-b797-4eff-86da-0c5c650473df" name="默认的" comment="">
       <change type="MODIFICATION" beforePath="$PROJECT_DIR$/.idea/workspace.xml" afterPath="$PROJECT_DIR$/.idea/workspace.xml" />
-      <change type="MODIFICATION" beforePath="$PROJECT_DIR$/LearnModule/MY_math.py" afterPath="$PROJECT_DIR$/LearnModule/MY_math.py" />
-      <change type="MODIFICATION" beforePath="$PROJECT_DIR$/PY.exercise/testcode001.py" afterPath="$PROJECT_DIR$/PY.exercise/testcode001.py" />
     </list>
     <option name="EXCLUDED_CONVERTED_TO_IGNORED" value="true" />
     <option name="TRACKING_ENABLED" value="true" />
@@ -18,36 +12,36 @@
     <option name="LAST_RESOLUTION" value="IGNORE" />
   </component>
   <component name="CoverageDataManager">
-    <SUITE FILE_PATH="coverage/learning2017$MY_math.coverage" NAME="MY_math Coverage Results" MODIFIED="1490413265566" SOURCE_PROVIDER="com.intellij.coverage.DefaultCoverageFileProvider" RUNNER="coverage.py" COVERAGE_BY_TEST_ENABLED="true" COVERAGE_TRACING_ENABLED="false" WORKING_DIRECTORY="$PROJECT_DIR$/LearnModule" />
-    <SUITE FILE_PATH="coverage/learning2017$_pydev_execfile.coverage" NAME="_pydev_execfile Coverage Results" MODIFIED="1483680438855" SOURCE_PROVIDER="com.intellij.coverage.DefaultCoverageFileProvider" RUNNER="coverage.py" COVERAGE_BY_TEST_ENABLED="true" COVERAGE_TRACING_ENABLED="false" WORKING_DIRECTORY="$APPLICATION_HOME_DIR$/helpers/pydev/_pydev_imps" />
     <SUITE FILE_PATH="coverage/learning2017$learning0325_showhandrank.coverage" NAME="learning0325-showhandrank Coverage Results" MODIFIED="1490456873030" SOURCE_PROVIDER="com.intellij.coverage.DefaultCoverageFileProvider" RUNNER="coverage.py" COVERAGE_BY_TEST_ENABLED="true" COVERAGE_TRACING_ENABLED="false" WORKING_DIRECTORY="$PROJECT_DIR$/LearnOOP" />
-    <SUITE FILE_PATH="coverage/learning2017$str2int.coverage" NAME="str2int Coverage Results" MODIFIED="1484124066604" SOURCE_PROVIDER="com.intellij.coverage.DefaultCoverageFileProvider" RUNNER="coverage.py" COVERAGE_BY_TEST_ENABLED="true" COVERAGE_TRACING_ENABLED="false" WORKING_DIRECTORY="$PROJECT_DIR$/LearnModule" />
-    <SUITE FILE_PATH="coverage/learning2017$Module_test.coverage" NAME="Module_test Coverage Results" MODIFIED="1483328860044" SOURCE_PROVIDER="com.intellij.coverage.DefaultCoverageFileProvider" RUNNER="coverage.py" COVERAGE_BY_TEST_ENABLED="true" COVERAGE_TRACING_ENABLED="false" WORKING_DIRECTORY="$PROJECT_DIR$/LearnModule" />
-    <SUITE FILE_PATH="coverage/learning2017$StringAddValue.coverage" NAME="StringAddValue Coverage Results" MODIFIED="1484120119169" SOURCE_PROVIDER="com.intellij.coverage.DefaultCoverageFileProvider" RUNNER="coverage.py" COVERAGE_BY_TEST_ENABLED="true" COVERAGE_TRACING_ENABLED="false" WORKING_DIRECTORY="$PROJECT_DIR$/LearnModule" />
-    <SUITE FILE_PATH="coverage/learning2017$learning0324003.coverage" NAME="learning0324003 Coverage Results" MODIFIED="1490434895274" SOURCE_PROVIDER="com.intellij.coverage.DefaultCoverageFileProvider" RUNNER="coverage.py" COVERAGE_BY_TEST_ENABLED="true" COVERAGE_TRACING_ENABLED="false" WORKING_DIRECTORY="$PROJECT_DIR$/LearnOOP" />
-    <SUITE FILE_PATH="coverage/learning2017$learning0107001.coverage" NAME="learning0107001 Coverage Results" MODIFIED="1483771701144" SOURCE_PROVIDER="com.intellij.coverage.DefaultCoverageFileProvider" RUNNER="coverage.py" COVERAGE_BY_TEST_ENABLED="true" COVERAGE_TRACING_ENABLED="false" WORKING_DIRECTORY="$PROJECT_DIR$/LearnOOP" />
     <SUITE FILE_PATH="coverage/learning2017$surname_distribute_stats.coverage" NAME="surname_distribute_stats Coverage Results" MODIFIED="1484652882661" SOURCE_PROVIDER="com.intellij.coverage.DefaultCoverageFileProvider" RUNNER="coverage.py" COVERAGE_BY_TEST_ENABLED="true" COVERAGE_TRACING_ENABLED="false" WORKING_DIRECTORY="$PROJECT_DIR$" />
-    <SUITE FILE_PATH="coverage/learning2017$exer0718003.coverage" NAME="exer0718003 Coverage Results" MODIFIED="1500395941779" SOURCE_PROVIDER="com.intellij.coverage.DefaultCoverageFileProvider" RUNNER="coverage.py" COVERAGE_BY_TEST_ENABLED="true" COVERAGE_TRACING_ENABLED="false" WORKING_DIRECTORY="$PROJECT_DIR$/PY.exercise" />
-    <SUITE FILE_PATH="coverage/learning2017$module_Use2.coverage" NAME="module.Use2 Coverage Results" MODIFIED="1483454739625" SOURCE_PROVIDER="com.intellij.coverage.DefaultCoverageFileProvider" RUNNER="coverage.py" COVERAGE_BY_TEST_ENABLED="true" COVERAGE_TRACING_ENABLED="false" WORKING_DIRECTORY="$PROJECT_DIR$" />
-    <SUITE FILE_PATH="coverage/learning2017$learning0105001.coverage" NAME="learning0105001 Coverage Results" MODIFIED="1483770004325" SOURCE_PROVIDER="com.intellij.coverage.DefaultCoverageFileProvider" RUNNER="coverage.py" COVERAGE_BY_TEST_ENABLED="true" COVERAGE_TRACING_ENABLED="false" WORKING_DIRECTORY="$PROJECT_DIR$/LearnOOP" />
-    <SUITE FILE_PATH="coverage/learning2017$testcode001.coverage" NAME="testcode001 Coverage Results" MODIFIED="1502629278467" SOURCE_PROVIDER="com.intellij.coverage.DefaultCoverageFileProvider" RUNNER="coverage.py" COVERAGE_BY_TEST_ENABLED="true" COVERAGE_TRACING_ENABLED="false" WORKING_DIRECTORY="$PROJECT_DIR$/PY.exercise" />
-    <SUITE FILE_PATH="coverage/learning2017$Module_Use.coverage" NAME="Module_Use Coverage Results" MODIFIED="1483331907608" SOURCE_PROVIDER="com.intellij.coverage.DefaultCoverageFileProvider" RUNNER="coverage.py" COVERAGE_BY_TEST_ENABLED="true" COVERAGE_TRACING_ENABLED="false" WORKING_DIRECTORY="$PROJECT_DIR$/LearnModule" />
-    <SUITE FILE_PATH="coverage/learning2017$exer0625001.coverage" NAME="exer0625001 Coverage Results" MODIFIED="1499006136717" SOURCE_PROVIDER="com.intellij.coverage.DefaultCoverageFileProvider" RUNNER="coverage.py" COVERAGE_BY_TEST_ENABLED="true" COVERAGE_TRACING_ENABLED="false" WORKING_DIRECTORY="$PROJECT_DIR$/PY.exercise" />
-    <SUITE FILE_PATH="coverage/learning2017$print_progressbar.coverage" NAME="print_progressbar Coverage Results" MODIFIED="1484276374661" SOURCE_PROVIDER="com.intellij.coverage.DefaultCoverageFileProvider" RUNNER="coverage.py" COVERAGE_BY_TEST_ENABLED="true" COVERAGE_TRACING_ENABLED="false" WORKING_DIRECTORY="$PROJECT_DIR$/LearnModule" />
-    <SUITE FILE_PATH="coverage/learning2017$code_test.coverage" NAME="code_test Coverage Results" MODIFIED="1484902317606" SOURCE_PROVIDER="com.intellij.coverage.DefaultCoverageFileProvider" RUNNER="coverage.py" COVERAGE_BY_TEST_ENABLED="true" COVERAGE_TRACING_ENABLED="false" WORKING_DIRECTORY="$PROJECT_DIR$" />
-    <SUITE FILE_PATH="coverage/learning2017$Module_Use__1_.coverage" NAME="Module_Use (1) Coverage Results" MODIFIED="1483629008858" SOURCE_PROVIDER="com.intellij.coverage.DefaultCoverageFileProvider" RUNNER="coverage.py" COVERAGE_BY_TEST_ENABLED="true" COVERAGE_TRACING_ENABLED="false" WORKING_DIRECTORY="$PROJECT_DIR$" />
-    <SUITE FILE_PATH="coverage/learning2017$Dict_deal.coverage" NAME="Dict_deal Coverage Results" MODIFIED="1483634172679" SOURCE_PROVIDER="com.intellij.coverage.DefaultCoverageFileProvider" RUNNER="coverage.py" COVERAGE_BY_TEST_ENABLED="true" COVERAGE_TRACING_ENABLED="false" WORKING_DIRECTORY="$PROJECT_DIR$/LearnModule" />
-    <SUITE FILE_PATH="coverage/learning2017$CardsGame.coverage" NAME="CardsGame Coverage Results" MODIFIED="1502529536491" SOURCE_PROVIDER="com.intellij.coverage.DefaultCoverageFileProvider" RUNNER="coverage.py" COVERAGE_BY_TEST_ENABLED="true" COVERAGE_TRACING_ENABLED="false" WORKING_DIRECTORY="$PROJECT_DIR$/LearnModule" />
-    <SUITE FILE_PATH="coverage/learning2017$0812.coverage" NAME="空当接龙游戏0812 Coverage Results" MODIFIED="1502632594846" SOURCE_PROVIDER="com.intellij.coverage.DefaultCoverageFileProvider" RUNNER="coverage.py" COVERAGE_BY_TEST_ENABLED="true" COVERAGE_TRACING_ENABLED="false" WORKING_DIRECTORY="$PROJECT_DIR$/PY.exercise" />
-    <SUITE FILE_PATH="coverage/learning2017$learning0103001.coverage" NAME="learning0103001 Coverage Results" MODIFIED="1483628811738" SOURCE_PROVIDER="com.intellij.coverage.DefaultCoverageFileProvider" RUNNER="coverage.py" COVERAGE_BY_TEST_ENABLED="true" COVERAGE_TRACING_ENABLED="false" WORKING_DIRECTORY="$PROJECT_DIR$/LearnOOP" />
-    <SUITE FILE_PATH="coverage/learning2017$learning0324_showhandpokers.coverage" NAME="learning0324-showhandpokers Coverage Results" MODIFIED="1490444895112" SOURCE_PROVIDER="com.intellij.coverage.DefaultCoverageFileProvider" RUNNER="coverage.py" COVERAGE_BY_TEST_ENABLED="true" COVERAGE_TRACING_ENABLED="false" WORKING_DIRECTORY="$PROJECT_DIR$/LearnOOP" />
-    <SUITE FILE_PATH="coverage/learning2017$int2str.coverage" NAME="int2str Coverage Results" MODIFIED="1484131847635" SOURCE_PROVIDER="com.intellij.coverage.DefaultCoverageFileProvider" RUNNER="coverage.py" COVERAGE_BY_TEST_ENABLED="true" COVERAGE_TRACING_ENABLED="false" WORKING_DIRECTORY="$PROJECT_DIR$/LearnModule" />
-    <SUITE FILE_PATH="coverage/learning2017$exer0708002.coverage" NAME="exer0708002 Coverage Results" MODIFIED="1499528290032" SOURCE_PROVIDER="com.intellij.coverage.DefaultCoverageFileProvider" RUNNER="coverage.py" COVERAGE_BY_TEST_ENABLED="true" COVERAGE_TRACING_ENABLED="false" WORKING_DIRECTORY="$PROJECT_DIR$/PY.exercise" />
-    <SUITE FILE_PATH="coverage/learning2017$code_test04.coverage" NAME="code_test04 Coverage Results" MODIFIED="1490456304049" SOURCE_PROVIDER="com.intellij.coverage.DefaultCoverageFileProvider" RUNNER="coverage.py" COVERAGE_BY_TEST_ENABLED="true" COVERAGE_TRACING_ENABLED="false" WORKING_DIRECTORY="$PROJECT_DIR$/LearnOOP" />
-    <SUITE FILE_PATH="coverage/learning2017$Func_StringSplit.coverage" NAME="Func_StringSplit Coverage Results" MODIFIED="1484902847874" SOURCE_PROVIDER="com.intellij.coverage.DefaultCoverageFileProvider" RUNNER="coverage.py" COVERAGE_BY_TEST_ENABLED="true" COVERAGE_TRACING_ENABLED="false" WORKING_DIRECTORY="$PROJECT_DIR$/LearnModule" />
-    <SUITE FILE_PATH="coverage/learning2017$CNKI_get_hotkeywords.coverage" NAME="CNKI_get_hotkeywords Coverage Results" MODIFIED="1484621580267" SOURCE_PROVIDER="com.intellij.coverage.DefaultCoverageFileProvider" RUNNER="coverage.py" COVERAGE_BY_TEST_ENABLED="true" COVERAGE_TRACING_ENABLED="false" WORKING_DIRECTORY="$PROJECT_DIR$" />
+    <SUITE FILE_PATH="coverage/learning2017$StringAddValue.coverage" NAME="StringAddValue Coverage Results" MODIFIED="1484120119169" SOURCE_PROVIDER="com.intellij.coverage.DefaultCoverageFileProvider" RUNNER="coverage.py" COVERAGE_BY_TEST_ENABLED="true" COVERAGE_TRACING_ENABLED="false" WORKING_DIRECTORY="$PROJECT_DIR$/LearnModule" />
     <SUITE FILE_PATH="coverage/learning2017$Num2Chinese.coverage" NAME="Num2Chinese Coverage Results" MODIFIED="1484134122042" SOURCE_PROVIDER="com.intellij.coverage.DefaultCoverageFileProvider" RUNNER="coverage.py" COVERAGE_BY_TEST_ENABLED="true" COVERAGE_TRACING_ENABLED="false" WORKING_DIRECTORY="$PROJECT_DIR$/LearnModule" />
     <SUITE FILE_PATH="coverage/learning2017$Func_StringSpilt.coverage" NAME="Func_StringSpilt Coverage Results" MODIFIED="1483964240863" SOURCE_PROVIDER="com.intellij.coverage.DefaultCoverageFileProvider" RUNNER="coverage.py" COVERAGE_BY_TEST_ENABLED="true" COVERAGE_TRACING_ENABLED="false" WORKING_DIRECTORY="$PROJECT_DIR$/LearnModule" />
+    <SUITE FILE_PATH="coverage/learning2017$exer0708002.coverage" NAME="exer0708002 Coverage Results" MODIFIED="1499528290032" SOURCE_PROVIDER="com.intellij.coverage.DefaultCoverageFileProvider" RUNNER="coverage.py" COVERAGE_BY_TEST_ENABLED="true" COVERAGE_TRACING_ENABLED="false" WORKING_DIRECTORY="$PROJECT_DIR$/PY.exercise" />
+    <SUITE FILE_PATH="coverage/learning2017$_pydev_execfile.coverage" NAME="_pydev_execfile Coverage Results" MODIFIED="1483680438855" SOURCE_PROVIDER="com.intellij.coverage.DefaultCoverageFileProvider" RUNNER="coverage.py" COVERAGE_BY_TEST_ENABLED="true" COVERAGE_TRACING_ENABLED="false" WORKING_DIRECTORY="$APPLICATION_HOME_DIR$/helpers/pydev/_pydev_imps" />
+    <SUITE FILE_PATH="coverage/learning2017$code_test.coverage" NAME="code_test Coverage Results" MODIFIED="1484902317606" SOURCE_PROVIDER="com.intellij.coverage.DefaultCoverageFileProvider" RUNNER="coverage.py" COVERAGE_BY_TEST_ENABLED="true" COVERAGE_TRACING_ENABLED="false" WORKING_DIRECTORY="$PROJECT_DIR$" />
+    <SUITE FILE_PATH="coverage/learning2017$learning0324003.coverage" NAME="learning0324003 Coverage Results" MODIFIED="1490434895274" SOURCE_PROVIDER="com.intellij.coverage.DefaultCoverageFileProvider" RUNNER="coverage.py" COVERAGE_BY_TEST_ENABLED="true" COVERAGE_TRACING_ENABLED="false" WORKING_DIRECTORY="$PROJECT_DIR$/LearnOOP" />
+    <SUITE FILE_PATH="coverage/learning2017$learning0324_showhandpokers.coverage" NAME="learning0324-showhandpokers Coverage Results" MODIFIED="1490444895112" SOURCE_PROVIDER="com.intellij.coverage.DefaultCoverageFileProvider" RUNNER="coverage.py" COVERAGE_BY_TEST_ENABLED="true" COVERAGE_TRACING_ENABLED="false" WORKING_DIRECTORY="$PROJECT_DIR$/LearnOOP" />
+    <SUITE FILE_PATH="coverage/learning2017$Func_StringSplit.coverage" NAME="Func_StringSplit Coverage Results" MODIFIED="1484902847874" SOURCE_PROVIDER="com.intellij.coverage.DefaultCoverageFileProvider" RUNNER="coverage.py" COVERAGE_BY_TEST_ENABLED="true" COVERAGE_TRACING_ENABLED="false" WORKING_DIRECTORY="$PROJECT_DIR$/LearnModule" />
+    <SUITE FILE_PATH="coverage/learning2017$int2str.coverage" NAME="int2str Coverage Results" MODIFIED="1484131847635" SOURCE_PROVIDER="com.intellij.coverage.DefaultCoverageFileProvider" RUNNER="coverage.py" COVERAGE_BY_TEST_ENABLED="true" COVERAGE_TRACING_ENABLED="false" WORKING_DIRECTORY="$PROJECT_DIR$/LearnModule" />
+    <SUITE FILE_PATH="coverage/learning2017$MY_math.coverage" NAME="MY_math Coverage Results" MODIFIED="1490413265566" SOURCE_PROVIDER="com.intellij.coverage.DefaultCoverageFileProvider" RUNNER="coverage.py" COVERAGE_BY_TEST_ENABLED="true" COVERAGE_TRACING_ENABLED="false" WORKING_DIRECTORY="$PROJECT_DIR$/LearnModule" />
+    <SUITE FILE_PATH="coverage/learning2017$learning0103001.coverage" NAME="learning0103001 Coverage Results" MODIFIED="1483628811738" SOURCE_PROVIDER="com.intellij.coverage.DefaultCoverageFileProvider" RUNNER="coverage.py" COVERAGE_BY_TEST_ENABLED="true" COVERAGE_TRACING_ENABLED="false" WORKING_DIRECTORY="$PROJECT_DIR$/LearnOOP" />
+    <SUITE FILE_PATH="coverage/learning2017$exer0718003.coverage" NAME="exer0718003 Coverage Results" MODIFIED="1500395941779" SOURCE_PROVIDER="com.intellij.coverage.DefaultCoverageFileProvider" RUNNER="coverage.py" COVERAGE_BY_TEST_ENABLED="true" COVERAGE_TRACING_ENABLED="false" WORKING_DIRECTORY="$PROJECT_DIR$/PY.exercise" />
+    <SUITE FILE_PATH="coverage/learning2017$CNKI_get_hotkeywords.coverage" NAME="CNKI_get_hotkeywords Coverage Results" MODIFIED="1484621580267" SOURCE_PROVIDER="com.intellij.coverage.DefaultCoverageFileProvider" RUNNER="coverage.py" COVERAGE_BY_TEST_ENABLED="true" COVERAGE_TRACING_ENABLED="false" WORKING_DIRECTORY="$PROJECT_DIR$" />
+    <SUITE FILE_PATH="coverage/learning2017$print_progressbar.coverage" NAME="print_progressbar Coverage Results" MODIFIED="1484276374661" SOURCE_PROVIDER="com.intellij.coverage.DefaultCoverageFileProvider" RUNNER="coverage.py" COVERAGE_BY_TEST_ENABLED="true" COVERAGE_TRACING_ENABLED="false" WORKING_DIRECTORY="$PROJECT_DIR$/LearnModule" />
+    <SUITE FILE_PATH="coverage/learning2017$learning0105001.coverage" NAME="learning0105001 Coverage Results" MODIFIED="1483770004325" SOURCE_PROVIDER="com.intellij.coverage.DefaultCoverageFileProvider" RUNNER="coverage.py" COVERAGE_BY_TEST_ENABLED="true" COVERAGE_TRACING_ENABLED="false" WORKING_DIRECTORY="$PROJECT_DIR$/LearnOOP" />
+    <SUITE FILE_PATH="coverage/learning2017$code_test04.coverage" NAME="code_test04 Coverage Results" MODIFIED="1490456304049" SOURCE_PROVIDER="com.intellij.coverage.DefaultCoverageFileProvider" RUNNER="coverage.py" COVERAGE_BY_TEST_ENABLED="true" COVERAGE_TRACING_ENABLED="false" WORKING_DIRECTORY="$PROJECT_DIR$/LearnOOP" />
+    <SUITE FILE_PATH="coverage/learning2017$Module_test.coverage" NAME="Module_test Coverage Results" MODIFIED="1483328860044" SOURCE_PROVIDER="com.intellij.coverage.DefaultCoverageFileProvider" RUNNER="coverage.py" COVERAGE_BY_TEST_ENABLED="true" COVERAGE_TRACING_ENABLED="false" WORKING_DIRECTORY="$PROJECT_DIR$/LearnModule" />
+    <SUITE FILE_PATH="coverage/learning2017$Dict_deal.coverage" NAME="Dict_deal Coverage Results" MODIFIED="1483634172679" SOURCE_PROVIDER="com.intellij.coverage.DefaultCoverageFileProvider" RUNNER="coverage.py" COVERAGE_BY_TEST_ENABLED="true" COVERAGE_TRACING_ENABLED="false" WORKING_DIRECTORY="$PROJECT_DIR$/LearnModule" />
+    <SUITE FILE_PATH="coverage/learning2017$CardsGame.coverage" NAME="CardsGame Coverage Results" MODIFIED="1502529536491" SOURCE_PROVIDER="com.intellij.coverage.DefaultCoverageFileProvider" RUNNER="coverage.py" COVERAGE_BY_TEST_ENABLED="true" COVERAGE_TRACING_ENABLED="false" WORKING_DIRECTORY="$PROJECT_DIR$/LearnModule" />
+    <SUITE FILE_PATH="coverage/learning2017$learning0107001.coverage" NAME="learning0107001 Coverage Results" MODIFIED="1483771701144" SOURCE_PROVIDER="com.intellij.coverage.DefaultCoverageFileProvider" RUNNER="coverage.py" COVERAGE_BY_TEST_ENABLED="true" COVERAGE_TRACING_ENABLED="false" WORKING_DIRECTORY="$PROJECT_DIR$/LearnOOP" />
+    <SUITE FILE_PATH="coverage/learning2017$Module_Use__1_.coverage" NAME="Module_Use (1) Coverage Results" MODIFIED="1483629008858" SOURCE_PROVIDER="com.intellij.coverage.DefaultCoverageFileProvider" RUNNER="coverage.py" COVERAGE_BY_TEST_ENABLED="true" COVERAGE_TRACING_ENABLED="false" WORKING_DIRECTORY="$PROJECT_DIR$" />
+    <SUITE FILE_PATH="coverage/learning2017$0812.coverage" NAME="空当接龙游戏0812 Coverage Results" MODIFIED="1502632594846" SOURCE_PROVIDER="com.intellij.coverage.DefaultCoverageFileProvider" RUNNER="coverage.py" COVERAGE_BY_TEST_ENABLED="true" COVERAGE_TRACING_ENABLED="false" WORKING_DIRECTORY="$PROJECT_DIR$/PY.exercise" />
+    <SUITE FILE_PATH="coverage/learning2017$module_Use2.coverage" NAME="module.Use2 Coverage Results" MODIFIED="1483454739625" SOURCE_PROVIDER="com.intellij.coverage.DefaultCoverageFileProvider" RUNNER="coverage.py" COVERAGE_BY_TEST_ENABLED="true" COVERAGE_TRACING_ENABLED="false" WORKING_DIRECTORY="$PROJECT_DIR$" />
+    <SUITE FILE_PATH="coverage/learning2017$exer0625001.coverage" NAME="exer0625001 Coverage Results" MODIFIED="1499006136717" SOURCE_PROVIDER="com.intellij.coverage.DefaultCoverageFileProvider" RUNNER="coverage.py" COVERAGE_BY_TEST_ENABLED="true" COVERAGE_TRACING_ENABLED="false" WORKING_DIRECTORY="$PROJECT_DIR$/PY.exercise" />
+    <SUITE FILE_PATH="coverage/learning2017$str2int.coverage" NAME="str2int Coverage Results" MODIFIED="1484124066604" SOURCE_PROVIDER="com.intellij.coverage.DefaultCoverageFileProvider" RUNNER="coverage.py" COVERAGE_BY_TEST_ENABLED="true" COVERAGE_TRACING_ENABLED="false" WORKING_DIRECTORY="$PROJECT_DIR$/LearnModule" />
+    <SUITE FILE_PATH="coverage/learning2017$Module_Use.coverage" NAME="Module_Use Coverage Results" MODIFIED="1483331907608" SOURCE_PROVIDER="com.intellij.coverage.DefaultCoverageFileProvider" RUNNER="coverage.py" COVERAGE_BY_TEST_ENABLED="true" COVERAGE_TRACING_ENABLED="false" WORKING_DIRECTORY="$PROJECT_DIR$/LearnModule" />
+    <SUITE FILE_PATH="coverage/learning2017$testcode001.coverage" NAME="testcode001 Coverage Results" MODIFIED="1502629278467" SOURCE_PROVIDER="com.intellij.coverage.DefaultCoverageFileProvider" RUNNER="coverage.py" COVERAGE_BY_TEST_ENABLED="true" COVERAGE_TRACING_ENABLED="false" WORKING_DIRECTORY="$PROJECT_DIR$/PY.exercise" />
   </component>
   <component name="CreatePatchCommitExecutor">
     <option name="PATCH_PATH" value="" />
@@ -76,14 +70,44 @@
           </provider>
         </entry>
       </file>
-      <file leaf-file-name="空当接龙游戏0812.py" pinned="false" current-in-tab="true">
+      <file leaf-file-name="空当接龙游戏0812.py" pinned="false" current-in-tab="false">
         <entry file="file://$PROJECT_DIR$/PY.exercise/空当接龙游戏0812.py">
           <provider selected="true" editor-type-id="text-editor">
-            <state relative-caret-position="987">
-              <caret line="154" column="8" lean-forward="true" selection-start-line="154" selection-start-column="8" selection-end-line="154" selection-end-column="8" />
+            <state relative-caret-position="7701">
+              <caret line="154" column="8" lean-forward="false" selection-start-line="154" selection-start-column="8" selection-end-line="154" selection-end-column="8" />
               <folding>
                 <element signature="e#46#79#0" expanded="true" />
               </folding>
+            </state>
+          </provider>
+        </entry>
+      </file>
+      <file leaf-file-name="exer0728001.py" pinned="false" current-in-tab="false">
+        <entry file="file://$PROJECT_DIR$/PY.exercise/exer0728001.py">
+          <provider selected="true" editor-type-id="text-editor">
+            <state relative-caret-position="0">
+              <caret line="0" column="0" lean-forward="false" selection-start-line="0" selection-start-column="0" selection-end-line="0" selection-end-column="0" />
+              <folding />
+            </state>
+          </provider>
+        </entry>
+      </file>
+      <file leaf-file-name="normalized_news.json" pinned="false" current-in-tab="false">
+        <entry file="file://$PROJECT_DIR$/ESP_project/data_news/normalized_news.json">
+          <provider selected="true" editor-type-id="text-editor">
+            <state relative-caret-position="0">
+              <caret line="0" column="0" lean-forward="false" selection-start-line="0" selection-start-column="0" selection-end-line="0" selection-end-column="0" />
+              <folding />
+            </state>
+          </provider>
+        </entry>
+      </file>
+      <file leaf-file-name="Data_normalization.py" pinned="false" current-in-tab="true">
+        <entry file="file://$PROJECT_DIR$/ESP_project/data_news/Data_normalization.py">
+          <provider selected="true" editor-type-id="text-editor">
+            <state relative-caret-position="0">
+              <caret line="0" column="0" lean-forward="false" selection-start-line="0" selection-start-column="0" selection-end-line="0" selection-end-column="0" />
+              <folding />
             </state>
           </provider>
         </entry>
@@ -98,31 +122,11 @@
           </provider>
         </entry>
       </file>
-      <file leaf-file-name="file_operate.py" pinned="false" current-in-tab="false">
-        <entry file="file://$PROJECT_DIR$/LearnModule/file_operate.py">
-          <provider selected="true" editor-type-id="text-editor">
-            <state relative-caret-position="0">
-              <caret line="0" column="0" lean-forward="false" selection-start-line="0" selection-start-column="0" selection-end-line="0" selection-end-column="0" />
-              <folding />
-            </state>
-          </provider>
-        </entry>
-      </file>
-      <file leaf-file-name="Module_test.py" pinned="false" current-in-tab="false">
-        <entry file="file://$PROJECT_DIR$/LearnModule/Module_test.py">
-          <provider selected="true" editor-type-id="text-editor">
-            <state relative-caret-position="0">
-              <caret line="0" column="0" lean-forward="false" selection-start-line="0" selection-start-column="0" selection-end-line="0" selection-end-column="0" />
-              <folding />
-            </state>
-          </provider>
-        </entry>
-      </file>
       <file leaf-file-name="testcode001.py" pinned="false" current-in-tab="false">
         <entry file="file://$PROJECT_DIR$/PY.exercise/testcode001.py">
           <provider selected="true" editor-type-id="text-editor">
-            <state relative-caret-position="1248">
-              <caret line="145" column="13" lean-forward="true" selection-start-line="145" selection-start-column="13" selection-end-line="145" selection-end-column="13" />
+            <state relative-caret-position="5508">
+              <caret line="110" column="12" lean-forward="false" selection-start-line="110" selection-start-column="12" selection-end-line="110" selection-end-column="12" />
               <folding>
                 <element signature="e#26#35#0" expanded="true" />
               </folding>
@@ -154,17 +158,7 @@
         <entry file="file://$PROJECT_DIR$/LearnModule/CardsGame.py">
           <provider selected="true" editor-type-id="text-editor">
             <state relative-caret-position="3774">
-              <caret line="74" column="29" lean-forward="true" selection-start-line="74" selection-start-column="29" selection-end-line="74" selection-end-column="29" />
-              <folding />
-            </state>
-          </provider>
-        </entry>
-      </file>
-      <file leaf-file-name="cal_data.py" pinned="false" current-in-tab="false">
-        <entry file="file://$PROJECT_DIR$/LearnModule/cal_data.py">
-          <provider selected="true" editor-type-id="text-editor">
-            <state relative-caret-position="0">
-              <caret line="0" column="0" lean-forward="false" selection-start-line="0" selection-start-column="0" selection-end-line="10" selection-end-column="25" />
+              <caret line="74" column="29" lean-forward="false" selection-start-line="74" selection-start-column="29" selection-end-line="74" selection-end-column="29" />
               <folding />
             </state>
           </provider>
@@ -319,6 +313,38 @@
               <option name="myItemType" value="com.intellij.ide.projectView.impl.nodes.PsiDirectoryNode" />
             </PATH_ELEMENT>
           </PATH>
+          <PATH>
+            <PATH_ELEMENT>
+              <option name="myItemId" value="learning2017" />
+              <option name="myItemType" value="com.intellij.ide.projectView.impl.nodes.ProjectViewProjectNode" />
+            </PATH_ELEMENT>
+            <PATH_ELEMENT>
+              <option name="myItemId" value="learning2017" />
+              <option name="myItemType" value="com.intellij.ide.projectView.impl.nodes.PsiDirectoryNode" />
+            </PATH_ELEMENT>
+            <PATH_ELEMENT>
+              <option name="myItemId" value="ESP_project" />
+              <option name="myItemType" value="com.intellij.ide.projectView.impl.nodes.PsiDirectoryNode" />
+            </PATH_ELEMENT>
+            <PATH_ELEMENT>
+              <option name="myItemId" value="data_news" />
+              <option name="myItemType" value="com.intellij.ide.projectView.impl.nodes.PsiDirectoryNode" />
+            </PATH_ELEMENT>
+          </PATH>
+          <PATH>
+            <PATH_ELEMENT>
+              <option name="myItemId" value="learning2017" />
+              <option name="myItemType" value="com.intellij.ide.projectView.impl.nodes.ProjectViewProjectNode" />
+            </PATH_ELEMENT>
+            <PATH_ELEMENT>
+              <option name="myItemId" value="learning2017" />
+              <option name="myItemType" value="com.intellij.ide.projectView.impl.nodes.PsiDirectoryNode" />
+            </PATH_ELEMENT>
+            <PATH_ELEMENT>
+              <option name="myItemId" value="ESP_project" />
+              <option name="myItemType" value="com.intellij.ide.projectView.impl.nodes.PsiDirectoryNode" />
+            </PATH_ELEMENT>
+          </PATH>
         </subPane>
       </pane>
       <pane id="Scope" />
@@ -329,6 +355,7 @@
     <property name="WebServerToolWindowFactoryState" value="false" />
     <property name="js.eslint.eslintPackage" value="" />
     <property name="last_opened_file_path" value="D:/Program Files (x86)/Git/bin/git.exe" />
+    <property name="ChangesBrowser.SHOW_FLATTEN" value="false" />
   </component>
   <component name="RecentsManager">
     <key name="MoveFile.RECENT_KEYS">
@@ -749,7 +776,14 @@
       <option name="project" value="LOCAL" />
       <updated>1499006300583</updated>
     </task>
-    <option name="localTasksCounter" value="12" />
+    <task id="LOCAL-00012" summary="Merge branch 'master' of https://git.oschina.net/flyingaura/learning2017&#10;&#10;# Conflicts:&#10;#&#9;.idea/workspace.xml&#10;">
+      <created>1502633355553</created>
+      <option name="number" value="00012" />
+      <option name="presentableId" value="LOCAL-00012" />
+      <option name="project" value="LOCAL" />
+      <updated>1502633355553</updated>
+    </task>
+    <option name="localTasksCounter" value="13" />
     <servers />
   </component>
   <component name="TodoView">
@@ -765,22 +799,22 @@
     <frame x="-11" y="-11" width="3862" height="2122" extended-state="6" />
     <editor active="false" />
     <layout>
-      <window_info id="Project" active="false" anchor="left" auto_hide="false" internal_type="DOCKED" type="DOCKED" visible="true" show_stripe_button="true" weight="0.25649178" sideWeight="0.5" order="0" side_tool="false" content_ui="combo" />
+      <window_info id="Project" active="false" anchor="left" auto_hide="false" internal_type="DOCKED" type="DOCKED" visible="true" show_stripe_button="true" weight="0.26046634" sideWeight="0.5" order="0" side_tool="false" content_ui="combo" />
       <window_info id="TODO" active="false" anchor="bottom" auto_hide="false" internal_type="DOCKED" type="DOCKED" visible="false" show_stripe_button="true" weight="0.33" sideWeight="0.5" order="6" side_tool="false" content_ui="tabs" />
-      <window_info id="调试" active="false" anchor="bottom" auto_hide="false" internal_type="DOCKED" type="DOCKED" visible="false" show_stripe_button="true" weight="0.32830384" sideWeight="0.5" order="7" side_tool="false" content_ui="tabs" />
-      <window_info id="Event Log" active="false" anchor="bottom" auto_hide="false" internal_type="DOCKED" type="DOCKED" visible="false" show_stripe_button="true" weight="0.26118627" sideWeight="0.5010604" order="12" side_tool="true" content_ui="tabs" />
+      <window_info id="Event Log" active="true" anchor="bottom" auto_hide="false" internal_type="DOCKED" type="DOCKED" visible="true" show_stripe_button="true" weight="0.26118627" sideWeight="0.5010604" order="12" side_tool="true" content_ui="tabs" />
       <window_info id="Database" active="false" anchor="right" auto_hide="false" internal_type="DOCKED" type="DOCKED" visible="false" show_stripe_button="true" weight="0.33" sideWeight="0.5" order="3" side_tool="false" content_ui="tabs" />
       <window_info id="Version Control" active="false" anchor="bottom" auto_hide="false" internal_type="DOCKED" type="DOCKED" visible="false" show_stripe_button="false" weight="0.33" sideWeight="0.5" order="8" side_tool="false" content_ui="tabs" />
       <window_info id="Python Console" active="false" anchor="bottom" auto_hide="false" internal_type="DOCKED" type="DOCKED" visible="false" show_stripe_button="true" weight="0.23829344" sideWeight="0.5" order="9" side_tool="false" content_ui="tabs" />
       <window_info id="Structure" active="false" anchor="left" auto_hide="false" internal_type="DOCKED" type="DOCKED" visible="false" show_stripe_button="true" weight="0.24959305" sideWeight="0.5" order="1" side_tool="false" content_ui="tabs" />
       <window_info id="Terminal" active="false" anchor="bottom" auto_hide="false" internal_type="DOCKED" type="DOCKED" visible="false" show_stripe_button="true" weight="0.16129032" sideWeight="0.5" order="13" side_tool="false" content_ui="tabs" />
-      <window_info id="运行" active="false" anchor="bottom" auto_hide="false" internal_type="DOCKED" type="DOCKED" visible="true" show_stripe_button="true" weight="0.060353797" sideWeight="0.5" order="10" side_tool="false" content_ui="tabs" />
       <window_info id="Favorites" active="false" anchor="left" auto_hide="false" internal_type="DOCKED" type="DOCKED" visible="false" show_stripe_button="true" weight="0.3298969" sideWeight="0.5" order="2" side_tool="true" content_ui="tabs" />
       <window_info id="Cvs" active="false" anchor="bottom" auto_hide="false" internal_type="DOCKED" type="DOCKED" visible="false" show_stripe_button="true" weight="0.25" sideWeight="0.5" order="4" side_tool="false" content_ui="tabs" />
+      <window_info id="调试" active="false" anchor="bottom" auto_hide="false" internal_type="DOCKED" type="DOCKED" visible="false" show_stripe_button="true" weight="0.32830384" sideWeight="0.5" order="7" side_tool="false" content_ui="tabs" />
       <window_info id="Message" active="false" anchor="bottom" auto_hide="false" internal_type="DOCKED" type="DOCKED" visible="false" show_stripe_button="true" weight="0.33" sideWeight="0.5" order="0" side_tool="false" content_ui="tabs" />
       <window_info id="Commander" active="false" anchor="right" auto_hide="false" internal_type="DOCKED" type="DOCKED" visible="false" show_stripe_button="true" weight="0.4" sideWeight="0.5" order="0" side_tool="false" content_ui="tabs" />
       <window_info id="Inspection" active="false" anchor="bottom" auto_hide="false" internal_type="DOCKED" type="DOCKED" visible="false" show_stripe_button="true" weight="0.4" sideWeight="0.5" order="5" side_tool="false" content_ui="tabs" />
       <window_info id="Run" active="false" anchor="bottom" auto_hide="false" internal_type="DOCKED" type="DOCKED" visible="false" show_stripe_button="true" weight="0.33" sideWeight="0.5" order="2" side_tool="false" content_ui="tabs" />
+      <window_info id="运行" active="false" anchor="bottom" auto_hide="false" internal_type="DOCKED" type="DOCKED" visible="false" show_stripe_button="true" weight="0.060353797" sideWeight="0.5" order="10" side_tool="false" content_ui="tabs" />
       <window_info id="Hierarchy" active="false" anchor="right" auto_hide="false" internal_type="DOCKED" type="DOCKED" visible="false" show_stripe_button="true" weight="0.25" sideWeight="0.5" order="2" side_tool="false" content_ui="combo" />
       <window_info id="Find" active="false" anchor="bottom" auto_hide="false" internal_type="DOCKED" type="DOCKED" visible="false" show_stripe_button="true" weight="0.33" sideWeight="0.5" order="1" side_tool="false" content_ui="tabs" />
       <window_info id="Ant Build" active="false" anchor="right" auto_hide="false" internal_type="DOCKED" type="DOCKED" visible="false" show_stripe_button="true" weight="0.25" sideWeight="0.5" order="1" side_tool="false" content_ui="tabs" />
@@ -838,27 +872,6 @@
     <watches-manager />
   </component>
   <component name="editorHistoryManager">
-    <entry file="file://$PROJECT_DIR$/LearnOOP/learning0214003.py">
-      <provider selected="true" editor-type-id="text-editor">
-        <state relative-caret-position="1550">
-          <caret line="31" column="30" lean-forward="false" selection-start-line="31" selection-start-column="30" selection-end-line="31" selection-end-column="30" />
-        </state>
-      </provider>
-    </entry>
-    <entry file="file://$PROJECT_DIR$/LearnModule/String_func.py">
-      <provider selected="true" editor-type-id="text-editor">
-        <state relative-caret-position="4300">
-          <caret line="86" column="4" lean-forward="false" selection-start-line="86" selection-start-column="4" selection-end-line="86" selection-end-column="4" />
-        </state>
-      </provider>
-    </entry>
-    <entry file="file://$PROJECT_DIR$/LearnModule/str2int.py">
-      <provider selected="true" editor-type-id="text-editor">
-        <state relative-caret-position="550">
-          <caret line="11" column="23" lean-forward="false" selection-start-line="11" selection-start-column="23" selection-end-line="11" selection-end-column="23" />
-        </state>
-      </provider>
-    </entry>
     <entry file="file://$PROJECT_DIR$/LearnModule/MY_math.py">
       <provider selected="true" editor-type-id="text-editor">
         <state relative-caret-position="7800">
@@ -1138,7 +1151,6 @@
       <provider selected="true" editor-type-id="text-editor">
         <state relative-caret-position="0">
           <caret line="0" column="0" lean-forward="false" selection-start-line="0" selection-start-column="0" selection-end-line="0" selection-end-column="0" />
-          <folding />
         </state>
       </provider>
     </entry>
@@ -1146,18 +1158,10 @@
       <provider selected="true" editor-type-id="text-editor">
         <state relative-caret-position="0">
           <caret line="0" column="0" lean-forward="false" selection-start-line="0" selection-start-column="0" selection-end-line="0" selection-end-column="0" />
-          <folding />
         </state>
       </provider>
     </entry>
-    <entry file="file://$PROJECT_DIR$/LearnModule/cal_data.py">
-      <provider selected="true" editor-type-id="text-editor">
-        <state relative-caret-position="0">
-          <caret line="0" column="0" lean-forward="false" selection-start-line="0" selection-start-column="0" selection-end-line="10" selection-end-column="25" />
-          <folding />
-        </state>
-      </provider>
-    </entry>
+    <entry file="file://$PROJECT_DIR$/LearnModule/cal_data.py" />
     <entry file="file://$PROJECT_DIR$/PY.exercise/exer0718003.py">
       <provider selected="true" editor-type-id="text-editor">
         <state relative-caret-position="2958">
@@ -1192,8 +1196,8 @@
     </entry>
     <entry file="file://$PROJECT_DIR$/PY.exercise/testcode001.py">
       <provider selected="true" editor-type-id="text-editor">
-        <state relative-caret-position="1248">
-          <caret line="145" column="13" lean-forward="true" selection-start-line="145" selection-start-column="13" selection-end-line="145" selection-end-column="13" />
+        <state relative-caret-position="5508">
+          <caret line="110" column="12" lean-forward="false" selection-start-line="110" selection-start-column="12" selection-end-line="110" selection-end-column="12" />
           <folding>
             <element signature="e#26#35#0" expanded="true" />
           </folding>
@@ -1203,18 +1207,42 @@
     <entry file="file://$PROJECT_DIR$/LearnModule/CardsGame.py">
       <provider selected="true" editor-type-id="text-editor">
         <state relative-caret-position="3774">
-          <caret line="74" column="29" lean-forward="true" selection-start-line="74" selection-start-column="29" selection-end-line="74" selection-end-column="29" />
+          <caret line="74" column="29" lean-forward="false" selection-start-line="74" selection-start-column="29" selection-end-line="74" selection-end-column="29" />
           <folding />
         </state>
       </provider>
     </entry>
     <entry file="file://$PROJECT_DIR$/PY.exercise/空当接龙游戏0812.py">
       <provider selected="true" editor-type-id="text-editor">
-        <state relative-caret-position="987">
-          <caret line="154" column="8" lean-forward="true" selection-start-line="154" selection-start-column="8" selection-end-line="154" selection-end-column="8" />
+        <state relative-caret-position="7701">
+          <caret line="154" column="8" lean-forward="false" selection-start-line="154" selection-start-column="8" selection-end-line="154" selection-end-column="8" />
           <folding>
             <element signature="e#46#79#0" expanded="true" />
           </folding>
+        </state>
+      </provider>
+    </entry>
+    <entry file="file://$PROJECT_DIR$/PY.exercise/exer0728001.py">
+      <provider selected="true" editor-type-id="text-editor">
+        <state relative-caret-position="0">
+          <caret line="0" column="0" lean-forward="false" selection-start-line="0" selection-start-column="0" selection-end-line="0" selection-end-column="0" />
+          <folding />
+        </state>
+      </provider>
+    </entry>
+    <entry file="file://$PROJECT_DIR$/ESP_project/data_news/normalized_news.json">
+      <provider selected="true" editor-type-id="text-editor">
+        <state relative-caret-position="0">
+          <caret line="0" column="0" lean-forward="false" selection-start-line="0" selection-start-column="0" selection-end-line="0" selection-end-column="0" />
+          <folding />
+        </state>
+      </provider>
+    </entry>
+    <entry file="file://$PROJECT_DIR$/ESP_project/data_news/Data_normalization.py">
+      <provider selected="true" editor-type-id="text-editor">
+        <state relative-caret-position="0">
+          <caret line="0" column="0" lean-forward="false" selection-start-line="0" selection-start-column="0" selection-end-line="0" selection-end-column="0" />
+          <folding />
         </state>
       </provider>
     </entry>
