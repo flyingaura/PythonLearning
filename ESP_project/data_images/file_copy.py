@@ -57,18 +57,20 @@ from LearnModule import StringSplit
 FileRecord = {}
 FileDataList = []
 fileindex = 0
-with open('F:/documents/python/learning2017/ESP_project/data_files/origin_files.json', mode = 'rb') as infile:
+with open('F:\documents\python\learning2017\ESP_project\data_images\origin_images.json', mode = 'rb') as infile:
     for aline in infile.readlines():
         aline_decode = aline.decode('utf-8').strip()
         alineJson = json.loads(aline_decode)
-        alineJson['全文内容'] = ''
-        FileRecord = alineJson
-        FileDataList.append(FileRecord.copy())
+        if(alineJson['图像高度'] == '' or alineJson['图像宽度'] == ''):
+            print(alineJson)
+        # alineJson['全文内容'] = ''
+        # FileRecord = alineJson
+        # FileDataList.append(FileRecord.copy())
 
-with open('F:/documents/python/learning2017/ESP_project/data_images/file_anothers.json', mode = 'wb') as outfile:
-    for arecord in FileDataList:
-        outfile.write(json.dumps(arecord, ensure_ascii= False).encode('utf-8'))
-        outfile.write('\n'.encode('utf-8'))
+# with open('F:/documents/python/learning2017/ESP_project/data_images/file_anothers.json', mode = 'wb') as outfile:
+#     for arecord in FileDataList:
+#         outfile.write(json.dumps(arecord, ensure_ascii= False).encode('utf-8'))
+#         outfile.write('\n'.encode('utf-8'))
 
 
 # with open('F:/documents/python/learning2017/ESP_project/data_files/files_normalized.json', mode = 'wb') as outfile:

@@ -103,9 +103,9 @@ with open(r'F:\documents\python\learning2017\ESP_project\data_images\origin_imag
                     AimageFile['authors'] = OutImagesJson['作者']
                     AimageFile['filesize'] = SetFileSize(int(OutImagesJson['文件大小']))
                     if('图像高度' in keylist and '图像宽度' in keylist):
-                        AimageFile['imagePixel'] = [OutImagesJson['图像宽度'],OutImagesJson['图像高度']]
+                        AimageFile['imagePixel'] = [int(OutImagesJson['图像宽度'].split(' ')[0]), int(OutImagesJson['图像高度'].split(' ')[0])]
                     else:
-                        AimageFile['imagePixel'] = '未知'
+                        AimageFile['imagePixel'] = []
                     if(OutImagesJson['修改时间']):
                         AimageFile['pubtime'] = FormatTime(OutImagesJson['修改时间'])
                     else:
