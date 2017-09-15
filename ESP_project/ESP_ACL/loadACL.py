@@ -24,8 +24,8 @@ RoleGroup = ['GeneralManager','ProductCenter','SalesCenter','R&DCenter','PMCente
 # OriginFilePath = r'F:\documents\python\learning2017\ESP_project\data_knowledge\knowledge_normalized_NoACL.json'
 # OutFilePath = r'F:\documents\python\learning2017\ESP_project\data_knowledge\knowledge_normalized.json'
 
-OriginFilePath = r'F:\documents\python\learning2017\ESP_project\data_files\files_normalized_NoACL.json'
-OutFilePath = r'F:\documents\python\learning2017\ESP_project\data_files\files_normalized.json'
+OriginFilePath = r'F:\documents\python\learning2017\ESP_project\data_files\files_normalized.json'
+OutFilePath = r'F:\documents\python\learning2017\ESP_project\data_files\files_normalized_ACL.json'
 
 DataList = []
 with open(OriginFilePath, mode = 'rb') as infile:

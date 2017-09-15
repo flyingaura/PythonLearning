@@ -14,16 +14,16 @@ deplist = ['总经理办公室','产品中心','研发中心','数据中心','�
 
 file_tail = ['','(1)','(2)','(3)','_转载','研究报告','【供参考】','[内部资料]','（个人心得）','【来自XXXX】']
 
-AllPathList = os.walk(r'F:\documents\ESP产品开发用数据\ESP_files')
-FilePathList = []
+# AllPathList = os.walk(r'F:\documents\ESP产品开发用数据\ESP_files')
+# FilePathList = []
 
-for Apath in AllPathList:
-    if(Apath[2] != []):
-        for Afile in Apath[2]:
-            # AfilePath = os.path.join(Apath[0],Afile)
-            FilePathList.append([Apath[0],Afile])
-            # print(AfilePath)
-# print(len(FilePathList))
+# for Apath in AllPathList:
+#     if(Apath[2] != []):
+#         for Afile in Apath[2]:
+#             # AfilePath = os.path.join(Apath[0],Afile)
+#             FilePathList.append([Apath[0],Afile])
+#             # print(AfilePath)
+# # print(len(FilePathList))
 
 def SetFileFormat(FileSuffix):
     fformatdict = {'word':['doc','docx','wps'],'PPT':['ppt','pptx','dps'],'excel':['xls','xlsx','et'],
@@ -67,89 +67,112 @@ def SetPubtime(init_year,init_time,days,seconds):  #随机生成发布日期 201
 FileRecord = {}
 FileDataList = []
 fileindex = 0
-with open('F:/documents/python/learning2017/ESP_project/data_files/origin_files.json', mode = 'rb') as infile:
+OriginFilePath = 'F:/documents/python/learning2017/ESP_project/data_files/origin_files.json'
+# OriginFilePath = r'F:\documents\python\learning2017\ESP_project\data_files\files_test.json'
+with open(OriginFilePath, mode = 'rb') as infile:
+    DropCount = 0
     for aline in infile.readlines():
-        if(fileindex < len(FilePathList)):
-            aline_decode = aline.decode('utf-8').strip()
-            alineJson = json.loads(aline_decode)
-            for key in alineJson:
-                if(key == '全文内容'):
-                    # pass
-                    FileRecord['content'] = alineJson[key].strip()
-                elif(key == '作者'):
-                    FileRecord['authors'] = alineJson[key]
-                elif(key == '文件大小'):
-                    FileRecord['filesize'] = SetFileSize(int(alineJson[key]))
-                elif(key == '创建时间'):
-                    FileRecord['edittime'] = FormatTime(alineJson[key])
-                elif(key == '修改时间'):
-                    FileRecord['pubtime'] = FormatTime(alineJson[key])
+        aline_decode = aline.decode('utf-8').strip()
+        alineJson = json.loads(aline_decode)
+        AfileKey = alineJson.keys()
 
-                FileRecord['belongdep'] = Data_normalization.SetDepartment(deplist)
-                FileRecord['filename'] = FilePathList[fileindex][1]
-                FileName = os.path.splitext(FilePathList[fileindex][1])
+        if('文件名称' in AfileKey):
+            FileRecord['filename'] = alineJson['文件名称']
+        else:               #文件名为空的数据直接扔掉
+            DropCount += 1
+            continue
+        # ===============================设置文件名相关属性==============================
+        FileName = os.path.splitext(FileRecord['filename'])
+        FileRecord['title'] = FileName[0]
+        FileRecord['file_suffix'] = FileName[1].strip('.').lower()
+        FileRecord['fileformat'] = SetFileFormat(FileRecord['file_suffix'])
 
-                # =========================================================
-                FilePathSet = StringSplit.stringsplit(FilePathList[fileindex][0], '\\')
-                FilePath = ''
-                FilesCat = ''
-                for xpath in FilePathSet[3:]:
-                    FilePath = os.path.join(FilePath, xpath)
-                for xpath in FilePathSet[4:]:
-                    FilesCat = FilesCat + '//' + xpath
-                FileRecord['fileURL'] = os.path.join(FilePath,FilePathList[fileindex][1])
-                FileRecord['FilesCat'] = FilesCat
-                FileRecord['title'] = FileName[0]
-                FileRecord['file_suffix'] = FileName[1].strip('.').lower()
-                FileRecord['fileformat'] = SetFileFormat(FileRecord['file_suffix'])
-                FileRecord['viewcounts'] = random.randint(0,117)
+        # ===============================设置文件路径相关属性==============================
+        SetFilePath = StringSplit.stringsplit(alineJson['文件路径'],'\\')
+        FilePath = ''
+        for Apath in SetFilePath[1:]:
+            FilePath = os.path.join(FilePath,Apath)
+        FileRecord['fileURL'] = FilePath
 
+        # ===============================设置文件所属分类==============================
+        FileCat = ''
+        for Apath in SetFilePath[2:-1]:
+            FileCat = FileCat + '//' + Apath
+        FileRecord['FilesCat'] = FileCat
 
-            fileindex += 1
-            FileDataList.append(FileRecord.copy())
-            # ====================================================================
-            CopyIndex = random.randint(1,10)
-            if(CopyIndex % 3 == 0):
-                CopyCount = random.randint(1,5)
-                # FileTailList = []
-                # FileCopyNum = 0
-                # while(FileCopyNum < CopyCount):
-                for i in range(CopyCount):
-                    FileTailIndex = random.randint(0, len(file_tail) + 4)
-                    if(FileTailIndex >= len(file_tail)):
-                        FileTailIndex = 0
-                    # if(FileTailIndex not in FileTailList):
-                    AFileCopy = FileRecord.copy()
-                    AFileCopy['title'] = AFileCopy['title'] + file_tail[FileTailIndex]
-                    AFileCopy['belongdep'] = Data_normalization.SetDepartment(deplist)
-                    if(FileRecord['edittime']):
-                        # print(FileRecord['edittime'])
-                        init_year = ''
-                        for Adata in FileRecord['edittime'].split(' ')[0].split('-'):
-                            init_year = init_year + Adata
-                        AFileCopy['edittime'] = SetPubtime(int(init_year),FileRecord['edittime'].split(' ')[1],random.randint(0,365),random.randint(0,24 * 3600))
-                    else:
-                        AFileCopy['edittime'] = SetPubtime(20150101, '00:00:00', random.randint(0, 730), random.randint(0, 24 * 3600))
-                    if(FileRecord['pubtime']):
-                        init_year = ''
-                        for Adata in FileRecord['pubtime'].split(' ')[0].split('-'):
-                            init_year = init_year + Adata
-                        AFileCopy['pubtime'] = SetPubtime(int(init_year),FileRecord['pubtime'].split(' ')[1],random.randint(0,365),random.randint(0,24 * 3600))
-                    else:
-                        AFileCopy['pubtime'] = AFileCopy['edittime']
+        # ===============================设置文件其他属性==============================
 
-                    AFileCopy['viewcounts'] = random.randint(0, 117)
-
-                    FileDataList.append(AFileCopy.copy())
-                    # FileCopyNum += 1
-                    # FileTailList.append(FileTailIndex)
-
+        if('全文内容' in AfileKey):
+            FileRecord['content'] = alineJson['全文内容'].strip()
         else:
-            break
+            FileRecord['content'] = ''
+        if('作者' in AfileKey):
+            FileRecord['authors'] = alineJson['作者']
+        else:
+            FileRecord['authors'] = ''
+        if('文件大小' in AfileKey):
+            FileRecord['filesize'] = SetFileSize(int(alineJson['文件大小']))
+        else:
+            FileRecord['filesize'] = '0'
 
-print(len(FileDataList))
+        if ('创建时间' in AfileKey):
+            FileRecord['edittime'] = FormatTime(alineJson['创建时间'])
+        else:
+            FileRecord['edittime'] = ''
+        if ('修改时间' in AfileKey):
+            FileRecord['pubtime'] = FormatTime(alineJson['修改时间'])
+        else:
+            FileRecord['pubtime'] = SetPubtime(20150101, '00:00:00', random.randint(0, 730), random.randint(0, 24 * 3600))
+
+        FileRecord['belongdep'] = Data_normalization.SetDepartment(deplist)
+        FileRecord['viewcounts'] = random.randint(0,117)
+
+            # fileindex += 1
+        FileDataList.append(FileRecord.copy())
+
+        # ====================================随机分配相似文件================================
+        CopyIndex = random.randint(1,10)
+        if(CopyIndex % 3 == 0):
+            CopyCount = random.randint(1,5)
+            # FileTailList = []
+            # FileCopyNum = 0
+            # while(FileCopyNum < CopyCount):
+            for i in range(CopyCount):
+                FileTailIndex = random.randint(0, len(file_tail) + 4)
+                if(FileTailIndex >= len(file_tail)):
+                    FileTailIndex = 0
+                # if(FileTailIndex not in FileTailList):
+                AFileCopy = FileRecord.copy()
+                AFileCopy['title'] = AFileCopy['title'] + file_tail[FileTailIndex]
+                AFileCopy['belongdep'] = Data_normalization.SetDepartment(deplist)
+                if(FileRecord['edittime']):
+                    # print(FileRecord['edittime'])
+                    init_year = ''
+                    for Adata in FileRecord['edittime'].split(' ')[0].split('-'):
+                        init_year = init_year + Adata
+                    AFileCopy['edittime'] = SetPubtime(int(init_year),FileRecord['edittime'].split(' ')[1],random.randint(0,365),random.randint(0,24 * 3600))
+                else:
+                    AFileCopy['edittime'] = SetPubtime(20150101, '00:00:00', random.randint(0, 730), random.randint(0, 24 * 3600))
+                if(FileRecord['pubtime']):
+                    init_year = ''
+                    for Adata in FileRecord['pubtime'].split(' ')[0].split('-'):
+                        init_year = init_year + Adata
+                    AFileCopy['pubtime'] = SetPubtime(int(init_year),FileRecord['pubtime'].split(' ')[1],random.randint(0,365),random.randint(0,24 * 3600))
+                else:
+                    AFileCopy['pubtime'] = AFileCopy['edittime']
+
+                AFileCopy['viewcounts'] = random.randint(0, 117)
+
+                FileDataList.append(AFileCopy.copy())
+                # FileCopyNum += 1
+                # FileTailList.append(FileTailIndex)
+
+
+print('DropFiles Count = %d' %DropCount)
+print('The total Files Count = %d' %(len(FileDataList)))
 with open('F:/documents/python/learning2017/ESP_project/data_files/files_normalized.json', mode = 'wb') as outfile:
     for arecord in FileDataList:
+        # arecord['content'] = ''
         outfile.write(json.dumps(arecord, ensure_ascii= False).encode('utf-8'))
         outfile.write('\n'.encode('utf-8'))
 
