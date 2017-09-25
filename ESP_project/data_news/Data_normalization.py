@@ -121,7 +121,7 @@ with open('F:/documents/python/learning2017/ESP_project/data_news/origin_news.js
                 ANewsCopy['viewcounts'] = random.randint(0, 83)
                 datalist.append(ANewsCopy.copy())
 
-print(len(datalist))
+# print(len(datalist))
 # 把规范化处理后的新闻数据写入到json文件中，用来导入数据库
 with open('F:/documents/python/learning2017/ESP_project/data_news/normalized_news.json',mode = 'wb') as outfile:
     for Adata in datalist:
