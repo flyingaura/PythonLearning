@@ -47,7 +47,7 @@ class HighSchool(object):
 
 
         return  '-' * 46  + ' 序号：%5s' %(self.OrderID) + '-' * 46 + '\n' \
-                + '学校名称：%-30s' %(self.fullname) + '||' + '学校英文名称：%-60s' %(self.EnName) + '\n' \
+                + '学校中文名称：%-30s' %(self.fullname) + '||' + '学校英文名称：%-60s' %(self.EnName) + '\n' \
                 + '学校中文简称: %-30s' %(self.Abbreviation_cn) + '||' + '学校英文简称: %-60s' %(self.Abbreviation_en) + '\n' \
                 + '学校类别: %-30s' %(self.SchoolCategory) + '||' + '主管部门: %-60s' %(self.CompetentDepartment) + '\n' \
                 + '学校所在地: %-30s' %(self.Location) + '||' + '办学层次: %-60s' %(self.SchoolLevel) + '\n' \
@@ -63,24 +63,18 @@ def readCSV(filepath,reqcode = 'utf-8'):
 
     return datalist
 
-datafilepath1 = r'F:\memory\python-learning\learning2017\program data\高校相关数据\2016年全国高等学校名单.csv'
-datafilepath2 = r'F:\memory\python-learning\learning2017\program data\高校相关数据\985 and 211名单.csv'
-datafilepath3 = r'F:\memory\python-learning\learning2017\program data\高校相关数据\中西部高校基础能力建设工程.csv'
-datafilepath4 = r'F:\memory\python-learning\learning2017\program data\高校相关数据\高等学校学科创新引智计划.dat'
-datafilepath5 = r'F:\memory\python-learning\learning2017\program data\高校相关数据\教育部与地方共建高校.dat'
-datafilepath6 = r'F:\memory\python-learning\learning2017\program data\高校相关数据\教育部直属高等学校名单.dat'
+datafilepath1 = r'F:\documents\python\learning2017\program data\高校相关数据\2016年全国高等学校名单.csv'
+datafilepath2 = r'F:\documents\python\learning2017\program data\高校相关数据\985 and 211名单.csv'
+datafilepath3 = r'F:\documents\python\learning2017\program data\高校相关数据\中西部高校基础能力建设工程.csv'
+datafilepath4 = r'F:\documents\python\learning2017\program data\高校相关数据\高等学校学科创新引智计划.dat'
+datafilepath5 = r'F:\documents\python\learning2017\program data\高校相关数据\教育部与地方共建高校.dat'
+datafilepath6 = r'F:\documents\python\learning2017\program data\高校相关数据\教育部直属高等学校名单.dat'
 
-HighSchoolList = []
-
-HighSchoolBI = readCSV(datafilepath1)  #读取全部高校的基本信息
-HighSchoolKey = readCSV(datafilepath2,'GBK') #读取985和211高校信息
-HighSchoolNBAC = readCSV(datafilepath3,'GBK')  #中西部高校基础能力建设工程高校信息
-HighSchool111P = readCSV(datafilepath4,'utf-8')  #高等学校学科创新引智计划高校信息
-
+# ========== 读取中西部高校基础能力建设工程高校信息 ==========
 # NBACcount = 0
 NBACSchoolList = []
 # i = 1
-for Aschool in HighSchoolNBAC:
+for Aschool in readCSV(datafilepath3,'GBK'):
     NBACschools = Aschool[0].split('\t')
     # Acount = String_func.StrExtractNum(NBACschools[1],1)[0]
     # print('%d: %d' %(i,Acount))
@@ -94,8 +88,9 @@ for Aschool in HighSchoolNBAC:
 # print('NBACCount = %d' %NBACcount)
 # print('Count of NBACShool is %d' %(len(NBACSchoolList)))
 
+# ========== 读取高等学校学科创新引智计划高校信息 ==========
 P111schoolList = []
-for Aschool in HighSchool111P:
+for Aschool in readCSV(datafilepath4,'utf-8'):
     P111schools = StringSplit.stringsplit(Aschool[0],(':','、'))
     # Acount = String_func.StrExtractNum(P111schools[0], 1)[0]
     # print('%d: %d' %(i,Acount))
@@ -109,9 +104,9 @@ for Aschool in HighSchool111P:
 # print('NBACCount = %d' %NBACcount)
 # print('Count of NBACShool is %d' %(len(P111schoolList)))
 
-
+# ========== 读取985和211高校信息 ==========
 HighSchoolCPinfo = {}
-for Aschool in HighSchoolKey[2:]:
+for Aschool in readCSV(datafilepath2,'GBK')[2:]:
     try:
         orderNum = int(Aschool[0])
     except ValueError:
@@ -121,58 +116,104 @@ for Aschool in HighSchoolKey[2:]:
     else:
         HighSchoolCPinfo[Aschool[1]] = [Aschool[3], Aschool[7], Aschool[8]]
 
+SchoolCPkeys = HighSchoolCPinfo.keys()
 
-for aline in HighSchoolBI:
+# ========== 读取高校办学模式数据 ============
+HighSchoolModel = {}
+for Aline in readCSV(datafilepath5):
+    HighSchoolModel[Aline[2]] = '教育部与地方共建高校'
+for Aline in readCSV(datafilepath6):
+    HighSchoolModel[Aline[0]] = '教育部直属高等学校'
+
+SchoolModelkeys = HighSchoolModel.keys()
+
+# ========== 读取并设置全部高校基本信息 ==========
+HighSchoolList = []
+for aline in readCSV(datafilepath1):  #读取全部高校的基本信息
     # print(aline)
-    if(aline[1]):
-        Aschool = HighSchool(OrderID = aline[0], fullname = aline[1], CompetentDepartment = aline[2], Location = aline[3], SchoolLevel = aline[4])
-        if(aline[5]):
-            Aschool.SchoolRunner = aline[5]
+    # ========== 判断办学模式 ===========
+    if(aline[0].isdigit()):
+        if (aline[1] in SchoolModelkeys):
+            SchoolModel = HighSchoolModel[aline[1]]
         else:
-            Aschool.SchoolRunner = '公立'
+            SchoolModel = ''
 
-        ConsProject = {'985Project': False, '211Project': False, 'NBACWC': False, '111Plan': False}   #设置学校所拥有的国家扶持建设项目
-
-        if(aline[1] in HighSchoolCPinfo.keys()):    #判断是否为985或211大学
-            Aschool.SchoolCategory = HighSchoolCPinfo[aline[1]][0]
-            if(HighSchoolCPinfo[aline[1]][1]):
+        # ========== 设置高校所属的建设项目 ===========
+        ConsProject = {'985Project': False, '211Project': False, 'NBACWC': False, '111Plan': False}
+        if (aline[1] in SchoolCPkeys):    #判断是否为985或211大学
+            SchoolCategory = HighSchoolCPinfo[aline[1]][0]
+            if (HighSchoolCPinfo[aline[1]][1]):
                 ConsProject['211Project'] = True
                 try:
-                    JoinYear = StringSplit.stringsplit(HighSchoolCPinfo[aline[1]][1],('（', '）'))[1]
+                    JoinYear = StringSplit.stringsplit(HighSchoolCPinfo[aline[1]][1], ('（', '）'))[1]
                 except IndexError:
-                    print('出错学校为：%s' %aline[1], end = '')
+                    print('出错学校为：%s' % aline[1], end='')
                     print(HighSchoolCPinfo[aline[1]])
                     JoinYear = ''
                 ConsProject['211ProjectTime'] = JoinYear
 
-            if(HighSchoolCPinfo[aline[1]][2]):
+            if (HighSchoolCPinfo[aline[1]][2]):
                 ConsProject['985Project'] = True
                 try:
                     JoinYear = StringSplit.stringsplit(HighSchoolCPinfo[aline[1]][2], ('（', '）'))[1]
                 except IndexError:
-                    print('出错学校为：%s' %aline[1], end='')
+                    print('出错学校为：%s' % aline[1], end='')
                     print(HighSchoolCPinfo[aline[1]])
                     JoinYear = ''
                 ConsProject['211ProjectTime'] = JoinYear
                 ConsProject['985Project'] = JoinYear
+        else:
+            SchoolCategory = ''
 
-        if(aline[1] in NBACSchoolList):   #判断是否为中西部高校基础能力建设工程高校
+        if (aline[1] in NBACSchoolList):  # 判断是否为中西部高校基础能力建设工程高校
             ConsProject['NBACWC'] = True
 
-        if(aline[1] in P111schoolList):    #判断是否为高等学校学科创新引智计划高校
+        if (aline[1] in P111schoolList):  # 判断是否为高等学校学科创新引智计划高校
             ConsProject['111Plan'] = True
 
-        Aschool.ConsProject = ConsProject.copy()
+        # ========== 设置高校的运营模式 ===========
+        if (aline[5]):
+            SchoolRunner = aline[5]
+        else:
+            SchoolRunner = '公立'
+
+        # 定义一个高校的基本属性信息
+        Aschool = HighSchool(OrderID = aline[0], fullname = aline[1], SchoolCategory = SchoolCategory, CompetentDepartment = aline[2], Location = aline[3], SchoolLevel = aline[4],
+                             SchoolModel = SchoolModel, SchoolRunner = SchoolRunner, ConsProject = ConsProject)
+
         HighSchoolList.append(Aschool)
 
-for Aschool in HighSchoolList:
-    print(Aschool)
+OutFilePath = r'F:\documents\python\learning2017\program data\高校相关数据\全国高校基本信息.dat'
 
+with open(OutFilePath, mode = 'w', encoding = 'utf-8') as outfile:
+    outfile.write('%s\t%s\t%s\t%s\t%s\t%s\t%s\t%s\t%s\t%s\t%s\t%s\t%s\t%s\t%s\t'
+                  %('序号','学校中文名称','学校英文名称','学校中文简称','学校英文简称','学校类别','主管部门',
+                    '学校所在地','办学层次','学校运营模式','办学模式','属于985工程','属于211工程','属于中西部高校基础能力建设工程',
+                    '属于高等学校学科创新引智计划'))
+    outfile.write('\n')
+    for Aschool in HighSchoolList:
+        if (Aschool.ConsProject['985Project']):
+            is985 = 'Y'
+        else:
+            is985 = 'N'
+        if (Aschool.ConsProject['211Project']):
+            is211 = 'Y'
+        else:
+            is211 = 'N'
+        if (Aschool.ConsProject['NBACWC']):
+            isNBAC = 'Y'
+        else:
+            isNBAC = 'N'
+        if (Aschool.ConsProject['111Plan']):
+            is111 = 'Y'
+        else:
+            is111 = 'N'
 
-
-
-
-
+        outfile.write('%s\t%s\t%s\t%s\t%s\t%s\t%s\t%s\t%s\t%s\t%s\t%s\t%s\t%s\t%s\t'
+                  %(Aschool.OrderID,Aschool.fullname,Aschool.EnName,Aschool.Abbreviation_cn,Aschool.Abbreviation_en,
+                    Aschool.SchoolCategory, Aschool.CompetentDepartment, Aschool.Location,
+                   Aschool.SchoolLevel,Aschool.SchoolRunner,Aschool.SchoolModel,is985,is211,isNBAC,is111))
+        outfile.write('\n')
 
 
 
