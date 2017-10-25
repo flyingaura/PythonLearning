@@ -69,6 +69,25 @@ datafilepath3 = r'F:\documents\python\learning2017\program data\高校相关数�
 datafilepath4 = r'F:\documents\python\learning2017\program data\高校相关数据\高等学校学科创新引智计划.dat'
 datafilepath5 = r'F:\documents\python\learning2017\program data\高校相关数据\教育部与地方共建高校.dat'
 datafilepath6 = r'F:\documents\python\learning2017\program data\高校相关数据\教育部直属高等学校名单.dat'
+datafilepath7 = r'F:\documents\python\learning2017\program data\高校相关数据\全国高校名录.dat'
+
+# ========== 读取大学名称及其英文全称 ==========
+HighSchoolNameList = {}
+with open(datafilepath7, mode = 'r', encoding= 'utf-8') as infile:
+    for aline in infile.readlines():
+        aline_str = aline.strip()
+        # print(aline_str)
+        for i in range(len(aline_str)):
+            if(String_func.if_enletter(aline_str[i])):
+                if(i == 0):
+                    break
+                else:
+                    # print(aline_str[i])
+                    HighSchoolNameList[aline_str[:i].strip()] = aline_str[i:].strip()
+                    break
+HighSchoolNamekeys = HighSchoolNameList.keys()
+    # for key in HighSchoolNameList:
+    #     print('%s:%s' %(key,HighSchoolNameList[key]))
 
 # ========== 读取中西部高校基础能力建设工程高校信息 ==========
 # NBACcount = 0
@@ -131,8 +150,15 @@ SchoolModelkeys = HighSchoolModel.keys()
 HighSchoolList = []
 for aline in readCSV(datafilepath1):  #读取全部高校的基本信息
     # print(aline)
-    # ========== 判断办学模式 ===========
     if(aline[0].isdigit()):
+
+        # ========== 设置高校英文全称 ===========
+        if(aline[1] in HighSchoolNamekeys):
+            EnName = HighSchoolNameList[aline[1]]
+        else:
+            EnName = ''
+
+        # ========== 判断办学模式 ===========
         if (aline[1] in SchoolModelkeys):
             SchoolModel = HighSchoolModel[aline[1]]
         else:
@@ -178,7 +204,8 @@ for aline in readCSV(datafilepath1):  #读取全部高校的基本信息
             SchoolRunner = '公立'
 
         # 定义一个高校的基本属性信息
-        Aschool = HighSchool(OrderID = aline[0], fullname = aline[1], SchoolCategory = SchoolCategory, CompetentDepartment = aline[2], Location = aline[3], SchoolLevel = aline[4],
+        Aschool = HighSchool(OrderID = aline[0], fullname = aline[1], EnName = EnName, SchoolCategory = SchoolCategory,
+                             CompetentDepartment = aline[2], Location = aline[3], SchoolLevel = aline[4],
                              SchoolModel = SchoolModel, SchoolRunner = SchoolRunner, ConsProject = ConsProject)
 
         HighSchoolList.append(Aschool)
