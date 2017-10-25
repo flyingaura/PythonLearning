@@ -3,5 +3,7 @@
   <component name="Encoding">
     <file url="file://$PROJECT_DIR$/PY.exercise/copytest.txt" charset="GBK" />
     <file url="file://$PROJECT_DIR$/program data/personaldescription" charset="UTF-8" />
+    <file url="file://$PROJECT_DIR$/program data/高校相关数据/985 and 211名单.csv" charset="GBK" />
+    <file url="file://$PROJECT_DIR$/program data/高校相关数据/中西部高校基础能力建设工程.csv" charset="GBK" />
   </component>
 </project>
