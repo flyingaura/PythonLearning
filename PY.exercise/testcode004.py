@@ -43,6 +43,21 @@ import time
 # print(list(time.strptime(date, "%Y-%m-%d")))
 # NowTime = int(time.time())
 # print(time.strftime('%Y-%m-%d %H:%M:%S', time.localtime(NowTime)))
+#
+# teststr = 'http://gongyi.sohu.com/20120716/n348242197.shtml'
+# print(StringSplit.stringsplit(StringSplit.stringsplit(teststr,'/')[1],'.')[0])
 
-teststr = 'http://gongyi.sohu.com/20120716/n348242197.shtml'
-print(StringSplit.stringsplit(StringSplit.stringsplit(teststr,'/')[1],'.')[0])
+# Alist = [1]
+# print(random.sample(Alist,1))
+xlist = [x for x in range(5)]
+ylist = [y for y in 'abcde']
+# print(xlist)
+# for i in range(len(xlist)):
+#     if(xlist[i] % 2 == 0):
+#         xlist[i] = xlist[i] + 10
+
+print(xlist + ylist)
+print(random.sample(xlist + ylist , 1))
+
+xlist.remove(3)
+print(xlist)

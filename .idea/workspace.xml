@@ -2,18 +2,9 @@
 <project version="4">
   <component name="ChangeListManager">
     <list default="true" id="286e034b-b797-4eff-86da-0c5c650473df" name="默认的" comment="Merge branch 'master' of https://git.oschina.net/flyingaura/learning2017&#10;&#10;# Conflicts:&#10;#&#9;.idea/workspace.xml&#10;">
-      <change type="NEW" beforePath="" afterPath="$PROJECT_DIR$/DataAnalysize Project/SpecialExtractor.py" />
-      <change type="NEW" beforePath="" afterPath="$PROJECT_DIR$/RSF_project/data/政务人名词表1024.txt" />
-      <change type="NEW" beforePath="" afterPath="$PROJECT_DIR$/RSF_project/data/电子政务及公文主题词表（包括同义词及上位词） 2017.10.24.csv" />
-      <change type="NEW" beforePath="" afterPath="$PROJECT_DIR$/RSF_project/data_process/ZW_synonym_process.py" />
-      <change type="NEW" beforePath="" afterPath="$PROJECT_DIR$/RSF_project/data_process/zwrn_process.py" />
-      <change type="NEW" beforePath="" afterPath="$PROJECT_DIR$/program data/高校相关数据/全国高校名录.dat" />
-      <change type="MODIFICATION" beforePath="$PROJECT_DIR$/.idea/encodings.xml" afterPath="$PROJECT_DIR$/.idea/encodings.xml" />
+      <change type="NEW" beforePath="" afterPath="$PROJECT_DIR$/PY.exercise/CatchAndRun.py" />
       <change type="MODIFICATION" beforePath="$PROJECT_DIR$/.idea/workspace.xml" afterPath="$PROJECT_DIR$/.idea/workspace.xml" />
-      <change type="MODIFICATION" beforePath="$PROJECT_DIR$/DataAnalysize Project/HighSchoolData.py" afterPath="$PROJECT_DIR$/DataAnalysize Project/HighSchoolData.py" />
-      <change type="MODIFICATION" beforePath="$PROJECT_DIR$/LearnModule/String_func.py" afterPath="$PROJECT_DIR$/LearnModule/String_func.py" />
       <change type="MODIFICATION" beforePath="$PROJECT_DIR$/PY.exercise/testcode004.py" afterPath="$PROJECT_DIR$/PY.exercise/testcode004.py" />
-      <change type="MODIFICATION" beforePath="$PROJECT_DIR$/program data/高校相关数据/全国高校基本信息.dat" afterPath="$PROJECT_DIR$/program data/高校相关数据/全国高校基本信息.dat" />
     </list>
     <option name="EXCLUDED_CONVERTED_TO_IGNORED" value="true" />
     <option name="TRACKING_ENABLED" value="true" />
@@ -23,70 +14,71 @@
     <option name="LAST_RESOLUTION" value="IGNORE" />
   </component>
   <component name="CoverageDataManager">
-    <SUITE FILE_PATH="coverage/learning2017$loadACL.coverage" NAME="loadACL Coverage Results" MODIFIED="1505129838598" SOURCE_PROVIDER="com.intellij.coverage.DefaultCoverageFileProvider" RUNNER="coverage.py" COVERAGE_BY_TEST_ENABLED="true" COVERAGE_TRACING_ENABLED="false" WORKING_DIRECTORY="$PROJECT_DIR$/ESP_project/ESP_ACL" />
-    <SUITE FILE_PATH="coverage/learning2017$random_date.coverage" NAME="random_date Coverage Results" MODIFIED="1503308157004" SOURCE_PROVIDER="com.intellij.coverage.DefaultCoverageFileProvider" RUNNER="coverage.py" COVERAGE_BY_TEST_ENABLED="true" COVERAGE_TRACING_ENABLED="false" WORKING_DIRECTORY="$PROJECT_DIR$/ESP_project/data_news" />
-    <SUITE FILE_PATH="coverage/learning2017$SetImageSizeType.coverage" NAME="SetImageSizeType Coverage Results" MODIFIED="1504859844666" SOURCE_PROVIDER="com.intellij.coverage.DefaultCoverageFileProvider" RUNNER="coverage.py" COVERAGE_BY_TEST_ENABLED="true" COVERAGE_TRACING_ENABLED="false" WORKING_DIRECTORY="$PROJECT_DIR$/ESP_project/data_images" />
-    <SUITE FILE_PATH="coverage/learning2017$learning0324_showhandpokers.coverage" NAME="learning0324-showhandpokers Coverage Results" MODIFIED="1490444895112" SOURCE_PROVIDER="com.intellij.coverage.DefaultCoverageFileProvider" RUNNER="coverage.py" COVERAGE_BY_TEST_ENABLED="true" COVERAGE_TRACING_ENABLED="false" WORKING_DIRECTORY="$PROJECT_DIR$/LearnOOP" />
-    <SUITE FILE_PATH="coverage/learning2017$exer0718003.coverage" NAME="exer0718003 Coverage Results" MODIFIED="1500395941779" SOURCE_PROVIDER="com.intellij.coverage.DefaultCoverageFileProvider" RUNNER="coverage.py" COVERAGE_BY_TEST_ENABLED="true" COVERAGE_TRACING_ENABLED="false" WORKING_DIRECTORY="$PROJECT_DIR$/PY.exercise" />
-    <SUITE FILE_PATH="coverage/learning2017$TestDataFetch.coverage" NAME="TestDataFetch Coverage Results" MODIFIED="1505124001751" SOURCE_PROVIDER="com.intellij.coverage.DefaultCoverageFileProvider" RUNNER="coverage.py" COVERAGE_BY_TEST_ENABLED="true" COVERAGE_TRACING_ENABLED="false" WORKING_DIRECTORY="$PROJECT_DIR$/ESP_project/data_files" />
-    <SUITE FILE_PATH="coverage/learning2017$Dict_deal.coverage" NAME="Dict_deal Coverage Results" MODIFIED="1483634172679" SOURCE_PROVIDER="com.intellij.coverage.DefaultCoverageFileProvider" RUNNER="coverage.py" COVERAGE_BY_TEST_ENABLED="true" COVERAGE_TRACING_ENABLED="false" WORKING_DIRECTORY="$PROJECT_DIR$/LearnModule" />
-    <SUITE FILE_PATH="coverage/learning2017$CardsGame.coverage" NAME="CardsGame Coverage Results" MODIFIED="1502529536491" SOURCE_PROVIDER="com.intellij.coverage.DefaultCoverageFileProvider" RUNNER="coverage.py" COVERAGE_BY_TEST_ENABLED="true" COVERAGE_TRACING_ENABLED="false" WORKING_DIRECTORY="$PROJECT_DIR$/LearnModule" />
-    <SUITE FILE_PATH="coverage/learning2017$testcode003.coverage" NAME="testcode003 Coverage Results" MODIFIED="1504782303113" SOURCE_PROVIDER="com.intellij.coverage.DefaultCoverageFileProvider" RUNNER="coverage.py" COVERAGE_BY_TEST_ENABLED="true" COVERAGE_TRACING_ENABLED="false" WORKING_DIRECTORY="$PROJECT_DIR$/PY.exercise" />
-    <SUITE FILE_PATH="coverage/learning2017$exer0708002.coverage" NAME="exer0708002 Coverage Results" MODIFIED="1499528290032" SOURCE_PROVIDER="com.intellij.coverage.DefaultCoverageFileProvider" RUNNER="coverage.py" COVERAGE_BY_TEST_ENABLED="true" COVERAGE_TRACING_ENABLED="false" WORKING_DIRECTORY="$PROJECT_DIR$/PY.exercise" />
-    <SUITE FILE_PATH="coverage/learning2017$Func_StringSplit.coverage" NAME="Func_StringSplit Coverage Results" MODIFIED="1484902847874" SOURCE_PROVIDER="com.intellij.coverage.DefaultCoverageFileProvider" RUNNER="coverage.py" COVERAGE_BY_TEST_ENABLED="true" COVERAGE_TRACING_ENABLED="false" WORKING_DIRECTORY="$PROJECT_DIR$/LearnModule" />
-    <SUITE FILE_PATH="coverage/learning2017$exer0901001.coverage" NAME="exer0901001 Coverage Results" MODIFIED="1504253009053" SOURCE_PROVIDER="com.intellij.coverage.DefaultCoverageFileProvider" RUNNER="coverage.py" COVERAGE_BY_TEST_ENABLED="true" COVERAGE_TRACING_ENABLED="false" WORKING_DIRECTORY="$PROJECT_DIR$/PY.exercise" />
-    <SUITE FILE_PATH="coverage/learning2017$exer0905001.coverage" NAME="exer0905001 Coverage Results" MODIFIED="1504613749201" SOURCE_PROVIDER="com.intellij.coverage.DefaultCoverageFileProvider" RUNNER="coverage.py" COVERAGE_BY_TEST_ENABLED="true" COVERAGE_TRACING_ENABLED="false" WORKING_DIRECTORY="$PROJECT_DIR$/PY.exercise" />
-    <SUITE FILE_PATH="coverage/learning2017$SpecialExtractor.coverage" NAME="SpecialExtractor Coverage Results" MODIFIED="1506410527747" SOURCE_PROVIDER="com.intellij.coverage.DefaultCoverageFileProvider" RUNNER="coverage.py" COVERAGE_BY_TEST_ENABLED="true" COVERAGE_TRACING_ENABLED="false" WORKING_DIRECTORY="$PROJECT_DIR$/DataAnalysize Project" />
-    <SUITE FILE_PATH="coverage/learning2017$MY_math.coverage" NAME="MY_math Coverage Results" MODIFIED="1490413265566" SOURCE_PROVIDER="com.intellij.coverage.DefaultCoverageFileProvider" RUNNER="coverage.py" COVERAGE_BY_TEST_ENABLED="true" COVERAGE_TRACING_ENABLED="false" WORKING_DIRECTORY="$PROJECT_DIR$/LearnModule" />
-    <SUITE FILE_PATH="coverage/learning2017$_pydev_execfile.coverage" NAME="_pydev_execfile Coverage Results" MODIFIED="1483680438855" SOURCE_PROVIDER="com.intellij.coverage.DefaultCoverageFileProvider" RUNNER="coverage.py" COVERAGE_BY_TEST_ENABLED="true" COVERAGE_TRACING_ENABLED="false" WORKING_DIRECTORY="$APPLICATION_HOME_DIR$/helpers/pydev/_pydev_imps" />
-    <SUITE FILE_PATH="coverage/learning2017$module_Use2.coverage" NAME="module.Use2 Coverage Results" MODIFIED="1483454739625" SOURCE_PROVIDER="com.intellij.coverage.DefaultCoverageFileProvider" RUNNER="coverage.py" COVERAGE_BY_TEST_ENABLED="true" COVERAGE_TRACING_ENABLED="false" WORKING_DIRECTORY="$PROJECT_DIR$" />
-    <SUITE FILE_PATH="coverage/learning2017$Func_StringSpilt.coverage" NAME="Func_StringSpilt Coverage Results" MODIFIED="1483964240863" SOURCE_PROVIDER="com.intellij.coverage.DefaultCoverageFileProvider" RUNNER="coverage.py" COVERAGE_BY_TEST_ENABLED="true" COVERAGE_TRACING_ENABLED="false" WORKING_DIRECTORY="$PROJECT_DIR$/LearnModule" />
-    <SUITE FILE_PATH="coverage/learning2017$testcode004.coverage" NAME="testcode004 Coverage Results" MODIFIED="1508833725306" SOURCE_PROVIDER="com.intellij.coverage.DefaultCoverageFileProvider" RUNNER="coverage.py" COVERAGE_BY_TEST_ENABLED="true" COVERAGE_TRACING_ENABLED="false" WORKING_DIRECTORY="$PROJECT_DIR$/PY.exercise" />
-    <SUITE FILE_PATH="coverage/learning2017$file_copy.coverage" NAME="file_copy Coverage Results" MODIFIED="1504777253758" SOURCE_PROVIDER="com.intellij.coverage.DefaultCoverageFileProvider" RUNNER="coverage.py" COVERAGE_BY_TEST_ENABLED="true" COVERAGE_TRACING_ENABLED="false" WORKING_DIRECTORY="$PROJECT_DIR$/ESP_project/data_images" />
-    <SUITE FILE_PATH="coverage/learning2017$Num2Chinese.coverage" NAME="Num2Chinese Coverage Results" MODIFIED="1484134122042" SOURCE_PROVIDER="com.intellij.coverage.DefaultCoverageFileProvider" RUNNER="coverage.py" COVERAGE_BY_TEST_ENABLED="true" COVERAGE_TRACING_ENABLED="false" WORKING_DIRECTORY="$PROJECT_DIR$/LearnModule" />
-    <SUITE FILE_PATH="coverage/learning2017$Module_Use.coverage" NAME="Module_Use Coverage Results" MODIFIED="1483331907608" SOURCE_PROVIDER="com.intellij.coverage.DefaultCoverageFileProvider" RUNNER="coverage.py" COVERAGE_BY_TEST_ENABLED="true" COVERAGE_TRACING_ENABLED="false" WORKING_DIRECTORY="$PROJECT_DIR$/LearnModule" />
-    <SUITE FILE_PATH="coverage/learning2017$ZW_synonym_process.coverage" NAME="ZW_synonym_process Coverage Results" MODIFIED="1508933304515" SOURCE_PROVIDER="com.intellij.coverage.DefaultCoverageFileProvider" RUNNER="coverage.py" COVERAGE_BY_TEST_ENABLED="true" COVERAGE_TRACING_ENABLED="false" WORKING_DIRECTORY="$PROJECT_DIR$/RSF_project/data_process" />
-    <SUITE FILE_PATH="coverage/learning2017$CNKI_get_hotkeywords.coverage" NAME="CNKI_get_hotkeywords Coverage Results" MODIFIED="1484621580267" SOURCE_PROVIDER="com.intellij.coverage.DefaultCoverageFileProvider" RUNNER="coverage.py" COVERAGE_BY_TEST_ENABLED="true" COVERAGE_TRACING_ENABLED="false" WORKING_DIRECTORY="$PROJECT_DIR$" />
-    <SUITE FILE_PATH="coverage/learning2017$orgnization.coverage" NAME="orgnization Coverage Results" MODIFIED="1502954460856" SOURCE_PROVIDER="com.intellij.coverage.DefaultCoverageFileProvider" RUNNER="coverage.py" COVERAGE_BY_TEST_ENABLED="true" COVERAGE_TRACING_ENABLED="false" WORKING_DIRECTORY="$PROJECT_DIR$/LearnModule/ESP_project" />
-    <SUITE FILE_PATH="coverage/learning2017$Data_normalization.coverage" NAME="Data_normalization Coverage Results" MODIFIED="1503647120531" SOURCE_PROVIDER="com.intellij.coverage.DefaultCoverageFileProvider" RUNNER="coverage.py" COVERAGE_BY_TEST_ENABLED="true" COVERAGE_TRACING_ENABLED="false" WORKING_DIRECTORY="$PROJECT_DIR$/ESP_project/data_news" />
-    <SUITE FILE_PATH="coverage/learning2017$exer0825001.coverage" NAME="exer0825001 Coverage Results" MODIFIED="1503659644857" SOURCE_PROVIDER="com.intellij.coverage.DefaultCoverageFileProvider" RUNNER="coverage.py" COVERAGE_BY_TEST_ENABLED="true" COVERAGE_TRACING_ENABLED="false" WORKING_DIRECTORY="$PROJECT_DIR$/PY.exercise" />
-    <SUITE FILE_PATH="coverage/learning2017$imagesSorted.coverage" NAME="imagesSorted Coverage Results" MODIFIED="1504790384767" SOURCE_PROVIDER="com.intellij.coverage.DefaultCoverageFileProvider" RUNNER="coverage.py" COVERAGE_BY_TEST_ENABLED="true" COVERAGE_TRACING_ENABLED="false" WORKING_DIRECTORY="$PROJECT_DIR$/ESP_project/data_images" />
-    <SUITE FILE_PATH="coverage/learning2017$code_test.coverage" NAME="code_test Coverage Results" MODIFIED="1484902317606" SOURCE_PROVIDER="com.intellij.coverage.DefaultCoverageFileProvider" RUNNER="coverage.py" COVERAGE_BY_TEST_ENABLED="true" COVERAGE_TRACING_ENABLED="false" WORKING_DIRECTORY="$PROJECT_DIR$" />
-    <SUITE FILE_PATH="coverage/learning2017$exer0901002.coverage" NAME="exer0901002 Coverage Results" MODIFIED="1504261025738" SOURCE_PROVIDER="com.intellij.coverage.DefaultCoverageFileProvider" RUNNER="coverage.py" COVERAGE_BY_TEST_ENABLED="true" COVERAGE_TRACING_ENABLED="false" WORKING_DIRECTORY="$PROJECT_DIR$/PY.exercise" />
-    <SUITE FILE_PATH="coverage/learning2017$surname_distribute_stats.coverage" NAME="surname_distribute_stats Coverage Results" MODIFIED="1484652882661" SOURCE_PROVIDER="com.intellij.coverage.DefaultCoverageFileProvider" RUNNER="coverage.py" COVERAGE_BY_TEST_ENABLED="true" COVERAGE_TRACING_ENABLED="false" WORKING_DIRECTORY="$PROJECT_DIR$" />
-    <SUITE FILE_PATH="coverage/learning2017$Module_test.coverage" NAME="Module_test Coverage Results" MODIFIED="1483328860044" SOURCE_PROVIDER="com.intellij.coverage.DefaultCoverageFileProvider" RUNNER="coverage.py" COVERAGE_BY_TEST_ENABLED="true" COVERAGE_TRACING_ENABLED="false" WORKING_DIRECTORY="$PROJECT_DIR$/LearnModule" />
-    <SUITE FILE_PATH="coverage/learning2017$exer0625001.coverage" NAME="exer0625001 Coverage Results" MODIFIED="1499006136717" SOURCE_PROVIDER="com.intellij.coverage.DefaultCoverageFileProvider" RUNNER="coverage.py" COVERAGE_BY_TEST_ENABLED="true" COVERAGE_TRACING_ENABLED="false" WORKING_DIRECTORY="$PROJECT_DIR$/PY.exercise" />
-    <SUITE FILE_PATH="coverage/learning2017$learning0325_showhandrank.coverage" NAME="learning0325-showhandrank Coverage Results" MODIFIED="1490456873030" SOURCE_PROVIDER="com.intellij.coverage.DefaultCoverageFileProvider" RUNNER="coverage.py" COVERAGE_BY_TEST_ENABLED="true" COVERAGE_TRACING_ENABLED="false" WORKING_DIRECTORY="$PROJECT_DIR$/LearnOOP" />
-    <SUITE FILE_PATH="coverage/learning2017$mobliephone.coverage" NAME="mobliephone Coverage Results" MODIFIED="1502955765287" SOURCE_PROVIDER="com.intellij.coverage.DefaultCoverageFileProvider" RUNNER="coverage.py" COVERAGE_BY_TEST_ENABLED="true" COVERAGE_TRACING_ENABLED="false" WORKING_DIRECTORY="$PROJECT_DIR$/LearnModule/ESP_project" />
-    <SUITE FILE_PATH="coverage/learning2017$learning0324003.coverage" NAME="learning0324003 Coverage Results" MODIFIED="1490434895274" SOURCE_PROVIDER="com.intellij.coverage.DefaultCoverageFileProvider" RUNNER="coverage.py" COVERAGE_BY_TEST_ENABLED="true" COVERAGE_TRACING_ENABLED="false" WORKING_DIRECTORY="$PROJECT_DIR$/LearnOOP" />
-    <SUITE FILE_PATH="coverage/learning2017$username.coverage" NAME="username Coverage Results" MODIFIED="1502957281863" SOURCE_PROVIDER="com.intellij.coverage.DefaultCoverageFileProvider" RUNNER="coverage.py" COVERAGE_BY_TEST_ENABLED="true" COVERAGE_TRACING_ENABLED="false" WORKING_DIRECTORY="$PROJECT_DIR$/LearnModule/ESP_project" />
-    <SUITE FILE_PATH="coverage/learning2017$HighSchoolData.coverage" NAME="HighSchoolData Coverage Results" MODIFIED="1506414458988" SOURCE_PROVIDER="com.intellij.coverage.DefaultCoverageFileProvider" RUNNER="coverage.py" COVERAGE_BY_TEST_ENABLED="true" COVERAGE_TRACING_ENABLED="false" WORKING_DIRECTORY="$PROJECT_DIR$/DataAnalysize Project" />
-    <SUITE FILE_PATH="coverage/learning2017$email.coverage" NAME="email Coverage Results" MODIFIED="1502955179944" SOURCE_PROVIDER="com.intellij.coverage.DefaultCoverageFileProvider" RUNNER="coverage.py" COVERAGE_BY_TEST_ENABLED="true" COVERAGE_TRACING_ENABLED="false" WORKING_DIRECTORY="$PROJECT_DIR$/LearnModule/ESP_project" />
     <SUITE FILE_PATH="coverage/learning2017$images_normalized.coverage" NAME="images_normalized Coverage Results" MODIFIED="1505464836752" SOURCE_PROVIDER="com.intellij.coverage.DefaultCoverageFileProvider" RUNNER="coverage.py" COVERAGE_BY_TEST_ENABLED="true" COVERAGE_TRACING_ENABLED="false" WORKING_DIRECTORY="$PROJECT_DIR$/ESP_project/data_images" />
-    <SUITE FILE_PATH="coverage/learning2017$personaldescription.coverage" NAME="personaldescription Coverage Results" MODIFIED="1502958922978" SOURCE_PROVIDER="com.intellij.coverage.DefaultCoverageFileProvider" RUNNER="coverage.py" COVERAGE_BY_TEST_ENABLED="true" COVERAGE_TRACING_ENABLED="false" WORKING_DIRECTORY="$PROJECT_DIR$/LearnModule/ESP_project" />
-    <SUITE FILE_PATH="coverage/learning2017$print_progressbar.coverage" NAME="print_progressbar Coverage Results" MODIFIED="1484276374661" SOURCE_PROVIDER="com.intellij.coverage.DefaultCoverageFileProvider" RUNNER="coverage.py" COVERAGE_BY_TEST_ENABLED="true" COVERAGE_TRACING_ENABLED="false" WORKING_DIRECTORY="$PROJECT_DIR$/LearnModule" />
-    <SUITE FILE_PATH="coverage/learning2017$learning0103001.coverage" NAME="learning0103001 Coverage Results" MODIFIED="1483628811738" SOURCE_PROVIDER="com.intellij.coverage.DefaultCoverageFileProvider" RUNNER="coverage.py" COVERAGE_BY_TEST_ENABLED="true" COVERAGE_TRACING_ENABLED="false" WORKING_DIRECTORY="$PROJECT_DIR$/LearnOOP" />
-    <SUITE FILE_PATH="coverage/learning2017$file_normalization.coverage" NAME="file_normalization Coverage Results" MODIFIED="1505129818249" SOURCE_PROVIDER="com.intellij.coverage.DefaultCoverageFileProvider" RUNNER="coverage.py" COVERAGE_BY_TEST_ENABLED="true" COVERAGE_TRACING_ENABLED="false" WORKING_DIRECTORY="$PROJECT_DIR$/ESP_project/data_files" />
-    <SUITE FILE_PATH="coverage/learning2017$int2str.coverage" NAME="int2str Coverage Results" MODIFIED="1484131847635" SOURCE_PROVIDER="com.intellij.coverage.DefaultCoverageFileProvider" RUNNER="coverage.py" COVERAGE_BY_TEST_ENABLED="true" COVERAGE_TRACING_ENABLED="false" WORKING_DIRECTORY="$PROJECT_DIR$/LearnModule" />
-    <SUITE FILE_PATH="coverage/learning2017$Data_normalized.coverage" NAME="Data_normalized Coverage Results" MODIFIED="1503645620618" SOURCE_PROVIDER="com.intellij.coverage.DefaultCoverageFileProvider" RUNNER="coverage.py" COVERAGE_BY_TEST_ENABLED="true" COVERAGE_TRACING_ENABLED="false" WORKING_DIRECTORY="$PROJECT_DIR$/ESP_project/data_knowledge" />
+    <SUITE FILE_PATH="coverage/learning2017$Func_StringSpilt.coverage" NAME="Func_StringSpilt Coverage Results" MODIFIED="1483964240863" SOURCE_PROVIDER="com.intellij.coverage.DefaultCoverageFileProvider" RUNNER="coverage.py" COVERAGE_BY_TEST_ENABLED="true" COVERAGE_TRACING_ENABLED="false" WORKING_DIRECTORY="$PROJECT_DIR$/LearnModule" />
+    <SUITE FILE_PATH="coverage/learning2017$testcode004.coverage" NAME="testcode004 Coverage Results" MODIFIED="1509025988008" SOURCE_PROVIDER="com.intellij.coverage.DefaultCoverageFileProvider" RUNNER="coverage.py" COVERAGE_BY_TEST_ENABLED="true" COVERAGE_TRACING_ENABLED="false" WORKING_DIRECTORY="$PROJECT_DIR$/PY.exercise" />
+    <SUITE FILE_PATH="coverage/learning2017$loadACL.coverage" NAME="loadACL Coverage Results" MODIFIED="1505129838598" SOURCE_PROVIDER="com.intellij.coverage.DefaultCoverageFileProvider" RUNNER="coverage.py" COVERAGE_BY_TEST_ENABLED="true" COVERAGE_TRACING_ENABLED="false" WORKING_DIRECTORY="$PROJECT_DIR$/ESP_project/ESP_ACL" />
     <SUITE FILE_PATH="coverage/learning2017$appendixdirectory.coverage" NAME="appendixdirectory Coverage Results" MODIFIED="1503318779366" SOURCE_PROVIDER="com.intellij.coverage.DefaultCoverageFileProvider" RUNNER="coverage.py" COVERAGE_BY_TEST_ENABLED="true" COVERAGE_TRACING_ENABLED="false" WORKING_DIRECTORY="$PROJECT_DIR$/ESP_project/data_news" />
     <SUITE FILE_PATH="coverage/learning2017$ESapi2Json.coverage" NAME="ESapi2Json Coverage Results" MODIFIED="1503572326352" SOURCE_PROVIDER="com.intellij.coverage.DefaultCoverageFileProvider" RUNNER="coverage.py" COVERAGE_BY_TEST_ENABLED="true" COVERAGE_TRACING_ENABLED="false" WORKING_DIRECTORY="$PROJECT_DIR$/ESP_project/data_images" />
-    <SUITE FILE_PATH="coverage/learning2017$0812.coverage" NAME="空当接龙游戏0812 Coverage Results" MODIFIED="1502695381921" SOURCE_PROVIDER="com.intellij.coverage.DefaultCoverageFileProvider" RUNNER="coverage.py" COVERAGE_BY_TEST_ENABLED="true" COVERAGE_TRACING_ENABLED="false" WORKING_DIRECTORY="$PROJECT_DIR$/PY.exercise" />
-    <SUITE FILE_PATH="coverage/learning2017$knowledgeCatlist.coverage" NAME="knowledgeCatlist Coverage Results" MODIFIED="1503384059107" SOURCE_PROVIDER="com.intellij.coverage.DefaultCoverageFileProvider" RUNNER="coverage.py" COVERAGE_BY_TEST_ENABLED="true" COVERAGE_TRACING_ENABLED="false" WORKING_DIRECTORY="$PROJECT_DIR$/ESP_project/data_knowledge" />
-    <SUITE FILE_PATH="coverage/learning2017$viewcounts.coverage" NAME="viewcounts Coverage Results" MODIFIED="1502954469227" SOURCE_PROVIDER="com.intellij.coverage.DefaultCoverageFileProvider" RUNNER="coverage.py" COVERAGE_BY_TEST_ENABLED="true" COVERAGE_TRACING_ENABLED="false" WORKING_DIRECTORY="$PROJECT_DIR$/LearnModule/ESP_project" />
+    <SUITE FILE_PATH="coverage/learning2017$email.coverage" NAME="email Coverage Results" MODIFIED="1502955179944" SOURCE_PROVIDER="com.intellij.coverage.DefaultCoverageFileProvider" RUNNER="coverage.py" COVERAGE_BY_TEST_ENABLED="true" COVERAGE_TRACING_ENABLED="false" WORKING_DIRECTORY="$PROJECT_DIR$/LearnModule/ESP_project" />
+    <SUITE FILE_PATH="coverage/learning2017$exer0905001.coverage" NAME="exer0905001 Coverage Results" MODIFIED="1504613749201" SOURCE_PROVIDER="com.intellij.coverage.DefaultCoverageFileProvider" RUNNER="coverage.py" COVERAGE_BY_TEST_ENABLED="true" COVERAGE_TRACING_ENABLED="false" WORKING_DIRECTORY="$PROJECT_DIR$/PY.exercise" />
+    <SUITE FILE_PATH="coverage/learning2017$SpecialExtractor.coverage" NAME="SpecialExtractor Coverage Results" MODIFIED="1506410527747" SOURCE_PROVIDER="com.intellij.coverage.DefaultCoverageFileProvider" RUNNER="coverage.py" COVERAGE_BY_TEST_ENABLED="true" COVERAGE_TRACING_ENABLED="false" WORKING_DIRECTORY="$PROJECT_DIR$/DataAnalysize Project" />
+    <SUITE FILE_PATH="coverage/learning2017$Data_normalized.coverage" NAME="Data_normalized Coverage Results" MODIFIED="1503645620618" SOURCE_PROVIDER="com.intellij.coverage.DefaultCoverageFileProvider" RUNNER="coverage.py" COVERAGE_BY_TEST_ENABLED="true" COVERAGE_TRACING_ENABLED="false" WORKING_DIRECTORY="$PROJECT_DIR$/ESP_project/data_knowledge" />
+    <SUITE FILE_PATH="coverage/learning2017$exer0708002.coverage" NAME="exer0708002 Coverage Results" MODIFIED="1499528290032" SOURCE_PROVIDER="com.intellij.coverage.DefaultCoverageFileProvider" RUNNER="coverage.py" COVERAGE_BY_TEST_ENABLED="true" COVERAGE_TRACING_ENABLED="false" WORKING_DIRECTORY="$PROJECT_DIR$/PY.exercise" />
+    <SUITE FILE_PATH="coverage/learning2017$code_test.coverage" NAME="code_test Coverage Results" MODIFIED="1484902317606" SOURCE_PROVIDER="com.intellij.coverage.DefaultCoverageFileProvider" RUNNER="coverage.py" COVERAGE_BY_TEST_ENABLED="true" COVERAGE_TRACING_ENABLED="false" WORKING_DIRECTORY="$PROJECT_DIR$" />
+    <SUITE FILE_PATH="coverage/learning2017$learning0324_showhandpokers.coverage" NAME="learning0324-showhandpokers Coverage Results" MODIFIED="1490444895112" SOURCE_PROVIDER="com.intellij.coverage.DefaultCoverageFileProvider" RUNNER="coverage.py" COVERAGE_BY_TEST_ENABLED="true" COVERAGE_TRACING_ENABLED="false" WORKING_DIRECTORY="$PROJECT_DIR$/LearnOOP" />
+    <SUITE FILE_PATH="coverage/learning2017$Func_StringSplit.coverage" NAME="Func_StringSplit Coverage Results" MODIFIED="1484902847874" SOURCE_PROVIDER="com.intellij.coverage.DefaultCoverageFileProvider" RUNNER="coverage.py" COVERAGE_BY_TEST_ENABLED="true" COVERAGE_TRACING_ENABLED="false" WORKING_DIRECTORY="$PROJECT_DIR$/LearnModule" />
+    <SUITE FILE_PATH="coverage/learning2017$learning0324003.coverage" NAME="learning0324003 Coverage Results" MODIFIED="1490434895274" SOURCE_PROVIDER="com.intellij.coverage.DefaultCoverageFileProvider" RUNNER="coverage.py" COVERAGE_BY_TEST_ENABLED="true" COVERAGE_TRACING_ENABLED="false" WORKING_DIRECTORY="$PROJECT_DIR$/LearnOOP" />
+    <SUITE FILE_PATH="coverage/learning2017$ZW_synonym_process.coverage" NAME="ZW_synonym_process Coverage Results" MODIFIED="1508933304515" SOURCE_PROVIDER="com.intellij.coverage.DefaultCoverageFileProvider" RUNNER="coverage.py" COVERAGE_BY_TEST_ENABLED="true" COVERAGE_TRACING_ENABLED="false" WORKING_DIRECTORY="$PROJECT_DIR$/RSF_project/data_process" />
+    <SUITE FILE_PATH="coverage/learning2017$MY_math.coverage" NAME="MY_math Coverage Results" MODIFIED="1490413265566" SOURCE_PROVIDER="com.intellij.coverage.DefaultCoverageFileProvider" RUNNER="coverage.py" COVERAGE_BY_TEST_ENABLED="true" COVERAGE_TRACING_ENABLED="false" WORKING_DIRECTORY="$PROJECT_DIR$/LearnModule" />
     <SUITE FILE_PATH="coverage/learning2017$exer0908001.coverage" NAME="exer0908001 Coverage Results" MODIFIED="1504870709778" SOURCE_PROVIDER="com.intellij.coverage.DefaultCoverageFileProvider" RUNNER="coverage.py" COVERAGE_BY_TEST_ENABLED="true" COVERAGE_TRACING_ENABLED="false" WORKING_DIRECTORY="$PROJECT_DIR$/PY.exercise" />
-    <SUITE FILE_PATH="coverage/learning2017$Module_Use__1_.coverage" NAME="Module_Use (1) Coverage Results" MODIFIED="1483629008858" SOURCE_PROVIDER="com.intellij.coverage.DefaultCoverageFileProvider" RUNNER="coverage.py" COVERAGE_BY_TEST_ENABLED="true" COVERAGE_TRACING_ENABLED="false" WORKING_DIRECTORY="$PROJECT_DIR$" />
-    <SUITE FILE_PATH="coverage/learning2017$zwrn_process.coverage" NAME="zwrn_process Coverage Results" MODIFIED="1508931184486" SOURCE_PROVIDER="com.intellij.coverage.DefaultCoverageFileProvider" RUNNER="coverage.py" COVERAGE_BY_TEST_ENABLED="true" COVERAGE_TRACING_ENABLED="false" WORKING_DIRECTORY="$PROJECT_DIR$/RSF_project/data_process" />
-    <SUITE FILE_PATH="coverage/learning2017$testcode001.coverage" NAME="testcode001 Coverage Results" MODIFIED="1502629278467" SOURCE_PROVIDER="com.intellij.coverage.DefaultCoverageFileProvider" RUNNER="coverage.py" COVERAGE_BY_TEST_ENABLED="true" COVERAGE_TRACING_ENABLED="false" WORKING_DIRECTORY="$PROJECT_DIR$/PY.exercise" />
-    <SUITE FILE_PATH="coverage/learning2017$HeadportraitURL.coverage" NAME="HeadportraitURL Coverage Results" MODIFIED="1502959778675" SOURCE_PROVIDER="com.intellij.coverage.DefaultCoverageFileProvider" RUNNER="coverage.py" COVERAGE_BY_TEST_ENABLED="true" COVERAGE_TRACING_ENABLED="false" WORKING_DIRECTORY="$PROJECT_DIR$/LearnModule/ESP_project" />
+    <SUITE FILE_PATH="coverage/learning2017$exer0718003.coverage" NAME="exer0718003 Coverage Results" MODIFIED="1500395941779" SOURCE_PROVIDER="com.intellij.coverage.DefaultCoverageFileProvider" RUNNER="coverage.py" COVERAGE_BY_TEST_ENABLED="true" COVERAGE_TRACING_ENABLED="false" WORKING_DIRECTORY="$PROJECT_DIR$/PY.exercise" />
     <SUITE FILE_PATH="coverage/learning2017$file_copy__1_.coverage" NAME="file_copy (1) Coverage Results" MODIFIED="1503488229161" SOURCE_PROVIDER="com.intellij.coverage.DefaultCoverageFileProvider" RUNNER="coverage.py" COVERAGE_BY_TEST_ENABLED="true" COVERAGE_TRACING_ENABLED="false" WORKING_DIRECTORY="$PROJECT_DIR$/ESP_project/data_images" />
-    <SUITE FILE_PATH="coverage/learning2017$learning0105001.coverage" NAME="learning0105001 Coverage Results" MODIFIED="1483770004325" SOURCE_PROVIDER="com.intellij.coverage.DefaultCoverageFileProvider" RUNNER="coverage.py" COVERAGE_BY_TEST_ENABLED="true" COVERAGE_TRACING_ENABLED="false" WORKING_DIRECTORY="$PROJECT_DIR$/LearnOOP" />
+    <SUITE FILE_PATH="coverage/learning2017$print_progressbar.coverage" NAME="print_progressbar Coverage Results" MODIFIED="1484276374661" SOURCE_PROVIDER="com.intellij.coverage.DefaultCoverageFileProvider" RUNNER="coverage.py" COVERAGE_BY_TEST_ENABLED="true" COVERAGE_TRACING_ENABLED="false" WORKING_DIRECTORY="$PROJECT_DIR$/LearnModule" />
+    <SUITE FILE_PATH="coverage/learning2017$viewcounts.coverage" NAME="viewcounts Coverage Results" MODIFIED="1502954469227" SOURCE_PROVIDER="com.intellij.coverage.DefaultCoverageFileProvider" RUNNER="coverage.py" COVERAGE_BY_TEST_ENABLED="true" COVERAGE_TRACING_ENABLED="false" WORKING_DIRECTORY="$PROJECT_DIR$/LearnModule/ESP_project" />
+    <SUITE FILE_PATH="coverage/learning2017$mobliephone.coverage" NAME="mobliephone Coverage Results" MODIFIED="1502955765287" SOURCE_PROVIDER="com.intellij.coverage.DefaultCoverageFileProvider" RUNNER="coverage.py" COVERAGE_BY_TEST_ENABLED="true" COVERAGE_TRACING_ENABLED="false" WORKING_DIRECTORY="$PROJECT_DIR$/LearnModule/ESP_project" />
     <SUITE FILE_PATH="coverage/learning2017$code_test04.coverage" NAME="code_test04 Coverage Results" MODIFIED="1490456304049" SOURCE_PROVIDER="com.intellij.coverage.DefaultCoverageFileProvider" RUNNER="coverage.py" COVERAGE_BY_TEST_ENABLED="true" COVERAGE_TRACING_ENABLED="false" WORKING_DIRECTORY="$PROJECT_DIR$/LearnOOP" />
-    <SUITE FILE_PATH="coverage/learning2017$StringAddValue.coverage" NAME="StringAddValue Coverage Results" MODIFIED="1484120119169" SOURCE_PROVIDER="com.intellij.coverage.DefaultCoverageFileProvider" RUNNER="coverage.py" COVERAGE_BY_TEST_ENABLED="true" COVERAGE_TRACING_ENABLED="false" WORKING_DIRECTORY="$PROJECT_DIR$/LearnModule" />
+    <SUITE FILE_PATH="coverage/learning2017$Dict_deal.coverage" NAME="Dict_deal Coverage Results" MODIFIED="1483634172679" SOURCE_PROVIDER="com.intellij.coverage.DefaultCoverageFileProvider" RUNNER="coverage.py" COVERAGE_BY_TEST_ENABLED="true" COVERAGE_TRACING_ENABLED="false" WORKING_DIRECTORY="$PROJECT_DIR$/LearnModule" />
+    <SUITE FILE_PATH="coverage/learning2017$personaldescription.coverage" NAME="personaldescription Coverage Results" MODIFIED="1502958922978" SOURCE_PROVIDER="com.intellij.coverage.DefaultCoverageFileProvider" RUNNER="coverage.py" COVERAGE_BY_TEST_ENABLED="true" COVERAGE_TRACING_ENABLED="false" WORKING_DIRECTORY="$PROJECT_DIR$/LearnModule/ESP_project" />
+    <SUITE FILE_PATH="coverage/learning2017$TestDataFetch.coverage" NAME="TestDataFetch Coverage Results" MODIFIED="1505124001751" SOURCE_PROVIDER="com.intellij.coverage.DefaultCoverageFileProvider" RUNNER="coverage.py" COVERAGE_BY_TEST_ENABLED="true" COVERAGE_TRACING_ENABLED="false" WORKING_DIRECTORY="$PROJECT_DIR$/ESP_project/data_files" />
+    <SUITE FILE_PATH="coverage/learning2017$file_copy.coverage" NAME="file_copy Coverage Results" MODIFIED="1504777253758" SOURCE_PROVIDER="com.intellij.coverage.DefaultCoverageFileProvider" RUNNER="coverage.py" COVERAGE_BY_TEST_ENABLED="true" COVERAGE_TRACING_ENABLED="false" WORKING_DIRECTORY="$PROJECT_DIR$/ESP_project/data_images" />
+    <SUITE FILE_PATH="coverage/learning2017$exer0625001.coverage" NAME="exer0625001 Coverage Results" MODIFIED="1499006136717" SOURCE_PROVIDER="com.intellij.coverage.DefaultCoverageFileProvider" RUNNER="coverage.py" COVERAGE_BY_TEST_ENABLED="true" COVERAGE_TRACING_ENABLED="false" WORKING_DIRECTORY="$PROJECT_DIR$/PY.exercise" />
     <SUITE FILE_PATH="coverage/learning2017$str2int.coverage" NAME="str2int Coverage Results" MODIFIED="1484124066604" SOURCE_PROVIDER="com.intellij.coverage.DefaultCoverageFileProvider" RUNNER="coverage.py" COVERAGE_BY_TEST_ENABLED="true" COVERAGE_TRACING_ENABLED="false" WORKING_DIRECTORY="$PROJECT_DIR$/LearnModule" />
+    <SUITE FILE_PATH="coverage/learning2017$file_normalization.coverage" NAME="file_normalization Coverage Results" MODIFIED="1505129818249" SOURCE_PROVIDER="com.intellij.coverage.DefaultCoverageFileProvider" RUNNER="coverage.py" COVERAGE_BY_TEST_ENABLED="true" COVERAGE_TRACING_ENABLED="false" WORKING_DIRECTORY="$PROJECT_DIR$/ESP_project/data_files" />
+    <SUITE FILE_PATH="coverage/learning2017$testcode001.coverage" NAME="testcode001 Coverage Results" MODIFIED="1502629278467" SOURCE_PROVIDER="com.intellij.coverage.DefaultCoverageFileProvider" RUNNER="coverage.py" COVERAGE_BY_TEST_ENABLED="true" COVERAGE_TRACING_ENABLED="false" WORKING_DIRECTORY="$PROJECT_DIR$/PY.exercise" />
+    <SUITE FILE_PATH="coverage/learning2017$learning0325_showhandrank.coverage" NAME="learning0325-showhandrank Coverage Results" MODIFIED="1490456873030" SOURCE_PROVIDER="com.intellij.coverage.DefaultCoverageFileProvider" RUNNER="coverage.py" COVERAGE_BY_TEST_ENABLED="true" COVERAGE_TRACING_ENABLED="false" WORKING_DIRECTORY="$PROJECT_DIR$/LearnOOP" />
+    <SUITE FILE_PATH="coverage/learning2017$surname_distribute_stats.coverage" NAME="surname_distribute_stats Coverage Results" MODIFIED="1484652882661" SOURCE_PROVIDER="com.intellij.coverage.DefaultCoverageFileProvider" RUNNER="coverage.py" COVERAGE_BY_TEST_ENABLED="true" COVERAGE_TRACING_ENABLED="false" WORKING_DIRECTORY="$PROJECT_DIR$" />
+    <SUITE FILE_PATH="coverage/learning2017$StringAddValue.coverage" NAME="StringAddValue Coverage Results" MODIFIED="1484120119169" SOURCE_PROVIDER="com.intellij.coverage.DefaultCoverageFileProvider" RUNNER="coverage.py" COVERAGE_BY_TEST_ENABLED="true" COVERAGE_TRACING_ENABLED="false" WORKING_DIRECTORY="$PROJECT_DIR$/LearnModule" />
+    <SUITE FILE_PATH="coverage/learning2017$Num2Chinese.coverage" NAME="Num2Chinese Coverage Results" MODIFIED="1484134122042" SOURCE_PROVIDER="com.intellij.coverage.DefaultCoverageFileProvider" RUNNER="coverage.py" COVERAGE_BY_TEST_ENABLED="true" COVERAGE_TRACING_ENABLED="false" WORKING_DIRECTORY="$PROJECT_DIR$/LearnModule" />
+    <SUITE FILE_PATH="coverage/learning2017$orgnization.coverage" NAME="orgnization Coverage Results" MODIFIED="1502954460856" SOURCE_PROVIDER="com.intellij.coverage.DefaultCoverageFileProvider" RUNNER="coverage.py" COVERAGE_BY_TEST_ENABLED="true" COVERAGE_TRACING_ENABLED="false" WORKING_DIRECTORY="$PROJECT_DIR$/LearnModule/ESP_project" />
+    <SUITE FILE_PATH="coverage/learning2017$_pydev_execfile.coverage" NAME="_pydev_execfile Coverage Results" MODIFIED="1483680438855" SOURCE_PROVIDER="com.intellij.coverage.DefaultCoverageFileProvider" RUNNER="coverage.py" COVERAGE_BY_TEST_ENABLED="true" COVERAGE_TRACING_ENABLED="false" WORKING_DIRECTORY="$APPLICATION_HOME_DIR$/helpers/pydev/_pydev_imps" />
+    <SUITE FILE_PATH="coverage/learning2017$zwrn_process.coverage" NAME="zwrn_process Coverage Results" MODIFIED="1508931184486" SOURCE_PROVIDER="com.intellij.coverage.DefaultCoverageFileProvider" RUNNER="coverage.py" COVERAGE_BY_TEST_ENABLED="true" COVERAGE_TRACING_ENABLED="false" WORKING_DIRECTORY="$PROJECT_DIR$/RSF_project/data_process" />
+    <SUITE FILE_PATH="coverage/learning2017$testcode002.coverage" NAME="testcode002 Coverage Results" MODIFIED="1503395860041" SOURCE_PROVIDER="com.intellij.coverage.DefaultCoverageFileProvider" RUNNER="coverage.py" COVERAGE_BY_TEST_ENABLED="true" COVERAGE_TRACING_ENABLED="false" WORKING_DIRECTORY="$PROJECT_DIR$/PY.exercise" />
+    <SUITE FILE_PATH="coverage/learning2017$int2str.coverage" NAME="int2str Coverage Results" MODIFIED="1484131847635" SOURCE_PROVIDER="com.intellij.coverage.DefaultCoverageFileProvider" RUNNER="coverage.py" COVERAGE_BY_TEST_ENABLED="true" COVERAGE_TRACING_ENABLED="false" WORKING_DIRECTORY="$PROJECT_DIR$/LearnModule" />
+    <SUITE FILE_PATH="coverage/learning2017$Data_normalization.coverage" NAME="Data_normalization Coverage Results" MODIFIED="1503647120531" SOURCE_PROVIDER="com.intellij.coverage.DefaultCoverageFileProvider" RUNNER="coverage.py" COVERAGE_BY_TEST_ENABLED="true" COVERAGE_TRACING_ENABLED="false" WORKING_DIRECTORY="$PROJECT_DIR$/ESP_project/data_news" />
+    <SUITE FILE_PATH="coverage/learning2017$HighSchoolData.coverage" NAME="HighSchoolData Coverage Results" MODIFIED="1506414458988" SOURCE_PROVIDER="com.intellij.coverage.DefaultCoverageFileProvider" RUNNER="coverage.py" COVERAGE_BY_TEST_ENABLED="true" COVERAGE_TRACING_ENABLED="false" WORKING_DIRECTORY="$PROJECT_DIR$/DataAnalysize Project" />
+    <SUITE FILE_PATH="coverage/learning2017$username.coverage" NAME="username Coverage Results" MODIFIED="1502957281863" SOURCE_PROVIDER="com.intellij.coverage.DefaultCoverageFileProvider" RUNNER="coverage.py" COVERAGE_BY_TEST_ENABLED="true" COVERAGE_TRACING_ENABLED="false" WORKING_DIRECTORY="$PROJECT_DIR$/LearnModule/ESP_project" />
+    <SUITE FILE_PATH="coverage/learning2017$learning0103001.coverage" NAME="learning0103001 Coverage Results" MODIFIED="1483628811738" SOURCE_PROVIDER="com.intellij.coverage.DefaultCoverageFileProvider" RUNNER="coverage.py" COVERAGE_BY_TEST_ENABLED="true" COVERAGE_TRACING_ENABLED="false" WORKING_DIRECTORY="$PROJECT_DIR$/LearnOOP" />
+    <SUITE FILE_PATH="coverage/learning2017$CNKI_get_hotkeywords.coverage" NAME="CNKI_get_hotkeywords Coverage Results" MODIFIED="1484621580267" SOURCE_PROVIDER="com.intellij.coverage.DefaultCoverageFileProvider" RUNNER="coverage.py" COVERAGE_BY_TEST_ENABLED="true" COVERAGE_TRACING_ENABLED="false" WORKING_DIRECTORY="$PROJECT_DIR$" />
+    <SUITE FILE_PATH="coverage/learning2017$exer0901002.coverage" NAME="exer0901002 Coverage Results" MODIFIED="1504261025738" SOURCE_PROVIDER="com.intellij.coverage.DefaultCoverageFileProvider" RUNNER="coverage.py" COVERAGE_BY_TEST_ENABLED="true" COVERAGE_TRACING_ENABLED="false" WORKING_DIRECTORY="$PROJECT_DIR$/PY.exercise" />
+    <SUITE FILE_PATH="coverage/learning2017$learning0105001.coverage" NAME="learning0105001 Coverage Results" MODIFIED="1483770004325" SOURCE_PROVIDER="com.intellij.coverage.DefaultCoverageFileProvider" RUNNER="coverage.py" COVERAGE_BY_TEST_ENABLED="true" COVERAGE_TRACING_ENABLED="false" WORKING_DIRECTORY="$PROJECT_DIR$/LearnOOP" />
+    <SUITE FILE_PATH="coverage/learning2017$SetImageSizeType.coverage" NAME="SetImageSizeType Coverage Results" MODIFIED="1504859844666" SOURCE_PROVIDER="com.intellij.coverage.DefaultCoverageFileProvider" RUNNER="coverage.py" COVERAGE_BY_TEST_ENABLED="true" COVERAGE_TRACING_ENABLED="false" WORKING_DIRECTORY="$PROJECT_DIR$/ESP_project/data_images" />
+    <SUITE FILE_PATH="coverage/learning2017$CardsGame.coverage" NAME="CardsGame Coverage Results" MODIFIED="1502529536491" SOURCE_PROVIDER="com.intellij.coverage.DefaultCoverageFileProvider" RUNNER="coverage.py" COVERAGE_BY_TEST_ENABLED="true" COVERAGE_TRACING_ENABLED="false" WORKING_DIRECTORY="$PROJECT_DIR$/LearnModule" />
+    <SUITE FILE_PATH="coverage/learning2017$Module_test.coverage" NAME="Module_test Coverage Results" MODIFIED="1483328860044" SOURCE_PROVIDER="com.intellij.coverage.DefaultCoverageFileProvider" RUNNER="coverage.py" COVERAGE_BY_TEST_ENABLED="true" COVERAGE_TRACING_ENABLED="false" WORKING_DIRECTORY="$PROJECT_DIR$/LearnModule" />
+    <SUITE FILE_PATH="coverage/learning2017$exer0825001.coverage" NAME="exer0825001 Coverage Results" MODIFIED="1503659644857" SOURCE_PROVIDER="com.intellij.coverage.DefaultCoverageFileProvider" RUNNER="coverage.py" COVERAGE_BY_TEST_ENABLED="true" COVERAGE_TRACING_ENABLED="false" WORKING_DIRECTORY="$PROJECT_DIR$/PY.exercise" />
+    <SUITE FILE_PATH="coverage/learning2017$testcode003.coverage" NAME="testcode003 Coverage Results" MODIFIED="1504782303113" SOURCE_PROVIDER="com.intellij.coverage.DefaultCoverageFileProvider" RUNNER="coverage.py" COVERAGE_BY_TEST_ENABLED="true" COVERAGE_TRACING_ENABLED="false" WORKING_DIRECTORY="$PROJECT_DIR$/PY.exercise" />
     <SUITE FILE_PATH="coverage/learning2017$learning0107001.coverage" NAME="learning0107001 Coverage Results" MODIFIED="1483771701144" SOURCE_PROVIDER="com.intellij.coverage.DefaultCoverageFileProvider" RUNNER="coverage.py" COVERAGE_BY_TEST_ENABLED="true" COVERAGE_TRACING_ENABLED="false" WORKING_DIRECTORY="$PROJECT_DIR$/LearnOOP" />
     <SUITE FILE_PATH="coverage/learning2017$cal_time.coverage" NAME="cal_time Coverage Results" MODIFIED="1503309299215" SOURCE_PROVIDER="com.intellij.coverage.DefaultCoverageFileProvider" RUNNER="coverage.py" COVERAGE_BY_TEST_ENABLED="true" COVERAGE_TRACING_ENABLED="false" WORKING_DIRECTORY="$PROJECT_DIR$/LearnModule" />
-    <SUITE FILE_PATH="coverage/learning2017$testcode002.coverage" NAME="testcode002 Coverage Results" MODIFIED="1503395860041" SOURCE_PROVIDER="com.intellij.coverage.DefaultCoverageFileProvider" RUNNER="coverage.py" COVERAGE_BY_TEST_ENABLED="true" COVERAGE_TRACING_ENABLED="false" WORKING_DIRECTORY="$PROJECT_DIR$/PY.exercise" />
+    <SUITE FILE_PATH="coverage/learning2017$0812.coverage" NAME="空当接龙游戏0812 Coverage Results" MODIFIED="1502695381921" SOURCE_PROVIDER="com.intellij.coverage.DefaultCoverageFileProvider" RUNNER="coverage.py" COVERAGE_BY_TEST_ENABLED="true" COVERAGE_TRACING_ENABLED="false" WORKING_DIRECTORY="$PROJECT_DIR$/PY.exercise" />
+    <SUITE FILE_PATH="coverage/learning2017$Module_Use__1_.coverage" NAME="Module_Use (1) Coverage Results" MODIFIED="1483629008858" SOURCE_PROVIDER="com.intellij.coverage.DefaultCoverageFileProvider" RUNNER="coverage.py" COVERAGE_BY_TEST_ENABLED="true" COVERAGE_TRACING_ENABLED="false" WORKING_DIRECTORY="$PROJECT_DIR$" />
+    <SUITE FILE_PATH="coverage/learning2017$exer0901001.coverage" NAME="exer0901001 Coverage Results" MODIFIED="1504253009053" SOURCE_PROVIDER="com.intellij.coverage.DefaultCoverageFileProvider" RUNNER="coverage.py" COVERAGE_BY_TEST_ENABLED="true" COVERAGE_TRACING_ENABLED="false" WORKING_DIRECTORY="$PROJECT_DIR$/PY.exercise" />
+    <SUITE FILE_PATH="coverage/learning2017$random_date.coverage" NAME="random_date Coverage Results" MODIFIED="1503308157004" SOURCE_PROVIDER="com.intellij.coverage.DefaultCoverageFileProvider" RUNNER="coverage.py" COVERAGE_BY_TEST_ENABLED="true" COVERAGE_TRACING_ENABLED="false" WORKING_DIRECTORY="$PROJECT_DIR$/ESP_project/data_news" />
+    <SUITE FILE_PATH="coverage/learning2017$module_Use2.coverage" NAME="module.Use2 Coverage Results" MODIFIED="1483454739625" SOURCE_PROVIDER="com.intellij.coverage.DefaultCoverageFileProvider" RUNNER="coverage.py" COVERAGE_BY_TEST_ENABLED="true" COVERAGE_TRACING_ENABLED="false" WORKING_DIRECTORY="$PROJECT_DIR$" />
+    <SUITE FILE_PATH="coverage/learning2017$imagesSorted.coverage" NAME="imagesSorted Coverage Results" MODIFIED="1504790384767" SOURCE_PROVIDER="com.intellij.coverage.DefaultCoverageFileProvider" RUNNER="coverage.py" COVERAGE_BY_TEST_ENABLED="true" COVERAGE_TRACING_ENABLED="false" WORKING_DIRECTORY="$PROJECT_DIR$/ESP_project/data_images" />
+    <SUITE FILE_PATH="coverage/learning2017$CatchAndRun.coverage" NAME="CatchAndRun Coverage Results" MODIFIED="1509039764595" SOURCE_PROVIDER="com.intellij.coverage.DefaultCoverageFileProvider" RUNNER="coverage.py" COVERAGE_BY_TEST_ENABLED="true" COVERAGE_TRACING_ENABLED="false" WORKING_DIRECTORY="$PROJECT_DIR$/PY.exercise" />
+    <SUITE FILE_PATH="coverage/learning2017$knowledgeCatlist.coverage" NAME="knowledgeCatlist Coverage Results" MODIFIED="1503384059107" SOURCE_PROVIDER="com.intellij.coverage.DefaultCoverageFileProvider" RUNNER="coverage.py" COVERAGE_BY_TEST_ENABLED="true" COVERAGE_TRACING_ENABLED="false" WORKING_DIRECTORY="$PROJECT_DIR$/ESP_project/data_knowledge" />
+    <SUITE FILE_PATH="coverage/learning2017$Module_Use.coverage" NAME="Module_Use Coverage Results" MODIFIED="1483331907608" SOURCE_PROVIDER="com.intellij.coverage.DefaultCoverageFileProvider" RUNNER="coverage.py" COVERAGE_BY_TEST_ENABLED="true" COVERAGE_TRACING_ENABLED="false" WORKING_DIRECTORY="$PROJECT_DIR$/LearnModule" />
+    <SUITE FILE_PATH="coverage/learning2017$HeadportraitURL.coverage" NAME="HeadportraitURL Coverage Results" MODIFIED="1502959778675" SOURCE_PROVIDER="com.intellij.coverage.DefaultCoverageFileProvider" RUNNER="coverage.py" COVERAGE_BY_TEST_ENABLED="true" COVERAGE_TRACING_ENABLED="false" WORKING_DIRECTORY="$PROJECT_DIR$/LearnModule/ESP_project" />
   </component>
   <component name="CreatePatchCommitExecutor">
     <option name="PATCH_PATH" value="" />
@@ -108,8 +100,8 @@
       <file leaf-file-name="testcode004.py" pinned="false" current-in-tab="false">
         <entry file="file://$PROJECT_DIR$/PY.exercise/testcode004.py">
           <provider selected="true" editor-type-id="text-editor">
-            <state relative-caret-position="368">
-              <caret line="42" column="0" lean-forward="false" selection-start-line="42" selection-start-column="0" selection-end-line="42" selection-end-column="0" />
+            <state relative-caret-position="921">
+              <caret line="62" column="12" lean-forward="true" selection-start-line="62" selection-start-column="12" selection-end-line="62" selection-end-column="12" />
               <folding />
             </state>
           </provider>
@@ -118,8 +110,8 @@
       <file leaf-file-name="zwrn_process.py" pinned="false" current-in-tab="false">
         <entry file="file://$PROJECT_DIR$/RSF_project/data_process/zwrn_process.py">
           <provider selected="true" editor-type-id="text-editor">
-            <state relative-caret-position="149">
-              <caret line="26" column="0" lean-forward="true" selection-start-line="26" selection-start-column="0" selection-end-line="26" selection-end-column="0" />
+            <state relative-caret-position="1326">
+              <caret line="26" column="0" lean-forward="false" selection-start-line="26" selection-start-column="0" selection-end-line="26" selection-end-column="0" />
               <folding />
             </state>
           </provider>
@@ -135,11 +127,41 @@
           </provider>
         </entry>
       </file>
-      <file leaf-file-name="ZW_synonym_process.py" pinned="false" current-in-tab="true">
+      <file leaf-file-name="exer1024003.py" pinned="false" current-in-tab="false">
+        <entry file="file://$PROJECT_DIR$/PY.exercise/exer1024003.py">
+          <provider selected="true" editor-type-id="text-editor">
+            <state relative-caret-position="0">
+              <caret line="0" column="0" lean-forward="false" selection-start-line="0" selection-start-column="0" selection-end-line="0" selection-end-column="0" />
+              <folding />
+            </state>
+          </provider>
+        </entry>
+      </file>
+      <file leaf-file-name="CatchAndRun.py" pinned="false" current-in-tab="true">
+        <entry file="file://$PROJECT_DIR$/PY.exercise/CatchAndRun.py">
+          <provider selected="true" editor-type-id="text-editor">
+            <state relative-caret-position="11016">
+              <caret line="216" column="50" lean-forward="true" selection-start-line="216" selection-start-column="50" selection-end-line="216" selection-end-column="50" />
+              <folding />
+            </state>
+          </provider>
+        </entry>
+      </file>
+      <file leaf-file-name="CatchAndRun_Result.dat" pinned="false" current-in-tab="false">
+        <entry file="file://$PROJECT_DIR$/program data/CatchAndRun_Result.dat">
+          <provider selected="true" editor-type-id="text-editor">
+            <state relative-caret-position="-17493">
+              <caret line="185" column="81" lean-forward="false" selection-start-line="185" selection-start-column="81" selection-end-line="185" selection-end-column="81" />
+              <folding />
+            </state>
+          </provider>
+        </entry>
+      </file>
+      <file leaf-file-name="ZW_synonym_process.py" pinned="false" current-in-tab="false">
         <entry file="file://$PROJECT_DIR$/RSF_project/data_process/ZW_synonym_process.py">
           <provider selected="true" editor-type-id="text-editor">
-            <state relative-caret-position="690">
-              <caret line="29" column="21" lean-forward="true" selection-start-line="29" selection-start-column="21" selection-end-line="29" selection-end-column="21" />
+            <state relative-caret-position="1479">
+              <caret line="29" column="21" lean-forward="false" selection-start-line="29" selection-start-column="21" selection-end-line="29" selection-end-column="21" />
               <folding />
             </state>
           </provider>
@@ -148,8 +170,8 @@
       <file leaf-file-name="电子政务同义词表1024.txt" pinned="false" current-in-tab="false">
         <entry file="file://$PROJECT_DIR$/RSF_project/data/电子政务同义词表1024.txt">
           <provider selected="true" editor-type-id="text-editor">
-            <state relative-caret-position="1179">
-              <caret line="110" column="14" lean-forward="true" selection-start-line="110" selection-start-column="14" selection-end-line="110" selection-end-column="14" />
+            <state relative-caret-position="5610">
+              <caret line="110" column="14" lean-forward="false" selection-start-line="110" selection-start-column="14" selection-end-line="110" selection-end-column="14" />
               <folding />
             </state>
           </provider>
@@ -158,7 +180,7 @@
       <file leaf-file-name="电子政务及公文主题词表（包括同义词及上位词） 2017.10.24.csv" pinned="false" current-in-tab="false">
         <entry file="file://$PROJECT_DIR$/RSF_project/data/电子政务及公文主题词表（包括同义词及上位词） 2017.10.24.csv">
           <provider selected="true" editor-type-id="text-editor">
-            <state relative-caret-position="449">
+            <state relative-caret-position="1366290">
               <caret line="26790" column="19" lean-forward="false" selection-start-line="26790" selection-start-column="15" selection-end-line="26790" selection-end-column="19" />
               <folding />
             </state>
@@ -168,38 +190,8 @@
       <file leaf-file-name="政务人名词表1024.txt" pinned="false" current-in-tab="false">
         <entry file="file://$PROJECT_DIR$/RSF_project/data/政务人名词表1024.txt">
           <provider selected="true" editor-type-id="text-editor">
-            <state relative-caret-position="-1941">
+            <state relative-caret-position="18258">
               <caret line="358" column="2" lean-forward="false" selection-start-line="358" selection-start-column="1" selection-end-line="358" selection-end-column="2" />
-              <folding />
-            </state>
-          </provider>
-        </entry>
-      </file>
-      <file leaf-file-name="全国高校名录.dat" pinned="false" current-in-tab="false">
-        <entry file="file://$PROJECT_DIR$/program data/高校相关数据/全国高校名录.dat">
-          <provider selected="true" editor-type-id="text-editor">
-            <state relative-caret-position="58860">
-              <caret line="1962" column="4" lean-forward="false" selection-start-line="1962" selection-start-column="2" selection-end-line="1962" selection-end-column="4" />
-              <folding />
-            </state>
-          </provider>
-        </entry>
-      </file>
-      <file leaf-file-name="loadACL.py" pinned="false" current-in-tab="false">
-        <entry file="file://$PROJECT_DIR$/ESP_project/ESP_ACL/loadACL.py">
-          <provider selected="true" editor-type-id="text-editor">
-            <state relative-caret-position="390">
-              <caret line="14" column="38" lean-forward="false" selection-start-line="14" selection-start-column="38" selection-end-line="14" selection-end-column="38" />
-              <folding />
-            </state>
-          </provider>
-        </entry>
-      </file>
-      <file leaf-file-name="random.py" pinned="false" current-in-tab="false">
-        <entry file="file://D:/Program Files (x86)/Python/Python35/Lib/random.py">
-          <provider selected="true" editor-type-id="text-editor">
-            <state relative-caret-position="9300">
-              <caret line="316" column="15" lean-forward="false" selection-start-line="316" selection-start-column="8" selection-end-line="316" selection-end-column="15" />
               <folding />
             </state>
           </provider>
@@ -225,6 +217,7 @@
       <find>　</find>
       <find />
       <find>纪律检查委员会</find>
+      <find>NoOccupiedGrid = []</find>
     </findStrings>
   </component>
   <component name="Git.Settings">
@@ -241,7 +234,6 @@
   <component name="IdeDocumentHistory">
     <option name="CHANGED_PATHS">
       <list>
-        <option value="$PROJECT_DIR$/LearnModule/CardsGame.py" />
         <option value="$PROJECT_DIR$/PY.exercise/空当接龙游戏0812.py" />
         <option value="$PROJECT_DIR$/LearnModule/StringSplit.py" />
         <option value="$PROJECT_DIR$/LearnModule/ESP_project/orgnization.py" />
@@ -288,10 +280,11 @@
         <option value="$PROJECT_DIR$/LearnModule/String_func.py" />
         <option value="$PROJECT_DIR$/DataAnalysize Project/HighSchoolData.py" />
         <option value="$PROJECT_DIR$/program data/高校相关数据/985 and 211名单.csv" />
-        <option value="$PROJECT_DIR$/PY.exercise/testcode004.py" />
         <option value="$PROJECT_DIR$/RSF_project/data_process/zwrn_process.py" />
         <option value="$PROJECT_DIR$/RSF_project/data_process/ZW_synonym_process.py" />
         <option value="$PROJECT_DIR$/RSF_project/data/电子政务同义词表1024.txt" />
+        <option value="$PROJECT_DIR$/PY.exercise/testcode004.py" />
+        <option value="$PROJECT_DIR$/PY.exercise/CatchAndRun.py" />
       </list>
     </option>
   </component>
@@ -302,10 +295,10 @@
     <sorting>DEFINITION_ORDER</sorting>
   </component>
   <component name="ProjectFrameBounds">
-    <option name="x" value="-8" />
-    <option name="y" value="-8" />
-    <option name="width" value="1382" />
-    <option name="height" value="754" />
+    <option name="x" value="-11" />
+    <option name="y" value="-11" />
+    <option name="width" value="3862" />
+    <option name="height" value="2122" />
   </component>
   <component name="ProjectLevelVcsManager">
     <ConfirmationsSetting value="2" id="添加" />
@@ -325,6 +318,8 @@
       <foldersAlwaysOnTop value="true" />
     </navigator>
     <panes>
+      <pane id="Scope" />
+      <pane id="Scratches" />
       <pane id="ProjectPane">
         <subPane>
           <PATH>
@@ -382,28 +377,6 @@
               <option name="myItemId" value="RSF_project" />
               <option name="myItemType" value="com.intellij.ide.projectView.impl.nodes.PsiDirectoryNode" />
             </PATH_ELEMENT>
-            <PATH_ELEMENT>
-              <option name="myItemId" value="data_process" />
-              <option name="myItemType" value="com.intellij.ide.projectView.impl.nodes.PsiDirectoryNode" />
-            </PATH_ELEMENT>
-          </PATH>
-          <PATH>
-            <PATH_ELEMENT>
-              <option name="myItemId" value="learning2017" />
-              <option name="myItemType" value="com.intellij.ide.projectView.impl.nodes.ProjectViewProjectNode" />
-            </PATH_ELEMENT>
-            <PATH_ELEMENT>
-              <option name="myItemId" value="learning2017" />
-              <option name="myItemType" value="com.intellij.ide.projectView.impl.nodes.PsiDirectoryNode" />
-            </PATH_ELEMENT>
-            <PATH_ELEMENT>
-              <option name="myItemId" value="RSF_project" />
-              <option name="myItemType" value="com.intellij.ide.projectView.impl.nodes.PsiDirectoryNode" />
-            </PATH_ELEMENT>
-            <PATH_ELEMENT>
-              <option name="myItemId" value="data" />
-              <option name="myItemType" value="com.intellij.ide.projectView.impl.nodes.PsiDirectoryNode" />
-            </PATH_ELEMENT>
           </PATH>
           <PATH>
             <PATH_ELEMENT>
@@ -419,84 +392,8 @@
               <option name="myItemType" value="com.intellij.ide.projectView.impl.nodes.PsiDirectoryNode" />
             </PATH_ELEMENT>
           </PATH>
-          <PATH>
-            <PATH_ELEMENT>
-              <option name="myItemId" value="learning2017" />
-              <option name="myItemType" value="com.intellij.ide.projectView.impl.nodes.ProjectViewProjectNode" />
-            </PATH_ELEMENT>
-            <PATH_ELEMENT>
-              <option name="myItemId" value="learning2017" />
-              <option name="myItemType" value="com.intellij.ide.projectView.impl.nodes.PsiDirectoryNode" />
-            </PATH_ELEMENT>
-            <PATH_ELEMENT>
-              <option name="myItemId" value="LearnOOP" />
-              <option name="myItemType" value="com.intellij.ide.projectView.impl.nodes.PsiDirectoryNode" />
-            </PATH_ELEMENT>
-          </PATH>
-          <PATH>
-            <PATH_ELEMENT>
-              <option name="myItemId" value="learning2017" />
-              <option name="myItemType" value="com.intellij.ide.projectView.impl.nodes.ProjectViewProjectNode" />
-            </PATH_ELEMENT>
-            <PATH_ELEMENT>
-              <option name="myItemId" value="learning2017" />
-              <option name="myItemType" value="com.intellij.ide.projectView.impl.nodes.PsiDirectoryNode" />
-            </PATH_ELEMENT>
-            <PATH_ELEMENT>
-              <option name="myItemId" value="LearnModule" />
-              <option name="myItemType" value="com.intellij.ide.projectView.impl.nodes.PsiDirectoryNode" />
-            </PATH_ELEMENT>
-          </PATH>
-          <PATH>
-            <PATH_ELEMENT>
-              <option name="myItemId" value="learning2017" />
-              <option name="myItemType" value="com.intellij.ide.projectView.impl.nodes.ProjectViewProjectNode" />
-            </PATH_ELEMENT>
-            <PATH_ELEMENT>
-              <option name="myItemId" value="learning2017" />
-              <option name="myItemType" value="com.intellij.ide.projectView.impl.nodes.PsiDirectoryNode" />
-            </PATH_ELEMENT>
-            <PATH_ELEMENT>
-              <option name="myItemId" value="ESP_project" />
-              <option name="myItemType" value="com.intellij.ide.projectView.impl.nodes.PsiDirectoryNode" />
-            </PATH_ELEMENT>
-          </PATH>
-          <PATH>
-            <PATH_ELEMENT>
-              <option name="myItemId" value="learning2017" />
-              <option name="myItemType" value="com.intellij.ide.projectView.impl.nodes.ProjectViewProjectNode" />
-            </PATH_ELEMENT>
-            <PATH_ELEMENT>
-              <option name="myItemId" value="learning2017" />
-              <option name="myItemType" value="com.intellij.ide.projectView.impl.nodes.PsiDirectoryNode" />
-            </PATH_ELEMENT>
-            <PATH_ELEMENT>
-              <option name="myItemId" value="ESP_project" />
-              <option name="myItemType" value="com.intellij.ide.projectView.impl.nodes.PsiDirectoryNode" />
-            </PATH_ELEMENT>
-            <PATH_ELEMENT>
-              <option name="myItemId" value="ESP_ACL" />
-              <option name="myItemType" value="com.intellij.ide.projectView.impl.nodes.PsiDirectoryNode" />
-            </PATH_ELEMENT>
-          </PATH>
-          <PATH>
-            <PATH_ELEMENT>
-              <option name="myItemId" value="learning2017" />
-              <option name="myItemType" value="com.intellij.ide.projectView.impl.nodes.ProjectViewProjectNode" />
-            </PATH_ELEMENT>
-            <PATH_ELEMENT>
-              <option name="myItemId" value="learning2017" />
-              <option name="myItemType" value="com.intellij.ide.projectView.impl.nodes.PsiDirectoryNode" />
-            </PATH_ELEMENT>
-            <PATH_ELEMENT>
-              <option name="myItemId" value="DataAnalysize Project" />
-              <option name="myItemType" value="com.intellij.ide.projectView.impl.nodes.PsiDirectoryNode" />
-            </PATH_ELEMENT>
-          </PATH>
         </subPane>
       </pane>
-      <pane id="Scope" />
-      <pane id="Scratches" />
     </panes>
   </component>
   <component name="PropertiesComponent">
@@ -521,7 +418,7 @@
       <recent name="F:\documents\python\learning2017\LearnModule\ESP_project\data_contanct" />
     </key>
   </component>
-  <component name="RunManager" selected="Python.ZW_synonym_process">
+  <component name="RunManager" selected="Python.CatchAndRun">
     <configuration default="false" name="HighSchoolData" type="PythonConfigurationType" factoryName="Python" temporary="true">
       <option name="INTERPRETER_OPTIONS" value="" />
       <option name="PARENT_ENVS" value="true" />
@@ -536,24 +433,6 @@
       <module name="learning2017" />
       <EXTENSION ID="PythonCoverageRunConfigurationExtension" enabled="false" sample_coverage="true" runner="coverage.py" />
       <option name="SCRIPT_NAME" value="$PROJECT_DIR$/DataAnalysize Project/HighSchoolData.py" />
-      <option name="PARAMETERS" value="" />
-      <option name="SHOW_COMMAND_LINE" value="false" />
-      <method />
-    </configuration>
-    <configuration default="false" name="SpecialExtractor" type="PythonConfigurationType" factoryName="Python" temporary="true">
-      <option name="INTERPRETER_OPTIONS" value="" />
-      <option name="PARENT_ENVS" value="true" />
-      <envs>
-        <env name="PYTHONUNBUFFERED" value="1" />
-      </envs>
-      <option name="SDK_HOME" value="" />
-      <option name="WORKING_DIRECTORY" value="$PROJECT_DIR$/DataAnalysize Project" />
-      <option name="IS_MODULE_SDK" value="true" />
-      <option name="ADD_CONTENT_ROOTS" value="true" />
-      <option name="ADD_SOURCE_ROOTS" value="true" />
-      <module name="learning2017" />
-      <EXTENSION ID="PythonCoverageRunConfigurationExtension" enabled="false" sample_coverage="true" runner="coverage.py" />
-      <option name="SCRIPT_NAME" value="$PROJECT_DIR$/DataAnalysize Project/SpecialExtractor.py" />
       <option name="PARAMETERS" value="" />
       <option name="SHOW_COMMAND_LINE" value="false" />
       <method />
@@ -608,6 +487,24 @@
       <module name="learning2017" />
       <EXTENSION ID="PythonCoverageRunConfigurationExtension" enabled="false" sample_coverage="true" runner="coverage.py" />
       <option name="SCRIPT_NAME" value="$PROJECT_DIR$/RSF_project/data_process/ZW_synonym_process.py" />
+      <option name="PARAMETERS" value="" />
+      <option name="SHOW_COMMAND_LINE" value="false" />
+      <method />
+    </configuration>
+    <configuration default="false" name="CatchAndRun" type="PythonConfigurationType" factoryName="Python" temporary="true">
+      <option name="INTERPRETER_OPTIONS" value="" />
+      <option name="PARENT_ENVS" value="true" />
+      <envs>
+        <env name="PYTHONUNBUFFERED" value="1" />
+      </envs>
+      <option name="SDK_HOME" value="" />
+      <option name="WORKING_DIRECTORY" value="$PROJECT_DIR$/PY.exercise" />
+      <option name="IS_MODULE_SDK" value="true" />
+      <option name="ADD_CONTENT_ROOTS" value="true" />
+      <option name="ADD_SOURCE_ROOTS" value="true" />
+      <module name="learning2017" />
+      <EXTENSION ID="PythonCoverageRunConfigurationExtension" enabled="false" sample_coverage="true" runner="coverage.py" />
+      <option name="SCRIPT_NAME" value="$PROJECT_DIR$/PY.exercise/CatchAndRun.py" />
       <option name="PARAMETERS" value="" />
       <option name="SHOW_COMMAND_LINE" value="false" />
       <method />
@@ -828,18 +725,18 @@
     </configuration>
     <list size="5">
       <item index="0" class="java.lang.String" itemvalue="Python.HighSchoolData" />
-      <item index="1" class="java.lang.String" itemvalue="Python.SpecialExtractor" />
-      <item index="2" class="java.lang.String" itemvalue="Python.testcode004" />
-      <item index="3" class="java.lang.String" itemvalue="Python.zwrn_process" />
-      <item index="4" class="java.lang.String" itemvalue="Python.ZW_synonym_process" />
+      <item index="1" class="java.lang.String" itemvalue="Python.testcode004" />
+      <item index="2" class="java.lang.String" itemvalue="Python.zwrn_process" />
+      <item index="3" class="java.lang.String" itemvalue="Python.ZW_synonym_process" />
+      <item index="4" class="java.lang.String" itemvalue="Python.CatchAndRun" />
     </list>
     <recent_temporary>
       <list size="5">
-        <item index="0" class="java.lang.String" itemvalue="Python.ZW_synonym_process" />
-        <item index="1" class="java.lang.String" itemvalue="Python.zwrn_process" />
-        <item index="2" class="java.lang.String" itemvalue="Python.testcode004" />
-        <item index="3" class="java.lang.String" itemvalue="Python.HighSchoolData" />
-        <item index="4" class="java.lang.String" itemvalue="Python.SpecialExtractor" />
+        <item index="0" class="java.lang.String" itemvalue="Python.CatchAndRun" />
+        <item index="1" class="java.lang.String" itemvalue="Python.testcode004" />
+        <item index="2" class="java.lang.String" itemvalue="Python.ZW_synonym_process" />
+        <item index="3" class="java.lang.String" itemvalue="Python.zwrn_process" />
+        <item index="4" class="java.lang.String" itemvalue="Python.HighSchoolData" />
       </list>
     </recent_temporary>
   </component>
@@ -1007,10 +904,10 @@
     </todo-panel>
   </component>
   <component name="ToolWindowManager">
-    <frame x="-8" y="-8" width="1382" height="754" extended-state="6" />
+    <frame x="-11" y="-11" width="3862" height="2122" extended-state="6" />
     <editor active="false" />
     <layout>
-      <window_info id="Project" active="true" anchor="left" auto_hide="false" internal_type="DOCKED" type="DOCKED" visible="true" show_stripe_button="true" weight="0.25718608" sideWeight="0.5" order="0" side_tool="false" content_ui="combo" />
+      <window_info id="Project" active="true" anchor="left" auto_hide="false" internal_type="DOCKED" type="DOCKED" visible="true" show_stripe_button="true" weight="0.26126125" sideWeight="0.5" order="0" side_tool="false" content_ui="combo" />
       <window_info id="TODO" active="false" anchor="bottom" auto_hide="false" internal_type="DOCKED" type="DOCKED" visible="false" show_stripe_button="true" weight="0.33" sideWeight="0.5" order="6" side_tool="false" content_ui="tabs" />
       <window_info id="调试" active="false" anchor="bottom" auto_hide="false" internal_type="DOCKED" type="DOCKED" visible="false" show_stripe_button="true" weight="0.32258064" sideWeight="0.5" order="7" side_tool="false" content_ui="tabs" />
       <window_info id="Event Log" active="false" anchor="bottom" auto_hide="false" internal_type="DOCKED" type="DOCKED" visible="false" show_stripe_button="true" weight="0.21612903" sideWeight="0.50378215" order="12" side_tool="true" content_ui="tabs" />
@@ -1019,7 +916,7 @@
       <window_info id="Python Console" active="false" anchor="bottom" auto_hide="false" internal_type="DOCKED" type="DOCKED" visible="false" show_stripe_button="true" weight="0.23829344" sideWeight="0.5" order="9" side_tool="false" content_ui="tabs" />
       <window_info id="Structure" active="false" anchor="left" auto_hide="false" internal_type="DOCKED" type="DOCKED" visible="false" show_stripe_button="true" weight="0.24959305" sideWeight="0.5" order="1" side_tool="false" content_ui="tabs" />
       <window_info id="Terminal" active="false" anchor="bottom" auto_hide="false" internal_type="DOCKED" type="DOCKED" visible="false" show_stripe_button="true" weight="0.16129032" sideWeight="0.5" order="13" side_tool="false" content_ui="tabs" />
-      <window_info id="运行" active="false" anchor="bottom" auto_hide="false" internal_type="DOCKED" type="DOCKED" visible="true" show_stripe_button="true" weight="0.42258066" sideWeight="0.49621785" order="10" side_tool="false" content_ui="tabs" />
+      <window_info id="运行" active="false" anchor="bottom" auto_hide="false" internal_type="DOCKED" type="DOCKED" visible="true" show_stripe_button="true" weight="0.4224766" sideWeight="0.49621785" order="10" side_tool="false" content_ui="tabs" />
       <window_info id="Favorites" active="false" anchor="left" auto_hide="false" internal_type="DOCKED" type="DOCKED" visible="false" show_stripe_button="true" weight="0.3298969" sideWeight="0.5" order="2" side_tool="true" content_ui="tabs" />
       <window_info id="Cvs" active="false" anchor="bottom" auto_hide="false" internal_type="DOCKED" type="DOCKED" visible="false" show_stripe_button="true" weight="0.25" sideWeight="0.5" order="4" side_tool="false" content_ui="tabs" />
       <window_info id="Message" active="false" anchor="bottom" auto_hide="false" internal_type="DOCKED" type="DOCKED" visible="false" show_stripe_button="true" weight="0.33" sideWeight="0.5" order="0" side_tool="false" content_ui="tabs" />
@@ -1077,6 +974,31 @@
           <line>107</line>
           <option name="timeStamp" value="17" />
         </line-breakpoint>
+        <line-breakpoint enabled="true" suspend="THREAD" type="python-line">
+          <url>file://$PROJECT_DIR$/PY.exercise/CatchAndRun.py</url>
+          <line>189</line>
+          <option name="timeStamp" value="22" />
+        </line-breakpoint>
+        <line-breakpoint enabled="true" suspend="THREAD" type="python-line">
+          <url>file://$PROJECT_DIR$/PY.exercise/CatchAndRun.py</url>
+          <line>190</line>
+          <option name="timeStamp" value="23" />
+        </line-breakpoint>
+        <line-breakpoint enabled="true" suspend="THREAD" type="python-line">
+          <url>file://$PROJECT_DIR$/PY.exercise/CatchAndRun.py</url>
+          <line>191</line>
+          <option name="timeStamp" value="25" />
+        </line-breakpoint>
+        <line-breakpoint enabled="true" suspend="THREAD" type="python-line">
+          <url>file://$PROJECT_DIR$/PY.exercise/CatchAndRun.py</url>
+          <line>197</line>
+          <option name="timeStamp" value="26" />
+        </line-breakpoint>
+        <line-breakpoint enabled="true" suspend="THREAD" type="python-line">
+          <url>file://$PROJECT_DIR$/PY.exercise/CatchAndRun.py</url>
+          <line>210</line>
+          <option name="timeStamp" value="31" />
+        </line-breakpoint>
       </breakpoints>
       <default-breakpoints>
         <breakpoint type="python-exception">
@@ -1085,32 +1007,11 @@
           </properties>
         </breakpoint>
       </default-breakpoints>
-      <option name="time" value="21" />
+      <option name="time" value="32" />
     </breakpoint-manager>
     <watches-manager />
   </component>
   <component name="editorHistoryManager">
-    <entry file="file://$PROJECT_DIR$/program data/GPS.dat">
-      <provider selected="true" editor-type-id="text-editor">
-        <state relative-caret-position="240">
-          <caret line="8" column="24" lean-forward="false" selection-start-line="8" selection-start-column="0" selection-end-line="8" selection-end-column="24" />
-        </state>
-      </provider>
-    </entry>
-    <entry file="file://$PROJECT_DIR$/PY.exercise/exer0901002.py">
-      <provider selected="true" editor-type-id="text-editor">
-        <state relative-caret-position="2790">
-          <caret line="94" column="0" lean-forward="false" selection-start-line="94" selection-start-column="0" selection-end-line="94" selection-end-column="0" />
-        </state>
-      </provider>
-    </entry>
-    <entry file="file://$PROJECT_DIR$/LearnModule/str2int.py">
-      <provider selected="true" editor-type-id="text-editor">
-        <state relative-caret-position="0">
-          <caret line="0" column="0" lean-forward="false" selection-start-line="0" selection-start-column="0" selection-end-line="0" selection-end-column="0" />
-        </state>
-      </provider>
-    </entry>
     <entry file="file://$PROJECT_DIR$/ESP_project/data_files/files_normalized_NoACL.json" />
     <entry file="file://$PROJECT_DIR$/ESP_project/data_knowledge/knowledge_normalized_NoACL.json">
       <provider selected="true" editor-type-id="text-editor">
@@ -1329,7 +1230,6 @@
       <provider selected="true" editor-type-id="text-editor">
         <state relative-caret-position="7230">
           <caret line="241" column="60" lean-forward="false" selection-start-line="241" selection-start-column="60" selection-end-line="241" selection-end-column="60" />
-          <folding />
         </state>
       </provider>
     </entry>
@@ -1337,7 +1237,6 @@
       <provider selected="true" editor-type-id="text-editor">
         <state relative-caret-position="7350">
           <caret line="246" column="0" lean-forward="false" selection-start-line="246" selection-start-column="0" selection-end-line="246" selection-end-column="0" />
-          <folding />
         </state>
       </provider>
     </entry>
@@ -1345,7 +1244,6 @@
       <provider selected="true" editor-type-id="text-editor">
         <state relative-caret-position="20160">
           <caret line="672" column="24" lean-forward="false" selection-start-line="0" selection-start-column="0" selection-end-line="2596" selection-end-column="0" />
-          <folding />
         </state>
       </provider>
     </entry>
@@ -1353,7 +1251,6 @@
       <provider selected="true" editor-type-id="text-editor">
         <state relative-caret-position="2460">
           <caret line="82" column="11" lean-forward="false" selection-start-line="82" selection-start-column="3" selection-end-line="82" selection-end-column="11" />
-          <folding />
         </state>
       </provider>
     </entry>
@@ -1361,21 +1258,19 @@
       <provider selected="true" editor-type-id="text-editor">
         <state relative-caret-position="32700">
           <caret line="1090" column="26" lean-forward="false" selection-start-line="1090" selection-start-column="26" selection-end-line="1090" selection-end-column="26" />
-          <folding />
         </state>
       </provider>
     </entry>
     <entry file="file://$PROJECT_DIR$/program data/高校相关数据/全国高校名录.dat">
       <provider selected="true" editor-type-id="text-editor">
-        <state relative-caret-position="58860">
+        <state relative-caret-position="100062">
           <caret line="1962" column="4" lean-forward="false" selection-start-line="1962" selection-start-column="2" selection-end-line="1962" selection-end-column="4" />
-          <folding />
         </state>
       </provider>
     </entry>
-    <entry file="file://D:/Program Files (x86)/Python/Python35/Lib/random.py">
+    <entry file="file://D:/Program Files (x86)/python/python35/Lib/random.py">
       <provider selected="true" editor-type-id="text-editor">
-        <state relative-caret-position="9300">
+        <state relative-caret-position="15810">
           <caret line="316" column="15" lean-forward="false" selection-start-line="316" selection-start-column="8" selection-end-line="316" selection-end-column="15" />
           <folding />
         </state>
@@ -1383,23 +1278,15 @@
     </entry>
     <entry file="file://$PROJECT_DIR$/ESP_project/ESP_ACL/loadACL.py">
       <provider selected="true" editor-type-id="text-editor">
-        <state relative-caret-position="390">
+        <state relative-caret-position="663">
           <caret line="14" column="38" lean-forward="false" selection-start-line="14" selection-start-column="38" selection-end-line="14" selection-end-column="38" />
-          <folding />
-        </state>
-      </provider>
-    </entry>
-    <entry file="file://$PROJECT_DIR$/PY.exercise/testcode004.py">
-      <provider selected="true" editor-type-id="text-editor">
-        <state relative-caret-position="368">
-          <caret line="42" column="0" lean-forward="false" selection-start-line="42" selection-start-column="0" selection-end-line="42" selection-end-column="0" />
           <folding />
         </state>
       </provider>
     </entry>
     <entry file="file://$PROJECT_DIR$/RSF_project/data/政务人名词表1024.txt">
       <provider selected="true" editor-type-id="text-editor">
-        <state relative-caret-position="-1941">
+        <state relative-caret-position="18258">
           <caret line="358" column="2" lean-forward="false" selection-start-line="358" selection-start-column="1" selection-end-line="358" selection-end-column="2" />
           <folding />
         </state>
@@ -1407,8 +1294,8 @@
     </entry>
     <entry file="file://$PROJECT_DIR$/RSF_project/data_process/zwrn_process.py">
       <provider selected="true" editor-type-id="text-editor">
-        <state relative-caret-position="149">
-          <caret line="26" column="0" lean-forward="true" selection-start-line="26" selection-start-column="0" selection-end-line="26" selection-end-column="0" />
+        <state relative-caret-position="1326">
+          <caret line="26" column="0" lean-forward="false" selection-start-line="26" selection-start-column="0" selection-end-line="26" selection-end-column="0" />
           <folding />
         </state>
       </provider>
@@ -1423,7 +1310,7 @@
     </entry>
     <entry file="file://$PROJECT_DIR$/RSF_project/data/电子政务及公文主题词表（包括同义词及上位词） 2017.10.24.csv">
       <provider selected="true" editor-type-id="text-editor">
-        <state relative-caret-position="449">
+        <state relative-caret-position="1366290">
           <caret line="26790" column="19" lean-forward="false" selection-start-line="26790" selection-start-column="15" selection-end-line="26790" selection-end-column="19" />
           <folding />
         </state>
@@ -1431,16 +1318,48 @@
     </entry>
     <entry file="file://$PROJECT_DIR$/RSF_project/data/电子政务同义词表1024.txt">
       <provider selected="true" editor-type-id="text-editor">
-        <state relative-caret-position="1179">
-          <caret line="110" column="14" lean-forward="true" selection-start-line="110" selection-start-column="14" selection-end-line="110" selection-end-column="14" />
+        <state relative-caret-position="5610">
+          <caret line="110" column="14" lean-forward="false" selection-start-line="110" selection-start-column="14" selection-end-line="110" selection-end-column="14" />
           <folding />
         </state>
       </provider>
     </entry>
     <entry file="file://$PROJECT_DIR$/RSF_project/data_process/ZW_synonym_process.py">
       <provider selected="true" editor-type-id="text-editor">
-        <state relative-caret-position="690">
-          <caret line="29" column="21" lean-forward="true" selection-start-line="29" selection-start-column="21" selection-end-line="29" selection-end-column="21" />
+        <state relative-caret-position="1479">
+          <caret line="29" column="21" lean-forward="false" selection-start-line="29" selection-start-column="21" selection-end-line="29" selection-end-column="21" />
+          <folding />
+        </state>
+      </provider>
+    </entry>
+    <entry file="file://$PROJECT_DIR$/PY.exercise/exer1024003.py">
+      <provider selected="true" editor-type-id="text-editor">
+        <state relative-caret-position="0">
+          <caret line="0" column="0" lean-forward="false" selection-start-line="0" selection-start-column="0" selection-end-line="0" selection-end-column="0" />
+          <folding />
+        </state>
+      </provider>
+    </entry>
+    <entry file="file://$PROJECT_DIR$/PY.exercise/testcode004.py">
+      <provider selected="true" editor-type-id="text-editor">
+        <state relative-caret-position="921">
+          <caret line="62" column="12" lean-forward="true" selection-start-line="62" selection-start-column="12" selection-end-line="62" selection-end-column="12" />
+          <folding />
+        </state>
+      </provider>
+    </entry>
+    <entry file="file://$PROJECT_DIR$/program data/CatchAndRun_Result.dat">
+      <provider selected="true" editor-type-id="text-editor">
+        <state relative-caret-position="-17493">
+          <caret line="185" column="81" lean-forward="false" selection-start-line="185" selection-start-column="81" selection-end-line="185" selection-end-column="81" />
+          <folding />
+        </state>
+      </provider>
+    </entry>
+    <entry file="file://$PROJECT_DIR$/PY.exercise/CatchAndRun.py">
+      <provider selected="true" editor-type-id="text-editor">
+        <state relative-caret-position="11016">
+          <caret line="216" column="50" lean-forward="true" selection-start-line="216" selection-start-column="50" selection-end-line="216" selection-end-column="50" />
           <folding />
         </state>
       </provider>
