@@ -42,4 +42,11 @@ from LearnModule import StringSplit,String_func
 # splitstr = '\\'
 #
 # print(astr.strip(splitstr).split(splitstr)[0])
-print(isinstance('abcd',list))
+# print(isinstance('abcd',list))
+xlist = [x for x in range(10)]
+print(xlist)
+for i in xlist:
+    if(i % 3 == 0):
+        xlist.remove(i)
+
+print(xlist)

@@ -134,7 +134,7 @@ SheepGroup = []
 WolVesGroup = []
 # 设置羊和狼的繁殖率
 SheepIncreasing = 0.8
-WolfIncreasing = 0.5
+WolfIncreasing = 0.3
 
 print('%s' %('=' * 20 + '捕猎开始' + '=' * 20))
 print('初始羊群数量为：%d' %(SheepGroupCount))
@@ -175,7 +175,7 @@ with open(r'F:\documents\python\learning2017\program data\CatchAndRun_Result.dat
     outfile.write('初始狼群数量为：%d\n' % (WolvesGroupCount))
     outfile.write('%s' %Island)
 
-    for AclockTime in range(10):
+    for AclockTime in range(100):
 
         SheepGroupCount = len(SheepGroup)      #两个种群在每个周期开始的数量
         WolvesGroupCount = len(WolVesGroup)
@@ -216,10 +216,16 @@ with open(r'F:\documents\python\learning2017\program data\CatchAndRun_Result.dat
                         AnAnimal.i = MovedPoint[0]
                         AnAnimal.j = MovedPoint[1]
                         AnAnimal.hungry = AnAnimal.hungry + 1
-                        if(AnAnimal.hungry > 2):        #从狼群里去掉被饿死的狼
+                        if (AnAnimal.hungry > 2):  # 从狼群里去掉被饿死的狼
                             WolVesGroup.remove(AnAnimal)
                             AnAnimal.name = ''
                 Island.SetGrid(MovedPoint[0], MovedPoint[1], AnAnimal.name)
+            else:
+                if(AnAnimal.name == 'W'):
+                    AnAnimal.hungry = AnAnimal.hungry + 1
+                if (AnAnimal.hungry > 2):  # 从狼群里去掉被饿死的狼
+                    WolVesGroup.remove(AnAnimal)
+                    Island.SetGrid(AnAnimal.i, AnAnimal.j, '')
 
         NoOccupiedSpace = []
         for pointx in range(IslandSize):  # 统计无动物占据的空间格子
