@@ -38,7 +38,8 @@ from LearnModule import StringSplit,String_func
 
 # print(String_func.if_enletter('t'))
 
-astr = '\\公司管理\\总经理办'
-splitstr = '\\'
-
-print(astr.strip(splitstr).split(splitstr)[0])
+# astr = '\\公司管理\\总经理办'
+# splitstr = '\\'
+#
+# print(astr.strip(splitstr).split(splitstr)[0])
+print(isinstance('abcd',list))

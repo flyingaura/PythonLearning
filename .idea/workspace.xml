@@ -1,19 +1,10 @@
 <?xml version="1.0" encoding="UTF-8"?>
 <project version="4">
   <component name="ChangeListManager">
-    <list default="true" id="286e034b-b797-4eff-86da-0c5c650473df" name="默认的" comment="Merge branch 'master' of https://git.oschina.net/flyingaura/learning2017&#10;&#10;# Conflicts:&#10;#&#9;.idea/workspace.xml&#10;">
-      <change type="NEW" beforePath="" afterPath="$PROJECT_DIR$/DataAnalysize Project/SpecialExtractor.py" />
-      <change type="NEW" beforePath="" afterPath="$PROJECT_DIR$/RSF_project/data/政务人名词表1024.txt" />
-      <change type="NEW" beforePath="" afterPath="$PROJECT_DIR$/RSF_project/data/电子政务及公文主题词表（包括同义词及上位词） 2017.10.24.csv" />
-      <change type="NEW" beforePath="" afterPath="$PROJECT_DIR$/RSF_project/data_process/ZW_synonym_process.py" />
-      <change type="NEW" beforePath="" afterPath="$PROJECT_DIR$/RSF_project/data_process/zwrn_process.py" />
-      <change type="NEW" beforePath="" afterPath="$PROJECT_DIR$/program data/高校相关数据/全国高校名录.dat" />
-      <change type="MODIFICATION" beforePath="$PROJECT_DIR$/.idea/encodings.xml" afterPath="$PROJECT_DIR$/.idea/encodings.xml" />
+    <list default="true" id="286e034b-b797-4eff-86da-0c5c650473df" name="默认的" comment="">
       <change type="MODIFICATION" beforePath="$PROJECT_DIR$/.idea/workspace.xml" afterPath="$PROJECT_DIR$/.idea/workspace.xml" />
-      <change type="MODIFICATION" beforePath="$PROJECT_DIR$/DataAnalysize Project/HighSchoolData.py" afterPath="$PROJECT_DIR$/DataAnalysize Project/HighSchoolData.py" />
-      <change type="MODIFICATION" beforePath="$PROJECT_DIR$/LearnModule/String_func.py" afterPath="$PROJECT_DIR$/LearnModule/String_func.py" />
+      <change type="MODIFICATION" beforePath="$PROJECT_DIR$/ESP_project/data_images/ESapi2Json.py" afterPath="$PROJECT_DIR$/ESP_project/data_images/ESapi2Json.py" />
       <change type="MODIFICATION" beforePath="$PROJECT_DIR$/PY.exercise/testcode004.py" afterPath="$PROJECT_DIR$/PY.exercise/testcode004.py" />
-      <change type="MODIFICATION" beforePath="$PROJECT_DIR$/program data/高校相关数据/全国高校基本信息.dat" afterPath="$PROJECT_DIR$/program data/高校相关数据/全国高校基本信息.dat" />
     </list>
     <option name="EXCLUDED_CONVERTED_TO_IGNORED" value="true" />
     <option name="TRACKING_ENABLED" value="true" />
@@ -41,7 +32,7 @@
     <SUITE FILE_PATH="coverage/learning2017$_pydev_execfile.coverage" NAME="_pydev_execfile Coverage Results" MODIFIED="1483680438855" SOURCE_PROVIDER="com.intellij.coverage.DefaultCoverageFileProvider" RUNNER="coverage.py" COVERAGE_BY_TEST_ENABLED="true" COVERAGE_TRACING_ENABLED="false" WORKING_DIRECTORY="$APPLICATION_HOME_DIR$/helpers/pydev/_pydev_imps" />
     <SUITE FILE_PATH="coverage/learning2017$module_Use2.coverage" NAME="module.Use2 Coverage Results" MODIFIED="1483454739625" SOURCE_PROVIDER="com.intellij.coverage.DefaultCoverageFileProvider" RUNNER="coverage.py" COVERAGE_BY_TEST_ENABLED="true" COVERAGE_TRACING_ENABLED="false" WORKING_DIRECTORY="$PROJECT_DIR$" />
     <SUITE FILE_PATH="coverage/learning2017$Func_StringSpilt.coverage" NAME="Func_StringSpilt Coverage Results" MODIFIED="1483964240863" SOURCE_PROVIDER="com.intellij.coverage.DefaultCoverageFileProvider" RUNNER="coverage.py" COVERAGE_BY_TEST_ENABLED="true" COVERAGE_TRACING_ENABLED="false" WORKING_DIRECTORY="$PROJECT_DIR$/LearnModule" />
-    <SUITE FILE_PATH="coverage/learning2017$testcode004.coverage" NAME="testcode004 Coverage Results" MODIFIED="1508833725306" SOURCE_PROVIDER="com.intellij.coverage.DefaultCoverageFileProvider" RUNNER="coverage.py" COVERAGE_BY_TEST_ENABLED="true" COVERAGE_TRACING_ENABLED="false" WORKING_DIRECTORY="$PROJECT_DIR$/PY.exercise" />
+    <SUITE FILE_PATH="coverage/learning2017$testcode004.coverage" NAME="testcode004 Coverage Results" MODIFIED="1509014026575" SOURCE_PROVIDER="com.intellij.coverage.DefaultCoverageFileProvider" RUNNER="coverage.py" COVERAGE_BY_TEST_ENABLED="true" COVERAGE_TRACING_ENABLED="false" WORKING_DIRECTORY="$PROJECT_DIR$/PY.exercise" />
     <SUITE FILE_PATH="coverage/learning2017$file_copy.coverage" NAME="file_copy Coverage Results" MODIFIED="1504777253758" SOURCE_PROVIDER="com.intellij.coverage.DefaultCoverageFileProvider" RUNNER="coverage.py" COVERAGE_BY_TEST_ENABLED="true" COVERAGE_TRACING_ENABLED="false" WORKING_DIRECTORY="$PROJECT_DIR$/ESP_project/data_images" />
     <SUITE FILE_PATH="coverage/learning2017$Num2Chinese.coverage" NAME="Num2Chinese Coverage Results" MODIFIED="1484134122042" SOURCE_PROVIDER="com.intellij.coverage.DefaultCoverageFileProvider" RUNNER="coverage.py" COVERAGE_BY_TEST_ENABLED="true" COVERAGE_TRACING_ENABLED="false" WORKING_DIRECTORY="$PROJECT_DIR$/LearnModule" />
     <SUITE FILE_PATH="coverage/learning2017$Module_Use.coverage" NAME="Module_Use Coverage Results" MODIFIED="1483331907608" SOURCE_PROVIDER="com.intellij.coverage.DefaultCoverageFileProvider" RUNNER="coverage.py" COVERAGE_BY_TEST_ENABLED="true" COVERAGE_TRACING_ENABLED="false" WORKING_DIRECTORY="$PROJECT_DIR$/LearnModule" />
@@ -70,7 +61,7 @@
     <SUITE FILE_PATH="coverage/learning2017$int2str.coverage" NAME="int2str Coverage Results" MODIFIED="1484131847635" SOURCE_PROVIDER="com.intellij.coverage.DefaultCoverageFileProvider" RUNNER="coverage.py" COVERAGE_BY_TEST_ENABLED="true" COVERAGE_TRACING_ENABLED="false" WORKING_DIRECTORY="$PROJECT_DIR$/LearnModule" />
     <SUITE FILE_PATH="coverage/learning2017$Data_normalized.coverage" NAME="Data_normalized Coverage Results" MODIFIED="1503645620618" SOURCE_PROVIDER="com.intellij.coverage.DefaultCoverageFileProvider" RUNNER="coverage.py" COVERAGE_BY_TEST_ENABLED="true" COVERAGE_TRACING_ENABLED="false" WORKING_DIRECTORY="$PROJECT_DIR$/ESP_project/data_knowledge" />
     <SUITE FILE_PATH="coverage/learning2017$appendixdirectory.coverage" NAME="appendixdirectory Coverage Results" MODIFIED="1503318779366" SOURCE_PROVIDER="com.intellij.coverage.DefaultCoverageFileProvider" RUNNER="coverage.py" COVERAGE_BY_TEST_ENABLED="true" COVERAGE_TRACING_ENABLED="false" WORKING_DIRECTORY="$PROJECT_DIR$/ESP_project/data_news" />
-    <SUITE FILE_PATH="coverage/learning2017$ESapi2Json.coverage" NAME="ESapi2Json Coverage Results" MODIFIED="1503572326352" SOURCE_PROVIDER="com.intellij.coverage.DefaultCoverageFileProvider" RUNNER="coverage.py" COVERAGE_BY_TEST_ENABLED="true" COVERAGE_TRACING_ENABLED="false" WORKING_DIRECTORY="$PROJECT_DIR$/ESP_project/data_images" />
+    <SUITE FILE_PATH="coverage/learning2017$ESapi2Json.coverage" NAME="ESapi2Json Coverage Results" MODIFIED="1509014738096" SOURCE_PROVIDER="com.intellij.coverage.DefaultCoverageFileProvider" RUNNER="coverage.py" COVERAGE_BY_TEST_ENABLED="true" COVERAGE_TRACING_ENABLED="false" WORKING_DIRECTORY="$PROJECT_DIR$/ESP_project/data_images" />
     <SUITE FILE_PATH="coverage/learning2017$0812.coverage" NAME="空当接龙游戏0812 Coverage Results" MODIFIED="1502695381921" SOURCE_PROVIDER="com.intellij.coverage.DefaultCoverageFileProvider" RUNNER="coverage.py" COVERAGE_BY_TEST_ENABLED="true" COVERAGE_TRACING_ENABLED="false" WORKING_DIRECTORY="$PROJECT_DIR$/PY.exercise" />
     <SUITE FILE_PATH="coverage/learning2017$knowledgeCatlist.coverage" NAME="knowledgeCatlist Coverage Results" MODIFIED="1503384059107" SOURCE_PROVIDER="com.intellij.coverage.DefaultCoverageFileProvider" RUNNER="coverage.py" COVERAGE_BY_TEST_ENABLED="true" COVERAGE_TRACING_ENABLED="false" WORKING_DIRECTORY="$PROJECT_DIR$/ESP_project/data_knowledge" />
     <SUITE FILE_PATH="coverage/learning2017$viewcounts.coverage" NAME="viewcounts Coverage Results" MODIFIED="1502954469227" SOURCE_PROVIDER="com.intellij.coverage.DefaultCoverageFileProvider" RUNNER="coverage.py" COVERAGE_BY_TEST_ENABLED="true" COVERAGE_TRACING_ENABLED="false" WORKING_DIRECTORY="$PROJECT_DIR$/LearnModule/ESP_project" />
@@ -108,25 +99,25 @@
       <file leaf-file-name="testcode004.py" pinned="false" current-in-tab="false">
         <entry file="file://$PROJECT_DIR$/PY.exercise/testcode004.py">
           <provider selected="true" editor-type-id="text-editor">
-            <state relative-caret-position="368">
-              <caret line="42" column="0" lean-forward="false" selection-start-line="42" selection-start-column="0" selection-end-line="42" selection-end-column="0" />
+            <state relative-caret-position="1230">
+              <caret line="44" column="30" lean-forward="false" selection-start-line="44" selection-start-column="30" selection-end-line="44" selection-end-column="30" />
               <folding />
             </state>
           </provider>
         </entry>
       </file>
-      <file leaf-file-name="zwrn_process.py" pinned="false" current-in-tab="false">
-        <entry file="file://$PROJECT_DIR$/RSF_project/data_process/zwrn_process.py">
+      <file leaf-file-name="ZW_synonym_process.py" pinned="false" current-in-tab="false">
+        <entry file="file://$PROJECT_DIR$/RSF_project/data_process/ZW_synonym_process.py">
           <provider selected="true" editor-type-id="text-editor">
-            <state relative-caret-position="149">
-              <caret line="26" column="0" lean-forward="true" selection-start-line="26" selection-start-column="0" selection-end-line="26" selection-end-column="0" />
+            <state relative-caret-position="960">
+              <caret line="32" column="15" lean-forward="false" selection-start-line="32" selection-start-column="15" selection-end-line="32" selection-end-column="15" />
               <folding />
             </state>
           </provider>
         </entry>
       </file>
-      <file leaf-file-name="政务人名词表1024_P.txt" pinned="false" current-in-tab="false">
-        <entry file="file://$PROJECT_DIR$/RSF_project/data/政务人名词表1024_P.txt">
+      <file leaf-file-name="HeadportraitURL.py" pinned="false" current-in-tab="false">
+        <entry file="file://$PROJECT_DIR$/ESP_project/data_contanct/HeadportraitURL.py">
           <provider selected="true" editor-type-id="text-editor">
             <state relative-caret-position="0">
               <caret line="0" column="0" lean-forward="false" selection-start-line="0" selection-start-column="0" selection-end-line="0" selection-end-column="0" />
@@ -135,21 +126,11 @@
           </provider>
         </entry>
       </file>
-      <file leaf-file-name="ZW_synonym_process.py" pinned="false" current-in-tab="true">
-        <entry file="file://$PROJECT_DIR$/RSF_project/data_process/ZW_synonym_process.py">
-          <provider selected="true" editor-type-id="text-editor">
-            <state relative-caret-position="690">
-              <caret line="29" column="21" lean-forward="true" selection-start-line="29" selection-start-column="21" selection-end-line="29" selection-end-column="21" />
-              <folding />
-            </state>
-          </provider>
-        </entry>
-      </file>
       <file leaf-file-name="电子政务同义词表1024.txt" pinned="false" current-in-tab="false">
         <entry file="file://$PROJECT_DIR$/RSF_project/data/电子政务同义词表1024.txt">
           <provider selected="true" editor-type-id="text-editor">
-            <state relative-caret-position="1179">
-              <caret line="110" column="14" lean-forward="true" selection-start-line="110" selection-start-column="14" selection-end-line="110" selection-end-column="14" />
+            <state relative-caret-position="3300">
+              <caret line="110" column="14" lean-forward="false" selection-start-line="110" selection-start-column="14" selection-end-line="110" selection-end-column="14" />
               <folding />
             </state>
           </provider>
@@ -158,28 +139,8 @@
       <file leaf-file-name="电子政务及公文主题词表（包括同义词及上位词） 2017.10.24.csv" pinned="false" current-in-tab="false">
         <entry file="file://$PROJECT_DIR$/RSF_project/data/电子政务及公文主题词表（包括同义词及上位词） 2017.10.24.csv">
           <provider selected="true" editor-type-id="text-editor">
-            <state relative-caret-position="449">
+            <state relative-caret-position="803700">
               <caret line="26790" column="19" lean-forward="false" selection-start-line="26790" selection-start-column="15" selection-end-line="26790" selection-end-column="19" />
-              <folding />
-            </state>
-          </provider>
-        </entry>
-      </file>
-      <file leaf-file-name="政务人名词表1024.txt" pinned="false" current-in-tab="false">
-        <entry file="file://$PROJECT_DIR$/RSF_project/data/政务人名词表1024.txt">
-          <provider selected="true" editor-type-id="text-editor">
-            <state relative-caret-position="-1941">
-              <caret line="358" column="2" lean-forward="false" selection-start-line="358" selection-start-column="1" selection-end-line="358" selection-end-column="2" />
-              <folding />
-            </state>
-          </provider>
-        </entry>
-      </file>
-      <file leaf-file-name="全国高校名录.dat" pinned="false" current-in-tab="false">
-        <entry file="file://$PROJECT_DIR$/program data/高校相关数据/全国高校名录.dat">
-          <provider selected="true" editor-type-id="text-editor">
-            <state relative-caret-position="58860">
-              <caret line="1962" column="4" lean-forward="false" selection-start-line="1962" selection-start-column="2" selection-end-line="1962" selection-end-column="4" />
               <folding />
             </state>
           </provider>
@@ -195,11 +156,43 @@
           </provider>
         </entry>
       </file>
-      <file leaf-file-name="random.py" pinned="false" current-in-tab="false">
-        <entry file="file://D:/Program Files (x86)/Python/Python35/Lib/random.py">
+      <file leaf-file-name="CNKI_get_hotkeywords.py" pinned="false" current-in-tab="false">
+        <entry file="file://$PROJECT_DIR$/CNKI_get_hotkeywords.py">
           <provider selected="true" editor-type-id="text-editor">
-            <state relative-caret-position="9300">
-              <caret line="316" column="15" lean-forward="false" selection-start-line="316" selection-start-column="8" selection-end-line="316" selection-end-column="15" />
+            <state relative-caret-position="180">
+              <caret line="6" column="15" lean-forward="true" selection-start-line="6" selection-start-column="7" selection-end-line="6" selection-end-column="15" />
+              <folding />
+            </state>
+          </provider>
+        </entry>
+      </file>
+      <file leaf-file-name="ESapi2Json.py" pinned="false" current-in-tab="false">
+        <entry file="file://$PROJECT_DIR$/ESP_project/data_images/ESapi2Json.py">
+          <provider selected="true" editor-type-id="text-editor">
+            <state relative-caret-position="1200">
+              <caret line="43" column="22" lean-forward="true" selection-start-line="43" selection-start-column="22" selection-end-line="43" selection-end-column="22" />
+              <folding>
+                <element signature="e#25#49#0" expanded="true" />
+              </folding>
+            </state>
+          </provider>
+        </entry>
+      </file>
+      <file leaf-file-name="WrongACL.dat" pinned="false" current-in-tab="true">
+        <entry file="file://$PROJECT_DIR$/ESP_project/ESP_ACL/WrongACL.dat">
+          <provider selected="true" editor-type-id="text-editor">
+            <state relative-caret-position="210">
+              <caret line="7" column="0" lean-forward="true" selection-start-line="7" selection-start-column="0" selection-end-line="7" selection-end-column="0" />
+              <folding />
+            </state>
+          </provider>
+        </entry>
+      </file>
+      <file leaf-file-name="file_operate.py" pinned="false" current-in-tab="false">
+        <entry file="file://$PROJECT_DIR$/LearnModule/file_operate.py">
+          <provider selected="true" editor-type-id="text-editor">
+            <state relative-caret-position="570">
+              <caret line="19" column="35" lean-forward="false" selection-start-line="19" selection-start-column="22" selection-end-line="19" selection-end-column="35" />
               <folding />
             </state>
           </provider>
@@ -241,8 +234,6 @@
   <component name="IdeDocumentHistory">
     <option name="CHANGED_PATHS">
       <list>
-        <option value="$PROJECT_DIR$/LearnModule/CardsGame.py" />
-        <option value="$PROJECT_DIR$/PY.exercise/空当接龙游戏0812.py" />
         <option value="$PROJECT_DIR$/LearnModule/StringSplit.py" />
         <option value="$PROJECT_DIR$/LearnModule/ESP_project/orgnization.py" />
         <option value="$PROJECT_DIR$/LearnModule/ESP_project/viewcounts.py" />
@@ -261,7 +252,6 @@
         <option value="$PROJECT_DIR$/ESP_project/data_knowledge/knowledgeCatlist.py" />
         <option value="$PROJECT_DIR$/PY.exercise/testcode002.py" />
         <option value="$PROJECT_DIR$/ESP_project/esp_images/file_copy.py" />
-        <option value="$PROJECT_DIR$/ESP_project/data_images/ESapi2Json.py" />
         <option value="$PROJECT_DIR$/ESP_project/data_knowledge/Data_normalized.py" />
         <option value="$PROJECT_DIR$/PY.exercise/exer0825001.py" />
         <option value="$PROJECT_DIR$/PY.exercise/exer0901001.py" />
@@ -288,10 +278,13 @@
         <option value="$PROJECT_DIR$/LearnModule/String_func.py" />
         <option value="$PROJECT_DIR$/DataAnalysize Project/HighSchoolData.py" />
         <option value="$PROJECT_DIR$/program data/高校相关数据/985 and 211名单.csv" />
-        <option value="$PROJECT_DIR$/PY.exercise/testcode004.py" />
         <option value="$PROJECT_DIR$/RSF_project/data_process/zwrn_process.py" />
         <option value="$PROJECT_DIR$/RSF_project/data_process/ZW_synonym_process.py" />
         <option value="$PROJECT_DIR$/RSF_project/data/电子政务同义词表1024.txt" />
+        <option value="$PROJECT_DIR$/CNKI_get_hotkeywords.py" />
+        <option value="$PROJECT_DIR$/PY.exercise/testcode004.py" />
+        <option value="$PROJECT_DIR$/ESP_project/ESP_ACL/WrongACL.dat" />
+        <option value="$PROJECT_DIR$/ESP_project/data_images/ESapi2Json.py" />
       </list>
     </option>
   </component>
@@ -302,10 +295,10 @@
     <sorting>DEFINITION_ORDER</sorting>
   </component>
   <component name="ProjectFrameBounds">
-    <option name="x" value="-8" />
+    <option name="x" value="1358" />
     <option name="y" value="-8" />
-    <option name="width" value="1382" />
-    <option name="height" value="754" />
+    <option name="width" value="1616" />
+    <option name="height" value="886" />
   </component>
   <component name="ProjectLevelVcsManager">
     <ConfirmationsSetting value="2" id="添加" />
@@ -521,7 +514,7 @@
       <recent name="F:\documents\python\learning2017\LearnModule\ESP_project\data_contanct" />
     </key>
   </component>
-  <component name="RunManager" selected="Python.ZW_synonym_process">
+  <component name="RunManager" selected="Python.ESapi2Json">
     <configuration default="false" name="HighSchoolData" type="PythonConfigurationType" factoryName="Python" temporary="true">
       <option name="INTERPRETER_OPTIONS" value="" />
       <option name="PARENT_ENVS" value="true" />
@@ -536,24 +529,6 @@
       <module name="learning2017" />
       <EXTENSION ID="PythonCoverageRunConfigurationExtension" enabled="false" sample_coverage="true" runner="coverage.py" />
       <option name="SCRIPT_NAME" value="$PROJECT_DIR$/DataAnalysize Project/HighSchoolData.py" />
-      <option name="PARAMETERS" value="" />
-      <option name="SHOW_COMMAND_LINE" value="false" />
-      <method />
-    </configuration>
-    <configuration default="false" name="SpecialExtractor" type="PythonConfigurationType" factoryName="Python" temporary="true">
-      <option name="INTERPRETER_OPTIONS" value="" />
-      <option name="PARENT_ENVS" value="true" />
-      <envs>
-        <env name="PYTHONUNBUFFERED" value="1" />
-      </envs>
-      <option name="SDK_HOME" value="" />
-      <option name="WORKING_DIRECTORY" value="$PROJECT_DIR$/DataAnalysize Project" />
-      <option name="IS_MODULE_SDK" value="true" />
-      <option name="ADD_CONTENT_ROOTS" value="true" />
-      <option name="ADD_SOURCE_ROOTS" value="true" />
-      <module name="learning2017" />
-      <EXTENSION ID="PythonCoverageRunConfigurationExtension" enabled="false" sample_coverage="true" runner="coverage.py" />
-      <option name="SCRIPT_NAME" value="$PROJECT_DIR$/DataAnalysize Project/SpecialExtractor.py" />
       <option name="PARAMETERS" value="" />
       <option name="SHOW_COMMAND_LINE" value="false" />
       <method />
@@ -608,6 +583,24 @@
       <module name="learning2017" />
       <EXTENSION ID="PythonCoverageRunConfigurationExtension" enabled="false" sample_coverage="true" runner="coverage.py" />
       <option name="SCRIPT_NAME" value="$PROJECT_DIR$/RSF_project/data_process/ZW_synonym_process.py" />
+      <option name="PARAMETERS" value="" />
+      <option name="SHOW_COMMAND_LINE" value="false" />
+      <method />
+    </configuration>
+    <configuration default="false" name="ESapi2Json" type="PythonConfigurationType" factoryName="Python" temporary="true">
+      <option name="INTERPRETER_OPTIONS" value="" />
+      <option name="PARENT_ENVS" value="true" />
+      <envs>
+        <env name="PYTHONUNBUFFERED" value="1" />
+      </envs>
+      <option name="SDK_HOME" value="" />
+      <option name="WORKING_DIRECTORY" value="$PROJECT_DIR$/ESP_project/data_images" />
+      <option name="IS_MODULE_SDK" value="true" />
+      <option name="ADD_CONTENT_ROOTS" value="true" />
+      <option name="ADD_SOURCE_ROOTS" value="true" />
+      <module name="learning2017" />
+      <EXTENSION ID="PythonCoverageRunConfigurationExtension" enabled="false" sample_coverage="true" runner="coverage.py" />
+      <option name="SCRIPT_NAME" value="$PROJECT_DIR$/ESP_project/data_images/ESapi2Json.py" />
       <option name="PARAMETERS" value="" />
       <option name="SHOW_COMMAND_LINE" value="false" />
       <method />
@@ -828,18 +821,18 @@
     </configuration>
     <list size="5">
       <item index="0" class="java.lang.String" itemvalue="Python.HighSchoolData" />
-      <item index="1" class="java.lang.String" itemvalue="Python.SpecialExtractor" />
-      <item index="2" class="java.lang.String" itemvalue="Python.testcode004" />
-      <item index="3" class="java.lang.String" itemvalue="Python.zwrn_process" />
-      <item index="4" class="java.lang.String" itemvalue="Python.ZW_synonym_process" />
+      <item index="1" class="java.lang.String" itemvalue="Python.testcode004" />
+      <item index="2" class="java.lang.String" itemvalue="Python.zwrn_process" />
+      <item index="3" class="java.lang.String" itemvalue="Python.ZW_synonym_process" />
+      <item index="4" class="java.lang.String" itemvalue="Python.ESapi2Json" />
     </list>
     <recent_temporary>
       <list size="5">
-        <item index="0" class="java.lang.String" itemvalue="Python.ZW_synonym_process" />
-        <item index="1" class="java.lang.String" itemvalue="Python.zwrn_process" />
-        <item index="2" class="java.lang.String" itemvalue="Python.testcode004" />
-        <item index="3" class="java.lang.String" itemvalue="Python.HighSchoolData" />
-        <item index="4" class="java.lang.String" itemvalue="Python.SpecialExtractor" />
+        <item index="0" class="java.lang.String" itemvalue="Python.ESapi2Json" />
+        <item index="1" class="java.lang.String" itemvalue="Python.testcode004" />
+        <item index="2" class="java.lang.String" itemvalue="Python.ZW_synonym_process" />
+        <item index="3" class="java.lang.String" itemvalue="Python.zwrn_process" />
+        <item index="4" class="java.lang.String" itemvalue="Python.HighSchoolData" />
       </list>
     </recent_temporary>
   </component>
@@ -994,7 +987,14 @@
       <option name="project" value="LOCAL" />
       <updated>1506409312543</updated>
     </task>
-    <option name="localTasksCounter" value="21" />
+    <task id="LOCAL-00021" summary="Merge branch 'master' of https://git.oschina.net/flyingaura/learning2017&#10;&#10;# Conflicts:&#10;#&#9;.idea/workspace.xml&#10;">
+      <created>1508933593142</created>
+      <option name="number" value="00021" />
+      <option name="presentableId" value="LOCAL-00021" />
+      <option name="project" value="LOCAL" />
+      <updated>1508933593142</updated>
+    </task>
+    <option name="localTasksCounter" value="22" />
     <servers />
   </component>
   <component name="TodoView">
@@ -1007,25 +1007,25 @@
     </todo-panel>
   </component>
   <component name="ToolWindowManager">
-    <frame x="-8" y="-8" width="1382" height="754" extended-state="6" />
+    <frame x="1358" y="-8" width="1616" height="886" extended-state="6" />
     <editor active="false" />
     <layout>
-      <window_info id="Project" active="true" anchor="left" auto_hide="false" internal_type="DOCKED" type="DOCKED" visible="true" show_stripe_button="true" weight="0.25718608" sideWeight="0.5" order="0" side_tool="false" content_ui="combo" />
+      <window_info id="Project" active="false" anchor="left" auto_hide="false" internal_type="DOCKED" type="DOCKED" visible="true" show_stripe_button="true" weight="0.22493573" sideWeight="0.5" order="0" side_tool="false" content_ui="combo" />
       <window_info id="TODO" active="false" anchor="bottom" auto_hide="false" internal_type="DOCKED" type="DOCKED" visible="false" show_stripe_button="true" weight="0.33" sideWeight="0.5" order="6" side_tool="false" content_ui="tabs" />
-      <window_info id="调试" active="false" anchor="bottom" auto_hide="false" internal_type="DOCKED" type="DOCKED" visible="false" show_stripe_button="true" weight="0.32258064" sideWeight="0.5" order="7" side_tool="false" content_ui="tabs" />
       <window_info id="Event Log" active="false" anchor="bottom" auto_hide="false" internal_type="DOCKED" type="DOCKED" visible="false" show_stripe_button="true" weight="0.21612903" sideWeight="0.50378215" order="12" side_tool="true" content_ui="tabs" />
       <window_info id="Database" active="false" anchor="right" auto_hide="false" internal_type="DOCKED" type="DOCKED" visible="false" show_stripe_button="true" weight="0.33" sideWeight="0.5" order="3" side_tool="false" content_ui="tabs" />
       <window_info id="Version Control" active="false" anchor="bottom" auto_hide="false" internal_type="DOCKED" type="DOCKED" visible="false" show_stripe_button="false" weight="0.33" sideWeight="0.5" order="8" side_tool="false" content_ui="tabs" />
       <window_info id="Python Console" active="false" anchor="bottom" auto_hide="false" internal_type="DOCKED" type="DOCKED" visible="false" show_stripe_button="true" weight="0.23829344" sideWeight="0.5" order="9" side_tool="false" content_ui="tabs" />
       <window_info id="Structure" active="false" anchor="left" auto_hide="false" internal_type="DOCKED" type="DOCKED" visible="false" show_stripe_button="true" weight="0.24959305" sideWeight="0.5" order="1" side_tool="false" content_ui="tabs" />
       <window_info id="Terminal" active="false" anchor="bottom" auto_hide="false" internal_type="DOCKED" type="DOCKED" visible="false" show_stripe_button="true" weight="0.16129032" sideWeight="0.5" order="13" side_tool="false" content_ui="tabs" />
-      <window_info id="运行" active="false" anchor="bottom" auto_hide="false" internal_type="DOCKED" type="DOCKED" visible="true" show_stripe_button="true" weight="0.42258066" sideWeight="0.49621785" order="10" side_tool="false" content_ui="tabs" />
       <window_info id="Favorites" active="false" anchor="left" auto_hide="false" internal_type="DOCKED" type="DOCKED" visible="false" show_stripe_button="true" weight="0.3298969" sideWeight="0.5" order="2" side_tool="true" content_ui="tabs" />
       <window_info id="Cvs" active="false" anchor="bottom" auto_hide="false" internal_type="DOCKED" type="DOCKED" visible="false" show_stripe_button="true" weight="0.25" sideWeight="0.5" order="4" side_tool="false" content_ui="tabs" />
+      <window_info id="调试" active="false" anchor="bottom" auto_hide="false" internal_type="DOCKED" type="DOCKED" visible="false" show_stripe_button="true" weight="0.32258064" sideWeight="0.5" order="7" side_tool="false" content_ui="tabs" />
       <window_info id="Message" active="false" anchor="bottom" auto_hide="false" internal_type="DOCKED" type="DOCKED" visible="false" show_stripe_button="true" weight="0.33" sideWeight="0.5" order="0" side_tool="false" content_ui="tabs" />
       <window_info id="Commander" active="false" anchor="right" auto_hide="false" internal_type="DOCKED" type="DOCKED" visible="false" show_stripe_button="true" weight="0.4" sideWeight="0.5" order="0" side_tool="false" content_ui="tabs" />
       <window_info id="Inspection" active="false" anchor="bottom" auto_hide="false" internal_type="DOCKED" type="DOCKED" visible="false" show_stripe_button="true" weight="0.4" sideWeight="0.5" order="5" side_tool="false" content_ui="tabs" />
       <window_info id="Run" active="false" anchor="bottom" auto_hide="false" internal_type="DOCKED" type="DOCKED" visible="false" show_stripe_button="true" weight="0.33" sideWeight="0.5" order="2" side_tool="false" content_ui="tabs" />
+      <window_info id="运行" active="false" anchor="bottom" auto_hide="false" internal_type="DOCKED" type="DOCKED" visible="false" show_stripe_button="true" weight="0.42258066" sideWeight="0.49621785" order="10" side_tool="false" content_ui="tabs" />
       <window_info id="Hierarchy" active="false" anchor="right" auto_hide="false" internal_type="DOCKED" type="DOCKED" visible="false" show_stripe_button="true" weight="0.25" sideWeight="0.5" order="2" side_tool="false" content_ui="combo" />
       <window_info id="Find" active="false" anchor="bottom" auto_hide="false" internal_type="DOCKED" type="DOCKED" visible="false" show_stripe_button="true" weight="0.33" sideWeight="0.5" order="1" side_tool="false" content_ui="tabs" />
       <window_info id="Ant Build" active="false" anchor="right" auto_hide="false" internal_type="DOCKED" type="DOCKED" visible="false" show_stripe_button="true" weight="0.25" sideWeight="0.5" order="1" side_tool="false" content_ui="tabs" />
@@ -1090,39 +1090,10 @@
     <watches-manager />
   </component>
   <component name="editorHistoryManager">
-    <entry file="file://$PROJECT_DIR$/program data/GPS.dat">
-      <provider selected="true" editor-type-id="text-editor">
-        <state relative-caret-position="240">
-          <caret line="8" column="24" lean-forward="false" selection-start-line="8" selection-start-column="0" selection-end-line="8" selection-end-column="24" />
-        </state>
-      </provider>
-    </entry>
-    <entry file="file://$PROJECT_DIR$/PY.exercise/exer0901002.py">
-      <provider selected="true" editor-type-id="text-editor">
-        <state relative-caret-position="2790">
-          <caret line="94" column="0" lean-forward="false" selection-start-line="94" selection-start-column="0" selection-end-line="94" selection-end-column="0" />
-        </state>
-      </provider>
-    </entry>
-    <entry file="file://$PROJECT_DIR$/LearnModule/str2int.py">
-      <provider selected="true" editor-type-id="text-editor">
-        <state relative-caret-position="0">
-          <caret line="0" column="0" lean-forward="false" selection-start-line="0" selection-start-column="0" selection-end-line="0" selection-end-column="0" />
-        </state>
-      </provider>
-    </entry>
-    <entry file="file://$PROJECT_DIR$/ESP_project/data_files/files_normalized_NoACL.json" />
     <entry file="file://$PROJECT_DIR$/ESP_project/data_knowledge/knowledge_normalized_NoACL.json">
       <provider selected="true" editor-type-id="text-editor">
         <state relative-caret-position="0">
           <caret line="0" column="0" lean-forward="false" selection-start-line="0" selection-start-column="0" selection-end-line="0" selection-end-column="0" />
-        </state>
-      </provider>
-    </entry>
-    <entry file="file://$PROJECT_DIR$/ESP_project/data_images/ESapi2Json.py">
-      <provider selected="true" editor-type-id="text-editor">
-        <state relative-caret-position="600">
-          <caret line="23" column="47" lean-forward="false" selection-start-line="23" selection-start-column="47" selection-end-line="23" selection-end-column="47" />
         </state>
       </provider>
     </entry>
@@ -1321,7 +1292,6 @@
       <provider selected="true" editor-type-id="text-editor">
         <state relative-caret-position="142530">
           <caret line="4751" column="57" lean-forward="false" selection-start-line="4751" selection-start-column="47" selection-end-line="4751" selection-end-column="57" />
-          <folding />
         </state>
       </provider>
     </entry>
@@ -1329,7 +1299,6 @@
       <provider selected="true" editor-type-id="text-editor">
         <state relative-caret-position="7230">
           <caret line="241" column="60" lean-forward="false" selection-start-line="241" selection-start-column="60" selection-end-line="241" selection-end-column="60" />
-          <folding />
         </state>
       </provider>
     </entry>
@@ -1337,7 +1306,6 @@
       <provider selected="true" editor-type-id="text-editor">
         <state relative-caret-position="7350">
           <caret line="246" column="0" lean-forward="false" selection-start-line="246" selection-start-column="0" selection-end-line="246" selection-end-column="0" />
-          <folding />
         </state>
       </provider>
     </entry>
@@ -1345,7 +1313,6 @@
       <provider selected="true" editor-type-id="text-editor">
         <state relative-caret-position="20160">
           <caret line="672" column="24" lean-forward="false" selection-start-line="0" selection-start-column="0" selection-end-line="2596" selection-end-column="0" />
-          <folding />
         </state>
       </provider>
     </entry>
@@ -1353,7 +1320,6 @@
       <provider selected="true" editor-type-id="text-editor">
         <state relative-caret-position="2460">
           <caret line="82" column="11" lean-forward="false" selection-start-line="82" selection-start-column="3" selection-end-line="82" selection-end-column="11" />
-          <folding />
         </state>
       </provider>
     </entry>
@@ -1361,7 +1327,6 @@
       <provider selected="true" editor-type-id="text-editor">
         <state relative-caret-position="32700">
           <caret line="1090" column="26" lean-forward="false" selection-start-line="1090" selection-start-column="26" selection-end-line="1090" selection-end-column="26" />
-          <folding />
         </state>
       </provider>
     </entry>
@@ -1369,7 +1334,6 @@
       <provider selected="true" editor-type-id="text-editor">
         <state relative-caret-position="58860">
           <caret line="1962" column="4" lean-forward="false" selection-start-line="1962" selection-start-column="2" selection-end-line="1962" selection-end-column="4" />
-          <folding />
         </state>
       </provider>
     </entry>
@@ -1377,6 +1341,58 @@
       <provider selected="true" editor-type-id="text-editor">
         <state relative-caret-position="9300">
           <caret line="316" column="15" lean-forward="false" selection-start-line="316" selection-start-column="8" selection-end-line="316" selection-end-column="15" />
+        </state>
+      </provider>
+    </entry>
+    <entry file="file://$PROJECT_DIR$/RSF_project/data/政务人名词表1024.txt">
+      <provider selected="true" editor-type-id="text-editor">
+        <state relative-caret-position="10740">
+          <caret line="358" column="2" lean-forward="false" selection-start-line="358" selection-start-column="1" selection-end-line="358" selection-end-column="2" />
+        </state>
+      </provider>
+    </entry>
+    <entry file="file://$PROJECT_DIR$/RSF_project/data_process/zwrn_process.py">
+      <provider selected="true" editor-type-id="text-editor">
+        <state relative-caret-position="780">
+          <caret line="26" column="0" lean-forward="false" selection-start-line="26" selection-start-column="0" selection-end-line="26" selection-end-column="0" />
+        </state>
+      </provider>
+    </entry>
+    <entry file="file://$PROJECT_DIR$/RSF_project/data/政务人名词表1024_P.txt">
+      <provider selected="true" editor-type-id="text-editor">
+        <state relative-caret-position="0">
+          <caret line="0" column="0" lean-forward="false" selection-start-line="0" selection-start-column="0" selection-end-line="0" selection-end-column="0" />
+        </state>
+      </provider>
+    </entry>
+    <entry file="file://$PROJECT_DIR$/RSF_project/data/电子政务及公文主题词表（包括同义词及上位词） 2017.10.24.csv">
+      <provider selected="true" editor-type-id="text-editor">
+        <state relative-caret-position="803700">
+          <caret line="26790" column="19" lean-forward="false" selection-start-line="26790" selection-start-column="15" selection-end-line="26790" selection-end-column="19" />
+          <folding />
+        </state>
+      </provider>
+    </entry>
+    <entry file="file://$PROJECT_DIR$/RSF_project/data/电子政务同义词表1024.txt">
+      <provider selected="true" editor-type-id="text-editor">
+        <state relative-caret-position="3300">
+          <caret line="110" column="14" lean-forward="false" selection-start-line="110" selection-start-column="14" selection-end-line="110" selection-end-column="14" />
+          <folding />
+        </state>
+      </provider>
+    </entry>
+    <entry file="file://$PROJECT_DIR$/RSF_project/data_process/ZW_synonym_process.py">
+      <provider selected="true" editor-type-id="text-editor">
+        <state relative-caret-position="960">
+          <caret line="32" column="15" lean-forward="false" selection-start-line="32" selection-start-column="15" selection-end-line="32" selection-end-column="15" />
+          <folding />
+        </state>
+      </provider>
+    </entry>
+    <entry file="file://$PROJECT_DIR$/ESP_project/data_contanct/HeadportraitURL.py">
+      <provider selected="true" editor-type-id="text-editor">
+        <state relative-caret-position="0">
+          <caret line="0" column="0" lean-forward="false" selection-start-line="0" selection-start-column="0" selection-end-line="0" selection-end-column="0" />
           <folding />
         </state>
       </provider>
@@ -1389,58 +1405,44 @@
         </state>
       </provider>
     </entry>
+    <entry file="file://$PROJECT_DIR$/CNKI_get_hotkeywords.py">
+      <provider selected="true" editor-type-id="text-editor">
+        <state relative-caret-position="180">
+          <caret line="6" column="15" lean-forward="true" selection-start-line="6" selection-start-column="7" selection-end-line="6" selection-end-column="15" />
+          <folding />
+        </state>
+      </provider>
+    </entry>
     <entry file="file://$PROJECT_DIR$/PY.exercise/testcode004.py">
       <provider selected="true" editor-type-id="text-editor">
-        <state relative-caret-position="368">
-          <caret line="42" column="0" lean-forward="false" selection-start-line="42" selection-start-column="0" selection-end-line="42" selection-end-column="0" />
+        <state relative-caret-position="1230">
+          <caret line="44" column="30" lean-forward="false" selection-start-line="44" selection-start-column="30" selection-end-line="44" selection-end-column="30" />
           <folding />
         </state>
       </provider>
     </entry>
-    <entry file="file://$PROJECT_DIR$/RSF_project/data/政务人名词表1024.txt">
+    <entry file="file://$PROJECT_DIR$/LearnModule/file_operate.py">
       <provider selected="true" editor-type-id="text-editor">
-        <state relative-caret-position="-1941">
-          <caret line="358" column="2" lean-forward="false" selection-start-line="358" selection-start-column="1" selection-end-line="358" selection-end-column="2" />
+        <state relative-caret-position="570">
+          <caret line="19" column="35" lean-forward="false" selection-start-line="19" selection-start-column="22" selection-end-line="19" selection-end-column="35" />
           <folding />
         </state>
       </provider>
     </entry>
-    <entry file="file://$PROJECT_DIR$/RSF_project/data_process/zwrn_process.py">
+    <entry file="file://$PROJECT_DIR$/ESP_project/data_images/ESapi2Json.py">
       <provider selected="true" editor-type-id="text-editor">
-        <state relative-caret-position="149">
-          <caret line="26" column="0" lean-forward="true" selection-start-line="26" selection-start-column="0" selection-end-line="26" selection-end-column="0" />
-          <folding />
+        <state relative-caret-position="1200">
+          <caret line="43" column="22" lean-forward="true" selection-start-line="43" selection-start-column="22" selection-end-line="43" selection-end-column="22" />
+          <folding>
+            <element signature="e#25#49#0" expanded="true" />
+          </folding>
         </state>
       </provider>
     </entry>
-    <entry file="file://$PROJECT_DIR$/RSF_project/data/政务人名词表1024_P.txt">
+    <entry file="file://$PROJECT_DIR$/ESP_project/ESP_ACL/WrongACL.dat">
       <provider selected="true" editor-type-id="text-editor">
-        <state relative-caret-position="0">
-          <caret line="0" column="0" lean-forward="false" selection-start-line="0" selection-start-column="0" selection-end-line="0" selection-end-column="0" />
-          <folding />
-        </state>
-      </provider>
-    </entry>
-    <entry file="file://$PROJECT_DIR$/RSF_project/data/电子政务及公文主题词表（包括同义词及上位词） 2017.10.24.csv">
-      <provider selected="true" editor-type-id="text-editor">
-        <state relative-caret-position="449">
-          <caret line="26790" column="19" lean-forward="false" selection-start-line="26790" selection-start-column="15" selection-end-line="26790" selection-end-column="19" />
-          <folding />
-        </state>
-      </provider>
-    </entry>
-    <entry file="file://$PROJECT_DIR$/RSF_project/data/电子政务同义词表1024.txt">
-      <provider selected="true" editor-type-id="text-editor">
-        <state relative-caret-position="1179">
-          <caret line="110" column="14" lean-forward="true" selection-start-line="110" selection-start-column="14" selection-end-line="110" selection-end-column="14" />
-          <folding />
-        </state>
-      </provider>
-    </entry>
-    <entry file="file://$PROJECT_DIR$/RSF_project/data_process/ZW_synonym_process.py">
-      <provider selected="true" editor-type-id="text-editor">
-        <state relative-caret-position="690">
-          <caret line="29" column="21" lean-forward="true" selection-start-line="29" selection-start-column="21" selection-end-line="29" selection-end-column="21" />
+        <state relative-caret-position="210">
+          <caret line="7" column="0" lean-forward="true" selection-start-line="7" selection-start-column="0" selection-end-line="7" selection-end-column="0" />
           <folding />
         </state>
       </provider>
