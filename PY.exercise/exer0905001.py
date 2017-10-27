@@ -16,18 +16,26 @@ class Rational(object):
         self.denom = N2 // RN_GCD
 
     def __add__(self,RN):   #定义加法
+        if (isinstance(RN, int)):
+            RN = Rational(RN)
         # RN_gcd = MY_math.CalGCD(self.numer,self.denom)
         RN_lcm = MY_math.CalLCM(self.denom, RN.denom)
         return Rational((self.numer * RN_lcm // self.denom + RN.numer * RN_lcm // RN.denom),RN_lcm)
 
     def __sub__(self,RN):   #定义减法
+        if (isinstance(RN, int)):
+            RN = Rational(RN)
         RN_lcm = MY_math.CalLCM(self.denom, RN.denom)
         return Rational((self.numer * int(RN_lcm / self.denom) - RN.numer * int(RN_lcm / RN.denom)), RN_lcm)
 
     def __mul__(self,RN):   #定义乘法
+        if(isinstance(RN,int)):
+            RN = Rational(RN)
         return Rational(self.numer * RN.numer, self.denom * RN.denom)
 
     def __truediv__(self, RN):   #定义除法
+        if(isinstance(RN,int)):
+            RN = Rational(RN)
         return Rational(self.numer * RN.denom, self.denom * RN.numer)
 
     def __str__(self):   #定义输出，分数化简输出
@@ -39,8 +47,8 @@ class Rational(object):
     #     return self.__str__()
 
 
-RN1 = Rational(9,3)
-RN2 = Rational(17,5)
+RN1 = Rational(19,27)
+RN2 = 5.5
 
 print(RN1,RN2)
 print(RN1 + RN2)
@@ -49,4 +57,4 @@ print(RN1 * RN2)
 print(RN1 / RN2)
 # print(2//-4.10)
 
-print(isinstance(RN1,Rational))
+# print(isinstance(RN1,Rational))
