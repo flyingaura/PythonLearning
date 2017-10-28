@@ -1,10 +1,8 @@
 # -*- coding: utf-8 -*-
 import random
-import csv
-from LearnModule import String_func,StringSplit
-import json
 import time
-#
+import os
+from LearnModule import StringSplit,String_func
 # # alist = [random.sample(list(range(10)),3) for i in range(10)]
 # alist = []
 # bdict = {}
@@ -12,52 +10,43 @@ import time
 #     bdict[str(i)] = random.sample(list(range(10)),3)
 #     # alist.append(blist)
 # print(bdict)
-# #
-# # key0 = list(bdict.keys())[0]
-# # print(key0)
 #
-# datafilepath2 = r'F:\memory\python-learning\learning2017\program data\高校相关数据\2016年全国高等学校名单.csv'
-#
-# # with open(datafilepath2, mode='r', encoding='GBK') as infile:
-# #     # datalist = []
-# #     for aline in csv.reader(infile):
-# #         print(aline)
-# testStr = 'advann123sldfklsv39d3sl540lasd023lk1askf0sldkf001,voi208.30123lsk+++'
-# Numlist = String_func.StrExtractNum(testStr)
-# print(Numlist)
-# TotalCount = 0
-# URLCount = 0
-# testkey = '链接'
-# with open(r'F:\memory\python-learning\learning2017\ESP_project\data_news\origin_news.json', mode = 'rb') as infile:
-#     for Aline in infile.readlines():
-#         Aline_decode = Aline.decode('utf-8').strip()
-#         AlineJson = json.loads(Aline_decode)
-#         TotalCount += 1
-#         if(testkey in AlineJson.keys() and AlineJson[testkey]):
-#             URLCount += 1
-#
-# print('TotalCount = %d' %TotalCount)
-# print('URLCount = %d' %URLCount)
-# date = '2010-1101'
-# print(time.strptime(date, "%Y-%m-%d"))
-# print(list(time.strptime(date, "%Y-%m-%d")))
-# NowTime = int(time.time())
-# print(time.strftime('%Y-%m-%d %H:%M:%S', time.localtime(NowTime)))
-#
-# teststr = 'http://gongyi.sohu.com/20120716/n348242197.shtml'
-# print(StringSplit.stringsplit(StringSplit.stringsplit(teststr,'/')[1],'.')[0])
+# key0 = list(bdict.keys())[0]
+# print(key0)
 
-# Alist = [1]
-# print(random.sample(Alist,1))
-xlist = [x for x in range(5)]
-ylist = [y for y in 'abcde']
-# print(xlist)
-# for i in range(len(xlist)):
-#     if(xlist[i] % 2 == 0):
-#         xlist[i] = xlist[i] + 10
+# NowTime = time.time()
+# # JustTime = []
+# # JustTime.append(NowTime)
+# print(NowTime)
+# NowTime = 1505100099
+# print(type(NowTime))
+# print(time.localtime(NowTime))
+#
+# FormatTime = time.strftime('%Y-%m-%d %H:%M:%S',time.localtime(NowTime))
+# print(FormatTime)
 
-print(xlist + ylist)
-print(random.sample(xlist + ylist , 1))
+# print(os.path.splitext('备忘录_20130630_174926-马云论断.pdf')[0])
+# filepath = 'D:\\ESP_files\\相关技术学习\\搜索技术\\信息检索关键技术_2.ppt'
+# print(os.path.split(filepath))
+#
+# SetFilePath = StringSplit.stringsplit(filepath,'\\')
+# FilePath = ''
+# for Apath in SetFilePath[1:]:
+#     FilePath = os.path.join(FilePath,Apath)
+#
+# print(FilePath)
 
-xlist.remove(3)
+# print(String_func.if_enletter('t'))
+
+# astr = '\\公司管理\\总经理办'
+# splitstr = '\\'
+#
+# print(astr.strip(splitstr).split(splitstr)[0])
+# print(isinstance('abcd',list))
+xlist = [x for x in range(10)]
+print(xlist)
+for i in xlist:
+    if(i % 3 == 0):
+        xlist.remove(i)
+
 print(xlist)

@@ -126,15 +126,15 @@ class Wolf(Animal):  #定义狼的类
 
 
 # 定义一个动物生活空间，初始化羊群和狼群的坐标位置。（狼群数量小于羊群数量）
-Island = LivingSpace(20)
-IslandSize = Island.GetLivingSpaceSize()
+IslandSize = 20   #定义动物生活空间的边长
+Island = LivingSpace(IslandSize)
 SheepGroupCount = random.randint(2, IslandSize * IslandSize // 2)
 WolvesGroupCount = random.randint(1,SheepGroupCount // 2)
 SheepGroup = []
 WolVesGroup = []
 # 设置羊和狼的繁殖率
 SheepIncreasing = 0.8
-WolfIncreasing = 0.4
+WolfIncreasing = 0.3
 
 print('%s' %('=' * 20 + '捕猎开始' + '=' * 20))
 print('初始羊群数量为：%d' %(SheepGroupCount))
@@ -169,13 +169,13 @@ print(Island)
 # 3、羊和狼按设定繁殖率，第个周期都会繁殖一遍。当怀孕的羊被吃掉后，羊群扩张率会变小。
 
 # 演化结果输出到文件中
-with open(r'F:\memory\python-learning\learning2017\program data\CatchAndRun_Result.dat', mode = 'w', encoding= 'utf-8') as outfile:
+with open(r'F:\documents\python\learning2017\program data\CatchAndRun_Result.dat', mode = 'w', encoding= 'utf-8') as outfile:
     outfile.write('%s\n' % ('=' * 20 + '捕猎开始' + '=' * 20))
     outfile.write('初始羊群数量为：%d\n' % (SheepGroupCount))
     outfile.write('初始狼群数量为：%d\n' % (WolvesGroupCount))
     outfile.write('%s' %Island)
 
-    for AclockTime in range(10):
+    for AclockTime in range(100):
 
         SheepGroupCount = len(SheepGroup)      #两个种群在每个周期开始的数量
         WolvesGroupCount = len(WolVesGroup)
@@ -191,8 +191,8 @@ with open(r'F:\memory\python-learning\learning2017\program data\CatchAndRun_Resu
             AnAnimal = random.sample(NoMovedAnimals,1)[0]         #随机选出未移动集合中的一只动物
             MovedPoint = AnAnimal.moving()
             NoMovedAnimals.remove(AnAnimal)
-            if(MovedPoint):
-                Island.SetGrid(AnAnimal.i, AnAnimal.j, '') #没有移动空间，但本轮也不能再移动了
+            if(MovedPoint):     #没有移动空间，但本轮也不能再移动了
+                Island.SetGrid(AnAnimal.i, AnAnimal.j, '')
 
                 # print('-------> %s <--------' %(Island.GetGrid(MovedPoint[0],MovedPoint[1])))
                 if(AnAnimal.name == 'S'):        #如果是羊，直接移动
@@ -206,8 +206,8 @@ with open(r'F:\memory\python-learning\learning2017\program data\CatchAndRun_Resu
                         for Asheep in SheepGroup:            #从羊群里去掉被吃掉的羊
                             # print('(%d,%d) | (%d,%d)' %(Asheep.i,Asheep.j,MovedPoint[0],MovedPoint[1]))
                             if(Asheep.i == MovedPoint[0] and Asheep.j == MovedPoint[1]):
-                                if(Asheep.hasbaby):
-                                    print('kill ******')
+                                # if(Asheep.hasbaby):
+                                #     print('kill ******')
                                 SheepGroup.remove(Asheep)
                                 if(Asheep in NoMovedAnimals):
                                     NoMovedAnimals.remove(Asheep)
@@ -216,11 +216,22 @@ with open(r'F:\memory\python-learning\learning2017\program data\CatchAndRun_Resu
                         AnAnimal.i = MovedPoint[0]
                         AnAnimal.j = MovedPoint[1]
                         AnAnimal.hungry = AnAnimal.hungry + 1
-                        if(AnAnimal.hungry > 2):        #从狼群里去掉被饿死的狼
+                        if (AnAnimal.hungry > 2):  # 从狼群里去掉被饿死的狼
                             WolVesGroup.remove(AnAnimal)
                             AnAnimal.name = ''
                 Island.SetGrid(MovedPoint[0], MovedPoint[1], AnAnimal.name)
+            else:
+                if(AnAnimal.name == 'W'):
+                    AnAnimal.hungry = AnAnimal.hungry + 1
+                if (AnAnimal.hungry > 2):  # 从狼群里去掉被饿死的狼
+                    WolVesGroup.remove(AnAnimal)
+                    Island.SetGrid(AnAnimal.i, AnAnimal.j, '')
 
+        NoOccupiedSpace = []
+        for pointx in range(IslandSize):  # 统计无动物占据的空间格子
+            for pointy in range(IslandSize):
+                if (not Island.GetGrid(pointx, pointy)):
+                    NoOccupiedSpace.append((pointx, pointy))
 
         # 每个种群在本周期内的死亡数量
         SheepDeathCount = SheepGroupCount - len(SheepGroup)
@@ -228,8 +239,9 @@ with open(r'F:\memory\python-learning\learning2017\program data\CatchAndRun_Resu
 
         outfile.write('%s 第 %d 次节拍周期 %s\n' % ('=' * 20, (AclockTime + 1), '=' * 20))
         outfile.write('<----种群新生前----> \n')
-        outfile.write('原有羊群数量为：%d，其中死亡：%d\n' % (SheepGroupCount, SheepDeathCount))
-        outfile.write('原有狼群数量为：%d，其中死亡：%d\n' % (WolvesGroupCount, WolvesDeathCount))
+        outfile.write('原有羊群数量为：%d，其中死亡：%d, 剩余羊群数量为：%d\n' % (SheepGroupCount, SheepDeathCount,len(SheepGroup)))
+        outfile.write('原有狼群数量为：%d，其中死亡：%d, 剩余狼群数量为：%d\n' % (WolvesGroupCount, WolvesDeathCount,len(WolVesGroup)))
+        outfile.write('本轮移动后，无动物占据的空间格子数量为：%d\n' % (len(NoOccupiedSpace)))
         outfile.write('%s' % Island)
 
         # 一个周期结束后，根据剩余羊群和狼群中怀孕动物的数量，再次初始化两个种群
@@ -237,17 +249,13 @@ with open(r'F:\memory\python-learning\learning2017\program data\CatchAndRun_Resu
         NewSheepCount = 0   # 统计每个种群在本周期内的新生数量
         NewWolvesCount = 0
         HasBabiesGroup = []
-        NoOccupiedSpace = []
+
         for AnAnimal in (SheepGroup + WolVesGroup):
             if(AnAnimal.hasbaby):
                 HasBabiesGroup.append(AnAnimal)
-
-        for pointx in range(IslandSize):
-            for pointy in range(IslandSize):
-                if(not Island.GetGrid(pointx,pointy)):
-                    NoOccupiedSpace.append((pointx,pointy))
-
-        if(len(HasBabiesGroup) <= len(NoOccupiedSpace)):
+        HasBabiesGroupCount = len(HasBabiesGroup)
+        NoOccupiedSpaceCount = len(NoOccupiedSpace)
+        if(HasBabiesGroupCount <= NoOccupiedSpaceCount):
             for NewAnimal in HasBabiesGroup:
                 NewGrid = random.sample(NoOccupiedSpace, 1)[0]
                 if (NewAnimal.name == 'S'):
@@ -256,6 +264,7 @@ with open(r'F:\memory\python-learning\learning2017\program data\CatchAndRun_Resu
                 else:
                     WolVesGroup.append(Wolf(Island, NewGrid[0], NewGrid[1]))
                     NewWolvesCount += 1
+                NoOccupiedSpace.remove(NewGrid)
         else:
             for NewGrid in NoOccupiedSpace:
                 NewAnimal = random.sample(HasBabiesGroup, 1)[0]
@@ -265,6 +274,7 @@ with open(r'F:\memory\python-learning\learning2017\program data\CatchAndRun_Resu
                 else:
                     WolVesGroup.append(Wolf(Island, NewGrid[0], NewGrid[1]))
                     NewWolvesCount += 1
+                HasBabiesGroup.remove(NewAnimal)
 
         for AnAnimal in (SheepGroup + WolVesGroup):
             if(AnAnimal.hasbaby):
