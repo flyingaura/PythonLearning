@@ -43,10 +43,38 @@ from LearnModule import StringSplit,String_func
 #
 # print(astr.strip(splitstr).split(splitstr)[0])
 # print(isinstance('abcd',list))
-xlist = [x for x in range(10)]
-print(xlist)
-for i in xlist:
-    if(i % 3 == 0):
-        xlist.remove(i)
+# xlist = [x for x in range(10)]
+# for x in xlist:
+#     if(2 <= x < 7):
+#         print('good')
+#     else:
+#         print('bad')
+class aaa(object):
+    def __init__(self,i,j):
+        self.i = i
+        self.j = j
 
-print(xlist)
+    def __str__(self):
+        return '(%d,%d)' %(self.i, self.j)
+
+class bbb(object):
+
+    def __init__(self,i,j):
+        self.i = i * i
+        self.j = j * j
+
+    def __str__(self):
+        return '[%d,%d]' %(self.i, self.j)
+
+alist = []
+blist = []
+cdict = {}
+for i in 'abcde':
+    cdict[i] = ord(i)
+    # for j in range(3):
+        # alist.append(aaa(i,j))
+        # blist.append(bbb(i,j))
+
+print(cdict)
+print(sorted(cdict.keys()))
+
