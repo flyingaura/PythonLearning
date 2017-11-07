@@ -17,11 +17,12 @@ def time2seconds(time):
 
 def seconds2time(seconds):
     h = int(seconds / 3600)
-    if(h > 24):
-        h = h - 24
+    # if(h > 24):
+    #     h = h - 24
     m = int((seconds % 3600) / 60)
     s = (seconds % 3600) % 60
-    return ('%02d:%02d:%02d' %(h,m,s))
+    # return ('%02d:%02d:%02d' %(h,m,s))
+    return (h,m,s)
 
 def cal_time(init_time,seconds):
     return seconds2time(time2seconds(init_time) + seconds)
