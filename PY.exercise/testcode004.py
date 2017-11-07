@@ -1,5 +1,5 @@
 # -*- coding: utf-8 -*-
-import random,csv,json
+import random
 import time
 import os
 from LearnModule import StringSplit,String_func
@@ -43,48 +43,38 @@ from LearnModule import StringSplit,String_func
 #
 # print(astr.strip(splitstr).split(splitstr)[0])
 # print(isinstance('abcd',list))
-#
+# xlist = [x for x in range(10)]
+# for x in xlist:
+#     if(2 <= x < 7):
+#         print('good')
+#     else:
+#         print('bad')
+class aaa(object):
+    def __init__(self,i,j):
+        self.i = i
+        self.j = j
 
-# infilepath = r'E:\业务项目\X.内部项目\国务院公文服务（罗斯福计划）项目\项目数据\最终数据\国务院新闻 for WeiLiang\gov.cn news refined-2017-10-25.csv'
-# outfilepath = r'E:\业务项目\X.内部项目\国务院公文服务（罗斯福计划）项目\项目数据\最终数据\国务院新闻 for WeiLiang\govnews_struct.csv'
-#
-# datalist = []
-# with open(infilepath, mode = 'r', encoding= 'utf-8') as infile:
-#     for i in range(6):
-#         datalist.append(infile.readline())
-#
-# print(len(datalist))
-#
-# with open(outfilepath, mode = 'w', encoding= 'utf-8') as outfile:
-#     for Aline in datalist:
-#         outfile.write(Aline)
-# #         outfile.write('\n')
-#
-#
-# astr = "{'pub_date': '发布日期', 'record_title_fp': 'record_title_fp', 'index_number': '索引号', 'datasource': '来源-new', 'symbol_of_document_lssuing': '文号', 'pubyear_f': '发布年份', 'accomplishment_date_of_document': '成文日期-refined', 'issuing_department_of_document': '单位', 'turnpages': '翻页链接', 'naviclassify': '页面导航', 'related_title': '相关标题', 'keywords': '主题词', 'text_of_document': '全文源码', 'pubtime': '发布时间', 'year_of_document_issuing': '年', 'twolevelclassify': '二级分类', 'related_titleURL': '相关标题链接', 'serial_number_of_document_issuing': '号', 'onelevelclassify': '一级分类', 'URI': 'record_id_uri', 'title': '标题', 'record_type': '文种', 'content': '全文', 'URL': 'URI'}"
-# print(type(astr))
-# print(json.dumps(astr))
+    def __str__(self):
+        return '(%d,%d)' %(self.i, self.j)
 
-aaa = '城乡建设、环境保护'
-bbb = '城市规划'
-try:
-    onelevel = aaa
-except:
-    tofield = ''
+class bbb(object):
 
-else:
-    try:
-        twolevel = bbb
-    except:
-        tofield = onelevel
+    def __init__(self,i,j):
+        self.i = i * i
+        self.j = j * j
 
-    else:
-        if(not onelevel):
-            tofield = ''
-        else:
-            if(twolevel):
-                tofield = onelevel + '/' + twolevel
-            else:
-                tofield = onelevel
+    def __str__(self):
+        return '[%d,%d]' %(self.i, self.j)
 
-print(str(aaa.__str__()))
+alist = []
+blist = []
+cdict = {}
+for i in 'abcde':
+    cdict[i] = ord(i)
+    # for j in range(3):
+        # alist.append(aaa(i,j))
+        # blist.append(bbb(i,j))
+
+print(cdict)
+print(sorted(cdict.keys()))
+
