@@ -107,5 +107,5 @@ from LearnModule import MY_math
 #     abc.aaa_out()
 #     print('----> %s' %abc.key)
 
-for i in range(2,2):
+for i in range(1,10):
     print(i)
