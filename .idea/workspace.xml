@@ -1,16 +1,8 @@
 <?xml version="1.0" encoding="UTF-8"?>
 <project version="4">
   <component name="ChangeListManager">
-    <list default="true" id="286e034b-b797-4eff-86da-0c5c650473df" name="默认的" comment="Merge branch 'master' of https://git.oschina.net/flyingaura/learning2017&#10;&#10;# Conflicts:&#10;#&#9;.idea/workspace.xml&#10;">
-      <change type="NEW" beforePath="" afterPath="$PROJECT_DIR$/PY.exercise/WebAppLearning/arithmetic_training_game/images/Screenshot003.jpg" />
-      <change type="NEW" beforePath="" afterPath="$PROJECT_DIR$/PY.exercise/WebAppLearning/arithmetic_training_game/images/Screenshot004.jpg" />
-      <change type="NEW" beforePath="" afterPath="$PROJECT_DIR$/PY.exercise/WebAppLearning/arithmetic_training_game/images/Screenshot005.jpg" />
-      <change type="NEW" beforePath="" afterPath="$PROJECT_DIR$/PY.exercise/WebAppLearning/arithmetic_training_game/images/cat11.jpg" />
-      <change type="NEW" beforePath="" afterPath="$PROJECT_DIR$/PY.exercise/WebAppLearning/HTMLlearning/SecondHTML.html" />
-      <change type="MODIFICATION" beforePath="$PROJECT_DIR$/.idea/encodings.xml" afterPath="$PROJECT_DIR$/.idea/encodings.xml" />
+    <list default="true" id="286e034b-b797-4eff-86da-0c5c650473df" name="默认的" comment="">
       <change type="MODIFICATION" beforePath="$PROJECT_DIR$/.idea/workspace.xml" afterPath="$PROJECT_DIR$/.idea/workspace.xml" />
-      <change type="MODIFICATION" beforePath="$PROJECT_DIR$/PY.exercise/WebAppLearning/HTMLlearning/MyfirstHTML.html" afterPath="$PROJECT_DIR$/PY.exercise/WebAppLearning/HTMLlearning/MyfirstHTML.html" />
-      <change type="MODIFICATION" beforePath="$PROJECT_DIR$/PY.exercise/WebAppLearning/arithmetic_training_game/cgi-bin/webpage_artgame.py" afterPath="$PROJECT_DIR$/PY.exercise/WebAppLearning/arithmetic_training_game/cgi-bin/webpage_artgame.py" />
     </list>
     <option name="EXCLUDED_CONVERTED_TO_IGNORED" value="true" />
     <option name="TRACKING_ENABLED" value="true" />
@@ -1175,7 +1167,14 @@
       <option name="project" value="LOCAL" />
       <updated>1510413598422</updated>
     </task>
-    <option name="localTasksCounter" value="26" />
+    <task id="LOCAL-00026" summary="Merge branch 'master' of https://git.oschina.net/flyingaura/learning2017&#10;&#10;# Conflicts:&#10;#&#9;.idea/workspace.xml&#10;">
+      <created>1510585282408</created>
+      <option name="number" value="00026" />
+      <option name="presentableId" value="LOCAL-00026" />
+      <option name="project" value="LOCAL" />
+      <updated>1510585282408</updated>
+    </task>
+    <option name="localTasksCounter" value="27" />
     <servers />
   </component>
   <component name="TestHistory">
