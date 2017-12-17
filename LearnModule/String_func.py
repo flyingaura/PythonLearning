@@ -7,6 +7,8 @@
 6、在字符串指定位置插入一个字符串
 7、替换字符串指定位置中的字符或字符串
 8、删除字符串中的指定字符
+9、从字符串中提取出所有连续的数字，返回数字列表
+10、判断一个字符是否为英文字母
 """
 # -*- coding: utf-8 -*-
 import functools
@@ -202,5 +204,43 @@ def str_delstr(str1,delstr,ignor_cap = False):
 
     return out_str
 
+# 从字符串中提取出所有连续的数字，返回数字列表
+def StrExtractNum(s,Count = None):  #Count表示返回几个数字（从前往后取）
+    s = str(s)
+    NumList = []
+    NumStr = ''
+    # Numtag = 1
+    if (Count == None):  #取所有返回数字
+        for Aletter in s:
+            if (Aletter.isdigit()):
+                NumStr = NumStr + Aletter
+            else:
+                if (NumStr):
+                    NumList.append(int(NumStr))
+                    NumStr = ''
 
+    elif(isinstance(Count,int)):
+        for Aletter in s:
+            if(len(NumList) < abs(Count)):
+                if(Aletter.isdigit()):
+                    NumStr = NumStr + Aletter
+                else:
+                    if(NumStr):
+                        NumList.append(int(NumStr))
+                        NumStr = ''
+            else:
+                break
+    else:
+        raise ValueError('-->所输入第二个参数必须为整数!')
+
+
+    return NumList
+
+# 10、判断一个字符是否为英文字母
+def if_enletter(ch):
+
+    if(ord(ch) in range(97,123) or ord(ch) in range(65,91)):
+        return True
+    else:
+        return False
 

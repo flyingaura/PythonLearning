@@ -67,7 +67,7 @@ def barGraphic(WC_list):
 
 # ====== 主函数段，操作文件 ======
 
-with open('C:/Users/flyingaura/Desktop/text_en.txt', mode = 'r') as init_file:
+with open(r'F:\memory\python-learning\learning2017\program data\text_en.txt', mode = 'r') as init_file:
     fulltext = init_file.read()
 
 # split_list = special_character(fulltext)

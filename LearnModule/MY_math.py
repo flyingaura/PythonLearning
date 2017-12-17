@@ -1,5 +1,6 @@
 # -*- coding: utf-8 -*-
 import random
+import math
 
 """
 1、定义一个全奇数生成器,可以支持全序列和切片序列
@@ -9,6 +10,10 @@ import random
 5、定义一个从N个数的序列中取出M个数字的所有情况组合函数  fetch_in_list(n,m)
 6、定义一个从N个数的序列中取出M个数字的所有情况排列函数  array_in_list(n,m)
 7、定义一个从N个数的序列中遍历取M次的所有情况排列函数（M可大于N）　through_in_list(n,m)
+8、定义一个从0~N数据范围中随机取出指定M个数据的随机数函数   RandomFetch(N,M)
+9、定义一个取两个正整数最大公约数的函数   CalGCD(N1,N2)
+10、定义一个取两个正整数最小公倍数的函数  CalLCM(N1,N2)
+
 """
 
 def oddNum(n = None):
@@ -259,4 +264,51 @@ def RandomFetch(N,M):
             RandomSet.add(random.randint(0,N))
 
     return RandomSet
+
+# 9、定义一个取两个正整数最大公约数的函数   CalGCD(N1,N2)
+# def CalGCD(N1,N2):
+#     if(N1 <= 0 or N2 <= 0):
+#         raise ValueError('两个输入参数必须为正整数！')
+#     N_gcd = 1
+#     if(N1 == 1 or N2 == 1):
+#         return N_gcd
+#     if(N1 <= N2):
+#         Ntemp = N1
+#     else:
+#         Ntemp = N2
+#
+#     for i in range(2,Ntemp + 1):
+#         if(N1 % i == 0 and N2 % i == 0):
+#             N_gcd = i
+#
+#     return N_gcd
+
+def CalGCD(N1,N2):
+
+    if(not isinstance(N1,int) or not isinstance(N2,int)):
+        raise ValueError('所输入参数必须为整数！')
+    N1 = abs(N1)
+    N2 = abs(N2)
+
+    if(N1 > N2):
+        N1, N2 = N2, N1
+
+    while(N1):
+        N1, N2 = N2 % N1, N1
+
+    return N2
+
+    # if(N1 == 0):
+    #     return N2
+    #
+    # N_Gcd = CalGCD(N1, N2 % N1)
+    #
+    # return N_Gcd
+
+# 10、定义一个取两个整数最小公倍数的函数  CalLCM(N1,N2)
+def CalLCM(N1,N2):
+    if (not isinstance(N1, int) or not isinstance(N2, int)):
+        raise ValueError('所输入参数必须为整数！')
+
+    return int((N1 * N2) / CalGCD(N1,N2))
 
