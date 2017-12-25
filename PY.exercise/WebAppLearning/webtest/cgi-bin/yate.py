@@ -30,16 +30,12 @@ def radio_button(rb_name, rb_value):
                              '" value="' + rb_value + '"> ' + rb_value + '<br />')
 
 def create_inputs(name_string):
-    return ('<input type="text" name="' + name_string + '">')
+    return ('<input type="text" name="' + name_string + '"><br />')
 
-def checked_box(cb_name,cb_value,cb_title = None, checked = False):
+def checked_box(cb_name,cb_value,cb_title = None):
     if(not cb_title):
         cb_title = cb_value
-    if(checked):
-        checked_string = 'checked'
-    else:
-        checked_string = ''
-    return('<input type="checkbox" name="' + cb_name + '" value="' + cb_value + '" title="' + cb_title + '" ' + checked_string + '>' + cb_value + '&nbsp;&nbsp;&nbsp;&nbsp;')
+    return('<input type="checkbox" name="' + cb_name + '" value="' + cb_value + '" title="' + cb_title + '" >' + cb_value + '<br />')
 
 def select_set(selname, option_dic, size = '2', multiple = False):
     if(multiple):
