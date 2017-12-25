@@ -16,7 +16,7 @@
     <SUITE FILE_PATH="coverage/learning2017$Func_StringSpilt.coverage" NAME="Func_StringSpilt Coverage Results" MODIFIED="1483964240863" SOURCE_PROVIDER="com.intellij.coverage.DefaultCoverageFileProvider" RUNNER="coverage.py" COVERAGE_BY_TEST_ENABLED="true" COVERAGE_TRACING_ENABLED="false" WORKING_DIRECTORY="$PROJECT_DIR$/LearnModule" />
     <SUITE FILE_PATH="coverage/learning2017$testcode004.coverage" NAME="testcode004 Coverage Results" MODIFIED="1509210983719" SOURCE_PROVIDER="com.intellij.coverage.DefaultCoverageFileProvider" RUNNER="coverage.py" COVERAGE_BY_TEST_ENABLED="true" COVERAGE_TRACING_ENABLED="false" WORKING_DIRECTORY="$PROJECT_DIR$/PY.exercise" />
     <SUITE FILE_PATH="coverage/learning2017$arithmetic_training_games.coverage" NAME="arithmetic_training_games Coverage Results" MODIFIED="1510397313374" SOURCE_PROVIDER="com.intellij.coverage.DefaultCoverageFileProvider" RUNNER="coverage.py" COVERAGE_BY_TEST_ENABLED="true" COVERAGE_TRACING_ENABLED="false" WORKING_DIRECTORY="$PROJECT_DIR$/PY.exercise/WebAppLearning/arithmetic_training_game/cgi-bin" />
-    <SUITE FILE_PATH="coverage/learning2017$simple_httpd.coverage" NAME="simple_httpd Coverage Results" MODIFIED="1510577806637" SOURCE_PROVIDER="com.intellij.coverage.DefaultCoverageFileProvider" RUNNER="coverage.py" COVERAGE_BY_TEST_ENABLED="true" COVERAGE_TRACING_ENABLED="false" WORKING_DIRECTORY="$PROJECT_DIR$/PY.exercise/WebAppLearning/arithmetic_training_game" />
+    <SUITE FILE_PATH="coverage/learning2017$simple_httpd.coverage" NAME="simple_httpd Coverage Results" MODIFIED="1514032169232" SOURCE_PROVIDER="com.intellij.coverage.DefaultCoverageFileProvider" RUNNER="coverage.py" COVERAGE_BY_TEST_ENABLED="true" COVERAGE_TRACING_ENABLED="false" WORKING_DIRECTORY="$PROJECT_DIR$/PY.exercise/WebAppLearning/arithmetic_training_game" />
     <SUITE FILE_PATH="coverage/learning2017$loadACL.coverage" NAME="loadACL Coverage Results" MODIFIED="1505129838598" SOURCE_PROVIDER="com.intellij.coverage.DefaultCoverageFileProvider" RUNNER="coverage.py" COVERAGE_BY_TEST_ENABLED="true" COVERAGE_TRACING_ENABLED="false" WORKING_DIRECTORY="$PROJECT_DIR$/ESP_project/ESP_ACL" />
     <SUITE FILE_PATH="coverage/learning2017$appendixdirectory.coverage" NAME="appendixdirectory Coverage Results" MODIFIED="1503318779366" SOURCE_PROVIDER="com.intellij.coverage.DefaultCoverageFileProvider" RUNNER="coverage.py" COVERAGE_BY_TEST_ENABLED="true" COVERAGE_TRACING_ENABLED="false" WORKING_DIRECTORY="$PROJECT_DIR$/ESP_project/data_news" />
     <SUITE FILE_PATH="coverage/learning2017$ESapi2Json.coverage" NAME="ESapi2Json Coverage Results" MODIFIED="1509014738096" SOURCE_PROVIDER="com.intellij.coverage.DefaultCoverageFileProvider" RUNNER="coverage.py" COVERAGE_BY_TEST_ENABLED="true" COVERAGE_TRACING_ENABLED="false" WORKING_DIRECTORY="$PROJECT_DIR$/ESP_project/data_images" />
@@ -34,6 +34,7 @@
     <SUITE FILE_PATH="coverage/learning2017$Func_StringSplit.coverage" NAME="Func_StringSplit Coverage Results" MODIFIED="1484902847874" SOURCE_PROVIDER="com.intellij.coverage.DefaultCoverageFileProvider" RUNNER="coverage.py" COVERAGE_BY_TEST_ENABLED="true" COVERAGE_TRACING_ENABLED="false" WORKING_DIRECTORY="$PROJECT_DIR$/LearnModule" />
     <SUITE FILE_PATH="coverage/learning2017$learning0324003.coverage" NAME="learning0324003 Coverage Results" MODIFIED="1490434895274" SOURCE_PROVIDER="com.intellij.coverage.DefaultCoverageFileProvider" RUNNER="coverage.py" COVERAGE_BY_TEST_ENABLED="true" COVERAGE_TRACING_ENABLED="false" WORKING_DIRECTORY="$PROJECT_DIR$/LearnOOP" />
     <SUITE FILE_PATH="coverage/learning2017$ZW_synonym_process.coverage" NAME="ZW_synonym_process Coverage Results" MODIFIED="1508933304515" SOURCE_PROVIDER="com.intellij.coverage.DefaultCoverageFileProvider" RUNNER="coverage.py" COVERAGE_BY_TEST_ENABLED="true" COVERAGE_TRACING_ENABLED="false" WORKING_DIRECTORY="$PROJECT_DIR$/RSF_project/data_process" />
+    <SUITE FILE_PATH="coverage/learning2017$test_content.coverage" NAME="test_content Coverage Results" MODIFIED="1514019769394" SOURCE_PROVIDER="com.intellij.coverage.DefaultCoverageFileProvider" RUNNER="coverage.py" COVERAGE_BY_TEST_ENABLED="true" COVERAGE_TRACING_ENABLED="false" WORKING_DIRECTORY="$PROJECT_DIR$/PY.exercise/WebAppLearning/webtest/cgi-bin" />
     <SUITE FILE_PATH="coverage/learning2017$MY_math.coverage" NAME="MY_math Coverage Results" MODIFIED="1490413265566" SOURCE_PROVIDER="com.intellij.coverage.DefaultCoverageFileProvider" RUNNER="coverage.py" COVERAGE_BY_TEST_ENABLED="true" COVERAGE_TRACING_ENABLED="false" WORKING_DIRECTORY="$PROJECT_DIR$/LearnModule" />
     <SUITE FILE_PATH="coverage/learning2017$exer0908001.coverage" NAME="exer0908001 Coverage Results" MODIFIED="1504870709778" SOURCE_PROVIDER="com.intellij.coverage.DefaultCoverageFileProvider" RUNNER="coverage.py" COVERAGE_BY_TEST_ENABLED="true" COVERAGE_TRACING_ENABLED="false" WORKING_DIRECTORY="$PROJECT_DIR$/PY.exercise" />
     <SUITE FILE_PATH="coverage/learning2017$exer0718003.coverage" NAME="exer0718003 Coverage Results" MODIFIED="1500395941779" SOURCE_PROVIDER="com.intellij.coverage.DefaultCoverageFileProvider" RUNNER="coverage.py" COVERAGE_BY_TEST_ENABLED="true" COVERAGE_TRACING_ENABLED="false" WORKING_DIRECTORY="$PROJECT_DIR$/PY.exercise" />
@@ -49,6 +50,7 @@
     <SUITE FILE_PATH="coverage/learning2017$file_copy.coverage" NAME="file_copy Coverage Results" MODIFIED="1504777253758" SOURCE_PROVIDER="com.intellij.coverage.DefaultCoverageFileProvider" RUNNER="coverage.py" COVERAGE_BY_TEST_ENABLED="true" COVERAGE_TRACING_ENABLED="false" WORKING_DIRECTORY="$PROJECT_DIR$/ESP_project/data_images" />
     <SUITE FILE_PATH="coverage/learning2017$learning0424001.coverage" NAME="learning0424001 Coverage Results" MODIFIED="1509210093086" SOURCE_PROVIDER="com.intellij.coverage.DefaultCoverageFileProvider" RUNNER="coverage.py" COVERAGE_BY_TEST_ENABLED="true" COVERAGE_TRACING_ENABLED="false" WORKING_DIRECTORY="$PROJECT_DIR$/LearnOOP" />
     <SUITE FILE_PATH="coverage/learning2017$exer0625001.coverage" NAME="exer0625001 Coverage Results" MODIFIED="1499006136717" SOURCE_PROVIDER="com.intellij.coverage.DefaultCoverageFileProvider" RUNNER="coverage.py" COVERAGE_BY_TEST_ENABLED="true" COVERAGE_TRACING_ENABLED="false" WORKING_DIRECTORY="$PROJECT_DIR$/PY.exercise" />
+    <SUITE FILE_PATH="coverage/learning2017$simple_httpd__1_.coverage" NAME="simple_httpd (1) Coverage Results" MODIFIED="1514028053726" SOURCE_PROVIDER="com.intellij.coverage.DefaultCoverageFileProvider" RUNNER="coverage.py" COVERAGE_BY_TEST_ENABLED="true" COVERAGE_TRACING_ENABLED="false" WORKING_DIRECTORY="$PROJECT_DIR$/PY.exercise/WebAppLearning/webtest" />
     <SUITE FILE_PATH="coverage/learning2017$str2int.coverage" NAME="str2int Coverage Results" MODIFIED="1484124066604" SOURCE_PROVIDER="com.intellij.coverage.DefaultCoverageFileProvider" RUNNER="coverage.py" COVERAGE_BY_TEST_ENABLED="true" COVERAGE_TRACING_ENABLED="false" WORKING_DIRECTORY="$PROJECT_DIR$/LearnModule" />
     <SUITE FILE_PATH="coverage/learning2017$xls2json.coverage" NAME="xls2json Coverage Results" MODIFIED="1509992270349" SOURCE_PROVIDER="com.intellij.coverage.DefaultCoverageFileProvider" RUNNER="coverage.py" COVERAGE_BY_TEST_ENABLED="true" COVERAGE_TRACING_ENABLED="false" WORKING_DIRECTORY="$PROJECT_DIR$/RSF_project/data_process" />
     <SUITE FILE_PATH="coverage/learning2017$file_normalization.coverage" NAME="file_normalization Coverage Results" MODIFIED="1505129818249" SOURCE_PROVIDER="com.intellij.coverage.DefaultCoverageFileProvider" RUNNER="coverage.py" COVERAGE_BY_TEST_ENABLED="true" COVERAGE_TRACING_ENABLED="false" WORKING_DIRECTORY="$PROJECT_DIR$/ESP_project/data_files" />
@@ -67,7 +69,7 @@
     <SUITE FILE_PATH="coverage/learning2017$Data_normalization.coverage" NAME="Data_normalization Coverage Results" MODIFIED="1503647120531" SOURCE_PROVIDER="com.intellij.coverage.DefaultCoverageFileProvider" RUNNER="coverage.py" COVERAGE_BY_TEST_ENABLED="true" COVERAGE_TRACING_ENABLED="false" WORKING_DIRECTORY="$PROJECT_DIR$/ESP_project/data_news" />
     <SUITE FILE_PATH="coverage/learning2017$HighSchoolData.coverage" NAME="HighSchoolData Coverage Results" MODIFIED="1506414458988" SOURCE_PROVIDER="com.intellij.coverage.DefaultCoverageFileProvider" RUNNER="coverage.py" COVERAGE_BY_TEST_ENABLED="true" COVERAGE_TRACING_ENABLED="false" WORKING_DIRECTORY="$PROJECT_DIR$/DataAnalysize Project" />
     <SUITE FILE_PATH="coverage/learning2017$username.coverage" NAME="username Coverage Results" MODIFIED="1502957281863" SOURCE_PROVIDER="com.intellij.coverage.DefaultCoverageFileProvider" RUNNER="coverage.py" COVERAGE_BY_TEST_ENABLED="true" COVERAGE_TRACING_ENABLED="false" WORKING_DIRECTORY="$PROJECT_DIR$/LearnModule/ESP_project" />
-    <SUITE FILE_PATH="coverage/learning2017$testcode005.coverage" NAME="testcode005 Coverage Results" MODIFIED="1510396450059" SOURCE_PROVIDER="com.intellij.coverage.DefaultCoverageFileProvider" RUNNER="coverage.py" COVERAGE_BY_TEST_ENABLED="true" COVERAGE_TRACING_ENABLED="false" WORKING_DIRECTORY="$PROJECT_DIR$/PY.exercise" />
+    <SUITE FILE_PATH="coverage/learning2017$testcode005.coverage" NAME="testcode005 Coverage Results" MODIFIED="1514026935737" SOURCE_PROVIDER="com.intellij.coverage.DefaultCoverageFileProvider" RUNNER="coverage.py" COVERAGE_BY_TEST_ENABLED="true" COVERAGE_TRACING_ENABLED="false" WORKING_DIRECTORY="$PROJECT_DIR$/PY.exercise" />
     <SUITE FILE_PATH="coverage/learning2017$learning0103001.coverage" NAME="learning0103001 Coverage Results" MODIFIED="1483628811738" SOURCE_PROVIDER="com.intellij.coverage.DefaultCoverageFileProvider" RUNNER="coverage.py" COVERAGE_BY_TEST_ENABLED="true" COVERAGE_TRACING_ENABLED="false" WORKING_DIRECTORY="$PROJECT_DIR$/LearnOOP" />
     <SUITE FILE_PATH="coverage/learning2017$CNKI_get_hotkeywords.coverage" NAME="CNKI_get_hotkeywords Coverage Results" MODIFIED="1484621580267" SOURCE_PROVIDER="com.intellij.coverage.DefaultCoverageFileProvider" RUNNER="coverage.py" COVERAGE_BY_TEST_ENABLED="true" COVERAGE_TRACING_ENABLED="false" WORKING_DIRECTORY="$PROJECT_DIR$" />
     <SUITE FILE_PATH="coverage/learning2017$exer0901002.coverage" NAME="exer0901002 Coverage Results" MODIFIED="1504261025738" SOURCE_PROVIDER="com.intellij.coverage.DefaultCoverageFileProvider" RUNNER="coverage.py" COVERAGE_BY_TEST_ENABLED="true" COVERAGE_TRACING_ENABLED="false" WORKING_DIRECTORY="$PROJECT_DIR$/PY.exercise" />
@@ -110,14 +112,12 @@
   </component>
   <component name="FileEditorManager">
     <leaf SIDE_TABS_SIZE_LIMIT_KEY="450">
-      <file leaf-file-name="webpage_artgame.py" pinned="false" current-in-tab="false">
+      <file leaf-file-name="webpage_artgame.py" pinned="false" current-in-tab="true">
         <entry file="file://$PROJECT_DIR$/PY.exercise/WebAppLearning/arithmetic_training_game/cgi-bin/webpage_artgame.py">
           <provider selected="true" editor-type-id="text-editor">
-            <state relative-caret-position="663">
-              <caret line="14" column="12" lean-forward="false" selection-start-line="14" selection-start-column="12" selection-end-line="14" selection-end-column="12" />
-              <folding>
-                <element signature="e#33#43#0" expanded="true" />
-              </folding>
+            <state relative-caret-position="1144">
+              <caret line="26" column="50" lean-forward="false" selection-start-line="26" selection-start-column="50" selection-end-line="26" selection-end-column="50" />
+              <folding />
             </state>
           </provider>
         </entry>
@@ -125,59 +125,45 @@
       <file leaf-file-name="arithmetic_training_games.py" pinned="false" current-in-tab="false">
         <entry file="file://$PROJECT_DIR$/PY.exercise/WebAppLearning/arithmetic_training_game/cgi-bin/arithmetic_training_games.py">
           <provider selected="true" editor-type-id="text-editor">
-            <state relative-caret-position="2346">
-              <caret line="47" column="46" lean-forward="false" selection-start-line="47" selection-start-column="46" selection-end-line="47" selection-end-column="46" />
+            <state relative-caret-position="459">
+              <caret line="10" column="76" lean-forward="false" selection-start-line="10" selection-start-column="69" selection-end-line="10" selection-end-column="76" />
+              <folding>
+                <element signature="e#73#96#0" expanded="true" />
+              </folding>
+            </state>
+          </provider>
+        </entry>
+      </file>
+      <file leaf-file-name="generate_expression.py" pinned="false" current-in-tab="false">
+        <entry file="file://$PROJECT_DIR$/PY.exercise/WebAppLearning/arithmetic_training_game/cgi-bin/generate_expression.py">
+          <provider selected="true" editor-type-id="text-editor">
+            <state relative-caret-position="2652">
+              <caret line="54" column="1" lean-forward="false" selection-start-line="54" selection-start-column="1" selection-end-line="54" selection-end-column="1" />
+              <folding>
+                <element signature="e#53#92#0" expanded="true" />
+              </folding>
+            </state>
+          </provider>
+        </entry>
+      </file>
+      <file leaf-file-name="judge_result.py" pinned="false" current-in-tab="false">
+        <entry file="file://$PROJECT_DIR$/PY.exercise/WebAppLearning/arithmetic_training_game/cgi-bin/judge_result.py">
+          <provider selected="true" editor-type-id="text-editor">
+            <state relative-caret-position="102">
+              <caret line="2" column="0" lean-forward="false" selection-start-line="2" selection-start-column="0" selection-end-line="2" selection-end-column="0" />
               <folding />
             </state>
           </provider>
         </entry>
       </file>
-      <file leaf-file-name="simple_httpd.py" pinned="false" current-in-tab="false">
-        <entry file="file://$PROJECT_DIR$/PY.exercise/WebAppLearning/arithmetic_training_game/simple_httpd.py">
+      <file leaf-file-name="get_data_test.py" pinned="false" current-in-tab="false">
+        <entry file="file://$PROJECT_DIR$/PY.exercise/WebAppLearning/webtest/cgi-bin/get_data_test.py">
           <provider selected="true" editor-type-id="text-editor">
-            <state relative-caret-position="663">
-              <caret line="13" column="21" lean-forward="false" selection-start-line="13" selection-start-column="21" selection-end-line="13" selection-end-column="21" />
-              <folding />
-            </state>
-          </provider>
-        </entry>
-      </file>
-      <file leaf-file-name="index.html" pinned="false" current-in-tab="false">
-        <entry file="file://$PROJECT_DIR$/PY.exercise/WebAppLearning/arithmetic_training_game/index.html">
-          <provider selected="true" editor-type-id="text-editor">
-            <state relative-caret-position="51">
-              <caret line="1" column="67" lean-forward="false" selection-start-line="1" selection-start-column="0" selection-end-line="1" selection-end-column="67" />
-              <folding />
-            </state>
-          </provider>
-        </entry>
-      </file>
-      <file leaf-file-name="yate.py" pinned="false" current-in-tab="false">
-        <entry file="file://$PROJECT_DIR$/PY.exercise/WebAppLearning/arithmetic_training_game/cgi-bin/yate.py">
-          <provider selected="true" editor-type-id="text-editor">
-            <state relative-caret-position="2244">
-              <caret line="44" column="43" lean-forward="false" selection-start-line="44" selection-start-column="43" selection-end-line="44" selection-end-column="43" />
-              <folding />
-            </state>
-          </provider>
-        </entry>
-      </file>
-      <file leaf-file-name="form.html" pinned="false" current-in-tab="false">
-        <entry file="file://$PROJECT_DIR$/PY.exercise/WebAppLearning/arithmetic_training_game/templates/form.html">
-          <provider selected="true" editor-type-id="text-editor">
-            <state relative-caret-position="255">
-              <caret line="5" column="7" lean-forward="false" selection-start-line="5" selection-start-column="7" selection-end-line="5" selection-end-column="7" />
-              <folding />
-            </state>
-          </provider>
-        </entry>
-      </file>
-      <file leaf-file-name="header.html" pinned="false" current-in-tab="true">
-        <entry file="file://$PROJECT_DIR$/PY.exercise/WebAppLearning/arithmetic_training_game/templates/header.html">
-          <provider selected="true" editor-type-id="text-editor">
-            <state relative-caret-position="357">
-              <caret line="7" column="15" lean-forward="true" selection-start-line="7" selection-start-column="15" selection-end-line="7" selection-end-column="15" />
-              <folding />
+            <state relative-caret-position="612">
+              <caret line="14" column="46" lean-forward="false" selection-start-line="11" selection-start-column="0" selection-end-line="14" selection-end-column="46" />
+              <folding>
+                <element signature="e#48#87#0" expanded="true" />
+              </folding>
             </state>
           </provider>
         </entry>
@@ -185,56 +171,86 @@
       <file leaf-file-name="MyfirstHTML.html" pinned="false" current-in-tab="false">
         <entry file="file://$PROJECT_DIR$/PY.exercise/WebAppLearning/HTMLlearning/MyfirstHTML.html">
           <provider selected="true" editor-type-id="text-editor">
-            <state relative-caret-position="204">
-              <caret line="4" column="0" lean-forward="true" selection-start-line="4" selection-start-column="0" selection-end-line="4" selection-end-column="0" />
+            <state relative-caret-position="1122">
+              <caret line="22" column="40" lean-forward="false" selection-start-line="22" selection-start-column="40" selection-end-line="22" selection-end-column="40" />
               <folding>
-                <element signature="e#226#232#0" expanded="true" />
-                <element signature="e#232#238#0" expanded="true" />
-                <element signature="e#238#244#0" expanded="true" />
-                <element signature="e#244#250#0" expanded="true" />
-                <element signature="e#778#784#0" expanded="true" />
-                <element signature="e#1303#1310#0" expanded="true" />
-                <element signature="e#1320#1328#0" expanded="true" />
-                <element signature="e#1779#1785#0" expanded="true" />
-                <element signature="e#1820#1825#0" expanded="true" />
-                <element signature="e#1848#1853#0" expanded="true" />
-                <element signature="e#1876#1881#0" expanded="true" />
-                <element signature="e#1886#1892#0" expanded="true" />
-                <element signature="e#1895#1901#0" expanded="true" />
-                <element signature="e#1901#1907#0" expanded="true" />
-                <element signature="e#1907#1913#0" expanded="true" />
-                <element signature="e#3806#3812#0" expanded="true" />
-                <element signature="e#3818#3824#0" expanded="true" />
-                <element signature="e#3824#3830#0" expanded="true" />
-                <element signature="e#4208#4214#1" expanded="true" />
-                <element signature="e#6192#6198#0" expanded="true" />
-                <element signature="e#6198#6204#0" expanded="true" />
-                <element signature="e#6227#6233#0" expanded="true" />
-                <element signature="e#6233#6239#0" expanded="true" />
-                <element signature="e#6257#6263#0" expanded="true" />
-                <element signature="e#6263#6269#0" expanded="true" />
-                <element signature="e#6283#6289#0" expanded="true" />
-                <element signature="e#6289#6295#0" expanded="true" />
-                <element signature="e#6634#6640#0" expanded="true" />
+                <element signature="n#style#0;n#font#0;n#li#1;n#ul#0;n#form#1;n#body#0;n#html#0;n#!!top" expanded="true" />
+                <element signature="e#1666#1672#0" expanded="true" />
+                <element signature="e#1672#1678#0" expanded="true" />
+                <element signature="n#style#0;n#font#0;n#option#3;n#select#0;n#form#3;n#body#0;n#html#0;n#!!top" expanded="true" />
+                <element signature="n#style#0;n#textarea#0;n#form#4;n#body#0;n#html#0;n#!!top" expanded="true" />
+                <element signature="n#style#0;n#i#0;n#form#4;n#body#0;n#html#0;n#!!top" expanded="true" />
+                <element signature="n#style#0;n#font#0;n#form#4;n#body#0;n#html#0;n#!!top" expanded="true" />
+                <element signature="e#3446#3452#0" expanded="true" />
+                <element signature="e#3971#3978#0" expanded="true" />
+                <element signature="e#3988#3996#0" expanded="true" />
+                <element signature="e#4447#4453#0" expanded="true" />
+                <element signature="e#4488#4493#0" expanded="true" />
+                <element signature="e#4516#4521#0" expanded="true" />
+                <element signature="e#4544#4549#0" expanded="true" />
+                <element signature="e#4554#4560#0" expanded="true" />
+                <element signature="e#4563#4569#0" expanded="true" />
+                <element signature="e#4569#4575#0" expanded="true" />
+                <element signature="e#4575#4581#0" expanded="true" />
+                <element signature="e#6474#6480#0" expanded="true" />
+                <element signature="e#6486#6492#0" expanded="true" />
+                <element signature="e#6492#6498#0" expanded="true" />
+                <element signature="e#6876#6882#1" expanded="true" />
+                <element signature="e#8860#8866#0" expanded="true" />
+                <element signature="e#8866#8872#0" expanded="true" />
+                <element signature="e#8895#8901#0" expanded="true" />
+                <element signature="e#8901#8907#0" expanded="true" />
+                <element signature="e#8925#8931#0" expanded="true" />
+                <element signature="e#8931#8937#0" expanded="true" />
+                <element signature="e#8951#8957#0" expanded="true" />
+                <element signature="e#8957#8963#0" expanded="true" />
+                <element signature="e#9302#9308#0" expanded="true" />
               </folding>
             </state>
           </provider>
         </entry>
       </file>
-      <file leaf-file-name="SecondHTML.html" pinned="false" current-in-tab="false">
-        <entry file="file://$PROJECT_DIR$/PY.exercise/WebAppLearning/HTMLlearning/SecondHTML.html">
+      <file leaf-file-name="test_content.py" pinned="false" current-in-tab="false">
+        <entry file="file://$PROJECT_DIR$/PY.exercise/WebAppLearning/webtest/cgi-bin/test_content.py">
           <provider selected="true" editor-type-id="text-editor">
-            <state relative-caret-position="612">
-              <caret line="12" column="7" lean-forward="true" selection-start-line="12" selection-start-column="7" selection-end-line="12" selection-end-column="7" />
+            <state relative-caret-position="1275">
+              <caret line="27" column="35" lean-forward="false" selection-start-line="27" selection-start-column="23" selection-end-line="27" selection-end-column="35" />
+              <folding>
+                <element signature="e#47#58#0" expanded="true" />
+              </folding>
+            </state>
+          </provider>
+        </entry>
+      </file>
+      <file leaf-file-name="webpage_artgame.py" pinned="false" current-in-tab="false">
+        <entry file="file://$PROJECT_DIR$/PY.exercise/WebAppLearning/webtest/cgi-bin/webpage_artgame.py">
+          <provider selected="true" editor-type-id="text-editor">
+            <state relative-caret-position="1020">
+              <caret line="21" column="29" lean-forward="false" selection-start-line="21" selection-start-column="29" selection-end-line="21" selection-end-column="29" />
               <folding />
             </state>
           </provider>
         </entry>
       </file>
-      <file leaf-file-name="MyCat.jpg" pinned="false" current-in-tab="false">
-        <entry file="file://$PROJECT_DIR$/PY.exercise/WebAppLearning/arithmetic_training_game/images/MyCat.jpg">
-          <provider selected="true" editor-type-id="images">
-            <state />
+      <file leaf-file-name="expresssion_set.py" pinned="false" current-in-tab="false">
+        <entry file="file://$PROJECT_DIR$/PY.exercise/WebAppLearning/arithmetic_training_game/cgi-bin/expresssion_set.py">
+          <provider selected="true" editor-type-id="text-editor">
+            <state relative-caret-position="2040">
+              <caret line="41" column="50" lean-forward="false" selection-start-line="41" selection-start-column="50" selection-end-line="41" selection-end-column="50" />
+              <folding>
+                <element signature="e#48#59#0" expanded="true" />
+              </folding>
+            </state>
+          </provider>
+        </entry>
+      </file>
+      <file leaf-file-name="yate.py" pinned="false" current-in-tab="false">
+        <entry file="file://$PROJECT_DIR$/PY.exercise/WebAppLearning/arithmetic_training_game/cgi-bin/yate.py">
+          <provider selected="true" editor-type-id="text-editor">
+            <state relative-caret-position="1632">
+              <caret line="32" column="61" lean-forward="false" selection-start-line="32" selection-start-column="61" selection-end-line="32" selection-end-column="61" />
+              <folding />
+            </state>
           </provider>
         </entry>
       </file>
@@ -244,8 +260,8 @@
     <option name="RECENT_TEMPLATES">
       <list>
         <option value="Jupyter Notebook" />
-        <option value="Python Script" />
         <option value="HTML File" />
+        <option value="Python Script" />
       </list>
     </option>
   </component>
@@ -259,6 +275,7 @@
       <find>　</find>
       <find />
       <find>纪律检查委员会</find>
+      <find>OperatorList</find>
     </findStrings>
   </component>
   <component name="Git.Settings">
@@ -280,15 +297,6 @@
   <component name="IdeDocumentHistory">
     <option name="CHANGED_PATHS">
       <list>
-        <option value="$PROJECT_DIR$/LearnModule/MY_math.py" />
-        <option value="$PROJECT_DIR$/PY.exercise/exer0905001.py" />
-        <option value="$PROJECT_DIR$/ESP_project/data_images/file_copy.py" />
-        <option value="$PROJECT_DIR$/PY.exercise/testcode003.py" />
-        <option value="$PROJECT_DIR$/ESP_project/data_images/imagesSorted.py" />
-        <option value="$PROJECT_DIR$/ESP_project/data_images/SetImageSizeType.py" />
-        <option value="$PROJECT_DIR$/PY.exercise/exer0908001.py" />
-        <option value="$PROJECT_DIR$/ESP_project/data_images/imagesSorted.dat" />
-        <option value="$PROJECT_DIR$/ESP_project/data_files/TestdataFetch.ipynb" />
         <option value="$PROJECT_DIR$/ESP_project/data_files/TestDataFetch.py" />
         <option value="$PROJECT_DIR$/ESP_project/ESP_ACL/loadACL.py" />
         <option value="$PROJECT_DIR$/ESP_project/data_news/Data_normalization.py" />
@@ -318,19 +326,28 @@
         <option value="$PROJECT_DIR$/PY.exercise/WebAppLearning/arithmetic_training_games.py" />
         <option value="$PROJECT_DIR$/PY.exercise/WebAppLearning/webpage_artgame.py" />
         <option value="$PROJECT_DIR$/PY.exercise/WebAppLearning/yate/yate.py" />
-        <option value="$PROJECT_DIR$/PY.exercise/testcode005.py" />
         <option value="$PROJECT_DIR$/PY.exercise/WebAppLearning/arithmetic_training_game/simple_httpd.py" />
         <option value="$PROJECT_DIR$/PY.exercise/exer1111002.py" />
-        <option value="$PROJECT_DIR$/PY.exercise/WebAppLearning/arithmetic_training_game/cgi-bin/arithmetic_training_games.py" />
-        <option value="$PROJECT_DIR$/PY.exercise/WebAppLearning/arithmetic_training_game/index.html" />
         <option value="$PROJECT_DIR$/PY.exercise/WebAppLearning/arithmetic_training_game/templates/header.html" />
         <option value="$PROJECT_DIR$/PY.exercise/WebAppLearning/arithmetic_training_game/templates/form.html" />
-        <option value="$PROJECT_DIR$/PY.exercise/WebAppLearning/arithmetic_training_game/cgi-bin/yate.py" />
         <option value="$PROJECT_DIR$/PY.exercise/WebAppLearning/arithmetic_training_game/coach.css" />
         <option value="F:/works/weiliang/infcn/2017年备份/业务项目/Y.学习资料/HTML与CSS/EKP_DATA1.html" />
         <option value="$PROJECT_DIR$/PY.exercise/WebAppLearning/arithmetic_training_game/cgi-bin/webpage_artgame.py" />
         <option value="$PROJECT_DIR$/PY.exercise/WebAppLearning/HTMLlearning/SecondHTML.html" />
+        <option value="$PROJECT_DIR$/PY.exercise/WebAppLearning/WebTest.py" />
+        <option value="$PROJECT_DIR$/PY.exercise/WebAppLearning/webtest/index.html" />
+        <option value="$PROJECT_DIR$/PY.exercise/WebAppLearning/webtest/cgi-bin/yate.py" />
+        <option value="$PROJECT_DIR$/PY.exercise/WebAppLearning/webtest/cgi-bin/get_data_test.py" />
+        <option value="$PROJECT_DIR$/PY.exercise/WebAppLearning/webtest/cgi-bin/arithmetic_training_games.py" />
+        <option value="$PROJECT_DIR$/PY.exercise/WebAppLearning/arithmetic_training_game/cgi-bin/arithmetic_training_games.py" />
+        <option value="$PROJECT_DIR$/PY.exercise/WebAppLearning/webtest/cgi-bin/test_content.py" />
+        <option value="$PROJECT_DIR$/PY.exercise/WebAppLearning/arithmetic_training_game/index.html" />
+        <option value="$PROJECT_DIR$/PY.exercise/testcode005.py" />
+        <option value="$PROJECT_DIR$/PY.exercise/WebAppLearning/arithmetic_training_game/cgi-bin/expresssion_set.py" />
+        <option value="$PROJECT_DIR$/PY.exercise/WebAppLearning/arithmetic_training_game/cgi-bin/yate.py" />
+        <option value="$PROJECT_DIR$/PY.exercise/WebAppLearning/arithmetic_training_game/cgi-bin/judge_result.py" />
         <option value="$PROJECT_DIR$/PY.exercise/WebAppLearning/HTMLlearning/MyfirstHTML.html" />
+        <option value="$PROJECT_DIR$/PY.exercise/WebAppLearning/arithmetic_training_game/cgi-bin/generate_expression.py" />
       </list>
     </option>
   </component>
@@ -370,6 +387,7 @@
       <foldersAlwaysOnTop value="true" />
     </navigator>
     <panes>
+      <pane id="Scope" />
       <pane id="ProjectPane">
         <subPane>
           <PATH>
@@ -492,7 +510,33 @@
               <option name="myItemType" value="com.intellij.ide.projectView.impl.nodes.PsiDirectoryNode" />
             </PATH_ELEMENT>
             <PATH_ELEMENT>
-              <option name="myItemId" value="arithmetic_training_game" />
+              <option name="myItemId" value="webtest" />
+              <option name="myItemType" value="com.intellij.ide.projectView.impl.nodes.PsiDirectoryNode" />
+            </PATH_ELEMENT>
+          </PATH>
+          <PATH>
+            <PATH_ELEMENT>
+              <option name="myItemId" value="learning2017" />
+              <option name="myItemType" value="com.intellij.ide.projectView.impl.nodes.ProjectViewProjectNode" />
+            </PATH_ELEMENT>
+            <PATH_ELEMENT>
+              <option name="myItemId" value="learning2017" />
+              <option name="myItemType" value="com.intellij.ide.projectView.impl.nodes.PsiDirectoryNode" />
+            </PATH_ELEMENT>
+            <PATH_ELEMENT>
+              <option name="myItemId" value="PY.exercise" />
+              <option name="myItemType" value="com.intellij.ide.projectView.impl.nodes.PsiDirectoryNode" />
+            </PATH_ELEMENT>
+            <PATH_ELEMENT>
+              <option name="myItemId" value="WebAppLearning" />
+              <option name="myItemType" value="com.intellij.ide.projectView.impl.nodes.PsiDirectoryNode" />
+            </PATH_ELEMENT>
+            <PATH_ELEMENT>
+              <option name="myItemId" value="webtest" />
+              <option name="myItemType" value="com.intellij.ide.projectView.impl.nodes.PsiDirectoryNode" />
+            </PATH_ELEMENT>
+            <PATH_ELEMENT>
+              <option name="myItemId" value="cgi-bin" />
               <option name="myItemType" value="com.intellij.ide.projectView.impl.nodes.PsiDirectoryNode" />
             </PATH_ELEMENT>
           </PATH>
@@ -515,36 +559,6 @@
             </PATH_ELEMENT>
             <PATH_ELEMENT>
               <option name="myItemId" value="arithmetic_training_game" />
-              <option name="myItemType" value="com.intellij.ide.projectView.impl.nodes.PsiDirectoryNode" />
-            </PATH_ELEMENT>
-            <PATH_ELEMENT>
-              <option name="myItemId" value="templates" />
-              <option name="myItemType" value="com.intellij.ide.projectView.impl.nodes.PsiDirectoryNode" />
-            </PATH_ELEMENT>
-          </PATH>
-          <PATH>
-            <PATH_ELEMENT>
-              <option name="myItemId" value="learning2017" />
-              <option name="myItemType" value="com.intellij.ide.projectView.impl.nodes.ProjectViewProjectNode" />
-            </PATH_ELEMENT>
-            <PATH_ELEMENT>
-              <option name="myItemId" value="learning2017" />
-              <option name="myItemType" value="com.intellij.ide.projectView.impl.nodes.PsiDirectoryNode" />
-            </PATH_ELEMENT>
-            <PATH_ELEMENT>
-              <option name="myItemId" value="PY.exercise" />
-              <option name="myItemType" value="com.intellij.ide.projectView.impl.nodes.PsiDirectoryNode" />
-            </PATH_ELEMENT>
-            <PATH_ELEMENT>
-              <option name="myItemId" value="WebAppLearning" />
-              <option name="myItemType" value="com.intellij.ide.projectView.impl.nodes.PsiDirectoryNode" />
-            </PATH_ELEMENT>
-            <PATH_ELEMENT>
-              <option name="myItemId" value="arithmetic_training_game" />
-              <option name="myItemType" value="com.intellij.ide.projectView.impl.nodes.PsiDirectoryNode" />
-            </PATH_ELEMENT>
-            <PATH_ELEMENT>
-              <option name="myItemId" value="images" />
               <option name="myItemType" value="com.intellij.ide.projectView.impl.nodes.PsiDirectoryNode" />
             </PATH_ELEMENT>
           </PATH>
@@ -676,7 +690,6 @@
           </PATH>
         </subPane>
       </pane>
-      <pane id="Scope" />
       <pane id="Scratches" />
     </panes>
   </component>
@@ -689,13 +702,6 @@
     <property name="DefaultHtmlFileTemplate" value="HTML File" />
   </component>
   <component name="RecentsManager">
-    <key name="CopyFile.RECENT_KEYS">
-      <recent name="F:\memory\python-learning\learning2017\PY.exercise\WebAppLearning\arithmetic_training_game\images" />
-      <recent name="F:\memory\python-learning\learning2017\PY.exercise\WebAppLearning\arithmetic_training_game" />
-      <recent name="F:\memory\python-learning\learning2017\PY.exercise\WebAppLearning\arithmetic_training_game\cgi-bin" />
-      <recent name="F:\memory\python-learning\learning2017\PY.exercise\WebAppLearning\arithmetic_training_game\templates" />
-      <recent name="F:\memory\python-learning\learning2017\PY.exercise\WebAppLearning" />
-    </key>
     <key name="MoveFile.RECENT_KEYS">
       <recent name="F:\memory\python-learning\learning2017\PY.exercise\WebAppLearning\arithmetic_training_game\cgi-bin" />
       <recent name="F:\memory\python-learning\learning2017\RSF_project\data" />
@@ -703,22 +709,68 @@
       <recent name="F:\documents\python\learning2017\program data\高校相关数据" />
       <recent name="F:\documents\python\learning2017\program data\地质文献" />
     </key>
+    <key name="CopyFile.RECENT_KEYS">
+      <recent name="F:\memory\python-learning\learning2017\PY.exercise\WebAppLearning" />
+      <recent name="F:\memory\python-learning\learning2017\PY.exercise\WebAppLearning\arithmetic_training_game\images" />
+      <recent name="F:\memory\python-learning\learning2017\PY.exercise\WebAppLearning\arithmetic_training_game" />
+      <recent name="F:\memory\python-learning\learning2017\PY.exercise\WebAppLearning\arithmetic_training_game\cgi-bin" />
+      <recent name="F:\memory\python-learning\learning2017\PY.exercise\WebAppLearning\arithmetic_training_game\templates" />
+    </key>
   </component>
-  <component name="RunManager" selected="JavaScript Debug.SecondHTML.html">
-    <configuration default="false" name="webpage_artgame (1)" type="PythonConfigurationType" factoryName="Python" temporary="true">
+  <component name="RunManager" selected="JavaScript Debug.MyfirstHTML.html">
+    <configuration default="false" name="MyfirstHTML.html" type="JavascriptDebugType" factoryName="JavaScript Debug" temporary="true" nameIsGenerated="true" uri="http://localhost:63342/learning2017/PY.exercise/WebAppLearning/HTMLlearning/MyfirstHTML.html">
+      <method />
+    </configuration>
+    <configuration default="false" name="testcode005" type="PythonConfigurationType" factoryName="Python" temporary="true">
       <option name="INTERPRETER_OPTIONS" value="" />
       <option name="PARENT_ENVS" value="true" />
       <envs>
         <env name="PYTHONUNBUFFERED" value="1" />
       </envs>
       <option name="SDK_HOME" value="" />
-      <option name="WORKING_DIRECTORY" value="$PROJECT_DIR$/PY.exercise/WebAppLearning/arithmetic_training_game/cgi-bin" />
+      <option name="WORKING_DIRECTORY" value="$PROJECT_DIR$/PY.exercise" />
       <option name="IS_MODULE_SDK" value="true" />
       <option name="ADD_CONTENT_ROOTS" value="true" />
       <option name="ADD_SOURCE_ROOTS" value="true" />
       <module name="learning2017" />
       <EXTENSION ID="PythonCoverageRunConfigurationExtension" enabled="false" sample_coverage="true" runner="coverage.py" />
-      <option name="SCRIPT_NAME" value="$PROJECT_DIR$/PY.exercise/WebAppLearning/arithmetic_training_game/cgi-bin/webpage_artgame.py" />
+      <option name="SCRIPT_NAME" value="$PROJECT_DIR$/PY.exercise/testcode005.py" />
+      <option name="PARAMETERS" value="" />
+      <option name="SHOW_COMMAND_LINE" value="false" />
+      <method />
+    </configuration>
+    <configuration default="false" name="test_content" type="PythonConfigurationType" factoryName="Python" temporary="true">
+      <option name="INTERPRETER_OPTIONS" value="" />
+      <option name="PARENT_ENVS" value="true" />
+      <envs>
+        <env name="PYTHONUNBUFFERED" value="1" />
+      </envs>
+      <option name="SDK_HOME" value="" />
+      <option name="WORKING_DIRECTORY" value="$PROJECT_DIR$/PY.exercise/WebAppLearning/webtest/cgi-bin" />
+      <option name="IS_MODULE_SDK" value="true" />
+      <option name="ADD_CONTENT_ROOTS" value="true" />
+      <option name="ADD_SOURCE_ROOTS" value="true" />
+      <module name="learning2017" />
+      <EXTENSION ID="PythonCoverageRunConfigurationExtension" enabled="false" sample_coverage="true" runner="coverage.py" />
+      <option name="SCRIPT_NAME" value="$PROJECT_DIR$/PY.exercise/WebAppLearning/webtest/cgi-bin/test_content.py" />
+      <option name="PARAMETERS" value="" />
+      <option name="SHOW_COMMAND_LINE" value="false" />
+      <method />
+    </configuration>
+    <configuration default="false" name="simple_httpd (1)" type="PythonConfigurationType" factoryName="Python" temporary="true">
+      <option name="INTERPRETER_OPTIONS" value="" />
+      <option name="PARENT_ENVS" value="true" />
+      <envs>
+        <env name="PYTHONUNBUFFERED" value="1" />
+      </envs>
+      <option name="SDK_HOME" value="" />
+      <option name="WORKING_DIRECTORY" value="$PROJECT_DIR$/PY.exercise/WebAppLearning/webtest" />
+      <option name="IS_MODULE_SDK" value="true" />
+      <option name="ADD_CONTENT_ROOTS" value="true" />
+      <option name="ADD_SOURCE_ROOTS" value="true" />
+      <module name="learning2017" />
+      <EXTENSION ID="PythonCoverageRunConfigurationExtension" enabled="false" sample_coverage="true" runner="coverage.py" />
+      <option name="SCRIPT_NAME" value="$PROJECT_DIR$/PY.exercise/WebAppLearning/webtest/simple_httpd.py" />
       <option name="PARAMETERS" value="" />
       <option name="SHOW_COMMAND_LINE" value="false" />
       <method />
@@ -739,15 +791,6 @@
       <option name="SCRIPT_NAME" value="$PROJECT_DIR$/PY.exercise/WebAppLearning/arithmetic_training_game/simple_httpd.py" />
       <option name="PARAMETERS" value="" />
       <option name="SHOW_COMMAND_LINE" value="false" />
-      <method />
-    </configuration>
-    <configuration default="false" name="index.html" type="JavascriptDebugType" factoryName="JavaScript Debug" temporary="true" nameIsGenerated="true" uri="http://localhost:63342/learning2017/PY.exercise/WebAppLearning/arithmetic_training_game/index.html">
-      <method />
-    </configuration>
-    <configuration default="false" name="MyfirstHTML.html" type="JavascriptDebugType" factoryName="JavaScript Debug" temporary="true" nameIsGenerated="true" uri="http://localhost:63342/learning2017/PY.exercise/WebAppLearning/HTMLlearning/MyfirstHTML.html">
-      <method />
-    </configuration>
-    <configuration default="false" name="SecondHTML.html" type="JavascriptDebugType" factoryName="JavaScript Debug" temporary="true" nameIsGenerated="true" uri="http://localhost:63342/learning2017/PY.exercise/WebAppLearning/HTMLlearning/SecondHTML.html">
       <method />
     </configuration>
     <configuration default="true" type="DjangoTestsConfigurationType" factoryName="Django tests">
@@ -965,19 +1008,19 @@
       <method />
     </configuration>
     <list size="5">
-      <item index="0" class="java.lang.String" itemvalue="Python.webpage_artgame (1)" />
-      <item index="1" class="java.lang.String" itemvalue="Python.simple_httpd" />
-      <item index="2" class="java.lang.String" itemvalue="JavaScript Debug.index.html" />
-      <item index="3" class="java.lang.String" itemvalue="JavaScript Debug.MyfirstHTML.html" />
-      <item index="4" class="java.lang.String" itemvalue="JavaScript Debug.SecondHTML.html" />
+      <item index="0" class="java.lang.String" itemvalue="JavaScript Debug.MyfirstHTML.html" />
+      <item index="1" class="java.lang.String" itemvalue="Python.testcode005" />
+      <item index="2" class="java.lang.String" itemvalue="Python.test_content" />
+      <item index="3" class="java.lang.String" itemvalue="Python.simple_httpd (1)" />
+      <item index="4" class="java.lang.String" itemvalue="Python.simple_httpd" />
     </list>
     <recent_temporary>
       <list size="5">
-        <item index="0" class="java.lang.String" itemvalue="JavaScript Debug.SecondHTML.html" />
-        <item index="1" class="java.lang.String" itemvalue="JavaScript Debug.MyfirstHTML.html" />
-        <item index="2" class="java.lang.String" itemvalue="Python.simple_httpd" />
-        <item index="3" class="java.lang.String" itemvalue="Python.webpage_artgame (1)" />
-        <item index="4" class="java.lang.String" itemvalue="JavaScript Debug.index.html" />
+        <item index="0" class="java.lang.String" itemvalue="JavaScript Debug.MyfirstHTML.html" />
+        <item index="1" class="java.lang.String" itemvalue="Python.simple_httpd" />
+        <item index="2" class="java.lang.String" itemvalue="Python.simple_httpd (1)" />
+        <item index="3" class="java.lang.String" itemvalue="Python.testcode005" />
+        <item index="4" class="java.lang.String" itemvalue="Python.test_content" />
       </list>
     </recent_temporary>
   </component>
@@ -1174,7 +1217,35 @@
       <option name="project" value="LOCAL" />
       <updated>1510585282408</updated>
     </task>
-    <option name="localTasksCounter" value="27" />
+    <task id="LOCAL-00027" summary="Merge branch 'master' of https://git.oschina.net/flyingaura/learning2017&#10;&#10;# Conflicts:&#10;#&#9;.idea/workspace.xml&#10;">
+      <created>1510585333576</created>
+      <option name="number" value="00027" />
+      <option name="presentableId" value="LOCAL-00027" />
+      <option name="project" value="LOCAL" />
+      <updated>1510585333576</updated>
+    </task>
+    <task id="LOCAL-00028" summary="Merge branch 'master' of https://git.oschina.net/flyingaura/learning2017&#10;&#10;# Conflicts:&#10;#&#9;.idea/workspace.xml&#10;">
+      <created>1511089284039</created>
+      <option name="number" value="00028" />
+      <option name="presentableId" value="LOCAL-00028" />
+      <option name="project" value="LOCAL" />
+      <updated>1511089284039</updated>
+    </task>
+    <task id="LOCAL-00029" summary="Merge branch 'master' of https://git.oschina.net/flyingaura/learning2017&#10;&#10;# Conflicts:&#10;#&#9;.idea/workspace.xml&#10;">
+      <created>1514183415266</created>
+      <option name="number" value="00029" />
+      <option name="presentableId" value="LOCAL-00029" />
+      <option name="project" value="LOCAL" />
+      <updated>1514183415267</updated>
+    </task>
+    <task id="LOCAL-00030" summary="Merge branch 'master' of https://github.com/flyingaura/PythonLearning&#10;&#10;# Conflicts:&#10;#&#9;PY.exercise/WebAppLearning/HTMLlearning/MyfirstHTML.html&#10;#&#9;PY.exercise/WebAppLearning/arithmetic_training_game/cgi-bin/yate.py&#10;">
+      <created>1514183619368</created>
+      <option name="number" value="00030" />
+      <option name="presentableId" value="LOCAL-00030" />
+      <option name="project" value="LOCAL" />
+      <updated>1514183619368</updated>
+    </task>
+    <option name="localTasksCounter" value="31" />
     <servers />
   </component>
   <component name="TestHistory">
@@ -1222,9 +1293,9 @@
     <frame x="-11" y="-11" width="3862" height="2122" extended-state="6" />
     <editor active="false" />
     <layout>
-      <window_info id="Project" active="false" anchor="left" auto_hide="false" internal_type="DOCKED" type="DOCKED" visible="true" show_stripe_button="true" weight="0.25013247" sideWeight="0.5" order="0" side_tool="false" content_ui="combo" />
+      <window_info id="Project" active="false" anchor="left" auto_hide="false" internal_type="DOCKED" type="DOCKED" visible="true" show_stripe_button="true" weight="0.2607313" sideWeight="0.5" order="0" side_tool="false" content_ui="combo" />
       <window_info id="TODO" active="false" anchor="bottom" auto_hide="false" internal_type="DOCKED" type="DOCKED" visible="false" show_stripe_button="true" weight="0.23985432" sideWeight="0.5" order="6" side_tool="false" content_ui="tabs" />
-      <window_info id="Event Log" active="false" anchor="bottom" auto_hide="false" internal_type="DOCKED" type="DOCKED" visible="false" show_stripe_button="true" weight="0.22788762" sideWeight="0.50582933" order="12" side_tool="true" content_ui="tabs" />
+      <window_info id="Event Log" active="false" anchor="bottom" auto_hide="false" internal_type="DOCKED" type="DOCKED" visible="true" show_stripe_button="true" weight="0.22788762" sideWeight="0.50582933" order="12" side_tool="true" content_ui="tabs" />
       <window_info id="Database" active="false" anchor="right" auto_hide="false" internal_type="DOCKED" type="DOCKED" visible="false" show_stripe_button="true" weight="0.33" sideWeight="0.5" order="3" side_tool="false" content_ui="tabs" />
       <window_info id="Version Control" active="false" anchor="bottom" auto_hide="false" internal_type="DOCKED" type="DOCKED" visible="false" show_stripe_button="false" weight="0.33" sideWeight="0.5" order="8" side_tool="false" content_ui="tabs" />
       <window_info id="Python Console" active="false" anchor="bottom" auto_hide="false" internal_type="DOCKED" type="DOCKED" visible="false" show_stripe_button="true" weight="0.23829344" sideWeight="0.5" order="9" side_tool="false" content_ui="tabs" />
@@ -1254,7 +1325,8 @@
   <component name="VcsManagerConfiguration">
     <MESSAGE value="Merge branch 'master' of https://git.oschina.net/flyingaura/learning2017&#10;&#10;# Please enter a commit message to explain why this merge is necessary,&#10;# especially if it merges an updated upstream into a topic branch.&#10;#&#10;# Lines starting with '#' will be ignored, and an empty message aborts&#10;# the commit.&#10;" />
     <MESSAGE value="Merge branch 'master' of https://git.oschina.net/flyingaura/learning2017&#10;&#10;# Conflicts:&#10;#&#9;.idea/workspace.xml&#10;" />
-    <option name="LAST_COMMIT_MESSAGE" value="Merge branch 'master' of https://git.oschina.net/flyingaura/learning2017&#10;&#10;# Conflicts:&#10;#&#9;.idea/workspace.xml&#10;" />
+    <MESSAGE value="Merge branch 'master' of https://github.com/flyingaura/PythonLearning&#10;&#10;# Conflicts:&#10;#&#9;PY.exercise/WebAppLearning/HTMLlearning/MyfirstHTML.html&#10;#&#9;PY.exercise/WebAppLearning/arithmetic_training_game/cgi-bin/yate.py&#10;" />
+    <option name="LAST_COMMIT_MESSAGE" value="Merge branch 'master' of https://github.com/flyingaura/PythonLearning&#10;&#10;# Conflicts:&#10;#&#9;PY.exercise/WebAppLearning/HTMLlearning/MyfirstHTML.html&#10;#&#9;PY.exercise/WebAppLearning/arithmetic_training_game/cgi-bin/yate.py&#10;" />
   </component>
   <component name="XDebuggerManager">
     <breakpoint-manager>
@@ -1289,6 +1361,26 @@
           <line>107</line>
           <option name="timeStamp" value="17" />
         </line-breakpoint>
+        <line-breakpoint enabled="true" suspend="THREAD" type="python-line">
+          <url>file://$PROJECT_DIR$/PY.exercise/testcode005.py</url>
+          <line>31</line>
+          <option name="timeStamp" value="22" />
+        </line-breakpoint>
+        <line-breakpoint enabled="true" suspend="THREAD" type="python-line">
+          <url>file://$PROJECT_DIR$/PY.exercise/testcode005.py</url>
+          <line>34</line>
+          <option name="timeStamp" value="23" />
+        </line-breakpoint>
+        <line-breakpoint enabled="true" suspend="THREAD" type="python-line">
+          <url>file://$PROJECT_DIR$/PY.exercise/testcode005.py</url>
+          <line>35</line>
+          <option name="timeStamp" value="24" />
+        </line-breakpoint>
+        <line-breakpoint enabled="true" suspend="THREAD" type="python-line">
+          <url>file://$PROJECT_DIR$/PY.exercise/testcode005.py</url>
+          <line>22</line>
+          <option name="timeStamp" value="25" />
+        </line-breakpoint>
       </breakpoints>
       <default-breakpoints>
         <breakpoint type="python-exception">
@@ -1297,110 +1389,11 @@
           </properties>
         </breakpoint>
       </default-breakpoints>
-      <option name="time" value="21" />
+      <option name="time" value="26" />
     </breakpoint-manager>
     <watches-manager />
   </component>
   <component name="editorHistoryManager">
-    <entry file="file://$PROJECT_DIR$/RSF_project/data_process/zwrn_process.py">
-      <provider selected="true" editor-type-id="text-editor">
-        <state relative-caret-position="780">
-          <caret line="26" column="0" lean-forward="false" selection-start-line="26" selection-start-column="0" selection-end-line="26" selection-end-column="0" />
-        </state>
-      </provider>
-    </entry>
-    <entry file="file://$PROJECT_DIR$/RSF_project/data/政务人名词表1024_P.txt">
-      <provider selected="true" editor-type-id="text-editor">
-        <state relative-caret-position="0">
-          <caret line="0" column="0" lean-forward="false" selection-start-line="0" selection-start-column="0" selection-end-line="0" selection-end-column="0" />
-        </state>
-      </provider>
-    </entry>
-    <entry file="file://$PROJECT_DIR$/RSF_project/data/电子政务及公文主题词表（包括同义词及上位词） 2017.10.24.csv">
-      <provider selected="true" editor-type-id="text-editor">
-        <state relative-caret-position="1366290">
-          <caret line="26790" column="19" lean-forward="false" selection-start-line="26790" selection-start-column="15" selection-end-line="26790" selection-end-column="19" />
-        </state>
-      </provider>
-    </entry>
-    <entry file="file://$PROJECT_DIR$/RSF_project/data/电子政务同义词表1024.txt">
-      <provider selected="true" editor-type-id="text-editor">
-        <state relative-caret-position="5610">
-          <caret line="110" column="14" lean-forward="false" selection-start-line="110" selection-start-column="14" selection-end-line="110" selection-end-column="14" />
-        </state>
-      </provider>
-    </entry>
-    <entry file="file://$PROJECT_DIR$/RSF_project/data_process/ZW_synonym_process.py">
-      <provider selected="true" editor-type-id="text-editor">
-        <state relative-caret-position="1632">
-          <caret line="32" column="15" lean-forward="false" selection-start-line="32" selection-start-column="15" selection-end-line="32" selection-end-column="15" />
-        </state>
-      </provider>
-    </entry>
-    <entry file="file://$PROJECT_DIR$/ESP_project/data_contanct/HeadportraitURL.py">
-      <provider selected="true" editor-type-id="text-editor">
-        <state relative-caret-position="0">
-          <caret line="0" column="0" lean-forward="false" selection-start-line="0" selection-start-column="0" selection-end-line="0" selection-end-column="0" />
-        </state>
-      </provider>
-    </entry>
-    <entry file="file://$PROJECT_DIR$/CNKI_get_hotkeywords.py">
-      <provider selected="true" editor-type-id="text-editor">
-        <state relative-caret-position="306">
-          <caret line="6" column="15" lean-forward="false" selection-start-line="6" selection-start-column="7" selection-end-line="6" selection-end-column="15" />
-        </state>
-      </provider>
-    </entry>
-    <entry file="file://$PROJECT_DIR$/LearnModule/file_operate.py">
-      <provider selected="true" editor-type-id="text-editor">
-        <state relative-caret-position="969">
-          <caret line="19" column="35" lean-forward="false" selection-start-line="19" selection-start-column="22" selection-end-line="19" selection-end-column="35" />
-        </state>
-      </provider>
-    </entry>
-    <entry file="file://$PROJECT_DIR$/ESP_project/data_images/ESapi2Json.py">
-      <provider selected="true" editor-type-id="text-editor">
-        <state relative-caret-position="2040">
-          <caret line="43" column="22" lean-forward="false" selection-start-line="43" selection-start-column="22" selection-end-line="43" selection-end-column="22" />
-        </state>
-      </provider>
-    </entry>
-    <entry file="file://$PROJECT_DIR$/ESP_project/ESP_ACL/WrongACL.dat" />
-    <entry file="file://$PROJECT_DIR$/LearnOOP/learning0424001.py">
-      <provider selected="true" editor-type-id="text-editor">
-        <state relative-caret-position="306">
-          <caret line="6" column="12" lean-forward="false" selection-start-line="6" selection-start-column="12" selection-end-line="6" selection-end-column="12" />
-        </state>
-      </provider>
-    </entry>
-    <entry file="file://$PROJECT_DIR$/program data/breast-cancer-wisconsin.data">
-      <provider selected="true" editor-type-id="text-editor">
-        <state relative-caret-position="-1377">
-          <caret line="0" column="0" lean-forward="false" selection-start-line="0" selection-start-column="0" selection-end-line="0" selection-end-column="0" />
-        </state>
-      </provider>
-    </entry>
-    <entry file="file://$PROJECT_DIR$/program data/CatchAndRun_Result.dat">
-      <provider selected="true" editor-type-id="text-editor">
-        <state relative-caret-position="72624">
-          <caret line="1424" column="16" lean-forward="false" selection-start-line="1424" selection-start-column="16" selection-end-line="1424" selection-end-column="16" />
-        </state>
-      </provider>
-    </entry>
-    <entry file="file://$PROJECT_DIR$/PY.exercise/CatchAndRun.py">
-      <provider selected="true" editor-type-id="text-editor">
-        <state relative-caret-position="8415">
-          <caret line="166" column="11" lean-forward="false" selection-start-line="166" selection-start-column="11" selection-end-line="166" selection-end-column="11" />
-        </state>
-      </provider>
-    </entry>
-    <entry file="file://$PROJECT_DIR$/PY.exercise/exer1029001.py">
-      <provider selected="true" editor-type-id="text-editor">
-        <state relative-caret-position="1122">
-          <caret line="22" column="41" lean-forward="false" selection-start-line="22" selection-start-column="41" selection-end-line="22" selection-end-column="41" />
-        </state>
-      </provider>
-    </entry>
     <entry file="file://D:/Program Files (x86)/python/python35/Lib/site-packages/get-pip.py">
       <provider selected="true" editor-type-id="text-editor">
         <state relative-caret-position="0">
@@ -1448,13 +1441,6 @@
       <provider selected="true" editor-type-id="text-editor">
         <state relative-caret-position="2142">
           <caret line="43" column="75" lean-forward="false" selection-start-line="43" selection-start-column="75" selection-end-line="43" selection-end-column="75" />
-        </state>
-      </provider>
-    </entry>
-    <entry file="file://$PROJECT_DIR$/PY.exercise/testcode004.py">
-      <provider selected="true" editor-type-id="text-editor">
-        <state relative-caret-position="3825">
-          <caret line="78" column="12" lean-forward="false" selection-start-line="78" selection-start-column="6" selection-end-line="78" selection-end-column="12" />
         </state>
       </provider>
     </entry>
@@ -1508,13 +1494,6 @@
         </state>
       </provider>
     </entry>
-    <entry file="file://$PROJECT_DIR$/PY.exercise/testcode005.py">
-      <provider selected="true" editor-type-id="text-editor">
-        <state relative-caret-position="714">
-          <caret line="14" column="16" lean-forward="true" selection-start-line="14" selection-start-column="16" selection-end-line="14" selection-end-column="16" />
-        </state>
-      </provider>
-    </entry>
     <entry file="file://$PROJECT_DIR$/PY.exercise/exer1108003.py">
       <provider selected="true" editor-type-id="text-editor">
         <state relative-caret-position="156">
@@ -1560,14 +1539,6 @@
         </state>
       </provider>
     </entry>
-    <entry file="file://$PROJECT_DIR$/PY.exercise/WebAppLearning/arithmetic_training_game/cgi-bin/yate.py">
-      <provider selected="true" editor-type-id="text-editor">
-        <state relative-caret-position="2244">
-          <caret line="44" column="43" lean-forward="false" selection-start-line="44" selection-start-column="43" selection-end-line="44" selection-end-column="43" />
-          <folding />
-        </state>
-      </provider>
-    </entry>
     <entry file="file://$PROJECT_DIR$/.idea/encodings.xml">
       <provider selected="true" editor-type-id="text-editor">
         <state relative-caret-position="357">
@@ -1580,97 +1551,231 @@
         <state />
       </provider>
     </entry>
-    <entry file="file://$PROJECT_DIR$/PY.exercise/WebAppLearning/arithmetic_training_game/cgi-bin/arithmetic_training_games.py">
+    <entry file="file://$PROJECT_DIR$/PY.exercise/WebAppLearning/arithmetic_training_game/templates/form.html">
       <provider selected="true" editor-type-id="text-editor">
-        <state relative-caret-position="2346">
-          <caret line="47" column="46" lean-forward="false" selection-start-line="47" selection-start-column="46" selection-end-line="47" selection-end-column="46" />
-          <folding />
+        <state relative-caret-position="255">
+          <caret line="5" column="7" lean-forward="false" selection-start-line="5" selection-start-column="7" selection-end-line="5" selection-end-column="7" />
         </state>
       </provider>
     </entry>
-    <entry file="file://$PROJECT_DIR$/PY.exercise/WebAppLearning/arithmetic_training_game/simple_httpd.py">
+    <entry file="file://$PROJECT_DIR$/PY.exercise/WebAppLearning/arithmetic_training_game/templates/header.html">
       <provider selected="true" editor-type-id="text-editor">
-        <state relative-caret-position="663">
-          <caret line="13" column="21" lean-forward="false" selection-start-line="13" selection-start-column="21" selection-end-line="13" selection-end-column="21" />
-          <folding />
-        </state>
-      </provider>
-    </entry>
-    <entry file="file://$PROJECT_DIR$/PY.exercise/WebAppLearning/arithmetic_training_game/cgi-bin/webpage_artgame.py">
-      <provider selected="true" editor-type-id="text-editor">
-        <state relative-caret-position="663">
-          <caret line="14" column="12" lean-forward="false" selection-start-line="14" selection-start-column="12" selection-end-line="14" selection-end-column="12" />
-          <folding>
-            <element signature="e#33#43#0" expanded="true" />
-          </folding>
+        <state relative-caret-position="408">
+          <caret line="8" column="0" lean-forward="false" selection-start-line="8" selection-start-column="0" selection-end-line="8" selection-end-column="0" />
         </state>
       </provider>
     </entry>
     <entry file="file://$PROJECT_DIR$/PY.exercise/WebAppLearning/HTMLlearning/SecondHTML.html">
       <provider selected="true" editor-type-id="text-editor">
         <state relative-caret-position="612">
-          <caret line="12" column="7" lean-forward="true" selection-start-line="12" selection-start-column="7" selection-end-line="12" selection-end-column="7" />
-          <folding />
+          <caret line="12" column="7" lean-forward="false" selection-start-line="12" selection-start-column="7" selection-end-line="12" selection-end-column="7" />
+        </state>
+      </provider>
+    </entry>
+    <entry file="file://$USER_HOME$/.PyCharm2016.3/system/python_stubs/530015312/msvcrt.py">
+      <provider selected="true" editor-type-id="text-editor">
+        <state relative-caret-position="1326">
+          <caret line="26" column="64" lean-forward="false" selection-start-line="26" selection-start-column="60" selection-end-line="26" selection-end-column="64" />
+        </state>
+      </provider>
+    </entry>
+    <entry file="file://$PROJECT_DIR$/PY.exercise/WebAppLearning/WebTest.py" />
+    <entry file="file://$PROJECT_DIR$/PY.exercise/WebAppLearning/webtest/templates/footer.html">
+      <provider selected="true" editor-type-id="text-editor">
+        <state relative-caret-position="0">
+          <caret line="0" column="0" lean-forward="false" selection-start-line="0" selection-start-column="0" selection-end-line="0" selection-end-column="0" />
+        </state>
+      </provider>
+    </entry>
+    <entry file="file://$PROJECT_DIR$/PY.exercise/WebAppLearning/webtest/templates/header.html">
+      <provider selected="true" editor-type-id="text-editor">
+        <state relative-caret-position="0">
+          <caret line="0" column="0" lean-forward="false" selection-start-line="0" selection-start-column="0" selection-end-line="8" selection-end-column="0" />
+        </state>
+      </provider>
+    </entry>
+    <entry file="file://$PROJECT_DIR$/PY.exercise/testcode004.py">
+      <provider selected="true" editor-type-id="text-editor">
+        <state relative-caret-position="1086">
+          <caret line="78" column="12" lean-forward="false" selection-start-line="78" selection-start-column="6" selection-end-line="78" selection-end-column="12" />
+        </state>
+      </provider>
+    </entry>
+    <entry file="file://$PROJECT_DIR$/PY.exercise/testcode003.py">
+      <provider selected="true" editor-type-id="text-editor">
+        <state relative-caret-position="1137">
+          <caret line="106" column="75" lean-forward="true" selection-start-line="106" selection-start-column="75" selection-end-line="106" selection-end-column="75" />
+        </state>
+      </provider>
+    </entry>
+    <entry file="file://$PROJECT_DIR$/PY.exercise/WebAppLearning/webtest/index.html">
+      <provider selected="true" editor-type-id="text-editor">
+        <state relative-caret-position="663">
+          <caret line="13" column="31" lean-forward="true" selection-start-line="13" selection-start-column="31" selection-end-line="13" selection-end-column="31" />
+        </state>
+      </provider>
+    </entry>
+    <entry file="file://$PROJECT_DIR$/PY.exercise/WebAppLearning/webtest/cgi-bin/arithmetic_training_games.py">
+      <provider selected="true" editor-type-id="text-editor">
+        <state relative-caret-position="459">
+          <caret line="10" column="84" lean-forward="true" selection-start-line="10" selection-start-column="84" selection-end-line="10" selection-end-column="84" />
         </state>
       </provider>
     </entry>
     <entry file="file://$PROJECT_DIR$/PY.exercise/WebAppLearning/arithmetic_training_game/index.html">
       <provider selected="true" editor-type-id="text-editor">
-        <state relative-caret-position="51">
-          <caret line="1" column="67" lean-forward="false" selection-start-line="1" selection-start-column="0" selection-end-line="1" selection-end-column="67" />
+        <state relative-caret-position="510">
+          <caret line="10" column="42" lean-forward="false" selection-start-line="10" selection-start-column="42" selection-end-line="10" selection-end-column="42" />
+        </state>
+      </provider>
+    </entry>
+    <entry file="file://$PROJECT_DIR$/PY.exercise/WebAppLearning/webtest/cgi-bin/yate.py">
+      <provider selected="true" editor-type-id="text-editor">
+        <state relative-caret-position="3315">
+          <caret line="65" column="18" lean-forward="false" selection-start-line="0" selection-start-column="0" selection-end-line="69" selection-end-column="0" />
+        </state>
+      </provider>
+    </entry>
+    <entry file="file://$PROJECT_DIR$/PY.exercise/testcode005.py">
+      <provider selected="true" editor-type-id="text-editor">
+        <state relative-caret-position="1086">
+          <caret line="41" column="15" lean-forward="true" selection-start-line="41" selection-start-column="15" selection-end-line="41" selection-end-column="15" />
           <folding />
+        </state>
+      </provider>
+    </entry>
+    <entry file="file://$PROJECT_DIR$/PY.exercise/WebAppLearning/webtest/simple_httpd.py">
+      <provider selected="true" editor-type-id="text-editor">
+        <state relative-caret-position="663">
+          <caret line="13" column="21" lean-forward="true" selection-start-line="13" selection-start-column="21" selection-end-line="13" selection-end-column="21" />
+        </state>
+      </provider>
+    </entry>
+    <entry file="file://$PROJECT_DIR$/PY.exercise/WebAppLearning/arithmetic_training_game/simple_httpd.py">
+      <provider selected="true" editor-type-id="text-editor">
+        <state relative-caret-position="714">
+          <caret line="14" column="0" lean-forward="true" selection-start-line="14" selection-start-column="0" selection-end-line="14" selection-end-column="0" />
+        </state>
+      </provider>
+    </entry>
+    <entry file="file://$PROJECT_DIR$/PY.exercise/WebAppLearning/webtest/cgi-bin/webpage_artgame.py">
+      <provider selected="true" editor-type-id="text-editor">
+        <state relative-caret-position="1020">
+          <caret line="21" column="29" lean-forward="false" selection-start-line="21" selection-start-column="29" selection-end-line="21" selection-end-column="29" />
+          <folding />
+        </state>
+      </provider>
+    </entry>
+    <entry file="file://$PROJECT_DIR$/PY.exercise/WebAppLearning/arithmetic_training_game/cgi-bin/arithmetic_training_games.py">
+      <provider selected="true" editor-type-id="text-editor">
+        <state relative-caret-position="459">
+          <caret line="10" column="76" lean-forward="false" selection-start-line="10" selection-start-column="69" selection-end-line="10" selection-end-column="76" />
+          <folding>
+            <element signature="e#73#96#0" expanded="true" />
+          </folding>
+        </state>
+      </provider>
+    </entry>
+    <entry file="file://$PROJECT_DIR$/PY.exercise/WebAppLearning/arithmetic_training_game/cgi-bin/expresssion_set.py">
+      <provider selected="true" editor-type-id="text-editor">
+        <state relative-caret-position="2040">
+          <caret line="41" column="50" lean-forward="false" selection-start-line="41" selection-start-column="50" selection-end-line="41" selection-end-column="50" />
+          <folding>
+            <element signature="e#48#59#0" expanded="true" />
+          </folding>
+        </state>
+      </provider>
+    </entry>
+    <entry file="file://$PROJECT_DIR$/PY.exercise/WebAppLearning/webtest/cgi-bin/get_data_test.py">
+      <provider selected="true" editor-type-id="text-editor">
+        <state relative-caret-position="612">
+          <caret line="14" column="46" lean-forward="false" selection-start-line="11" selection-start-column="0" selection-end-line="14" selection-end-column="46" />
+          <folding>
+            <element signature="e#48#87#0" expanded="true" />
+          </folding>
+        </state>
+      </provider>
+    </entry>
+    <entry file="file://$PROJECT_DIR$/PY.exercise/WebAppLearning/webtest/cgi-bin/test_content.py">
+      <provider selected="true" editor-type-id="text-editor">
+        <state relative-caret-position="1275">
+          <caret line="27" column="35" lean-forward="false" selection-start-line="27" selection-start-column="23" selection-end-line="27" selection-end-column="35" />
+          <folding>
+            <element signature="e#47#58#0" expanded="true" />
+          </folding>
         </state>
       </provider>
     </entry>
     <entry file="file://$PROJECT_DIR$/PY.exercise/WebAppLearning/HTMLlearning/MyfirstHTML.html">
       <provider selected="true" editor-type-id="text-editor">
-        <state relative-caret-position="204">
-          <caret line="4" column="0" lean-forward="true" selection-start-line="4" selection-start-column="0" selection-end-line="4" selection-end-column="0" />
+        <state relative-caret-position="1122">
+          <caret line="22" column="40" lean-forward="false" selection-start-line="22" selection-start-column="40" selection-end-line="22" selection-end-column="40" />
           <folding>
-            <element signature="e#226#232#0" expanded="true" />
-            <element signature="e#232#238#0" expanded="true" />
-            <element signature="e#238#244#0" expanded="true" />
-            <element signature="e#244#250#0" expanded="true" />
-            <element signature="e#778#784#0" expanded="true" />
-            <element signature="e#1303#1310#0" expanded="true" />
-            <element signature="e#1320#1328#0" expanded="true" />
-            <element signature="e#1779#1785#0" expanded="true" />
-            <element signature="e#1820#1825#0" expanded="true" />
-            <element signature="e#1848#1853#0" expanded="true" />
-            <element signature="e#1876#1881#0" expanded="true" />
-            <element signature="e#1886#1892#0" expanded="true" />
-            <element signature="e#1895#1901#0" expanded="true" />
-            <element signature="e#1901#1907#0" expanded="true" />
-            <element signature="e#1907#1913#0" expanded="true" />
-            <element signature="e#3806#3812#0" expanded="true" />
-            <element signature="e#3818#3824#0" expanded="true" />
-            <element signature="e#3824#3830#0" expanded="true" />
-            <element signature="e#4208#4214#1" expanded="true" />
-            <element signature="e#6192#6198#0" expanded="true" />
-            <element signature="e#6198#6204#0" expanded="true" />
-            <element signature="e#6227#6233#0" expanded="true" />
-            <element signature="e#6233#6239#0" expanded="true" />
-            <element signature="e#6257#6263#0" expanded="true" />
-            <element signature="e#6263#6269#0" expanded="true" />
-            <element signature="e#6283#6289#0" expanded="true" />
-            <element signature="e#6289#6295#0" expanded="true" />
-            <element signature="e#6634#6640#0" expanded="true" />
+            <element signature="n#style#0;n#font#0;n#li#1;n#ul#0;n#form#1;n#body#0;n#html#0;n#!!top" expanded="true" />
+            <element signature="e#1666#1672#0" expanded="true" />
+            <element signature="e#1672#1678#0" expanded="true" />
+            <element signature="n#style#0;n#font#0;n#option#3;n#select#0;n#form#3;n#body#0;n#html#0;n#!!top" expanded="true" />
+            <element signature="n#style#0;n#textarea#0;n#form#4;n#body#0;n#html#0;n#!!top" expanded="true" />
+            <element signature="n#style#0;n#i#0;n#form#4;n#body#0;n#html#0;n#!!top" expanded="true" />
+            <element signature="n#style#0;n#font#0;n#form#4;n#body#0;n#html#0;n#!!top" expanded="true" />
+            <element signature="e#3446#3452#0" expanded="true" />
+            <element signature="e#3971#3978#0" expanded="true" />
+            <element signature="e#3988#3996#0" expanded="true" />
+            <element signature="e#4447#4453#0" expanded="true" />
+            <element signature="e#4488#4493#0" expanded="true" />
+            <element signature="e#4516#4521#0" expanded="true" />
+            <element signature="e#4544#4549#0" expanded="true" />
+            <element signature="e#4554#4560#0" expanded="true" />
+            <element signature="e#4563#4569#0" expanded="true" />
+            <element signature="e#4569#4575#0" expanded="true" />
+            <element signature="e#4575#4581#0" expanded="true" />
+            <element signature="e#6474#6480#0" expanded="true" />
+            <element signature="e#6486#6492#0" expanded="true" />
+            <element signature="e#6492#6498#0" expanded="true" />
+            <element signature="e#6876#6882#1" expanded="true" />
+            <element signature="e#8860#8866#0" expanded="true" />
+            <element signature="e#8866#8872#0" expanded="true" />
+            <element signature="e#8895#8901#0" expanded="true" />
+            <element signature="e#8901#8907#0" expanded="true" />
+            <element signature="e#8925#8931#0" expanded="true" />
+            <element signature="e#8931#8937#0" expanded="true" />
+            <element signature="e#8951#8957#0" expanded="true" />
+            <element signature="e#8957#8963#0" expanded="true" />
+            <element signature="e#9302#9308#0" expanded="true" />
           </folding>
         </state>
       </provider>
     </entry>
-    <entry file="file://$PROJECT_DIR$/PY.exercise/WebAppLearning/arithmetic_training_game/templates/form.html">
+    <entry file="file://$PROJECT_DIR$/PY.exercise/WebAppLearning/arithmetic_training_game/cgi-bin/generate_expression.py">
       <provider selected="true" editor-type-id="text-editor">
-        <state relative-caret-position="255">
-          <caret line="5" column="7" lean-forward="false" selection-start-line="5" selection-start-column="7" selection-end-line="5" selection-end-column="7" />
+        <state relative-caret-position="2652">
+          <caret line="54" column="1" lean-forward="false" selection-start-line="54" selection-start-column="1" selection-end-line="54" selection-end-column="1" />
+          <folding>
+            <element signature="e#53#92#0" expanded="true" />
+          </folding>
+        </state>
+      </provider>
+    </entry>
+    <entry file="file://$PROJECT_DIR$/PY.exercise/WebAppLearning/arithmetic_training_game/cgi-bin/judge_result.py">
+      <provider selected="true" editor-type-id="text-editor">
+        <state relative-caret-position="102">
+          <caret line="2" column="0" lean-forward="false" selection-start-line="2" selection-start-column="0" selection-end-line="2" selection-end-column="0" />
           <folding />
         </state>
       </provider>
     </entry>
-    <entry file="file://$PROJECT_DIR$/PY.exercise/WebAppLearning/arithmetic_training_game/templates/header.html">
+    <entry file="file://$PROJECT_DIR$/PY.exercise/WebAppLearning/arithmetic_training_game/cgi-bin/yate.py">
       <provider selected="true" editor-type-id="text-editor">
-        <state relative-caret-position="357">
-          <caret line="7" column="15" lean-forward="true" selection-start-line="7" selection-start-column="15" selection-end-line="7" selection-end-column="15" />
+        <state relative-caret-position="1632">
+          <caret line="32" column="61" lean-forward="false" selection-start-line="32" selection-start-column="61" selection-end-line="32" selection-end-column="61" />
+          <folding />
+        </state>
+      </provider>
+    </entry>
+    <entry file="file://$PROJECT_DIR$/PY.exercise/WebAppLearning/arithmetic_training_game/cgi-bin/webpage_artgame.py">
+      <provider selected="true" editor-type-id="text-editor">
+        <state relative-caret-position="1144">
+          <caret line="26" column="50" lean-forward="false" selection-start-line="26" selection-start-column="50" selection-end-line="26" selection-end-column="50" />
           <folding />
         </state>
       </provider>
