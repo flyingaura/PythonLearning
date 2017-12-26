@@ -2,15 +2,136 @@
 <project version="4">
   <component name="ChangeListManager">
     <list default="true" id="286e034b-b797-4eff-86da-0c5c650473df" name="默认的" comment="Merge branch 'master' of https://git.oschina.net/flyingaura/learning2017&#10;&#10;# Conflicts:&#10;#&#9;.idea/workspace.xml&#10;">
-      <change type="DELETED" beforePath="$PROJECT_DIR$/PY.exercise/tempworks.py" afterPath="" />
+      <change type="NEW" beforePath="" afterPath="$PROJECT_DIR$/ESP_project/helpInfo/images/addDataBase.png" />
+      <change type="NEW" beforePath="" afterPath="$PROJECT_DIR$/ESP_project/helpInfo/images/addDic.png" />
+      <change type="NEW" beforePath="" afterPath="$PROJECT_DIR$/ESP_project/helpInfo/images/addDicStrip.png" />
+      <change type="NEW" beforePath="" afterPath="$PROJECT_DIR$/ESP_project/helpInfo/images/addKokenizer.png" />
+      <change type="NEW" beforePath="" afterPath="$PROJECT_DIR$/ESP_project/helpInfo/images/addMgrPerson.png" />
+      <change type="NEW" beforePath="" afterPath="$PROJECT_DIR$/ESP_project/helpInfo/images/addMgrPerson2.png" />
+      <change type="NEW" beforePath="" afterPath="$PROJECT_DIR$/ESP_project/helpInfo/images/bfkzgnpz21.png" />
+      <change type="NEW" beforePath="" afterPath="$PROJECT_DIR$/ESP_project/helpInfo/images/bfkzgnpz22.png" />
+      <change type="NEW" beforePath="" afterPath="$PROJECT_DIR$/ESP_project/helpInfo/images/bfkzgnpz23.png" />
+      <change type="NEW" beforePath="" afterPath="$PROJECT_DIR$/ESP_project/helpInfo/images/bfkzgnpz31.png" />
+      <change type="NEW" beforePath="" afterPath="$PROJECT_DIR$/ESP_project/helpInfo/images/bfkzgnpz32.png" />
+      <change type="NEW" beforePath="" afterPath="$PROJECT_DIR$/ESP_project/helpInfo/images/bfkzgnpz33.png" />
+      <change type="NEW" beforePath="" afterPath="$PROJECT_DIR$/ESP_project/helpInfo/images/cjlm1.png" />
+      <change type="NEW" beforePath="" afterPath="$PROJECT_DIR$/ESP_project/helpInfo/images/cjlm2.png" />
+      <change type="NEW" beforePath="" afterPath="$PROJECT_DIR$/ESP_project/helpInfo/images/countInfo1.png" />
+      <change type="NEW" beforePath="" afterPath="$PROJECT_DIR$/ESP_project/helpInfo/images/countInfo2.png" />
+      <change type="NEW" beforePath="" afterPath="$PROJECT_DIR$/ESP_project/helpInfo/images/countInfo3.png" />
+      <change type="NEW" beforePath="" afterPath="$PROJECT_DIR$/ESP_project/helpInfo/images/createDataBase1.png" />
+      <change type="NEW" beforePath="" afterPath="$PROJECT_DIR$/ESP_project/helpInfo/images/createDataBase10.png" />
+      <change type="NEW" beforePath="" afterPath="$PROJECT_DIR$/ESP_project/helpInfo/images/createDataBase12.png" />
+      <change type="NEW" beforePath="" afterPath="$PROJECT_DIR$/ESP_project/helpInfo/images/createDataBase2.png" />
+      <change type="NEW" beforePath="" afterPath="$PROJECT_DIR$/ESP_project/helpInfo/images/createDataBase3.png" />
+      <change type="NEW" beforePath="" afterPath="$PROJECT_DIR$/ESP_project/helpInfo/images/createDataBase4.png" />
+      <change type="NEW" beforePath="" afterPath="$PROJECT_DIR$/ESP_project/helpInfo/images/createDataBase5.png" />
+      <change type="NEW" beforePath="" afterPath="$PROJECT_DIR$/ESP_project/helpInfo/images/createDataBase6.png" />
+      <change type="NEW" beforePath="" afterPath="$PROJECT_DIR$/ESP_project/helpInfo/images/createDataBase7.png" />
+      <change type="NEW" beforePath="" afterPath="$PROJECT_DIR$/ESP_project/helpInfo/images/createDataBase8.png" />
+      <change type="NEW" beforePath="" afterPath="$PROJECT_DIR$/ESP_project/helpInfo/images/createDataBase9.png" />
+      <change type="NEW" beforePath="" afterPath="$PROJECT_DIR$/ESP_project/helpInfo/images/createIndex.png" />
+      <change type="NEW" beforePath="" afterPath="$PROJECT_DIR$/ESP_project/helpInfo/images/dataClean1.png" />
+      <change type="NEW" beforePath="" afterPath="$PROJECT_DIR$/ESP_project/helpInfo/images/dataClean2.png" />
+      <change type="NEW" beforePath="" afterPath="$PROJECT_DIR$/ESP_project/helpInfo/images/dataClean3.png" />
+      <change type="NEW" beforePath="" afterPath="$PROJECT_DIR$/ESP_project/helpInfo/images/dataCleanTask1.png" />
+      <change type="NEW" beforePath="" afterPath="$PROJECT_DIR$/ESP_project/helpInfo/images/dataCleanTask2.png" />
+      <change type="NEW" beforePath="" afterPath="$PROJECT_DIR$/ESP_project/helpInfo/images/dataCleanTask3.png" />
+      <change type="NEW" beforePath="" afterPath="$PROJECT_DIR$/ESP_project/helpInfo/images/dataMrg.png" />
+      <change type="NEW" beforePath="" afterPath="$PROJECT_DIR$/ESP_project/helpInfo/images/dataSearch.png" />
+      <change type="NEW" beforePath="" afterPath="$PROJECT_DIR$/ESP_project/helpInfo/images/delDic.png" />
+      <change type="NEW" beforePath="" afterPath="$PROJECT_DIR$/ESP_project/helpInfo/images/delKokenizer.png" />
+      <change type="NEW" beforePath="" afterPath="$PROJECT_DIR$/ESP_project/helpInfo/images/dicMrg.png" />
+      <change type="NEW" beforePath="" afterPath="$PROJECT_DIR$/ESP_project/helpInfo/images/editKokenizer.png" />
+      <change type="NEW" beforePath="" afterPath="$PROJECT_DIR$/ESP_project/helpInfo/images/editMssTable.png" />
+      <change type="NEW" beforePath="" afterPath="$PROJECT_DIR$/ESP_project/helpInfo/images/gaiyaototal.png" />
+      <change type="NEW" beforePath="" afterPath="$PROJECT_DIR$/ESP_project/helpInfo/images/hotSource.png" />
+      <change type="NEW" beforePath="" afterPath="$PROJECT_DIR$/ESP_project/helpInfo/images/importDic.png" />
+      <change type="NEW" beforePath="" afterPath="$PROJECT_DIR$/ESP_project/helpInfo/images/indexMgr.png" />
+      <change type="NEW" beforePath="" afterPath="$PROJECT_DIR$/ESP_project/helpInfo/images/jsonResult.png" />
+      <change type="NEW" beforePath="" afterPath="$PROJECT_DIR$/ESP_project/helpInfo/images/jymkksfb21.png" />
+      <change type="NEW" beforePath="" afterPath="$PROJECT_DIR$/ESP_project/helpInfo/images/jymkksfb61.png" />
+      <change type="NEW" beforePath="" afterPath="$PROJECT_DIR$/ESP_project/helpInfo/images/lmjbxx1.png" />
+      <change type="NEW" beforePath="" afterPath="$PROJECT_DIR$/ESP_project/helpInfo/images/log1.png" />
+      <change type="NEW" beforePath="" afterPath="$PROJECT_DIR$/ESP_project/helpInfo/images/log2.png" />
+      <change type="NEW" beforePath="" afterPath="$PROJECT_DIR$/ESP_project/helpInfo/images/monitor1.png" />
+      <change type="NEW" beforePath="" afterPath="$PROJECT_DIR$/ESP_project/helpInfo/images/monitor2.png" />
+      <change type="NEW" beforePath="" afterPath="$PROJECT_DIR$/ESP_project/helpInfo/images/monitor3.png" />
+      <change type="NEW" beforePath="" afterPath="$PROJECT_DIR$/ESP_project/helpInfo/images/monitor4.png" />
+      <change type="NEW" beforePath="" afterPath="$PROJECT_DIR$/ESP_project/helpInfo/images/monitor5.png" />
+      <change type="NEW" beforePath="" afterPath="$PROJECT_DIR$/ESP_project/helpInfo/images/monitor6.png" />
+      <change type="NEW" beforePath="" afterPath="$PROJECT_DIR$/ESP_project/helpInfo/images/monitor7.png" />
+      <change type="NEW" beforePath="" afterPath="$PROJECT_DIR$/ESP_project/helpInfo/images/monitor8.png" />
+      <change type="NEW" beforePath="" afterPath="$PROJECT_DIR$/ESP_project/helpInfo/images/mssFieldEdit.png" />
+      <change type="NEW" beforePath="" afterPath="$PROJECT_DIR$/ESP_project/helpInfo/images/mssTableMrg1.png" />
+      <change type="NEW" beforePath="" afterPath="$PROJECT_DIR$/ESP_project/helpInfo/images/mssTableMrg2.png" />
+      <change type="NEW" beforePath="" afterPath="$PROJECT_DIR$/ESP_project/helpInfo/images/mssTableMrg3.png" />
+      <change type="NEW" beforePath="" afterPath="$PROJECT_DIR$/ESP_project/helpInfo/images/querySearch.png" />
+      <change type="NEW" beforePath="" afterPath="$PROJECT_DIR$/ESP_project/helpInfo/images/recommendMgr.png" />
+      <change type="NEW" beforePath="" afterPath="$PROJECT_DIR$/ESP_project/helpInfo/images/recommendTagOption.png" />
+      <change type="NEW" beforePath="" afterPath="$PROJECT_DIR$/ESP_project/helpInfo/images/register.png" />
+      <change type="NEW" beforePath="" afterPath="$PROJECT_DIR$/ESP_project/helpInfo/images/register1.png" />
+      <change type="NEW" beforePath="" afterPath="$PROJECT_DIR$/ESP_project/helpInfo/images/roleMgr.png" />
+      <change type="NEW" beforePath="" afterPath="$PROJECT_DIR$/ESP_project/helpInfo/images/roleMgr2.png" />
+      <change type="NEW" beforePath="" afterPath="$PROJECT_DIR$/ESP_project/helpInfo/images/searchData.png" />
+      <change type="NEW" beforePath="" afterPath="$PROJECT_DIR$/ESP_project/helpInfo/images/searchDataBase.png" />
+      <change type="NEW" beforePath="" afterPath="$PROJECT_DIR$/ESP_project/helpInfo/images/searchDataBase1.png" />
+      <change type="NEW" beforePath="" afterPath="$PROJECT_DIR$/ESP_project/helpInfo/images/searchDataBase2.png" />
+      <change type="NEW" beforePath="" afterPath="$PROJECT_DIR$/ESP_project/helpInfo/images/searchDataBase3.png" />
+      <change type="NEW" beforePath="" afterPath="$PROJECT_DIR$/ESP_project/helpInfo/images/selectRecommend.png" />
+      <change type="NEW" beforePath="" afterPath="$PROJECT_DIR$/ESP_project/helpInfo/images/sqlSearch.png" />
+      <change type="NEW" beforePath="" afterPath="$PROJECT_DIR$/ESP_project/helpInfo/images/ssgz1.png" />
+      <change type="NEW" beforePath="" afterPath="$PROJECT_DIR$/ESP_project/helpInfo/images/ssgz2.png" />
+      <change type="NEW" beforePath="" afterPath="$PROJECT_DIR$/ESP_project/helpInfo/images/sysRegist.png" />
+      <change type="NEW" beforePath="" afterPath="$PROJECT_DIR$/ESP_project/helpInfo/images/sysRegist2.png" />
+      <change type="NEW" beforePath="" afterPath="$PROJECT_DIR$/ESP_project/helpInfo/images/tableResult.png" />
+      <change type="NEW" beforePath="" afterPath="$PROJECT_DIR$/ESP_project/helpInfo/images/templateSearch.png" />
+      <change type="NEW" beforePath="" afterPath="$PROJECT_DIR$/ESP_project/helpInfo/images/testKokenizer1.png" />
+      <change type="NEW" beforePath="" afterPath="$PROJECT_DIR$/ESP_project/helpInfo/images/testKokenizer2.png" />
+      <change type="NEW" beforePath="" afterPath="$PROJECT_DIR$/ESP_project/helpInfo/images/testKokenizer3.png" />
+      <change type="NEW" beforePath="" afterPath="$PROJECT_DIR$/ESP_project/helpInfo/images/userMgr.png" />
+      <change type="NEW" beforePath="" afterPath="$PROJECT_DIR$/ESP_project/helpInfo/images/userMgr2.png" />
+      <change type="NEW" beforePath="" afterPath="$PROJECT_DIR$/ESP_project/helpInfo/images/userlog.png" />
+      <change type="NEW" beforePath="" afterPath="$PROJECT_DIR$/ESP_project/helpInfo/images/userlog2.png" />
+      <change type="NEW" beforePath="" afterPath="$PROJECT_DIR$/ESP_project/helpInfo/images/viewMssTableData.png" />
+      <change type="NEW" beforePath="" afterPath="$PROJECT_DIR$/ESP_project/helpInfo/images/viewTableData.png" />
+      <change type="NEW" beforePath="" afterPath="$PROJECT_DIR$/RSF_project/data/9f7cbb17-a81b-45ed-98f6-34ea97fdbe82.dmp" />
+      <change type="NEW" beforePath="" afterPath="$PROJECT_DIR$/.gitignore" />
+      <change type="NEW" beforePath="" afterPath="$PROJECT_DIR$/ESP_project/helpInfo/index.html" />
+      <change type="NEW" beforePath="" afterPath="$PROJECT_DIR$/PY.exercise/WebAppLearning/arithmetic_training_game/WrongRecord.html" />
+      <change type="NEW" beforePath="" afterPath="$PROJECT_DIR$/PY.exercise/WebAppLearning/arithmetic_training_game/cgi-bin/page_test.py" />
+      <change type="NEW" beforePath="" afterPath="$PROJECT_DIR$/PY.exercise/WebAppLearning/arithmetic_training_game/cgi-bin/test_formaction.py" />
+      <change type="NEW" beforePath="" afterPath="$PROJECT_DIR$/PY.exercise/WebAppLearning/arithmetic_training_game/cgi-bin/test_page.html" />
+      <change type="NEW" beforePath="" afterPath="$PROJECT_DIR$/PY.exercise/WebAppLearning/arithmetic_training_game/data/test.json" />
+      <change type="NEW" beforePath="" afterPath="$PROJECT_DIR$/PY.exercise/WebAppLearning/arithmetic_training_game/test_page.html" />
+      <change type="NEW" beforePath="" afterPath="$PROJECT_DIR$/PY.exercise/exer20171212001.py" />
+      <change type="NEW" beforePath="" afterPath="$PROJECT_DIR$/RSF_project/data/gov.cn news refined-2017-10-25.txt" />
+      <change type="NEW" beforePath="" afterPath="$PROJECT_DIR$/RSF_project/data/htmlcodetest001.txt" />
+      <change type="NEW" beforePath="" afterPath="$PROJECT_DIR$/RSF_project/data/news_out1.json" />
+      <change type="NEW" beforePath="" afterPath="$PROJECT_DIR$/RSF_project/data/news_out1.txt" />
+      <change type="NEW" beforePath="" afterPath="$PROJECT_DIR$/RSF_project/data/news_out2.json" />
+      <change type="NEW" beforePath="" afterPath="$PROJECT_DIR$/RSF_project/data/news_out3.json" />
+      <change type="NEW" beforePath="" afterPath="$PROJECT_DIR$/RSF_project/data/news_out4.json" />
+      <change type="NEW" beforePath="" afterPath="$PROJECT_DIR$/RSF_project/data/news_out5.json" />
+      <change type="NEW" beforePath="" afterPath="$PROJECT_DIR$/RSF_project/data/news_out6.json" />
+      <change type="NEW" beforePath="" afterPath="$PROJECT_DIR$/RSF_project/data/news_out7.json" />
+      <change type="NEW" beforePath="" afterPath="$PROJECT_DIR$/RSF_project/data/news_out8.json" />
+      <change type="NEW" beforePath="" afterPath="$PROJECT_DIR$/RSF_project/data/“十九大”政务新词词表.txt" />
+      <change type="NEW" beforePath="" afterPath="$PROJECT_DIR$/RSF_project/data/“十九大”政务新词词表（导入用）.txt" />
+      <change type="NEW" beforePath="" afterPath="$PROJECT_DIR$/RSF_project/data/国务院组织机构 2017.10.24.csv" />
+      <change type="NEW" beforePath="" afterPath="$PROJECT_DIR$/RSF_project/data/国务院组织机构同义词表1027.txt" />
+      <change type="NEW" beforePath="" afterPath="$PROJECT_DIR$/RSF_project/data/国务院组织机构补充词表1101.txt" />
+      <change type="NEW" beforePath="" afterPath="$PROJECT_DIR$/RSF_project/data/地区名称.txt" />
+      <change type="NEW" beforePath="" afterPath="$PROJECT_DIR$/RSF_project/data/政务主题词表1024.txt" />
+      <change type="NEW" beforePath="" afterPath="$PROJECT_DIR$/RSF_project/data/政务主题词表1114（全集）.txt" />
+      <change type="NEW" beforePath="" afterPath="$PROJECT_DIR$/RSF_project/data/政务主题词表1114（待清洗）.txt" />
+      <change type="NEW" beforePath="" afterPath="$PROJECT_DIR$/RSF_project/data/政务主题词表1114（补充+另一词典）.txt" />
+      <change type="NEW" beforePath="" afterPath="$PROJECT_DIR$/RSF_project/data/政务主题词表1114（补充）.txt" />
+      <change type="NEW" beforePath="" afterPath="$PROJECT_DIR$/RSF_project/data_process/FromESgetDcode.py" />
+      <change type="NEW" beforePath="" afterPath="$PROJECT_DIR$/RSF_project/data_process/htmlfetch_test.py" />
+      <change type="NEW" beforePath="" afterPath="$PROJECT_DIR$/RSF_project/data_process/tempworks.py" />
+      <change type="NEW" beforePath="" afterPath="$PROJECT_DIR$/RSF_project/data_process/zwdict_process.py" />
       <change type="MODIFICATION" beforePath="$PROJECT_DIR$/.idea/workspace.xml" afterPath="$PROJECT_DIR$/.idea/workspace.xml" />
-      <change type="MODIFICATION" beforePath="$PROJECT_DIR$/PY.exercise/WebAppLearning/HTMLlearning/MyfirstHTML.html" afterPath="$PROJECT_DIR$/PY.exercise/WebAppLearning/HTMLlearning/MyfirstHTML.html" />
-      <change type="MODIFICATION" beforePath="$PROJECT_DIR$/PY.exercise/WebAppLearning/arithmetic_training_game/cgi-bin/expresssion_set.py" afterPath="$PROJECT_DIR$/PY.exercise/WebAppLearning/arithmetic_training_game/cgi-bin/expresssion_set.py" />
-      <change type="MODIFICATION" beforePath="$PROJECT_DIR$/PY.exercise/WebAppLearning/arithmetic_training_game/cgi-bin/generate_expression.py" afterPath="$PROJECT_DIR$/PY.exercise/WebAppLearning/arithmetic_training_game/cgi-bin/generate_expression.py" />
-      <change type="MODIFICATION" beforePath="$PROJECT_DIR$/PY.exercise/WebAppLearning/arithmetic_training_game/cgi-bin/judge_result.py" afterPath="$PROJECT_DIR$/PY.exercise/WebAppLearning/arithmetic_training_game/cgi-bin/judge_result.py" />
-      <change type="MODIFICATION" beforePath="$PROJECT_DIR$/PY.exercise/WebAppLearning/arithmetic_training_game/cgi-bin/yate.py" afterPath="$PROJECT_DIR$/PY.exercise/WebAppLearning/arithmetic_training_game/cgi-bin/yate.py" />
-      <change type="MODIFICATION" beforePath="$PROJECT_DIR$/PY.exercise/WebAppLearning/arithmetic_training_game/coach.css" afterPath="$PROJECT_DIR$/PY.exercise/WebAppLearning/arithmetic_training_game/coach.css" />
-      <change type="MODIFICATION" beforePath="$PROJECT_DIR$/PY.exercise/testcode005.py" afterPath="$PROJECT_DIR$/PY.exercise/testcode005.py" />
       <change type="MODIFICATION" beforePath="$PROJECT_DIR$/RSF_project/data_process/csv2json.py" afterPath="$PROJECT_DIR$/RSF_project/data_process/csv2json.py" />
     </list>
     <option name="EXCLUDED_CONVERTED_TO_IGNORED" value="true" />
@@ -1105,7 +1226,14 @@
       <option name="project" value="LOCAL" />
       <updated>1514276781880</updated>
     </task>
-    <option name="localTasksCounter" value="37" />
+    <task id="LOCAL-00037" summary="Merge branch 'master' of https://git.oschina.net/flyingaura/learning2017&#10;&#10;# Conflicts:&#10;#&#9;.idea/workspace.xml&#10;">
+      <created>1514278041666</created>
+      <option name="number" value="00037" />
+      <option name="presentableId" value="LOCAL-00037" />
+      <option name="project" value="LOCAL" />
+      <updated>1514278041666</updated>
+    </task>
+    <option name="localTasksCounter" value="38" />
     <servers />
   </component>
   <component name="TestHistory">
