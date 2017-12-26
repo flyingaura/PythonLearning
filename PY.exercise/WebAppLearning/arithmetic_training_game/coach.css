@@ -21,8 +21,8 @@ h1 {
 }
 
 h2 {
-  font-weight:      normal;
-  color:            #AE02CC;
+  font-weight:      900;
+  color: blue;
   font-size:        150%;
   border-bottom:    thin dotted #888888;
 }

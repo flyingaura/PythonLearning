@@ -37,9 +37,17 @@ for key in OperatorList:
     print(yate.checked_box('operator',OperatorList[key],key))
 print(yate.para('3.请设置计算数的个数'))
 print(yate.select_set('level',NumLevel,3))
-
+print(yate.input_hidden('ExpNum',1))   #设置题号，从1开始
+print(yate.input_hidden('WrongNum',0))   #设置答错的题数
+print(yate.input_hidden('WrongTag',0))   #设置答错的标识（同一道题，最多只记一次答错）
+print(yate.input_hidden('CorrectNum', 0))   #设置纠正后的题目数据
 print(yate.end_form('确定'))
-print(yate.include_footer({'返回首页':'/index.html'}))
+
+# =====================设置页脚的链接（保持固定顺序）=====================
+FooterString = OrderedDict()
+FooterString['返回首页'] = '/index.html'
+FooterString['错题回顾'] = 'WrongRecord.py'
+print(yate.include_footer(FooterString))
 
 
 
