@@ -6,6 +6,7 @@
 import arithmetic_training_games as ATG
 import yate
 import cgi
+from collections import OrderedDict
 
 # ================= 生成运算表达式 =================
 form_data = cgi.FieldStorage()
@@ -75,7 +76,11 @@ print(yate.input_hidden('CorrectNum', CorrectNum))
 
 print(yate.end_form('换一题'))
 
-print(yate.include_footer({'返回首页': '/index.html'}))
+# =====================设置页脚的链接（保持固定顺序）=====================
+FooterString = OrderedDict()
+FooterString['返回首页'] = '/index.html'
+FooterString['错题回顾'] = 'WrongRecord.py'
+print(yate.include_footer(FooterString))
 
 
 

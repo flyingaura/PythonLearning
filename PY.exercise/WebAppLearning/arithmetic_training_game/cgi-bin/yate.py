@@ -15,7 +15,7 @@ def include_footer(the_links):
         foot_text = footf.read()
     link_string = ''
     for key in the_links:
-        link_string += '<a href="' + the_links[key] + '">' + key + '</a>&nbsp;&nbsp;&nbsp;&nbsp;'
+        link_string += '<a href="' + the_links[key] + '">' + key + '</a>&nbsp;&nbsp;&nbsp;|&nbsp;&nbsp;&nbsp;'
     footer = Template(foot_text)
     return(footer.substitute(links=link_string))
 
@@ -69,6 +69,10 @@ def u_list(items):
         u_string += '<li>' + item + '</li>'
     u_string += '</ul>'
     return(u_string)
+
+def a_link(LinkURL, title, target = '"_self"'):
+    return('<a href="' + LinkURL + '" target="' + target + '">' + title + '</a>')
+
 
 def header(header_text, header_level=2):
     return('<h' + str(header_level) + '>' + header_text +

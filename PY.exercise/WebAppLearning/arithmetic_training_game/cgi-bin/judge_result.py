@@ -3,7 +3,9 @@
 import yate
 import cgi
 import arithmetic_training_games as ATG
-import json,time
+import json,time,os
+from collections import OrderedDict
+
 # ===================获取表单值===================
 form_data = cgi.FieldStorage()
 ArithmeticExpress = form_data['ArithmeticExpress'].value
@@ -19,7 +21,7 @@ WrongNum = int(form_data['WrongNum'].value)
 WrongTag = int(form_data['WrongTag'].value)
 CorrectNum = int(form_data['CorrectNum'].value)
 
-RecordFilePath = '../data/WrongRecord.json'   #指定错误题目记录文件路径
+RecordFilePath = 'data/WrongRecord.json'   #指定错误题目记录文件路径
 # ===================生成页面===================
 print(yate.start_response())
 print(yate.include_header('欢迎来到韦浩宇的算术运算训练营！'))
@@ -46,15 +48,23 @@ try:
         if(not WrongTag):
             WrongNum += 1
             WrongTag = 1
-            with open(RecordFilePath, mode = 'a', encoding= 'utf-8') as RecordFile:
-                time_string = time.strftime('%Y-%m-%d %H:%M:%S', time.localtime(time.time()))
+            if(not os.path.isfile(RecordFilePath)):
+                with open(RecordFilePath, mode='w', encoding='utf-8') as RecordFile:
+                    pass
+            with open(RecordFilePath, mode = 'r+', encoding= 'utf-8') as RecordFile:
+                Time_string = time.strftime('%Y-%m-%d', time.localtime(time.time()))
+                try:
+                    RecordJson = json.loads(RecordFile.read().strip())
+                    RecordFile.seek(0)
+                except json.decoder.JSONDecodeError:
+                    RecordJson = {}
+                try:
+                    RecordJson[Time_string].append(ArithmeticExpress + ' = ?')
+                except KeyError:
+                    RecordJson[Time_string] = []
+                    RecordJson[Time_string].append(ArithmeticExpress + ' = ?')
 
-
-                NetFile.seek(0)
-                init_dict[time_string] = list(range(10))
-                json.dump(init_dict, NetFile)
-                NetFile.write('\n')
-
+                json.dump(RecordJson, RecordFile)
 
 except KeyError:
 
@@ -118,5 +128,8 @@ if(re_answer_tag):
 
     print(yate.end_form('换一题'))
 
-# =========================================================
-print(yate.include_footer({'返回首页': '/index.html'}))
+# =====================设置页脚的链接（保持固定顺序）=====================
+FooterString = OrderedDict()
+FooterString['返回首页'] = '/index.html'
+FooterString['错题回顾'] = 'WrongRecord.py'
+print(yate.include_footer(FooterString))
