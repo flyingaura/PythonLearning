@@ -1,7 +1,8 @@
 # -*- coding: utf-8 -*-
 import random,numpy,math
 from string import Template
-import sys,msvcrt
+import sys,msvcrt,json,time
+from collections import OrderedDict
 # sys.path.append('.\WebAppLearning')
 # from yate import yate
 #
@@ -43,4 +44,18 @@ import sys,msvcrt
 
 #
 
-print(list(range(1,11)))
+# print(list(range(1,11)))
+init_dict = OrderedDict()
+filepath = r'F:\documents\python\learning2017\PY.exercise\WebAppLearning\arithmetic_training_game\data\test.json'
+with open(filepath, mode = 'a+', encoding= 'utf-8') as NetFile:
+    NetFile.seek(0)
+    time_string = time.strftime('%Y-%m-%d %H:%M:%S',time.localtime(time.time()))
+    init_dict[time_string] = list(range(10))
+    json.dump(init_dict, NetFile)
+    NetFile.write('\n')
+
+    NetFile.seek(0)
+    for Arec in NetFile.readlines():
+        Arec_json = json.loads(Arec)
+        print(Arec_json)
+
