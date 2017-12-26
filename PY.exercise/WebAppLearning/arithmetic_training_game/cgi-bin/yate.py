@@ -44,7 +44,7 @@ def checked_box(cb_name,cb_value,cb_title = None, checked = False):
         checked_string = ''
     return('<input type="checkbox" name="' + cb_name + '" value="' + cb_value + '" title="' + cb_title + '" ' + checked_string + '>' + cb_value + '&nbsp;&nbsp;&nbsp;&nbsp;')
 
-def select_set(selname, option_dic, size = '2', multiple = False):
+def select_set(selname, option_dic, size = '1', multiple = False, SelectedVals = []):
     if(multiple):
         mul_string = 'multiple'
     else:
@@ -53,7 +53,11 @@ def select_set(selname, option_dic, size = '2', multiple = False):
     Web_string = '<select name="' + selname + '" size="' + str(size) + '" ' + mul_string + '>' + '\n'
     option_string = ''
     for option in option_dic:
-        option_string = option_string + '<option value="' + str(option) + '" >' + str(option_dic[option]) +'</option>' + '\n'
+        if(option in SelectedVals):
+            selected_string = 'selected="selected"'
+        else:
+            selected_string = ''
+        option_string = option_string + '<option value="' + str(option) + '" ' + selected_string + '>' + str(option_dic[option]) + '</option>' + '\n'
 
     Web_string = Web_string + option_string + '</select>'
 

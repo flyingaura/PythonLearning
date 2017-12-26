@@ -17,7 +17,7 @@ try:
 
     print(yate.para('请选择查看哪天的错题？'))
     print(yate.start_form('WrongRecord.py'))
-    print(yate.select_set('WrongRecSelect', WrongRecDict, 4))
+    print(yate.select_set('WrongRecSelect', WrongRecDict))
     print(yate.end_form('确定'))
 
     try:

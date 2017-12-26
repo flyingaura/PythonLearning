@@ -1,9 +1,7 @@
 # -*- coding: utf-8 -*-
 
-import yate
-import cgi
 import arithmetic_training_games as ATG
-import json,time,os
+import json,time,os,yate,cgi
 from collections import OrderedDict
 
 # ===================获取表单值===================
@@ -97,6 +95,7 @@ print(yate.input_hidden('ExpNum', ExpNum))
 print(yate.input_hidden('WrongNum', WrongNum))
 print(yate.input_hidden('WrongTag', WrongTag))
 print(yate.input_hidden('CorrectNum', CorrectNum))
+print(yate.input_hidden('NewSetting', 0))
 
 if(re_answer_tag):
     print(yate.input_hidden('ArithmeticExpress', ArithmeticExpress))
@@ -125,6 +124,7 @@ if(re_answer_tag):
     print(yate.input_hidden('WrongNum', WrongNum))
     print(yate.input_hidden('WrongTag', 0))
     print(yate.input_hidden('CorrectNum', CorrectNum))
+    print(yate.input_hidden('NewSetting', 0))
 
     print(yate.end_form('换一题'))
 

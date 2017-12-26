@@ -2,23 +2,14 @@
 <project version="4">
   <component name="ChangeListManager">
     <list default="true" id="286e034b-b797-4eff-86da-0c5c650473df" name="默认的" comment="">
-      <change type="NEW" beforePath="" afterPath="$PROJECT_DIR$/PY.exercise/WebAppLearning/HTMLlearning/ThirdHTML.html" />
-      <change type="NEW" beforePath="" afterPath="$PROJECT_DIR$/PY.exercise/WebAppLearning/arithmetic_training_game/cgi-bin/WrongRecord.py" />
-      <change type="NEW" beforePath="" afterPath="$PROJECT_DIR$/PY.exercise/WebAppLearning/arithmetic_training_game/cgi-bin/page_test.py" />
-      <change type="NEW" beforePath="" afterPath="$PROJECT_DIR$/PY.exercise/WebAppLearning/arithmetic_training_game/cgi-bin/test_formaction.py" />
-      <change type="NEW" beforePath="" afterPath="$PROJECT_DIR$/PY.exercise/WebAppLearning/arithmetic_training_game/cgi-bin/test_page.html" />
-      <change type="NEW" beforePath="" afterPath="$PROJECT_DIR$/PY.exercise/WebAppLearning/arithmetic_training_game/data/test.json" />
-      <change type="NEW" beforePath="" afterPath="$PROJECT_DIR$/PY.exercise/WebAppLearning/arithmetic_training_game/test_page.html" />
-      <change type="NEW" beforePath="" afterPath="$PROJECT_DIR$/PY.exercise/exer20171212001.py" />
-      <change type="DELETED" beforePath="$PROJECT_DIR$/PY.exercise/tempworks.py" afterPath="" />
       <change type="MODIFICATION" beforePath="$PROJECT_DIR$/.idea/workspace.xml" afterPath="$PROJECT_DIR$/.idea/workspace.xml" />
       <change type="MODIFICATION" beforePath="$PROJECT_DIR$/PY.exercise/WebAppLearning/HTMLlearning/MyfirstHTML.html" afterPath="$PROJECT_DIR$/PY.exercise/WebAppLearning/HTMLlearning/MyfirstHTML.html" />
+      <change type="MODIFICATION" beforePath="$PROJECT_DIR$/PY.exercise/WebAppLearning/HTMLlearning/ThirdHTML.html" afterPath="$PROJECT_DIR$/PY.exercise/WebAppLearning/HTMLlearning/ThirdHTML.html" />
+      <change type="MODIFICATION" beforePath="$PROJECT_DIR$/PY.exercise/WebAppLearning/arithmetic_training_game/cgi-bin/WrongRecord.py" afterPath="$PROJECT_DIR$/PY.exercise/WebAppLearning/arithmetic_training_game/cgi-bin/WrongRecord.py" />
       <change type="MODIFICATION" beforePath="$PROJECT_DIR$/PY.exercise/WebAppLearning/arithmetic_training_game/cgi-bin/expresssion_set.py" afterPath="$PROJECT_DIR$/PY.exercise/WebAppLearning/arithmetic_training_game/cgi-bin/expresssion_set.py" />
       <change type="MODIFICATION" beforePath="$PROJECT_DIR$/PY.exercise/WebAppLearning/arithmetic_training_game/cgi-bin/generate_expression.py" afterPath="$PROJECT_DIR$/PY.exercise/WebAppLearning/arithmetic_training_game/cgi-bin/generate_expression.py" />
       <change type="MODIFICATION" beforePath="$PROJECT_DIR$/PY.exercise/WebAppLearning/arithmetic_training_game/cgi-bin/judge_result.py" afterPath="$PROJECT_DIR$/PY.exercise/WebAppLearning/arithmetic_training_game/cgi-bin/judge_result.py" />
       <change type="MODIFICATION" beforePath="$PROJECT_DIR$/PY.exercise/WebAppLearning/arithmetic_training_game/cgi-bin/yate.py" afterPath="$PROJECT_DIR$/PY.exercise/WebAppLearning/arithmetic_training_game/cgi-bin/yate.py" />
-      <change type="MODIFICATION" beforePath="$PROJECT_DIR$/PY.exercise/WebAppLearning/arithmetic_training_game/coach.css" afterPath="$PROJECT_DIR$/PY.exercise/WebAppLearning/arithmetic_training_game/coach.css" />
-      <change type="MODIFICATION" beforePath="$PROJECT_DIR$/PY.exercise/testcode005.py" afterPath="$PROJECT_DIR$/PY.exercise/testcode005.py" />
     </list>
     <option name="EXCLUDED_CONVERTED_TO_IGNORED" value="true" />
     <option name="TRACKING_ENABLED" value="true" />
@@ -1199,7 +1190,14 @@
       <option name="project" value="LOCAL" />
       <updated>1510585282408</updated>
     </task>
-    <option name="localTasksCounter" value="27" />
+    <task id="LOCAL-00027" summary="Merge branch 'master' of https://github.com/flyingaura/PythonLearning&#10;&#10;# Conflicts:&#10;#&#9;.idea/workspace.xml&#10;">
+      <created>1514299265504</created>
+      <option name="number" value="00027" />
+      <option name="presentableId" value="LOCAL-00027" />
+      <option name="project" value="LOCAL" />
+      <updated>1514299265504</updated>
+    </task>
+    <option name="localTasksCounter" value="28" />
     <servers />
   </component>
   <component name="TestHistory">
@@ -1250,13 +1248,13 @@
       <window_info id="Project" active="false" anchor="left" auto_hide="false" internal_type="DOCKED" type="DOCKED" visible="true" show_stripe_button="true" weight="0.25225225" sideWeight="0.5" order="0" side_tool="false" content_ui="combo" />
       <window_info id="TODO" active="false" anchor="bottom" auto_hide="false" internal_type="DOCKED" type="DOCKED" visible="false" show_stripe_button="true" weight="0.23985432" sideWeight="0.5" order="6" side_tool="false" content_ui="tabs" />
       <window_info id="调试" active="false" anchor="bottom" auto_hide="false" internal_type="DOCKED" type="DOCKED" visible="false" show_stripe_button="true" weight="0.32258064" sideWeight="0.5" order="7" side_tool="false" content_ui="tabs" />
-      <window_info id="Event Log" active="false" anchor="bottom" auto_hide="false" internal_type="DOCKED" type="DOCKED" visible="false" show_stripe_button="true" weight="0.22788762" sideWeight="0.50582933" order="12" side_tool="true" content_ui="tabs" />
+      <window_info id="Event Log" active="false" anchor="bottom" auto_hide="false" internal_type="DOCKED" type="DOCKED" visible="false" show_stripe_button="true" weight="0.20395422" sideWeight="0.5068892" order="12" side_tool="true" content_ui="tabs" />
       <window_info id="Database" active="false" anchor="right" auto_hide="false" internal_type="DOCKED" type="DOCKED" visible="false" show_stripe_button="true" weight="0.33" sideWeight="0.5" order="3" side_tool="false" content_ui="tabs" />
       <window_info id="Version Control" active="false" anchor="bottom" auto_hide="false" internal_type="DOCKED" type="DOCKED" visible="false" show_stripe_button="false" weight="0.33" sideWeight="0.5" order="8" side_tool="false" content_ui="tabs" />
       <window_info id="Python Console" active="false" anchor="bottom" auto_hide="false" internal_type="DOCKED" type="DOCKED" visible="false" show_stripe_button="true" weight="0.23829344" sideWeight="0.5" order="9" side_tool="false" content_ui="tabs" />
       <window_info id="Structure" active="false" anchor="left" auto_hide="false" internal_type="DOCKED" type="DOCKED" visible="false" show_stripe_button="true" weight="0.24933757" sideWeight="0.5" order="1" side_tool="false" content_ui="tabs" />
       <window_info id="Terminal" active="false" anchor="bottom" auto_hide="false" internal_type="DOCKED" type="DOCKED" visible="false" show_stripe_button="true" weight="0.16077003" sideWeight="0.49788022" order="13" side_tool="false" content_ui="tabs" />
-      <window_info id="运行" active="false" anchor="bottom" auto_hide="false" internal_type="DOCKED" type="DOCKED" visible="true" show_stripe_button="true" weight="0.20395422" sideWeight="0.49417064" order="10" side_tool="false" content_ui="tabs" />
+      <window_info id="运行" active="false" anchor="bottom" auto_hide="false" internal_type="DOCKED" type="DOCKED" visible="true" show_stripe_button="true" weight="0.20395422" sideWeight="0.49311075" order="10" side_tool="false" content_ui="tabs" />
       <window_info id="Favorites" active="false" anchor="left" auto_hide="false" internal_type="DOCKED" type="DOCKED" visible="false" show_stripe_button="true" weight="0.3298969" sideWeight="0.5" order="2" side_tool="true" content_ui="tabs" />
       <window_info id="Cvs" active="false" anchor="bottom" auto_hide="false" internal_type="DOCKED" type="DOCKED" visible="false" show_stripe_button="true" weight="0.25" sideWeight="0.5" order="4" side_tool="false" content_ui="tabs" />
       <window_info id="Message" active="false" anchor="bottom" auto_hide="false" internal_type="DOCKED" type="DOCKED" visible="false" show_stripe_button="true" weight="0.33" sideWeight="0.5" order="0" side_tool="false" content_ui="tabs" />
@@ -1279,7 +1277,8 @@
   <component name="VcsManagerConfiguration">
     <MESSAGE value="Merge branch 'master' of https://git.oschina.net/flyingaura/learning2017&#10;&#10;# Please enter a commit message to explain why this merge is necessary,&#10;# especially if it merges an updated upstream into a topic branch.&#10;#&#10;# Lines starting with '#' will be ignored, and an empty message aborts&#10;# the commit.&#10;" />
     <MESSAGE value="Merge branch 'master' of https://git.oschina.net/flyingaura/learning2017&#10;&#10;# Conflicts:&#10;#&#9;.idea/workspace.xml&#10;" />
-    <option name="LAST_COMMIT_MESSAGE" value="Merge branch 'master' of https://git.oschina.net/flyingaura/learning2017&#10;&#10;# Conflicts:&#10;#&#9;.idea/workspace.xml&#10;" />
+    <MESSAGE value="Merge branch 'master' of https://github.com/flyingaura/PythonLearning&#10;&#10;# Conflicts:&#10;#&#9;.idea/workspace.xml&#10;" />
+    <option name="LAST_COMMIT_MESSAGE" value="Merge branch 'master' of https://github.com/flyingaura/PythonLearning&#10;&#10;# Conflicts:&#10;#&#9;.idea/workspace.xml&#10;" />
   </component>
   <component name="XDebuggerManager">
     <breakpoint-manager>

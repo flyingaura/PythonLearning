@@ -4,8 +4,7 @@
 """
 
 import arithmetic_training_games as ATG
-import yate
-import cgi
+import cgi,json,yate
 from collections import OrderedDict
 
 # ================= 生成运算表达式 =================
@@ -34,6 +33,11 @@ while(True):
     except ZeroDivisionError:
         continue
 
+# =================把表达式配置信息保存到一个文件里=================
+if(form_data['NewSetting'].value):
+    with open('data/setting.json', mode = 'w', encoding= 'utf-8') as settingfile:
+        json.dump({'numlist':form_data['numlist'].value, 'operator': OperatorList, 'level': form_data['level'].value}, settingfile)
+
 # =================生成一个HTML页面=================
 print(yate.start_response())
 print(yate.include_header('欢迎来到韦浩宇的算术运算训练营！'))
@@ -54,6 +58,7 @@ print(yate.input_hidden('ExpNum', ExpNum))
 print(yate.input_hidden('WrongNum',WrongNum))
 print(yate.input_hidden('WrongTag',WrongTag))
 print(yate.input_hidden('CorrectNum', CorrectNum))
+print(yate.input_hidden('NewSetting', 0))   #设置是否为新设置的标识（其他页面为0）
 
 #===========================================================
 
@@ -73,6 +78,7 @@ print(yate.input_hidden('ExpNum', ExpNum))
 print(yate.input_hidden('WrongNum', WrongNum))
 print(yate.input_hidden('WrongTag', 0))
 print(yate.input_hidden('CorrectNum', CorrectNum))
+print(yate.input_hidden('NewSetting', 0))
 
 print(yate.end_form('换一题'))
 
