@@ -3,13 +3,6 @@
   <component name="ChangeListManager">
     <list default="true" id="286e034b-b797-4eff-86da-0c5c650473df" name="默认的" comment="">
       <change type="MODIFICATION" beforePath="$PROJECT_DIR$/.idea/workspace.xml" afterPath="$PROJECT_DIR$/.idea/workspace.xml" />
-      <change type="MODIFICATION" beforePath="$PROJECT_DIR$/PY.exercise/WebAppLearning/HTMLlearning/MyfirstHTML.html" afterPath="$PROJECT_DIR$/PY.exercise/WebAppLearning/HTMLlearning/MyfirstHTML.html" />
-      <change type="MODIFICATION" beforePath="$PROJECT_DIR$/PY.exercise/WebAppLearning/HTMLlearning/ThirdHTML.html" afterPath="$PROJECT_DIR$/PY.exercise/WebAppLearning/HTMLlearning/ThirdHTML.html" />
-      <change type="MODIFICATION" beforePath="$PROJECT_DIR$/PY.exercise/WebAppLearning/arithmetic_training_game/cgi-bin/WrongRecord.py" afterPath="$PROJECT_DIR$/PY.exercise/WebAppLearning/arithmetic_training_game/cgi-bin/WrongRecord.py" />
-      <change type="MODIFICATION" beforePath="$PROJECT_DIR$/PY.exercise/WebAppLearning/arithmetic_training_game/cgi-bin/expresssion_set.py" afterPath="$PROJECT_DIR$/PY.exercise/WebAppLearning/arithmetic_training_game/cgi-bin/expresssion_set.py" />
-      <change type="MODIFICATION" beforePath="$PROJECT_DIR$/PY.exercise/WebAppLearning/arithmetic_training_game/cgi-bin/generate_expression.py" afterPath="$PROJECT_DIR$/PY.exercise/WebAppLearning/arithmetic_training_game/cgi-bin/generate_expression.py" />
-      <change type="MODIFICATION" beforePath="$PROJECT_DIR$/PY.exercise/WebAppLearning/arithmetic_training_game/cgi-bin/judge_result.py" afterPath="$PROJECT_DIR$/PY.exercise/WebAppLearning/arithmetic_training_game/cgi-bin/judge_result.py" />
-      <change type="MODIFICATION" beforePath="$PROJECT_DIR$/PY.exercise/WebAppLearning/arithmetic_training_game/cgi-bin/yate.py" afterPath="$PROJECT_DIR$/PY.exercise/WebAppLearning/arithmetic_training_game/cgi-bin/yate.py" />
     </list>
     <option name="EXCLUDED_CONVERTED_TO_IGNORED" value="true" />
     <option name="TRACKING_ENABLED" value="true" />
@@ -23,7 +16,7 @@
     <SUITE FILE_PATH="coverage/learning2017$Func_StringSpilt.coverage" NAME="Func_StringSpilt Coverage Results" MODIFIED="1483964240863" SOURCE_PROVIDER="com.intellij.coverage.DefaultCoverageFileProvider" RUNNER="coverage.py" COVERAGE_BY_TEST_ENABLED="true" COVERAGE_TRACING_ENABLED="false" WORKING_DIRECTORY="$PROJECT_DIR$/LearnModule" />
     <SUITE FILE_PATH="coverage/learning2017$testcode004.coverage" NAME="testcode004 Coverage Results" MODIFIED="1509210983719" SOURCE_PROVIDER="com.intellij.coverage.DefaultCoverageFileProvider" RUNNER="coverage.py" COVERAGE_BY_TEST_ENABLED="true" COVERAGE_TRACING_ENABLED="false" WORKING_DIRECTORY="$PROJECT_DIR$/PY.exercise" />
     <SUITE FILE_PATH="coverage/learning2017$arithmetic_training_games.coverage" NAME="arithmetic_training_games Coverage Results" MODIFIED="1510397313374" SOURCE_PROVIDER="com.intellij.coverage.DefaultCoverageFileProvider" RUNNER="coverage.py" COVERAGE_BY_TEST_ENABLED="true" COVERAGE_TRACING_ENABLED="false" WORKING_DIRECTORY="$PROJECT_DIR$/PY.exercise/WebAppLearning/arithmetic_training_game/cgi-bin" />
-    <SUITE FILE_PATH="coverage/learning2017$simple_httpd.coverage" NAME="simple_httpd Coverage Results" MODIFIED="1514297673246" SOURCE_PROVIDER="com.intellij.coverage.DefaultCoverageFileProvider" RUNNER="coverage.py" COVERAGE_BY_TEST_ENABLED="true" COVERAGE_TRACING_ENABLED="false" WORKING_DIRECTORY="$PROJECT_DIR$/PY.exercise/WebAppLearning/arithmetic_training_game" />
+    <SUITE FILE_PATH="coverage/learning2017$simple_httpd.coverage" NAME="simple_httpd Coverage Results" MODIFIED="1514376445975" SOURCE_PROVIDER="com.intellij.coverage.DefaultCoverageFileProvider" RUNNER="coverage.py" COVERAGE_BY_TEST_ENABLED="true" COVERAGE_TRACING_ENABLED="false" WORKING_DIRECTORY="$PROJECT_DIR$/PY.exercise/WebAppLearning/arithmetic_training_game" />
     <SUITE FILE_PATH="coverage/learning2017$loadACL.coverage" NAME="loadACL Coverage Results" MODIFIED="1505129838598" SOURCE_PROVIDER="com.intellij.coverage.DefaultCoverageFileProvider" RUNNER="coverage.py" COVERAGE_BY_TEST_ENABLED="true" COVERAGE_TRACING_ENABLED="false" WORKING_DIRECTORY="$PROJECT_DIR$/ESP_project/ESP_ACL" />
     <SUITE FILE_PATH="coverage/learning2017$appendixdirectory.coverage" NAME="appendixdirectory Coverage Results" MODIFIED="1503318779366" SOURCE_PROVIDER="com.intellij.coverage.DefaultCoverageFileProvider" RUNNER="coverage.py" COVERAGE_BY_TEST_ENABLED="true" COVERAGE_TRACING_ENABLED="false" WORKING_DIRECTORY="$PROJECT_DIR$/ESP_project/data_news" />
     <SUITE FILE_PATH="coverage/learning2017$ESapi2Json.coverage" NAME="ESapi2Json Coverage Results" MODIFIED="1509014738096" SOURCE_PROVIDER="com.intellij.coverage.DefaultCoverageFileProvider" RUNNER="coverage.py" COVERAGE_BY_TEST_ENABLED="true" COVERAGE_TRACING_ENABLED="false" WORKING_DIRECTORY="$PROJECT_DIR$/ESP_project/data_images" />
@@ -130,22 +123,10 @@
       <file leaf-file-name="generate_expression.py" pinned="false" current-in-tab="false">
         <entry file="file://$PROJECT_DIR$/PY.exercise/WebAppLearning/arithmetic_training_game/cgi-bin/generate_expression.py">
           <provider selected="true" editor-type-id="text-editor">
-            <state relative-caret-position="459">
-              <caret line="9" column="13" lean-forward="true" selection-start-line="9" selection-start-column="13" selection-end-line="9" selection-end-column="13" />
+            <state relative-caret-position="357">
+              <caret line="9" column="13" lean-forward="false" selection-start-line="9" selection-start-column="13" selection-end-line="9" selection-end-column="13" />
               <folding>
                 <element signature="e#53#92#0" expanded="true" />
-              </folding>
-            </state>
-          </provider>
-        </entry>
-      </file>
-      <file leaf-file-name="judge_result.py" pinned="false" current-in-tab="false">
-        <entry file="file://$PROJECT_DIR$/PY.exercise/WebAppLearning/arithmetic_training_game/cgi-bin/judge_result.py">
-          <provider selected="true" editor-type-id="text-editor">
-            <state relative-caret-position="204">
-              <caret line="4" column="35" lean-forward="true" selection-start-line="4" selection-start-column="35" selection-end-line="4" selection-end-column="35" />
-              <folding>
-                <element signature="e#25#64#0" expanded="true" />
               </folding>
             </state>
           </provider>
@@ -184,7 +165,7 @@
       <file leaf-file-name="yate.py" pinned="false" current-in-tab="false">
         <entry file="file://$PROJECT_DIR$/PY.exercise/WebAppLearning/arithmetic_training_game/cgi-bin/yate.py">
           <provider selected="true" editor-type-id="text-editor">
-            <state relative-caret-position="408">
+            <state relative-caret-position="1785">
               <caret line="35" column="85" lean-forward="false" selection-start-line="35" selection-start-column="85" selection-end-line="35" selection-end-column="85" />
               <folding />
             </state>
@@ -194,7 +175,7 @@
       <file leaf-file-name="MyfirstHTML.html" pinned="false" current-in-tab="false">
         <entry file="file://$PROJECT_DIR$/PY.exercise/WebAppLearning/HTMLlearning/MyfirstHTML.html">
           <provider selected="true" editor-type-id="text-editor">
-            <state relative-caret-position="561">
+            <state relative-caret-position="3162">
               <caret line="62" column="0" lean-forward="false" selection-start-line="62" selection-start-column="0" selection-end-line="67" selection-end-column="13" />
               <folding>
                 <element signature="e#226#232#0" expanded="true" />
@@ -206,10 +187,10 @@
           </provider>
         </entry>
       </file>
-      <file leaf-file-name="expresssion_set.py" pinned="false" current-in-tab="true">
+      <file leaf-file-name="expresssion_set.py" pinned="false" current-in-tab="false">
         <entry file="file://$PROJECT_DIR$/PY.exercise/WebAppLearning/arithmetic_training_game/cgi-bin/expresssion_set.py">
           <provider selected="true" editor-type-id="text-editor">
-            <state relative-caret-position="1173">
+            <state relative-caret-position="3264">
               <caret line="65" column="20" lean-forward="true" selection-start-line="65" selection-start-column="20" selection-end-line="65" selection-end-column="20" />
               <folding>
                 <element signature="e#48#64#0" expanded="true" />
@@ -218,10 +199,20 @@
           </provider>
         </entry>
       </file>
+      <file leaf-file-name="simple_httpd.py" pinned="false" current-in-tab="true">
+        <entry file="file://$PROJECT_DIR$/PY.exercise/WebAppLearning/arithmetic_training_game/simple_httpd.py">
+          <provider selected="true" editor-type-id="text-editor">
+            <state relative-caret-position="714">
+              <caret line="14" column="0" lean-forward="true" selection-start-line="14" selection-start-column="0" selection-end-line="14" selection-end-column="0" />
+              <folding />
+            </state>
+          </provider>
+        </entry>
+      </file>
       <file leaf-file-name="WrongRecord.py" pinned="false" current-in-tab="false">
         <entry file="file://$PROJECT_DIR$/PY.exercise/WebAppLearning/arithmetic_training_game/cgi-bin/WrongRecord.py">
           <provider selected="true" editor-type-id="text-editor">
-            <state relative-caret-position="561">
+            <state relative-caret-position="714">
               <caret line="14" column="61" lean-forward="false" selection-start-line="14" selection-start-column="61" selection-end-line="14" selection-end-column="61" />
               <folding />
             </state>
@@ -339,7 +330,7 @@
   <component name="ProjectFrameBounds">
     <option name="x" value="-11" />
     <option name="y" value="-11" />
-    <option name="width" value="3862" />
+    <option name="width" value="3844" />
     <option name="height" value="2122" />
   </component>
   <component name="ProjectLevelVcsManager">
@@ -360,7 +351,6 @@
       <foldersAlwaysOnTop value="true" />
     </navigator>
     <panes>
-      <pane id="Scope" />
       <pane id="Scratches" />
       <pane id="ProjectPane">
         <subPane>
@@ -694,6 +684,7 @@
           </PATH>
         </subPane>
       </pane>
+      <pane id="Scope" />
     </panes>
   </component>
   <component name="PropertiesComponent">
@@ -720,7 +711,7 @@
       <recent name="F:\documents\python\learning2017\program data\地质文献" />
     </key>
   </component>
-  <component name="RunManager" selected="JavaScript Debug.ThirdHTML.html">
+  <component name="RunManager" selected="Python.simple_httpd">
     <configuration default="false" name="webpage_artgame (1)" type="PythonConfigurationType" factoryName="Python" temporary="true">
       <option name="INTERPRETER_OPTIONS" value="" />
       <option name="PARENT_ENVS" value="true" />
@@ -989,8 +980,8 @@
     </list>
     <recent_temporary>
       <list size="5">
-        <item index="0" class="java.lang.String" itemvalue="JavaScript Debug.ThirdHTML.html" />
-        <item index="1" class="java.lang.String" itemvalue="Python.simple_httpd" />
+        <item index="0" class="java.lang.String" itemvalue="Python.simple_httpd" />
+        <item index="1" class="java.lang.String" itemvalue="JavaScript Debug.ThirdHTML.html" />
         <item index="2" class="java.lang.String" itemvalue="JavaScript Debug.SecondHTML.html" />
         <item index="3" class="java.lang.String" itemvalue="JavaScript Debug.MyfirstHTML.html" />
         <item index="4" class="java.lang.String" itemvalue="Python.webpage_artgame (1)" />
@@ -1197,7 +1188,14 @@
       <option name="project" value="LOCAL" />
       <updated>1514299265504</updated>
     </task>
-    <option name="localTasksCounter" value="28" />
+    <task id="LOCAL-00028" summary="Merge branch 'master' of https://github.com/flyingaura/PythonLearning&#10;&#10;# Conflicts:&#10;#&#9;.idea/workspace.xml&#10;">
+      <created>1514299318957</created>
+      <option name="number" value="00028" />
+      <option name="presentableId" value="LOCAL-00028" />
+      <option name="project" value="LOCAL" />
+      <updated>1514299318957</updated>
+    </task>
+    <option name="localTasksCounter" value="29" />
     <servers />
   </component>
   <component name="TestHistory">
@@ -1242,25 +1240,25 @@
     </todo-panel>
   </component>
   <component name="ToolWindowManager">
-    <frame x="-11" y="-11" width="3862" height="2122" extended-state="6" />
+    <frame x="-11" y="-11" width="3844" height="2122" extended-state="0" />
     <editor active="false" />
     <layout>
-      <window_info id="Project" active="false" anchor="left" auto_hide="false" internal_type="DOCKED" type="DOCKED" visible="true" show_stripe_button="true" weight="0.25225225" sideWeight="0.5" order="0" side_tool="false" content_ui="combo" />
+      <window_info id="Project" active="false" anchor="left" auto_hide="false" internal_type="DOCKED" type="DOCKED" visible="true" show_stripe_button="true" weight="0.25638977" sideWeight="0.5" order="0" side_tool="false" content_ui="combo" />
       <window_info id="TODO" active="false" anchor="bottom" auto_hide="false" internal_type="DOCKED" type="DOCKED" visible="false" show_stripe_button="true" weight="0.23985432" sideWeight="0.5" order="6" side_tool="false" content_ui="tabs" />
-      <window_info id="调试" active="false" anchor="bottom" auto_hide="false" internal_type="DOCKED" type="DOCKED" visible="false" show_stripe_button="true" weight="0.32258064" sideWeight="0.5" order="7" side_tool="false" content_ui="tabs" />
       <window_info id="Event Log" active="false" anchor="bottom" auto_hide="false" internal_type="DOCKED" type="DOCKED" visible="false" show_stripe_button="true" weight="0.20395422" sideWeight="0.5068892" order="12" side_tool="true" content_ui="tabs" />
       <window_info id="Database" active="false" anchor="right" auto_hide="false" internal_type="DOCKED" type="DOCKED" visible="false" show_stripe_button="true" weight="0.33" sideWeight="0.5" order="3" side_tool="false" content_ui="tabs" />
       <window_info id="Version Control" active="false" anchor="bottom" auto_hide="false" internal_type="DOCKED" type="DOCKED" visible="false" show_stripe_button="false" weight="0.33" sideWeight="0.5" order="8" side_tool="false" content_ui="tabs" />
       <window_info id="Python Console" active="false" anchor="bottom" auto_hide="false" internal_type="DOCKED" type="DOCKED" visible="false" show_stripe_button="true" weight="0.23829344" sideWeight="0.5" order="9" side_tool="false" content_ui="tabs" />
       <window_info id="Structure" active="false" anchor="left" auto_hide="false" internal_type="DOCKED" type="DOCKED" visible="false" show_stripe_button="true" weight="0.24933757" sideWeight="0.5" order="1" side_tool="false" content_ui="tabs" />
       <window_info id="Terminal" active="false" anchor="bottom" auto_hide="false" internal_type="DOCKED" type="DOCKED" visible="false" show_stripe_button="true" weight="0.16077003" sideWeight="0.49788022" order="13" side_tool="false" content_ui="tabs" />
-      <window_info id="运行" active="false" anchor="bottom" auto_hide="false" internal_type="DOCKED" type="DOCKED" visible="true" show_stripe_button="true" weight="0.20395422" sideWeight="0.49311075" order="10" side_tool="false" content_ui="tabs" />
       <window_info id="Favorites" active="false" anchor="left" auto_hide="false" internal_type="DOCKED" type="DOCKED" visible="false" show_stripe_button="true" weight="0.3298969" sideWeight="0.5" order="2" side_tool="true" content_ui="tabs" />
       <window_info id="Cvs" active="false" anchor="bottom" auto_hide="false" internal_type="DOCKED" type="DOCKED" visible="false" show_stripe_button="true" weight="0.25" sideWeight="0.5" order="4" side_tool="false" content_ui="tabs" />
+      <window_info id="调试" active="false" anchor="bottom" auto_hide="false" internal_type="DOCKED" type="DOCKED" visible="false" show_stripe_button="true" weight="0.32258064" sideWeight="0.5" order="7" side_tool="false" content_ui="tabs" />
       <window_info id="Message" active="false" anchor="bottom" auto_hide="false" internal_type="DOCKED" type="DOCKED" visible="false" show_stripe_button="true" weight="0.33" sideWeight="0.5" order="0" side_tool="false" content_ui="tabs" />
       <window_info id="Commander" active="false" anchor="right" auto_hide="false" internal_type="DOCKED" type="DOCKED" visible="false" show_stripe_button="true" weight="0.4" sideWeight="0.5" order="0" side_tool="false" content_ui="tabs" />
       <window_info id="Inspection" active="false" anchor="bottom" auto_hide="false" internal_type="DOCKED" type="DOCKED" visible="false" show_stripe_button="true" weight="0.4" sideWeight="0.5" order="5" side_tool="false" content_ui="tabs" />
       <window_info id="Run" active="false" anchor="bottom" auto_hide="false" internal_type="DOCKED" type="DOCKED" visible="false" show_stripe_button="true" weight="0.33" sideWeight="0.5" order="2" side_tool="false" content_ui="tabs" />
+      <window_info id="运行" active="false" anchor="bottom" auto_hide="false" internal_type="DOCKED" type="DOCKED" visible="true" show_stripe_button="true" weight="0.20395422" sideWeight="0.49311075" order="10" side_tool="false" content_ui="tabs" />
       <window_info id="Hierarchy" active="false" anchor="right" auto_hide="false" internal_type="DOCKED" type="DOCKED" visible="false" show_stripe_button="true" weight="0.25" sideWeight="0.5" order="2" side_tool="false" content_ui="combo" />
       <window_info id="Find" active="false" anchor="bottom" auto_hide="false" internal_type="DOCKED" type="DOCKED" visible="false" show_stripe_button="true" weight="0.33" sideWeight="0.5" order="1" side_tool="false" content_ui="tabs" />
       <window_info id="Ant Build" active="false" anchor="right" auto_hide="false" internal_type="DOCKED" type="DOCKED" visible="false" show_stripe_button="true" weight="0.25" sideWeight="0.5" order="1" side_tool="false" content_ui="tabs" />
@@ -1537,7 +1535,6 @@
       <provider selected="true" editor-type-id="text-editor">
         <state relative-caret-position="2346">
           <caret line="47" column="46" lean-forward="false" selection-start-line="47" selection-start-column="46" selection-end-line="47" selection-end-column="46" />
-          <folding />
         </state>
       </provider>
     </entry>
@@ -1545,7 +1542,6 @@
       <provider selected="true" editor-type-id="text-editor">
         <state relative-caret-position="612">
           <caret line="12" column="7" lean-forward="true" selection-start-line="12" selection-start-column="7" selection-end-line="12" selection-end-column="7" />
-          <folding />
         </state>
       </provider>
     </entry>
@@ -1553,7 +1549,6 @@
       <provider selected="true" editor-type-id="text-editor">
         <state relative-caret-position="51">
           <caret line="1" column="67" lean-forward="false" selection-start-line="1" selection-start-column="0" selection-end-line="1" selection-end-column="67" />
-          <folding />
         </state>
       </provider>
     </entry>
@@ -1561,7 +1556,6 @@
       <provider selected="true" editor-type-id="text-editor">
         <state relative-caret-position="255">
           <caret line="5" column="7" lean-forward="false" selection-start-line="5" selection-start-column="7" selection-end-line="5" selection-end-column="7" />
-          <folding />
         </state>
       </provider>
     </entry>
@@ -1569,7 +1563,6 @@
       <provider selected="true" editor-type-id="text-editor">
         <state relative-caret-position="357">
           <caret line="7" column="15" lean-forward="true" selection-start-line="7" selection-start-column="15" selection-end-line="7" selection-end-column="15" />
-          <folding />
         </state>
       </provider>
     </entry>
@@ -1577,7 +1570,6 @@
       <provider selected="true" editor-type-id="text-editor">
         <state relative-caret-position="0">
           <caret line="0" column="0" lean-forward="false" selection-start-line="0" selection-start-column="0" selection-end-line="0" selection-end-column="0" />
-          <folding />
         </state>
       </provider>
     </entry>
@@ -1585,25 +1577,13 @@
       <provider selected="true" editor-type-id="text-editor">
         <state relative-caret-position="0">
           <caret line="0" column="0" lean-forward="false" selection-start-line="0" selection-start-column="0" selection-end-line="0" selection-end-column="0" />
-          <folding />
-        </state>
-      </provider>
-    </entry>
-    <entry file="file://$PROJECT_DIR$/PY.exercise/WebAppLearning/arithmetic_training_game/simple_httpd.py">
-      <provider selected="true" editor-type-id="text-editor">
-        <state relative-caret-position="714">
-          <caret line="14" column="0" lean-forward="true" selection-start-line="14" selection-start-column="0" selection-end-line="14" selection-end-column="0" />
-          <folding />
         </state>
       </provider>
     </entry>
     <entry file="file://$PROJECT_DIR$/PY.exercise/WebAppLearning/arithmetic_training_game/cgi-bin/judge_result.py">
       <provider selected="true" editor-type-id="text-editor">
-        <state relative-caret-position="204">
-          <caret line="4" column="35" lean-forward="true" selection-start-line="4" selection-start-column="35" selection-end-line="4" selection-end-column="35" />
-          <folding>
-            <element signature="e#25#64#0" expanded="true" />
-          </folding>
+        <state relative-caret-position="102">
+          <caret line="4" column="35" lean-forward="false" selection-start-line="4" selection-start-column="35" selection-end-line="4" selection-end-column="35" />
         </state>
       </provider>
     </entry>
@@ -1625,7 +1605,7 @@
     </entry>
     <entry file="file://$PROJECT_DIR$/PY.exercise/WebAppLearning/HTMLlearning/MyfirstHTML.html">
       <provider selected="true" editor-type-id="text-editor">
-        <state relative-caret-position="561">
+        <state relative-caret-position="3162">
           <caret line="62" column="0" lean-forward="false" selection-start-line="62" selection-start-column="0" selection-end-line="67" selection-end-column="13" />
           <folding>
             <element signature="e#226#232#0" expanded="true" />
@@ -1646,7 +1626,7 @@
     </entry>
     <entry file="file://$PROJECT_DIR$/PY.exercise/WebAppLearning/arithmetic_training_game/cgi-bin/WrongRecord.py">
       <provider selected="true" editor-type-id="text-editor">
-        <state relative-caret-position="561">
+        <state relative-caret-position="714">
           <caret line="14" column="61" lean-forward="false" selection-start-line="14" selection-start-column="61" selection-end-line="14" selection-end-column="61" />
           <folding />
         </state>
@@ -1654,8 +1634,8 @@
     </entry>
     <entry file="file://$PROJECT_DIR$/PY.exercise/WebAppLearning/arithmetic_training_game/cgi-bin/generate_expression.py">
       <provider selected="true" editor-type-id="text-editor">
-        <state relative-caret-position="459">
-          <caret line="9" column="13" lean-forward="true" selection-start-line="9" selection-start-column="13" selection-end-line="9" selection-end-column="13" />
+        <state relative-caret-position="357">
+          <caret line="9" column="13" lean-forward="false" selection-start-line="9" selection-start-column="13" selection-end-line="9" selection-end-column="13" />
           <folding>
             <element signature="e#53#92#0" expanded="true" />
           </folding>
@@ -1672,7 +1652,7 @@
     </entry>
     <entry file="file://$PROJECT_DIR$/PY.exercise/WebAppLearning/arithmetic_training_game/cgi-bin/yate.py">
       <provider selected="true" editor-type-id="text-editor">
-        <state relative-caret-position="408">
+        <state relative-caret-position="1785">
           <caret line="35" column="85" lean-forward="false" selection-start-line="35" selection-start-column="85" selection-end-line="35" selection-end-column="85" />
           <folding />
         </state>
@@ -1680,11 +1660,19 @@
     </entry>
     <entry file="file://$PROJECT_DIR$/PY.exercise/WebAppLearning/arithmetic_training_game/cgi-bin/expresssion_set.py">
       <provider selected="true" editor-type-id="text-editor">
-        <state relative-caret-position="1173">
+        <state relative-caret-position="3264">
           <caret line="65" column="20" lean-forward="true" selection-start-line="65" selection-start-column="20" selection-end-line="65" selection-end-column="20" />
           <folding>
             <element signature="e#48#64#0" expanded="true" />
           </folding>
+        </state>
+      </provider>
+    </entry>
+    <entry file="file://$PROJECT_DIR$/PY.exercise/WebAppLearning/arithmetic_training_game/simple_httpd.py">
+      <provider selected="true" editor-type-id="text-editor">
+        <state relative-caret-position="714">
+          <caret line="14" column="0" lean-forward="true" selection-start-line="14" selection-start-column="0" selection-end-line="14" selection-end-column="0" />
+          <folding />
         </state>
       </provider>
     </entry>
