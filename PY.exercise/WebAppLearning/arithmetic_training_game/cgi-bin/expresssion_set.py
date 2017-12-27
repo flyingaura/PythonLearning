@@ -63,8 +63,9 @@ print(yate.input_hidden('WrongNum',0))   #设置答错的题数
 print(yate.input_hidden('WrongTag',0))   #设置答错的标识（同一道题，最多只记一次答错）
 print(yate.input_hidden('CorrectNum', 0))   #设置纠正后的题目数据
 print(yate.input_hidden('NewSetting', 1))   #设置是否为新设置的标识（设置页面初始化为1）
+# print(yate.input_hidden('StartCal', 1))    #设置开始计算训练标识
 print(yate.para(''))
-print(yate.end_form('确定'))
+print(yate.end_form('确定', 'sub'))
 
 # =====================设置页脚的链接（保持固定顺序）=====================
 FooterString = OrderedDict()

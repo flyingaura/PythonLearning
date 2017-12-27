@@ -1,6 +1,7 @@
 # -*- coding: utf-8 -*-
 
 import yate,json,cgi
+from collections import OrderedDict
 
 RecordFilePath = 'data/WrongRecord.json'   #指定错误题目记录文件路径
 form_data = cgi.FieldStorage()
@@ -11,14 +12,14 @@ print(yate.include_header('韦浩宇的算术训练营 -- 错题回顾'))
 try:
     with open(RecordFilePath, mode = 'r', encoding='utf-8') as readfile:
         jsonstring = json.loads(readfile.read().strip())
-        WrongRecDict = {}
+        WrongRecDict = OrderedDict()
         for Arec in sorted(jsonstring.keys(), reverse = True):
             WrongRecDict[Arec] = Arec + '(<font color="red">' + str(len(jsonstring[Arec])) + '</font>)'
 
     print(yate.para('请选择查看哪天的错题？'))
     print(yate.start_form('WrongRecord.py'))
     print(yate.select_set('WrongRecSelect', WrongRecDict))
-    print(yate.end_form('确定'))
+    print(yate.end_form('确定','sub'))
 
     try:
         Recordkey = form_data['WrongRecSelect'].value
