@@ -1,20 +1,25 @@
 <html>
-<meta name="对于HTML的学习网页" http-equiv="Content-Type" content="text/html; charset=utf-8">
+<meta http-equiv="Content-Type" content="text/html; charset=utf-8">
 <head>
     <title>这是我的第一个网页</title>
 
 </head>
-<body bgcolor="#ffe4c4" >
-<!-- background="../arithmetic_training_game/images/MyCat.jpg" -->
-
+<body bgcolor="#ffe4c4">
 真的吗？好像以前也写过吧？
 你说对了，       这个真的不是我的第一个网页。
 也许已经是第100个了。        可这有卵用，<strong><i>因为我&nbsp;&nbsp;&nbsp;&nbsp;   全忘光了。</i></strong>
 <hr color="green">
+<p><a href="http://www.infcn.com.cn" target="_self">北京英富森软件股份有限公司</a> </p>
+<form>
+    <input type="submit" value="第一个">
+</form>
 
-<h3>看一下font标签的用法</h3>
-<p><font size="17" color="#daa520" face="verdana">看一下这段文字的FONT标签效果，size=17,face = courier</font></p>
-<p><font size="7" color="#ff7f50" face="arial" >看一下这段文字的FONT标签效果，size=7,face = arial</font></p>
+<form>
+    <input type="submit" value="第二个">
+</form>
+
+&nbsp;
+
 <h2 style="color:orangered">下面要学习的是表单的处理</h2>
 <ul>
     <p>学习HTML表单（Form）最关键要掌握的有三个要点：</p>
@@ -23,14 +28,14 @@
     <li>Method</li>
 </ul>
 <h3>=======&nbsp;&lt;input&gt;&nbsp;标签========</h3>
-<font action="../arithmetic_training_game/cgi-bin/arithmetic_training_games.py" method="post">
-    <font size="20" color="#a52a2a"> 请输入你的姓名:</font><input type="text" name="yourname" title="请输入您的姓名...">
-    <input type="submit" value="提交"></p>
-    <p>这个输入框是可以控制大小的&nbsp;&nbsp;&nbsp;<input type="text" name="changesize" width="100\  " height="280" align="center">结果不能，真的好尴尬
-    <input type="submit" value="提交"></p>
+<form action="../arithmetic_training_game/cgi-bin/arithmetic_training_games.py" method="post">
+    <p>请输入你的姓名：<input type="text" name="yourname" title="请输入您的姓名..."> <input type="submit" value="提交"></p>
+    <p>这个输入框是可以控制大小的&nbsp;&nbsp;&nbsp;<input type="text" name="changesize" width="500px" height="80" align="center">结果不能，真的好尴尬</p>
+    <p><input type="hidden" name="testvalue" value="123"></p>
+    <p><input type="submit" value="提交"></p>
 
 </form>
-<form>
+<form action="" method="post">
     <p>下面是学习复选框的输入</p>
     <ul>
     <li type="circle"><input type="checkbox" name="fruit" value="apple-苹果" checked><strong><i>apple-苹果</i></strong></li>
@@ -58,7 +63,7 @@
     <select name="vecoch" size="2" multiple >
         <option value="baoma"><i><ins><del>宝马</del></ins></i></option>
         <option value="benchi" dropzone="copy"><strong>奔驰</strong></option>
-        <option value="dazhong" >大众</option>
+        <option value="dazhong" selected="selected">大众</option>
         <option value="buick" disabled><font style="font-size: 20;color: #443245;">别克</font></option>
     </select>
     <br><input type="submit" value="怎么会是这样的下拉框？">

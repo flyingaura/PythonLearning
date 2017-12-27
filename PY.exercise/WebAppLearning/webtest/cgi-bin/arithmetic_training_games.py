@@ -29,7 +29,7 @@ class ArithmeticMode(object):
                 else:
                     ANumGroup = random.sample(self.NumList[1:], 1)
                     ZeroTag = 0
-                ANOperator = random.sample(self.OperatorList, 1)[0]
+                ANOperator = random.sample(self.OperatorList,1)[0]
                 if(ANOperator == '/'):
                     ZeroTag = 1
                 ANumGroup.append(ANOperator)  #每组算术表达式由一个数字和一个运算符组成

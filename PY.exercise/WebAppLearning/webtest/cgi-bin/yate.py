@@ -15,7 +15,7 @@ def include_footer(the_links):
         foot_text = footf.read()
     link_string = ''
     for key in the_links:
-        link_string += '<a href="' + the_links[key] + '">' + key + '</a>&nbsp;&nbsp;&nbsp;|&nbsp;&nbsp;&nbsp;'
+        link_string += '<a href="' + the_links[key] + '">' + key + '</a>&nbsp;&nbsp;&nbsp;&nbsp;'
     footer = Template(foot_text)
     return(footer.substitute(links=link_string))
 
@@ -23,28 +23,21 @@ def start_form(the_url, form_type="POST"):
     return('<form action="' + the_url + '" method="' + form_type + '">')
 
 def end_form(submit_msg="Submit"):
-    return('<input type=submit value="' + submit_msg + '"></form>')
+    return('<p></p><input type=submit value="' + submit_msg + '"></form>')
 
 def radio_button(rb_name, rb_value):
     return('<input type="radio" name="' + rb_name +
                              '" value="' + rb_value + '"> ' + rb_value + '<br />')
 
-def create_inputs(name_string, value = None):
-    if(not value):
-        return ('<input type="text" name="' + name_string + '">')
-    else:
-        return('<input type="text" name="' + name_string + '" value="' + value + '">')
+def create_inputs(name_string):
+    return ('<input type="text" name="' + name_string + '"><br />')
 
-def checked_box(cb_name,cb_value,cb_title = None, checked = False):
+def checked_box(cb_name,cb_value,cb_title = None):
     if(not cb_title):
         cb_title = cb_value
-    if(checked):
-        checked_string = 'checked'
-    else:
-        checked_string = ''
-    return('<input type="checkbox" name="' + cb_name + '" value="' + cb_value + '" title="' + cb_title + '" ' + checked_string + '>' + cb_value + '&nbsp;&nbsp;&nbsp;&nbsp;')
+    return('<input type="checkbox" name="' + cb_name + '" value="' + cb_value + '" title="' + cb_title + '" >' + cb_value + '<br />')
 
-def select_set(selname, option_dic, size = '1', multiple = False, SelectedVals = []):
+def select_set(selname, option_dic, size = '2', multiple = False):
     if(multiple):
         mul_string = 'multiple'
     else:
@@ -53,19 +46,11 @@ def select_set(selname, option_dic, size = '1', multiple = False, SelectedVals =
     Web_string = '<select name="' + selname + '" size="' + str(size) + '" ' + mul_string + '>' + '\n'
     option_string = ''
     for option in option_dic:
-        if(option in SelectedVals):
-            selected_string = 'selected="selected"'
-        else:
-            selected_string = ''
-        option_string = option_string + '<option value="' + str(option) + '" ' + selected_string + '>' + str(option_dic[option]) + '</option>' + '\n'
+        option_string = option_string + '<option value="' + str(option) + '" >' + str(option_dic[option]) +'</option>' + '\n'
 
     Web_string = Web_string + option_string + '</select>'
 
     return Web_string
-
-def input_hidden(name_string,value):
-    return('<input type="hidden" name="' + name_string + '" value="' + str(value) + '">')
-
 
 def u_list(items):
     u_string = '<ul>'
@@ -74,18 +59,11 @@ def u_list(items):
     u_string += '</ul>'
     return(u_string)
 
-def a_link(LinkURL, title, target = '"_self"'):
-    return('<a href="' + LinkURL + '" target="' + target + '">' + title + '</a>')
-
-
 def header(header_text, header_level=2):
     return('<h' + str(header_level) + '>' + header_text +
            '</h' + str(header_level) + '>')
 
 def para(para_text):
     return('<p>' + para_text + '</p>')
-
-def add_space(count):
-    return('&nbsp;' * count)
 
 
