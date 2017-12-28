@@ -96,7 +96,6 @@
       <change type="NEW" beforePath="" afterPath="$PROJECT_DIR$/ESP_project/helpInfo/images/viewMssTableData.png" />
       <change type="NEW" beforePath="" afterPath="$PROJECT_DIR$/ESP_project/helpInfo/images/viewTableData.png" />
       <change type="NEW" beforePath="" afterPath="$PROJECT_DIR$/RSF_project/data/9f7cbb17-a81b-45ed-98f6-34ea97fdbe82.dmp" />
-      <change type="NEW" beforePath="" afterPath="$PROJECT_DIR$/.gitignore" />
       <change type="NEW" beforePath="" afterPath="$PROJECT_DIR$/ESP_project/helpInfo/index.html" />
       <change type="NEW" beforePath="" afterPath="$PROJECT_DIR$/RSF_project/data/gov.cn news refined-2017-10-25.txt" />
       <change type="NEW" beforePath="" afterPath="$PROJECT_DIR$/RSF_project/data/htmlcodetest001.txt" />
@@ -120,12 +119,6 @@
       <change type="NEW" beforePath="" afterPath="$PROJECT_DIR$/RSF_project/data/政务主题词表1114（待清洗）.txt" />
       <change type="NEW" beforePath="" afterPath="$PROJECT_DIR$/RSF_project/data/政务主题词表1114（补充+另一词典）.txt" />
       <change type="NEW" beforePath="" afterPath="$PROJECT_DIR$/RSF_project/data/政务主题词表1114（补充）.txt" />
-      <change type="NEW" beforePath="" afterPath="$PROJECT_DIR$/RSF_project/data_process/FromESgetDcode.py" />
-      <change type="NEW" beforePath="" afterPath="$PROJECT_DIR$/RSF_project/data_process/htmlfetch_test.py" />
-      <change type="NEW" beforePath="" afterPath="$PROJECT_DIR$/RSF_project/data_process/tempworks.py" />
-      <change type="NEW" beforePath="" afterPath="$PROJECT_DIR$/RSF_project/data_process/zwdict_process.py" />
-      <change type="MODIFICATION" beforePath="$PROJECT_DIR$/.idea/learning2017.iml" afterPath="$PROJECT_DIR$/.idea/learning2017.iml" />
-      <change type="MODIFICATION" beforePath="$PROJECT_DIR$/.idea/misc.xml" afterPath="$PROJECT_DIR$/.idea/misc.xml" />
       <change type="MODIFICATION" beforePath="$PROJECT_DIR$/.idea/workspace.xml" afterPath="$PROJECT_DIR$/.idea/workspace.xml" />
     </list>
     <option name="EXCLUDED_CONVERTED_TO_IGNORED" value="true" />
@@ -1403,7 +1396,14 @@
       <option name="project" value="LOCAL" />
       <updated>1514382727834</updated>
     </task>
-    <option name="localTasksCounter" value="31" />
+    <task id="LOCAL-00031" summary="Merge branch 'master' of https://git.oschina.net/flyingaura/learning2017&#10;&#10;# Conflicts:&#10;#&#9;.idea/workspace.xml&#10;">
+      <created>1514445665667</created>
+      <option name="number" value="00031" />
+      <option name="presentableId" value="LOCAL-00031" />
+      <option name="project" value="LOCAL" />
+      <updated>1514445665667</updated>
+    </task>
+    <option name="localTasksCounter" value="32" />
     <servers />
   </component>
   <component name="TestHistory">
@@ -1451,7 +1451,7 @@
     <frame x="-8" y="-8" width="1382" height="754" extended-state="6" />
     <editor active="false" />
     <layout>
-      <window_info id="Project" active="false" anchor="left" auto_hide="false" internal_type="DOCKED" type="DOCKED" visible="true" show_stripe_button="true" weight="0.2647504" sideWeight="0.5" order="0" side_tool="false" content_ui="combo" />
+      <window_info id="Project" active="true" anchor="left" auto_hide="false" internal_type="DOCKED" type="DOCKED" visible="true" show_stripe_button="true" weight="0.2647504" sideWeight="0.5" order="0" side_tool="false" content_ui="combo" />
       <window_info id="TODO" active="false" anchor="bottom" auto_hide="false" internal_type="DOCKED" type="DOCKED" visible="false" show_stripe_button="true" weight="0.23985432" sideWeight="0.5" order="6" side_tool="false" content_ui="tabs" />
       <window_info id="Event Log" active="false" anchor="bottom" auto_hide="false" internal_type="DOCKED" type="DOCKED" visible="true" show_stripe_button="true" weight="0.22741936" sideWeight="0.50582933" order="12" side_tool="true" content_ui="tabs" />
       <window_info id="Database" active="false" anchor="right" auto_hide="false" internal_type="DOCKED" type="DOCKED" visible="false" show_stripe_button="true" weight="0.33" sideWeight="0.5" order="3" side_tool="false" content_ui="tabs" />
