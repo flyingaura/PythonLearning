@@ -22,18 +22,28 @@ def include_footer(the_links):
 def start_form(the_url, form_type="POST"):
     return('<form action="' + the_url + '" method="' + form_type + '">')
 
-def end_form(submit_msg="Submit"):
-    return('<input type=submit value="' + submit_msg + '"></form>')
+def end_form(submit_msg="Submit", style = None):
+    if(style):
+        style_string = 'class="' + style + '"'
+    else:
+        style_string = ''
+    return('<input type=submit value="' + submit_msg + '" ' + style_string + '></form>')
 
 def radio_button(rb_name, rb_value):
     return('<input type="radio" name="' + rb_name +
                              '" value="' + rb_value + '"> ' + rb_value + '<br />')
 
-def create_inputs(name_string, value = None):
-    if(not value):
-        return ('<input type="text" name="' + name_string + '">')
+def create_inputs(name_string, value = None, style = None):
+    if(value):
+        value_string = '" value="' + value + '"'
     else:
-        return('<input type="text" name="' + name_string + '" value="' + value + '">')
+        value_string = ''
+    if(style):
+        style_string = ' class="' + style + '"'
+    else:
+        style_string = ''
+
+    return ('<input type="text" name="' + name_string + '"' + value_string + style_string + '>')
 
 def checked_box(cb_name,cb_value,cb_title = None, checked = False):
     if(not cb_title):
@@ -44,7 +54,7 @@ def checked_box(cb_name,cb_value,cb_title = None, checked = False):
         checked_string = ''
     return('<input type="checkbox" name="' + cb_name + '" value="' + cb_value + '" title="' + cb_title + '" ' + checked_string + '>' + cb_value + '&nbsp;&nbsp;&nbsp;&nbsp;')
 
-def select_set(selname, option_dic, size = '2', multiple = False):
+def select_set(selname, option_dic, size = '1', multiple = False, SelectedVals = []):
     if(multiple):
         mul_string = 'multiple'
     else:
@@ -53,7 +63,11 @@ def select_set(selname, option_dic, size = '2', multiple = False):
     Web_string = '<select name="' + selname + '" size="' + str(size) + '" ' + mul_string + '>' + '\n'
     option_string = ''
     for option in option_dic:
-        option_string = option_string + '<option value="' + str(option) + '" >' + str(option_dic[option]) +'</option>' + '\n'
+        if(option in SelectedVals):
+            selected_string = 'selected="selected"'
+        else:
+            selected_string = ''
+        option_string = option_string + '<option value="' + str(option) + '" ' + selected_string + '>' + str(option_dic[option]) + '</option>' + '\n'
 
     Web_string = Web_string + option_string + '</select>'
 
