@@ -1,17 +1,49 @@
-<!DOCTYPE html>
-<html lang="en">
+<html>
+<meta http-equiv="Content-Type" content="text/html; charset=utf-8">
 <head>
-    <meta http-equiv="Content-Type" content="text/html; charset=utf-8">
-    <title>这是一个表单测试页面</title>
+<title>设置算术表达式的生成参数！</title>
+<link type="text/css" rel="stylesheet" href="/coach.css" />
+<script type="text/javascript"><script type="text/javascript">function FreeExerAction(){    document.name.action="generate_expression.py";    document.name.submit();}function ExamAction(){    document.name.action="exam.py";    document.name.submit();}</script></script>
 </head>
 <body>
-<h3>下面是测试代码</h3>
-<hr color="red">
-<br>
-<form action="page_test.py" method="post">
-    <input type="text" name="test">
-    <input type="submit" value="确定">
-</form>
+<h1>设置算术表达式的生成参数！</h1>
 
+<p>==========请设置算术表达式的生成参数==========</p>
+<form action="" name="name" method="POST">
+<p>1.请设置计算值范围</p>
+<select name="numlist" size="1" >
+<option value="10" >10</option>
+<option value="20" selected="selected">20</option>
+<option value="30" >30</option>
+<option value="40" >40</option>
+<option value="50" >50</option>
+<option value="60" >60</option>
+<option value="70" >70</option>
+<option value="80" >80</option>
+<option value="90" >90</option>
+<option value="100" >100</option>
+</select>
+<p>2.请设置训练用到的操作符</p>
+<input type="checkbox" name="operator" value="+" title="加号" checked>+&nbsp;&nbsp;&nbsp;&nbsp;
+<input type="checkbox" name="operator" value="-" title="减号" checked>-&nbsp;&nbsp;&nbsp;&nbsp;
+<input type="checkbox" name="operator" value="*" title="乘号" >*&nbsp;&nbsp;&nbsp;&nbsp;
+<input type="checkbox" name="operator" value="/" title="除号" >/&nbsp;&nbsp;&nbsp;&nbsp;
+<p>3.请设置计算数的个数</p>
+<select name="level" size="1" >
+<option value="2" >2</option>
+<option value="3" selected="selected">3</option>
+<option value="4" >4</option>
+<option value="5" >5</option>
+</select>
+<input type="hidden" name="NewSetting" value="1">
+<p></p>
+<input type="button" value="自由练习" onclick="FreeExerAction()" class="sub">&nbsp;&nbsp;&nbsp;&nbsp;
+<input type="button" value="进行测验" onclick="ExamAction()" class="sub">&nbsp;&nbsp;&nbsp;&nbsp;
+
+</form>
+<p>
+<a href="/index.html">返回首页</a>&nbsp;&nbsp;&nbsp;|&nbsp;&nbsp;&nbsp;<a href="WrongRecord.py">错题回顾</a>&nbsp;&nbsp;&nbsp;|&nbsp;&nbsp;&nbsp;
+</p>
 </body>
 </html>
+

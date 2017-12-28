@@ -10,6 +10,12 @@ def include_header(the_title):
     header = Template(head_text)
     return(header.substitute(title=the_title))
 
+def include_header_js(the_title, js_string):    #带JS代码的模板
+    with open('templates/header_with_js.html') as headf:
+        head_text = headf.read()
+    header = Template(head_text)
+    return(header.substitute(title=the_title, script=js_string))
+
 def include_footer(the_links):
     with open('templates/footer.html') as footf:
         foot_text = footf.read()
@@ -19,8 +25,8 @@ def include_footer(the_links):
     footer = Template(foot_text)
     return(footer.substitute(links=link_string))
 
-def start_form(the_url, form_type="POST"):
-    return('<form action="' + the_url + '" method="' + form_type + '">')
+def start_form(the_url, name='', form_type="POST"):
+    return('<form action="' + the_url + '" name="' + name + '" method="' + form_type + '">')
 
 def end_form(submit_msg="Submit", style = None):
     if(style):
@@ -28,6 +34,17 @@ def end_form(submit_msg="Submit", style = None):
     else:
         style_string = ''
     return('<input type=submit value="' + submit_msg + '" ' + style_string + '></form>')
+
+def multisub(SubURLs,style = None):
+    SubString = ''
+    if (style):
+        style_string = 'class="' + style + '"'
+    else:
+        style_string = ''
+    for value in SubURLs:
+        SubString = SubString + '<input type="button" value="' + value + '" onclick="' + SubURLs[value] + '" ' + style_string + '>' + '&nbsp;' * 4 + '\n'
+
+    return SubString
 
 def radio_button(rb_name, rb_value):
     return('<input type="radio" name="' + rb_name +

@@ -14,4 +14,25 @@ RecordFilePath = '../data/WrongRecord.json'
 #     # print(outfile.read())
 #     # jsonstring = json.loads(outfile.read())
 
-print(os.path.isfile(RecordFilePath))
+# print(os.path.isfile(RecordFilePath))
+
+Form_JS = '<script type="text/javascript">\
+function addAction(){\
+    document.name.action="指向的连接";\
+    document.name.submit();\
+}\
+function deleteAction(){\
+    document.name.action="指向的连接";\
+    document.name.submit();\
+}\
+function saveAction(){\
+    document.name.action="指向的连接";\
+    document.name.submit();\
+}\
+ function searchAction(){\
+    document.name.action="指向的连接";\
+    document.name.submit();\
+}\
+</script>'
+
+print(yate.include_header_js('设置算术表达式的生成参数！', Form_JS))
