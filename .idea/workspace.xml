@@ -2,7 +2,11 @@
 <project version="4">
   <component name="ChangeListManager">
     <list default="true" id="286e034b-b797-4eff-86da-0c5c650473df" name="默认的" comment="">
+      <change type="MODIFICATION" beforePath="$PROJECT_DIR$/.idea/learning2017.iml" afterPath="$PROJECT_DIR$/.idea/learning2017.iml" />
+      <change type="MODIFICATION" beforePath="$PROJECT_DIR$/.idea/misc.xml" afterPath="$PROJECT_DIR$/.idea/misc.xml" />
       <change type="MODIFICATION" beforePath="$PROJECT_DIR$/.idea/workspace.xml" afterPath="$PROJECT_DIR$/.idea/workspace.xml" />
+      <change type="MODIFICATION" beforePath="$PROJECT_DIR$/PY.exercise/WebAppLearning/arithmetic_training_game/data/WrongRecord.json" afterPath="$PROJECT_DIR$/PY.exercise/WebAppLearning/arithmetic_training_game/data/WrongRecord.json" />
+      <change type="MODIFICATION" beforePath="$PROJECT_DIR$/PY.exercise/WebAppLearning/arithmetic_training_game/data/setting.json" afterPath="$PROJECT_DIR$/PY.exercise/WebAppLearning/arithmetic_training_game/data/setting.json" />
     </list>
     <option name="EXCLUDED_CONVERTED_TO_IGNORED" value="true" />
     <option name="TRACKING_ENABLED" value="true" />
@@ -16,7 +20,7 @@
     <SUITE FILE_PATH="coverage/learning2017$Func_StringSpilt.coverage" NAME="Func_StringSpilt Coverage Results" MODIFIED="1483964240863" SOURCE_PROVIDER="com.intellij.coverage.DefaultCoverageFileProvider" RUNNER="coverage.py" COVERAGE_BY_TEST_ENABLED="true" COVERAGE_TRACING_ENABLED="false" WORKING_DIRECTORY="$PROJECT_DIR$/LearnModule" />
     <SUITE FILE_PATH="coverage/learning2017$testcode004.coverage" NAME="testcode004 Coverage Results" MODIFIED="1509210983719" SOURCE_PROVIDER="com.intellij.coverage.DefaultCoverageFileProvider" RUNNER="coverage.py" COVERAGE_BY_TEST_ENABLED="true" COVERAGE_TRACING_ENABLED="false" WORKING_DIRECTORY="$PROJECT_DIR$/PY.exercise" />
     <SUITE FILE_PATH="coverage/learning2017$arithmetic_training_games.coverage" NAME="arithmetic_training_games Coverage Results" MODIFIED="1510397313374" SOURCE_PROVIDER="com.intellij.coverage.DefaultCoverageFileProvider" RUNNER="coverage.py" COVERAGE_BY_TEST_ENABLED="true" COVERAGE_TRACING_ENABLED="false" WORKING_DIRECTORY="$PROJECT_DIR$/PY.exercise/WebAppLearning/arithmetic_training_game/cgi-bin" />
-    <SUITE FILE_PATH="coverage/learning2017$simple_httpd.coverage" NAME="simple_httpd Coverage Results" MODIFIED="1514376445975" SOURCE_PROVIDER="com.intellij.coverage.DefaultCoverageFileProvider" RUNNER="coverage.py" COVERAGE_BY_TEST_ENABLED="true" COVERAGE_TRACING_ENABLED="false" WORKING_DIRECTORY="$PROJECT_DIR$/PY.exercise/WebAppLearning/arithmetic_training_game" />
+    <SUITE FILE_PATH="coverage/learning2017$simple_httpd.coverage" NAME="simple_httpd Coverage Results" MODIFIED="1514415428779" SOURCE_PROVIDER="com.intellij.coverage.DefaultCoverageFileProvider" RUNNER="coverage.py" COVERAGE_BY_TEST_ENABLED="true" COVERAGE_TRACING_ENABLED="false" WORKING_DIRECTORY="$PROJECT_DIR$/PY.exercise/WebAppLearning/arithmetic_training_game" />
     <SUITE FILE_PATH="coverage/learning2017$loadACL.coverage" NAME="loadACL Coverage Results" MODIFIED="1505129838598" SOURCE_PROVIDER="com.intellij.coverage.DefaultCoverageFileProvider" RUNNER="coverage.py" COVERAGE_BY_TEST_ENABLED="true" COVERAGE_TRACING_ENABLED="false" WORKING_DIRECTORY="$PROJECT_DIR$/ESP_project/ESP_ACL" />
     <SUITE FILE_PATH="coverage/learning2017$appendixdirectory.coverage" NAME="appendixdirectory Coverage Results" MODIFIED="1503318779366" SOURCE_PROVIDER="com.intellij.coverage.DefaultCoverageFileProvider" RUNNER="coverage.py" COVERAGE_BY_TEST_ENABLED="true" COVERAGE_TRACING_ENABLED="false" WORKING_DIRECTORY="$PROJECT_DIR$/ESP_project/data_news" />
     <SUITE FILE_PATH="coverage/learning2017$ESapi2Json.coverage" NAME="ESapi2Json Coverage Results" MODIFIED="1509014738096" SOURCE_PROVIDER="com.intellij.coverage.DefaultCoverageFileProvider" RUNNER="coverage.py" COVERAGE_BY_TEST_ENABLED="true" COVERAGE_TRACING_ENABLED="false" WORKING_DIRECTORY="$PROJECT_DIR$/ESP_project/data_images" />
@@ -125,18 +129,16 @@
           <provider selected="true" editor-type-id="text-editor">
             <state relative-caret-position="357">
               <caret line="9" column="13" lean-forward="false" selection-start-line="9" selection-start-column="13" selection-end-line="9" selection-end-column="13" />
-              <folding>
-                <element signature="e#53#92#0" expanded="true" />
-              </folding>
+              <folding />
             </state>
           </provider>
         </entry>
       </file>
-      <file leaf-file-name="setting.json" pinned="false" current-in-tab="false">
-        <entry file="file://$PROJECT_DIR$/PY.exercise/WebAppLearning/arithmetic_training_game/data/setting.json">
+      <file leaf-file-name="coach.css" pinned="false" current-in-tab="false">
+        <entry file="file://$PROJECT_DIR$/PY.exercise/WebAppLearning/arithmetic_training_game/coach.css">
           <provider selected="true" editor-type-id="text-editor">
-            <state relative-caret-position="0">
-              <caret line="0" column="0" lean-forward="false" selection-start-line="0" selection-start-column="0" selection-end-line="0" selection-end-column="0" />
+            <state relative-caret-position="357">
+              <caret line="7" column="17" lean-forward="false" selection-start-line="7" selection-start-column="17" selection-end-line="7" selection-end-column="17" />
               <folding />
             </state>
           </provider>
@@ -165,9 +167,11 @@
       <file leaf-file-name="yate.py" pinned="false" current-in-tab="false">
         <entry file="file://$PROJECT_DIR$/PY.exercise/WebAppLearning/arithmetic_training_game/cgi-bin/yate.py">
           <provider selected="true" editor-type-id="text-editor">
-            <state relative-caret-position="1785">
-              <caret line="35" column="85" lean-forward="false" selection-start-line="35" selection-start-column="85" selection-end-line="35" selection-end-column="85" />
-              <folding />
+            <state relative-caret-position="1989">
+              <caret line="39" column="25" lean-forward="false" selection-start-line="39" selection-start-column="25" selection-end-line="39" selection-end-column="25" />
+              <folding>
+                <marker date="1514415311240" expanded="true" signature="1542:1545" ph="..." />
+              </folding>
             </state>
           </provider>
         </entry>
@@ -190,8 +194,8 @@
       <file leaf-file-name="expresssion_set.py" pinned="false" current-in-tab="false">
         <entry file="file://$PROJECT_DIR$/PY.exercise/WebAppLearning/arithmetic_training_game/cgi-bin/expresssion_set.py">
           <provider selected="true" editor-type-id="text-editor">
-            <state relative-caret-position="3264">
-              <caret line="65" column="20" lean-forward="true" selection-start-line="65" selection-start-column="20" selection-end-line="65" selection-end-column="20" />
+            <state relative-caret-position="3315">
+              <caret line="66" column="20" lean-forward="false" selection-start-line="66" selection-start-column="20" selection-end-line="66" selection-end-column="20" />
               <folding>
                 <element signature="e#48#64#0" expanded="true" />
               </folding>
@@ -213,7 +217,7 @@
         <entry file="file://$PROJECT_DIR$/PY.exercise/WebAppLearning/arithmetic_training_game/cgi-bin/WrongRecord.py">
           <provider selected="true" editor-type-id="text-editor">
             <state relative-caret-position="714">
-              <caret line="14" column="61" lean-forward="false" selection-start-line="14" selection-start-column="61" selection-end-line="14" selection-end-column="61" />
+              <caret line="15" column="61" lean-forward="false" selection-start-line="15" selection-start-column="61" selection-end-line="15" selection-end-column="61" />
               <folding />
             </state>
           </provider>
@@ -351,19 +355,10 @@
       <foldersAlwaysOnTop value="true" />
     </navigator>
     <panes>
+      <pane id="Scope" />
       <pane id="Scratches" />
       <pane id="ProjectPane">
         <subPane>
-          <PATH>
-            <PATH_ELEMENT>
-              <option name="myItemId" value="learning2017" />
-              <option name="myItemType" value="com.intellij.ide.projectView.impl.nodes.ProjectViewProjectNode" />
-            </PATH_ELEMENT>
-            <PATH_ELEMENT>
-              <option name="myItemId" value="外部库" />
-              <option name="myItemType" value="com.intellij.ide.projectView.impl.nodes.ExternalLibrariesNode" />
-            </PATH_ELEMENT>
-          </PATH>
           <PATH>
             <PATH_ELEMENT>
               <option name="myItemId" value="learning2017" />
@@ -684,11 +679,10 @@
           </PATH>
         </subPane>
       </pane>
-      <pane id="Scope" />
     </panes>
   </component>
   <component name="PropertiesComponent">
-    <property name="settings.editor.selected.configurable" value="vcs.Git" />
+    <property name="settings.editor.selected.configurable" value="com.jetbrains.python.configuration.PyActiveSdkModuleConfigurable" />
     <property name="WebServerToolWindowFactoryState" value="false" />
     <property name="js.eslint.eslintPackage" value="" />
     <property name="last_opened_file_path" value="D:/Program Files (x86)/Git/bin/git.exe" />
@@ -1195,7 +1189,21 @@
       <option name="project" value="LOCAL" />
       <updated>1514299318957</updated>
     </task>
-    <option name="localTasksCounter" value="29" />
+    <task id="LOCAL-00029" summary="Merge branch 'master' of https://github.com/flyingaura/PythonLearning&#10;&#10;# Conflicts:&#10;#&#9;.idea/workspace.xml&#10;">
+      <created>1514415299420</created>
+      <option name="number" value="00029" />
+      <option name="presentableId" value="LOCAL-00029" />
+      <option name="project" value="LOCAL" />
+      <updated>1514415299420</updated>
+    </task>
+    <task id="LOCAL-00030" summary="Merge branch 'master' of https://github.com/flyingaura/PythonLearning&#10;&#10;# Conflicts:&#10;#&#9;PY.exercise/WebAppLearning/arithmetic_training_game/data/WrongRecord.json&#10;#&#9;PY.exercise/WebAppLearning/arithmetic_training_game/data/setting.json&#10;">
+      <created>1514612815821</created>
+      <option name="number" value="00030" />
+      <option name="presentableId" value="LOCAL-00030" />
+      <option name="project" value="LOCAL" />
+      <updated>1514612815821</updated>
+    </task>
+    <option name="localTasksCounter" value="31" />
     <servers />
   </component>
   <component name="TestHistory">
@@ -1243,7 +1251,7 @@
     <frame x="-11" y="-11" width="3844" height="2122" extended-state="0" />
     <editor active="false" />
     <layout>
-      <window_info id="Project" active="false" anchor="left" auto_hide="false" internal_type="DOCKED" type="DOCKED" visible="true" show_stripe_button="true" weight="0.25638977" sideWeight="0.5" order="0" side_tool="false" content_ui="combo" />
+      <window_info id="Project" active="false" anchor="left" auto_hide="false" internal_type="DOCKED" type="DOCKED" visible="true" show_stripe_button="true" weight="0.2585197" sideWeight="0.5" order="0" side_tool="false" content_ui="combo" />
       <window_info id="TODO" active="false" anchor="bottom" auto_hide="false" internal_type="DOCKED" type="DOCKED" visible="false" show_stripe_button="true" weight="0.23985432" sideWeight="0.5" order="6" side_tool="false" content_ui="tabs" />
       <window_info id="Event Log" active="false" anchor="bottom" auto_hide="false" internal_type="DOCKED" type="DOCKED" visible="false" show_stripe_button="true" weight="0.20395422" sideWeight="0.5068892" order="12" side_tool="true" content_ui="tabs" />
       <window_info id="Database" active="false" anchor="right" auto_hide="false" internal_type="DOCKED" type="DOCKED" visible="false" show_stripe_button="true" weight="0.33" sideWeight="0.5" order="3" side_tool="false" content_ui="tabs" />
@@ -1258,7 +1266,7 @@
       <window_info id="Commander" active="false" anchor="right" auto_hide="false" internal_type="DOCKED" type="DOCKED" visible="false" show_stripe_button="true" weight="0.4" sideWeight="0.5" order="0" side_tool="false" content_ui="tabs" />
       <window_info id="Inspection" active="false" anchor="bottom" auto_hide="false" internal_type="DOCKED" type="DOCKED" visible="false" show_stripe_button="true" weight="0.4" sideWeight="0.5" order="5" side_tool="false" content_ui="tabs" />
       <window_info id="Run" active="false" anchor="bottom" auto_hide="false" internal_type="DOCKED" type="DOCKED" visible="false" show_stripe_button="true" weight="0.33" sideWeight="0.5" order="2" side_tool="false" content_ui="tabs" />
-      <window_info id="运行" active="false" anchor="bottom" auto_hide="false" internal_type="DOCKED" type="DOCKED" visible="true" show_stripe_button="true" weight="0.20395422" sideWeight="0.49311075" order="10" side_tool="false" content_ui="tabs" />
+      <window_info id="运行" active="false" anchor="bottom" auto_hide="false" internal_type="DOCKED" type="DOCKED" visible="false" show_stripe_button="true" weight="0.20395422" sideWeight="0.49311075" order="10" side_tool="false" content_ui="tabs" />
       <window_info id="Hierarchy" active="false" anchor="right" auto_hide="false" internal_type="DOCKED" type="DOCKED" visible="false" show_stripe_button="true" weight="0.25" sideWeight="0.5" order="2" side_tool="false" content_ui="combo" />
       <window_info id="Find" active="false" anchor="bottom" auto_hide="false" internal_type="DOCKED" type="DOCKED" visible="false" show_stripe_button="true" weight="0.33" sideWeight="0.5" order="1" side_tool="false" content_ui="tabs" />
       <window_info id="Ant Build" active="false" anchor="right" auto_hide="false" internal_type="DOCKED" type="DOCKED" visible="false" show_stripe_button="true" weight="0.25" sideWeight="0.5" order="1" side_tool="false" content_ui="tabs" />
@@ -1276,7 +1284,8 @@
     <MESSAGE value="Merge branch 'master' of https://git.oschina.net/flyingaura/learning2017&#10;&#10;# Please enter a commit message to explain why this merge is necessary,&#10;# especially if it merges an updated upstream into a topic branch.&#10;#&#10;# Lines starting with '#' will be ignored, and an empty message aborts&#10;# the commit.&#10;" />
     <MESSAGE value="Merge branch 'master' of https://git.oschina.net/flyingaura/learning2017&#10;&#10;# Conflicts:&#10;#&#9;.idea/workspace.xml&#10;" />
     <MESSAGE value="Merge branch 'master' of https://github.com/flyingaura/PythonLearning&#10;&#10;# Conflicts:&#10;#&#9;.idea/workspace.xml&#10;" />
-    <option name="LAST_COMMIT_MESSAGE" value="Merge branch 'master' of https://github.com/flyingaura/PythonLearning&#10;&#10;# Conflicts:&#10;#&#9;.idea/workspace.xml&#10;" />
+    <MESSAGE value="Merge branch 'master' of https://github.com/flyingaura/PythonLearning&#10;&#10;# Conflicts:&#10;#&#9;PY.exercise/WebAppLearning/arithmetic_training_game/data/WrongRecord.json&#10;#&#9;PY.exercise/WebAppLearning/arithmetic_training_game/data/setting.json&#10;" />
+    <option name="LAST_COMMIT_MESSAGE" value="Merge branch 'master' of https://github.com/flyingaura/PythonLearning&#10;&#10;# Conflicts:&#10;#&#9;PY.exercise/WebAppLearning/arithmetic_training_game/data/WrongRecord.json&#10;#&#9;PY.exercise/WebAppLearning/arithmetic_training_game/data/setting.json&#10;" />
   </component>
   <component name="XDebuggerManager">
     <breakpoint-manager>
@@ -1505,13 +1514,6 @@
         </state>
       </provider>
     </entry>
-    <entry file="file://$PROJECT_DIR$/PY.exercise/WebAppLearning/arithmetic_training_game/coach.css">
-      <provider selected="true" editor-type-id="text-editor">
-        <state relative-caret-position="357">
-          <caret line="7" column="17" lean-forward="false" selection-start-line="7" selection-start-column="17" selection-end-line="7" selection-end-column="17" />
-        </state>
-      </provider>
-    </entry>
     <entry file="file://F:/works/weiliang/infcn/2017年备份/业务项目/Y.学习资料/HTML与CSS/EKP_DATA1.html">
       <provider selected="true" editor-type-id="text-editor">
         <state relative-caret-position="0">
@@ -1627,18 +1629,8 @@
     <entry file="file://$PROJECT_DIR$/PY.exercise/WebAppLearning/arithmetic_training_game/cgi-bin/WrongRecord.py">
       <provider selected="true" editor-type-id="text-editor">
         <state relative-caret-position="714">
-          <caret line="14" column="61" lean-forward="false" selection-start-line="14" selection-start-column="61" selection-end-line="14" selection-end-column="61" />
+          <caret line="15" column="61" lean-forward="false" selection-start-line="15" selection-start-column="61" selection-end-line="15" selection-end-column="61" />
           <folding />
-        </state>
-      </provider>
-    </entry>
-    <entry file="file://$PROJECT_DIR$/PY.exercise/WebAppLearning/arithmetic_training_game/cgi-bin/generate_expression.py">
-      <provider selected="true" editor-type-id="text-editor">
-        <state relative-caret-position="357">
-          <caret line="9" column="13" lean-forward="false" selection-start-line="9" selection-start-column="13" selection-end-line="9" selection-end-column="13" />
-          <folding>
-            <element signature="e#53#92#0" expanded="true" />
-          </folding>
         </state>
       </provider>
     </entry>
@@ -1652,19 +1644,37 @@
     </entry>
     <entry file="file://$PROJECT_DIR$/PY.exercise/WebAppLearning/arithmetic_training_game/cgi-bin/yate.py">
       <provider selected="true" editor-type-id="text-editor">
-        <state relative-caret-position="1785">
-          <caret line="35" column="85" lean-forward="false" selection-start-line="35" selection-start-column="85" selection-end-line="35" selection-end-column="85" />
-          <folding />
+        <state relative-caret-position="1989">
+          <caret line="39" column="25" lean-forward="false" selection-start-line="39" selection-start-column="25" selection-end-line="39" selection-end-column="25" />
+          <folding>
+            <marker date="1514415311240" expanded="true" signature="1542:1545" ph="..." />
+          </folding>
         </state>
       </provider>
     </entry>
     <entry file="file://$PROJECT_DIR$/PY.exercise/WebAppLearning/arithmetic_training_game/cgi-bin/expresssion_set.py">
       <provider selected="true" editor-type-id="text-editor">
-        <state relative-caret-position="3264">
-          <caret line="65" column="20" lean-forward="true" selection-start-line="65" selection-start-column="20" selection-end-line="65" selection-end-column="20" />
+        <state relative-caret-position="3315">
+          <caret line="66" column="20" lean-forward="false" selection-start-line="66" selection-start-column="20" selection-end-line="66" selection-end-column="20" />
           <folding>
             <element signature="e#48#64#0" expanded="true" />
           </folding>
+        </state>
+      </provider>
+    </entry>
+    <entry file="file://$PROJECT_DIR$/PY.exercise/WebAppLearning/arithmetic_training_game/cgi-bin/generate_expression.py">
+      <provider selected="true" editor-type-id="text-editor">
+        <state relative-caret-position="357">
+          <caret line="9" column="13" lean-forward="false" selection-start-line="9" selection-start-column="13" selection-end-line="9" selection-end-column="13" />
+          <folding />
+        </state>
+      </provider>
+    </entry>
+    <entry file="file://$PROJECT_DIR$/PY.exercise/WebAppLearning/arithmetic_training_game/coach.css">
+      <provider selected="true" editor-type-id="text-editor">
+        <state relative-caret-position="357">
+          <caret line="7" column="17" lean-forward="false" selection-start-line="7" selection-start-column="17" selection-end-line="7" selection-end-column="17" />
+          <folding />
         </state>
       </provider>
     </entry>
