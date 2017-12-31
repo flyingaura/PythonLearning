@@ -73,16 +73,16 @@ li {
   list-style-image: url(images/backpack.gif);
   padding-top:      5px;
   margin-left:      10px;
-  font-size: 20px;
+  font-size: 18px;
   font-weight: bolder;
-  color:#993399
+  color:#0099CC
 }
 
 .sub {
-  font-size: 18;
+  font-size: 18px;
   font-family: 微软雅黑,宋体,Arial,Helvetica,Verdana,sans-serif;
   color: white;
-  width:100px;
+  width:160px;
   height:35px;
   line-height:35px;
   background-color: #cc6600;
@@ -120,4 +120,22 @@ li {
 /*}*/
 input[type="text"]:focus{
   border:1px solid #CC6666;
+}
+
+.specfont{
+  font-size: 80%;
+  font-family: 微软雅黑,宋体,Arial,Helvetica,Verdana,sans-serif;
+  color: #FF6666;
+  text-decoration:underline;
+}
+.timeshow{
+  font-size:120%;
+  font-weight:bolder;
+}
+
+#topfixed{
+  width:100%;
+  position:fixed;
+  top: 0;
+  background-color: white;
 }

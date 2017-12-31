@@ -35,16 +35,13 @@ def end_form(submit_msg="Submit", style = None):
         style_string = ''
     return('<input type=submit value="' + submit_msg + '" ' + style_string + '></form>')
 
-def multisub(SubURLs,style = None):
-    SubString = ''
+def subbutton(subvalue, suburl , style = None):
     if (style):
         style_string = 'class="' + style + '"'
     else:
         style_string = ''
-    for value in SubURLs:
-        SubString = SubString + '<input type="button" value="' + value + '" onclick="' + SubURLs[value] + '" ' + style_string + '>' + '&nbsp;' * 4 + '\n'
 
-    return SubString
+    return ('<input type="button" value="' + subvalue + '" onclick="' + suburl + '" ' + style_string + '>')
 
 def radio_button(rb_name, rb_value):
     return('<input type="radio" name="' + rb_name +
@@ -90,8 +87,13 @@ def select_set(selname, option_dic, size = '1', multiple = False, SelectedVals =
 
     return Web_string
 
-def input_hidden(name_string,value):
-    return('<input type="hidden" name="' + name_string + '" value="' + str(value) + '">')
+def input_hidden(name_string,value=None):
+    if(value != None):
+        input_string = '<input type="hidden" name="' + name_string + '" value="' + str(value) + '">'
+    else:
+        input_string = '<input type="hidden" name="' + name_string + '">'
+
+    return input_string
 
 
 def u_list(items):
@@ -115,4 +117,16 @@ def para(para_text):
 def add_space(count):
     return('&nbsp;' * count)
 
+def img_tag(url, title = None, align = None):
+    attribute_string = ''
+    if(title):
+        attribute_string = attribute_string + ' title="' + title + '"'
+    else:
+        attribute_string = attribute_string + ''
 
+    if(align):
+        attribute_string = attribute_string + ' align="' + align + '"'
+    else:
+        attribute_string = attribute_string + ''
+
+    return '<img src="' + url + '"' + attribute_string + '>'

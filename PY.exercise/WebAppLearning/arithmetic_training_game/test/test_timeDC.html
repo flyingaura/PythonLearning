@@ -1,0 +1,43 @@
+<html>
+<head>
+<link type="text/css" rel="stylesheet" href="/coach.css" />
+<script type="text/javascript" language="javascript">
+var time=new Date();
+time.setHours(0);
+time.setMinutes(0);
+time.setSeconds(10);
+var downtime = 1;
+var timeOutText="";
+var totalseconds=0;
+//var timeout;
+
+function countdown(){
+var timeshow=document.getElementById("timeshow");
+var hour=time.getHours();
+var min=time.getMinutes();
+var second=time.getSeconds();
+setTimeout("countdown()",1000);
+totalseconds ++;
+if(downtime==1){time.setSeconds(second-1);timeshow.style.color="#0099CC";}
+else{time.setSeconds(second+1);timeOutText="你已超时  ";timeshow.style.color="#CC0033";}
+if(hour=="0"&&min=="0"&&second=="1"){downtime=0;}
+hour<10?hour="0"+hour:hour;
+min<10?min="0"+min:min;
+second<10?second="0"+second:second;
+//timeshow.innerHTML=hour+":"+min+":"+second;
+timeshow.innerHTML=timeOutText+hour+":"+min+":"+second+"(已用时："+totalseconds+"秒)";
+document.form.totaltime.value = totalseconds
+}
+var timer=setTimeout("countdown()",1000);
+</script>
+</head>
+<body>
+<div class="timeshow">
+    开始计时：<span  id="timeshow"></span>
+</div>
+<form action="/cgi-bin/page_test.py" name="form" method="post">
+    <input type="hidden" name="totaltime">
+    <input type="submit" value="测试一下" class="sub">
+</form>
+</body>
+</html>

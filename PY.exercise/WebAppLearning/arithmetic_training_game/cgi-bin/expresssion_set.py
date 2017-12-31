@@ -54,14 +54,15 @@ function ExamAction(){\
     document.name.submit();\
 }'
 
-SubURLS = OrderedDict()
-SubURLS['自由练习'] = 'FreeExerAction()'
-SubURLS['进行测验'] = 'ExamAction()'
+# SubURLS = OrderedDict()
+# SubURLS['自由练习'] = 'FreeExerAction()'
+# SubURLS['进行测验'] = 'ExamAction()'
 
 # =================生成一个HTML页面=================
 print(yate.start_response())
 print(yate.include_header_js('设置算术表达式的生成参数！', Form_JS))
-print(yate.para('%s' %('=' * 10 + '请设置算术表达式的生成参数' + '=' * 10)))
+print(yate.header('设置算术表达式的生成参数！', 1))
+# print(yate.para('%s' %('=' * 10 + '请设置算术表达式的生成参数' + '=' * 10)))
 print(yate.start_form('', 'name'))
 print(yate.para('1.请设置计算值范围'))
 print(yate.select_set('numlist',NumList, SelectedVals = numlist_checked))
@@ -76,13 +77,16 @@ print(yate.select_set('level',NumLevel, SelectedVals = level_checked))
 print(yate.input_hidden('NewSetting', 1))   #设置是否为新设置的标识（设置页面初始化为1）
 # print(yate.input_hidden('StartCal', 1))    #设置开始计算训练标识
 print(yate.para(''))
-print(yate.multisub(SubURLS, 'sub'))
+print(yate.subbutton('自由练习', 'FreeExerAction()',  'sub'))
+print('&nbsp;' * 4)
+print(yate.subbutton('进行测验', 'ExamAction()',  'sub'))
 print('</form>')
 
 # =====================设置页脚的链接（保持固定顺序）=====================
 FooterString = OrderedDict()
 FooterString['返回首页'] = '/index.html'
 FooterString['错题回顾'] = 'WrongRecord.py'
+FooterString['测验回顾'] = 'ExamRecords.py'
 print(yate.include_footer(FooterString))
 
 

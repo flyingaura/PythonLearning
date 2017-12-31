@@ -16,13 +16,10 @@ def time2seconds(time):
     return int(h) * 3600 + int(m) * 60 + int(s)
 
 def seconds2time(seconds):
-    h = int(seconds / 3600)
-    # if(h > 24):
-    #     h = h - 24
-    m = int((seconds % 3600) / 60)
-    s = (seconds % 3600) % 60
-    # return ('%02d:%02d:%02d' %(h,m,s))
-    return (h,m,s)
+    if (not isinstance(seconds, int)):
+        raise ValueError('输入参数格式不正确，请输入整数')
+    seconds = abs(seconds)
+    return (seconds // 3600, (seconds % 3600) // 60, (seconds % 3600) % 60)
 
 def cal_time(init_time,seconds):
     return seconds2time(time2seconds(init_time) + seconds)

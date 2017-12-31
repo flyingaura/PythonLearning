@@ -3,19 +3,64 @@
 <head>
 <title>设置算术表达式的生成参数！</title>
 <link type="text/css" rel="stylesheet" href="/coach.css" />
-<script type="text/javascript">function FreeExerAction(){    document.name.action="generate_expression.py";    document.name.submit();}function ExamAction(){    document.name.action="exam.py";    document.name.submit();}</script>
+<script type="text/javascript">
+    function FreeExerAction(){
+        document.name.action="generate_expression.py";
+        document.name.submit();}
+    function ExamAction(){
+        document.name.action="exam.py";
+        document.name.submit();
+    }
+</script>
+
+<script type="text/javascript">
+var time=new Date();
+time.setHours(1);
+time.setMinutes(30);
+time.setSeconds(0);
+var timeout;
+var timeshow=document.getElementById("timeshow");
+function countdown(){
+var hour=time.getHours();
+var min=time.getMinutes();
+var second=time.getSeconds();
+if(hour=="0"&&min=="0"&&second=="0"){alert("Time Out!");clearInterval(timeout);}
+time.setSeconds(second-1);
+hour<10?hour="0"+hour:hour;
+min<10?min="0"+min:min;
+second<10?second="0"+second:second;
+timeshow.innerHTML=hour+":"+min+":"+second;
+}
+ timeout= setInterval(countdown,1000);
+
+</script>
 </head>
 <body>
 <h1>设置算术表达式的生成参数！</h1>
-
+<h2>本次考试成绩为&nbsp;&nbsp;&nbsp;&nbsp;<span style="color:#FF6666; font-size:150%">60</span></h2>
 <p>==========请设置算术表达式的生成参数==========</p>
 <form action="test_page.html" name="name" method="POST">
-
-    <p><a href="page_test.py">进入测试页面</a></p>
-
+<input type="submit" value="test123456789" class="sub">
 </form>
+<!--<form name='timeshow'>-->
+<!--<input type="text" name="countdonw">-->
+<!--</form>-->
+<div name="timeshow">
+
+</div>
+<h2><span style="text-decoration:underline; color:#333333; font-size:150%">韦浩宇</span>小朋友，
+                      本次考试你做对了<span style="color:#009966; font-size:150%"> %d </span>道题，
+                      做错了 <span style="color:#FF0033; font-size:150%"> %d </span> 道题，
+                      得分 <span style="color:#FF6600; font-size:150%; text-decoration:underline"> %d </span> ，请继续努力哦！'</h2>
+
+<p><a href="/cgi-bin/page_test.py" class="specfont">进入测试页面</a></p>
+<p>看一下前后<span class="specfont">文字有什么</span>不同</p>
 <p>
-<a href="/index.html">返回首页</a>&nbsp;&nbsp;&nbsp;|&nbsp;&nbsp;&nbsp;<a href="WrongRecord.py">错题回顾</a>&nbsp;&nbsp;&nbsp;|&nbsp;&nbsp;&nbsp;
+<a href="/index.html">返回首页</a>&nbsp;&nbsp;&nbsp;|&nbsp;&nbsp;&nbsp;
+</p>
+
+<p>
+<a href="/index.html">返回首页</a>&nbsp;&nbsp;&nbsp;|&nbsp;&nbsp;&nbsp;<a href="../cgi-bin/WrongRecord.py">错题回顾</a>&nbsp;&nbsp;&nbsp;|&nbsp;&nbsp;&nbsp;
 </p>
 </body>
 </html>

@@ -63,12 +63,18 @@ from collections import OrderedDict
 # print(test_string)
 # print(test_string.strip(' ').strip('|'))
 
-test_dict = {}
-for i in range(10):
-    time_string = time.strftime('%Y-%m-%d %H:%M:%S',time.localtime(time.time() + random.randint(-100000,100000)))
-    test_dict[time_string.split(' ')[0]] = time_string
-
-print(test_dict)
-print(sorted(test_dict.keys()))
-print(sorted(test_dict.keys(), reverse=True))
+# test_dict = {}
+# for i in range(10):
+#     time_string = time.strftime('%Y-%m-%d %H:%M:%S',time.localtime(time.time() + random.randint(-100000,100000)))
+#     test_dict[time_string.split(' ')[0]] = time_string
+#
+# print(test_dict)
+# print(sorted(test_dict.keys()))
+# print(sorted(test_dict.keys(), reverse=True))
+testdict = '{1:123}'
+# testjson = json.dumps(testdict)
+print('<span style="text-decoration:underline; color:#333333; font-size:150%%">韦浩宇</span>小朋友，'
+                      '本次考试你做对了<span style="color:#009966; font-size:150%%"> %d </span>道题，'
+                      '做错了 <span style="color:#FF0033; font-size:150%%"> %d </span> 道题，'
+                      '得分 <span style="color:#FF6600; font-size:150%%; text-decoration:underline"> %d </span> ，请继续努力哦！')
 

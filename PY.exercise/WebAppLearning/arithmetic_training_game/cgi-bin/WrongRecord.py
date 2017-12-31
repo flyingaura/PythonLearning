@@ -14,7 +14,7 @@ try:
         jsonstring = json.loads(readfile.read().strip())
         WrongRecDict = OrderedDict()
         for Arec in sorted(jsonstring.keys(), reverse = True):
-            WrongRecDict[Arec] = Arec + '(<font color="red">' + str(len(jsonstring[Arec])) + '</font>)'
+            WrongRecDict[Arec] = Arec + '(<span style="color:red">' + str(len(jsonstring[Arec])) + '</span>)'
 
     print(yate.para('请选择查看哪天的错题？'))
     print(yate.start_form('WrongRecord.py'))
@@ -24,7 +24,7 @@ try:
     try:
         Recordkey = form_data['WrongRecSelect'].value
         print(yate.para(''))
-        print(yate.header('以下为 <ins>%s</ins> 的错题记录（共 <ins>%d</ins> 道）：' %(Recordkey, len(jsonstring[Arec])), 2))
+        print(yate.header('以下为 <ins>%s</ins> 的错题记录（共 <ins>%d</ins> 道）：' %(Recordkey, len(jsonstring[Recordkey])), 2))
         print(yate.u_list(jsonstring[Recordkey]))
     except KeyError:
         pass
