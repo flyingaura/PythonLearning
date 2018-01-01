@@ -10,7 +10,7 @@ form_data = cgi.FieldStorage()
 WrongCount = 0
 
 print(yate.start_response())
-print(yate.include_header('韦浩宇的算术训练营 -- 测验回顾'))
+print(yate.include_header_js('韦浩宇的算术训练营 -- 测验回顾', ''))
 
 try:
     with open(RecordFilePath, mode = 'r', encoding='utf-8') as readfile:
@@ -21,6 +21,8 @@ try:
                 WrongCount = WrongCount + len(jsonstring[Arec][AnExam]['WrongRecords'])
             ExamRecDict[Arec] = Arec + '(%d | %d)' %(len(jsonstring[Arec]), WrongCount)
 
+    print('<div id="topfixed">')
+    print(yate.header('韦浩宇的算术训练营 -- 测验回顾', 1))
     print(yate.para('请选择查看哪天的测验？'))
     print(yate.start_form('ExamRecords.py'))
     print(yate.select_set('ExamRecSelect', ExamRecDict))
@@ -30,6 +32,8 @@ try:
         Recordkey = form_data['ExamRecSelect'].value
         print(yate.para(''))
         print(yate.header('以下为 <ins>%s</ins> 的测验记录（共 <ins>%d</ins> 次）：' %(Recordkey, len(jsonstring[Recordkey])), 2))
+        print('</div>')
+        print('<div style="margin-top:220px">')
         for AnExam in sorted(jsonstring[Recordkey].keys()):
             ExamWrongList = jsonstring[Recordkey][AnExam]['WrongRecords']
             ExamTime = jsonstring[Recordkey][AnExam]['ExamTime']
@@ -55,9 +59,11 @@ try:
                            % (AnExam, int(jsonstring[Recordkey][AnExam]['ExamCount']), CostTimeText, yate.img_tag('/images/奖励.png'))
                 print(yate.header(DescText, 3))
             print(yate.header('', 2))
+            print('</div>')
     except KeyError:
         # print(yate.para(''))
         # print(yate.header('抱歉，您所选的测验记录不存在，请重新选择！', 2))
+        print('</div>')
         pass
     # finally:
     #     print(yate.header('', 2))
