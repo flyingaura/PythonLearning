@@ -66,13 +66,13 @@ print(yate.header('设置算术表达式的生成参数！', 1))
 print(yate.start_form('', 'name'))
 print(yate.para('1.请设置计算值范围'))
 print(yate.select_set('numlist',NumList, SelectedVals = numlist_checked))
-print(yate.para('2.请设置训练用到的操作符'))
+print(yate.para('2.请设置使用的运算符'))
 for key in OperatorList:
     checkedVal = False
     if(OperatorList[key] in operator_checked):
         checkedVal = True
     print(yate.checked_box('operator',OperatorList[key],key, checked = checkedVal))
-print(yate.para('3.请设置计算数的个数'))
+print(yate.para('3.请设置计算数个数'))
 print(yate.select_set('level',NumLevel, SelectedVals = level_checked))
 print(yate.input_hidden('NewSetting', 1))   #设置是否为新设置的标识（设置页面初始化为1）
 # print(yate.input_hidden('StartCal', 1))    #设置开始计算训练标识
