@@ -60,7 +60,7 @@ else:                  #持续提交答案，进行答案判断
     try:
         if (int(form_data['CalResult'].value) == int(FactResult)):
             # action_URL = 'generate_expression.py'
-            header_string1 = '<font color="#009966">恭喜你，答对了! 请继续回答下一题</font>'
+            header_string1 = '<span style="color:#009966">恭喜你，答对了! <span style="color:#FF6666;text-decoration:underline";>用时: %s 秒</span> 请继续回答下一题</span>' %(form_data['totaltime'].value)
             while (True):
                 ArithmeticExpress = ATG.ArithmeticMode(list(range(MaxNum)), OperatorList, CalLevel).get_ArtExpress()
                 try:
@@ -118,14 +118,23 @@ else:                  #持续提交答案，进行答案判断
     except ValueError:
         header_string1 = '输入答案必须为数字，请输入正确格式的答案！'
 
+# =================== 定义一段显示练习计时的代码 ===================
+JS_string = 'var time=new Date();time.setHours(0);time.setMinutes(0);time.setSeconds(0);var downtime = 0;var timeOutText="";var totalseconds=0;' \
+            'function countdown(){var timeshow=document.getElementById("timeshow");var hour=time.getHours();var min=time.getMinutes();var second=time.getSeconds();' \
+            'setTimeout("countdown()",1000);totalseconds ++;if(downtime==1){time.setSeconds(second-1);timeshow.style.color="#0099CC";}' \
+            'else{time.setSeconds(second+1);timeshow.style.color="#0099CC";}' \
+            'hour<10?hour="0"+hour:hour;min<10?min="0"+min:min;second<10?second="0"+second:second;timeshow.innerHTML=timeOutText+hour+":"+min+":"+second;' \
+            'document.form.totaltime.value = totalseconds}var timer=setTimeout("countdown()",1000);'
+
 # =================生成一个HTML页面=================
 print(yate.start_response())
-print(yate.include_header('欢迎来到韦浩宇的算术运算训练营！'))
+print(yate.include_header_js('欢迎来到韦浩宇的算术运算训练营！', JS_string))
 # print(yate.start_form('arithmetic_training_games.py'))
+print(yate.header('欢迎来到韦浩宇的算术运算训练营！', 1))
 print(yate.header(header_string1, 2))
-print(yate.header('第 %d 题  ----> 已答对<font color = "green"> %d </font>题，答错<font color="red"> %d </font>题（已纠正 <font color="blue"> %d </font>题）'
+print(yate.header('第 %d 题, 计时：<span id="timeshow"></span> ----> 已答对<font color = "green"> %d </font>题，答错<font color="red"> %d </font>题（已纠正 <font color="blue"> %d </font>题）'
                   %(ExpNum, RightAnsNum, WrongNum, CorrectNum), 4))
-print(yate.start_form('generate_expression.py'))
+print(yate.start_form('generate_expression.py', name= 'form'))
 
 # =================在页面上记录上之前的设置参数=================
 print(yate.input_hidden('numlist', form_data['numlist'].value))
@@ -141,6 +150,7 @@ print(yate.input_hidden('CorrectNum', CorrectNum))
 print(yate.input_hidden('NewSetting', NewSettingTag))   #设置是否为新设置的标识（其他页面为0）
 print(yate.input_hidden('RightAnsNum', RightAnsNum))
 print(yate.input_hidden('RegenerationTag', 0))
+print(yate.input_hidden('totaltime'))           #把练习用时传过去（由JS提供值）
 
 #===========================================================
 
