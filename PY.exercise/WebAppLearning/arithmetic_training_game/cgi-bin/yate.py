@@ -59,14 +59,17 @@ def create_inputs(name_string, value = None, style = None):
 
     return ('<input type="text" name="' + name_string + '"' + value_string + style_string + '>')
 
-def checked_box(cb_name,cb_value,cb_title = None, checked = False):
+def checked_box(cb_name,cb_value, cb_show = None, cb_title = None, checked = False):
     if(not cb_title):
         cb_title = cb_value
+    if(not cb_show):
+        cb_show = cb_value
     if(checked):
         checked_string = 'checked'
     else:
         checked_string = ''
-    return('<input type="checkbox" name="' + cb_name + '" value="' + cb_value + '" title="' + cb_title + '" ' + checked_string + '>' + cb_value + '&nbsp;&nbsp;&nbsp;&nbsp;')
+    return('<input type="checkbox" name="' + cb_name + '" value="' + cb_value + '" title="' + cb_title + '" ' + checked_string + '>' +
+           '<span style="font-size:24px;color:#FF6666;font-weight:bolder;">' + cb_show + '</span>&nbsp;&nbsp;&nbsp;&nbsp;')
 
 def select_set(selname, option_dic, size = '1', multiple = False, SelectedVals = []):
     if(multiple):

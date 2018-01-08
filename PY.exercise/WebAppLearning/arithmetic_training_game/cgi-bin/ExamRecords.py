@@ -16,7 +16,7 @@ try:
     with open(RecordFilePath, mode = 'r', encoding='utf-8') as readfile:
         jsonstring = json.loads(readfile.read().strip())
         ExamRecDict = OrderedDict()
-        for Arec in sorted(jsonstring.keys(), reverse = True):
+        for Arec in sorted(jsonstring['ExamRecords'].keys(), reverse = True):
             for AnExam in jsonstring[Arec]:
                 WrongCount = WrongCount + len(jsonstring[Arec][AnExam]['WrongRecords'])
             ExamRecDict[Arec] = Arec + '(%d | %d)' %(len(jsonstring[Arec]), WrongCount)
@@ -31,12 +31,12 @@ try:
     try:
         Recordkey = form_data['ExamRecSelect'].value
         print(yate.para(''))
-        print(yate.header('以下为 <ins>%s</ins> 的测验记录（共 <ins>%d</ins> 次）：' %(Recordkey, len(jsonstring[Recordkey])), 2))
+        print(yate.header('以下为 <ins>%s</ins> 的测验记录（共 <ins>%d</ins> 次）：' %(Recordkey, len(jsonstring['ExamRecords'][Recordkey])), 2))
         print('</div>')
         print('<div style="margin-top:220px">')
-        for AnExam in sorted(jsonstring[Recordkey].keys()):
-            ExamWrongList = jsonstring[Recordkey][AnExam]['WrongRecords']
-            ExamTime = jsonstring[Recordkey][AnExam]['ExamTime']
+        for AnExam in sorted(jsonstring['ExamRecords'][Recordkey].keys()):
+            ExamWrongList = jsonstring['ExamRecords'][Recordkey][AnExam]['WrongRecords']
+            ExamTime = jsonstring['ExamRecords'][Recordkey][AnExam]['ExamTime']
             ExamTimeAct = cal_time.seconds2time(int(ExamTime[1]))
             CostTimeText = '<span style="color:#009966;">%d小时%d分%d秒</span>' % (ExamTimeAct[0], ExamTimeAct[1], ExamTimeAct[2])
             if(int(ExamTime[0]) < int(ExamTime[1])):
@@ -47,7 +47,7 @@ try:
             if(len(ExamWrongList)):
                 DescText = '<span style="color:#0066CC">%s.</span>&nbsp;&nbsp;本次测验共 <span style="color:#009966">%d</span> 道题，' \
                            '做错了 <span style="color:#FF6600; text-decoration:underline">%d</span> 道题，共用时 %s ' \
-                           % (AnExam, int(jsonstring[Recordkey][AnExam]['ExamCount']), len(ExamWrongList), CostTimeText)
+                           % (AnExam, int(jsonstring['ExamRecords'][Recordkey][AnExam]['ExamCount']), len(ExamWrongList), CostTimeText)
                 print(yate.header(DescText, 3))
                 print('<ul>')
                 for AnWrongExp in ExamWrongList:
@@ -56,7 +56,7 @@ try:
                 print('</ul>')
             else:
                 DescText = '<span style="color:#0066CC">%s.</span>&nbsp;&nbsp;本次测验共<span style="color:#009966">%d</span> 道题，你全做对啦！共用时 %s &nbsp;&nbsp;%s&nbsp;&nbsp;你真棒，请继续努力哦！' \
-                           % (AnExam, int(jsonstring[Recordkey][AnExam]['ExamCount']), CostTimeText, yate.img_tag('/images/奖励.png'))
+                           % (AnExam, int(jsonstring['ExamRecords'][Recordkey][AnExam]['ExamCount']), CostTimeText, yate.img_tag('/images/奖励.png'))
                 print(yate.header(DescText, 3))
             print(yate.header('', 2))
             print('</div>')
@@ -70,8 +70,13 @@ try:
 
 except FileNotFoundError:
     print(yate.img_tag('/images/miao1.jpg', title= '抱歉，目前没有测验记录！', align='center'))
-    print(yate.header('%s目前没有测验记录！点击' + yate.a_link('expresssion_set.py', '开始一次测验吧'), 1))
-
+    print(yate.header('目前没有测验记录！点击' + yate.a_link('expresssion_set.py', '开始一次测验吧'), 1))
+except json.JSONDecodeError:
+    print(yate.img_tag('/images/miao1.jpg', title='抱歉，暂时无法读取测验记录！', align='center'))
+    print(yate.header('暂时无法读取测验记录！点击' + yate.a_link('expresssion_set.py', '开始一次测验吧'), 1))
+except KeyError:
+    print(yate.img_tag('/images/miao1.jpg', title='抱歉，暂时无法读取测验记录！', align='center'))
+    print(yate.header('暂时无法读取测验记录！点击' + yate.a_link('expresssion_set.py', '开始一次测验吧'), 1))
 
 # =====================设置页脚的链接（保持固定顺序）=====================
 FooterString = OrderedDict()

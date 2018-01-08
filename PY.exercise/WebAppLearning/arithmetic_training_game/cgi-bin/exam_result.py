@@ -1,9 +1,10 @@
 # -*- coding: utf-8 -*-
 
-import json, cgi, yate, time, sys
+import json, cgi, yate, time, sys, cgitb
 from collections import OrderedDict
 sys.path.append('F:/memory/python-learning/learning2017/LearnModule/')
 import cal_time
+cgitb.enable()
 
 # =================== 定义一个判断考试成绩的类 ===================
 class ExamResult(object):
@@ -55,6 +56,24 @@ print(yate.start_response())
 print(yate.include_header('欢迎来到韦浩宇的算术运算训练营！'))
 
 if(exam_exist):
+    # =================== 读考试记录文件，判断文件是否存在并初始化考试奖励值 ===================
+    data_string = time.strftime('%Y-%m-%d', time.localtime(time.time()))
+    try:
+        with open(FilePath, mode='r', encoding='utf-8') as ExamRecFile:
+            try:
+                ExamRecJson = json.loads(ExamRecFile.read().strip())
+                AwardCount = int(ExamRecJson['AwardCount'])
+            except json.JSONDecodeError:
+                ExamRecJson = {}
+                AwardCount = 0
+            except KeyError:
+                AwardCount = 0
+
+    except FileNotFoundError:
+        ExamRecJson = {}
+        AwardCount = 0
+
+    # =================== 逐题判断答题结果是否正确并输出答题结果 ===================
     for AnInstance in instance_ER_List:
         if(AnInstance.IfRight()):
             score += 5
@@ -75,6 +94,18 @@ if(exam_exist):
         '得分 <span style="color:#FF6600; font-size:150%%; text-decoration:underline">%d</span> ，考试用时&nbsp;&nbsp;%s&nbsp;&nbsp;，请继续努力哦！'
         % (RightNum, len(instance_ER_List) - RightNum, score, CostTimeText), 2))
 
+    # ====== 判断答题奖励情况：全部正确且不超时，给一个奖励; 如果答题时间小于规定时间一半，则给两个奖励 ======
+    if(RightNum == len(instance_ER_List) and int(form_data['numlist'].value) >= 40 and len(form_data['operator']) >= 2 and int(form_data['level'].value) >= 3):
+        ThisExamAward = 0
+        if(ExamTimeActSeconds <= ExamTimeInitSeconds):
+            AwardCount += 1
+            ThisExamAward += 1
+        if(ExamTimeActSeconds <= ExamTimeInitSeconds // 2):
+            AwardCount += 1
+            ThisExamAward += 1
+        if(ThisExamAward):
+            print(yate.header('<span style="color:#FF6600; font-size:120%%;">这次考试在规定时间内全对，恭喜您获得奖励&nbsp;&nbsp;<img src="/images/奖励.png"> × %d</span>' % ThisExamAward, 2))
+
     # ====== 列出所有考试题和回答结果以及判分情况 ======
     # for AnInstance in sorted(instance_ER_List, key= lambda x:int(x.ExpNum)):
     for AnInstance in instance_ER_List:
@@ -92,8 +123,27 @@ if(exam_exist):
                       '得分 <span style="color:#FF6600; font-size:150%%"> %d </span> ，请继续努力哦！'
                       %(RightNum, len(instance_ER_List) - RightNum, score), 4))
 
+# =================== 下面是将错题保存到文件模块 ===================
+    with open(FilePath, mode = 'w', encoding='utf-8') as ExamRecFile:
+        try:
+            ExamNum = sorted([int(x) for x in ExamRecJson['ExamRecords'][data_string].keys()])[-1] + 1
+            ExamRecJson['ExamRecords'][data_string][str(ExamNum)] = {'WrongRecords': []}
+        except KeyError:
+            ExamNum = 1
+            ExamRecJson['ExamRecords'] = {data_string: {str(ExamNum):{'WrongRecords': []}}}
+
+        if(len(WrongExpList) != 0):
+            for Arecord in WrongExpList:
+                ExamRecJson['ExamRecords'][data_string][str(ExamNum)]['WrongRecords'].append((Arecord.ExpNum, Arecord.ArithmeticExpress, Arecord.ShowCalResult()))  #保存题号、算术表达式、输入结果
+        ExamRecJson['ExamRecords'][data_string][str(ExamNum)]['ExamCount'] = int(form_data['ExamCount'].value)    #保存测验题目数
+        ExamRecJson['ExamRecords'][data_string][str(ExamNum)]['ExamTime'] = (ExamTimeInitSeconds, ExamTimeActSeconds)   #保存考试规定用时和实际用时
+        ExamRecJson['AwardCount'] = AwardCount      #保存奖励数量
+        record_string = json.dumps(ExamRecJson)
+        ExamRecFile.write(record_string)
+
 else:
     print(yate.header('本次考试出问题啦，请点击&nbsp;' + yate.a_link('/index.html', '返回首页') + '&nbsp;重新生成试题', 1))
+    AwardCount = 0
 
 # =================== 下面是将算术题参数回传 ===================
 print(yate.start_form('exam.py'))
@@ -109,35 +159,9 @@ print(yate.end_form('再来一次测验', 'sub'))
 FooterString = OrderedDict()
 FooterString['返回首页'] = '/index.html'
 FooterString['考题回顾'] = 'ExamRecords.py'
+AwardString = yate.img_tag('/images/奖励.png') + '<span style="font-weight:bolder;color:#FF6666;"> × %d</span>' %(AwardCount)\
+              + '&nbsp;&nbsp;<span style="font-weight:bolder;color:#FF6666;">兑换奖励</span>'
+FooterString[AwardString] = 'AwardTable.py'
 print(yate.include_footer(FooterString))
 
-# =================== 下面是将错题保存到文件模块 ===================
-if(exam_exist):
-    data_string = time.strftime('%Y-%m-%d', time.localtime(time.time()))
-    try:
-        with open(FilePath, mode='r', encoding='utf-8') as ExamRecFile:
-            try:
-                ExamRecJson = json.loads(ExamRecFile.read().strip())
-            except json.JSONDecodeError:
-                ExamRecJson = {}
-
-    except FileNotFoundError:
-        ExamRecJson = {}
-
-    with open(FilePath, mode = 'w', encoding='utf-8') as ExamRecFile:
-        try:
-            ExamNum = sorted([int(x) for x in ExamRecJson[data_string].keys()])[-1] + 1
-            ExamRecJson[data_string][str(ExamNum)] = {'WrongRecords': []}
-        except KeyError:
-            ExamNum = 1
-            ExamRecJson[data_string] = {str(ExamNum):{'WrongRecords': []}}
-
-        if(len(WrongExpList) != 0):
-            for Arecord in WrongExpList:
-                ExamRecJson[data_string][str(ExamNum)]['WrongRecords'].append((Arecord.ExpNum, Arecord.ArithmeticExpress, Arecord.ShowCalResult()))  #保存题号、算术表达式、输入结果
-        ExamRecJson[data_string][str(ExamNum)]['ExamCount'] = int(form_data['ExamCount'].value)    #保存测验题目数
-        ExamRecJson[data_string][str(ExamNum)]['ExamTime'] = (ExamTimeInitSeconds, ExamTimeActSeconds)   #保存考试规定用时和实际用时
-
-        record_string = json.dumps(ExamRecJson)
-        ExamRecFile.write(record_string)
 
