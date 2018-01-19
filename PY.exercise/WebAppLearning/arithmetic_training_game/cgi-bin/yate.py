@@ -1,3 +1,5 @@
+#! /usr/local/bin/python3
+# -*- coding: utf-8 -*-
 
 from string import Template
 
@@ -35,13 +37,13 @@ def end_form(submit_msg="Submit", style = None):
         style_string = ''
     return('<input type=submit value="' + submit_msg + '" ' + style_string + '></form>')
 
-def subbutton(subvalue, suburl , style = None):
+def subbutton(subvalue, suburl , status = '', style = ''):
     if (style):
         style_string = 'class="' + style + '"'
     else:
         style_string = ''
 
-    return ('<input type="button" value="' + subvalue + '" onclick="' + suburl + '" ' + style_string + '>')
+    return ('<input type="button" value="' + subvalue + '" onclick="' + suburl + '" ' + status + ' ' + style_string + '>')
 
 def radio_button(rb_name, rb_value):
     return('<input type="radio" name="' + rb_name +
@@ -133,3 +135,18 @@ def img_tag(url, title = None, align = None):
         attribute_string = attribute_string + ''
 
     return '<img src="' + url + '"' + attribute_string + '>'
+
+def td_tag(td_text, td_css = '', id = '', display = True):
+    if(td_css):
+        td_css_string = ' class="%s"' %td_css
+    else:
+        td_css_string = ''
+    if(id):
+        id_string = ' id="' + id + '"'
+    else:
+        id_string = ''
+    if(display):
+        display_string = ''
+    else:
+        display_string = ' style="display:none"'
+    return '<td%s%s%s>%s</td>' % (id_string, display_string, td_css_string, td_text)
