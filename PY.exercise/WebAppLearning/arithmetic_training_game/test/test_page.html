@@ -2,7 +2,7 @@
 <meta http-equiv="Content-Type" content="text/html; charset=utf-8">
 <head>
 <title>设置算术表达式的生成参数！</title>
-<link type="text/css" rel="stylesheet" href="/coach.css" />
+<link type="text/css" rel="stylesheet" href="../coach.css" />
 <script type="text/javascript">
     function FreeExerAction(){
         document.name.action="generate_expression.py";
@@ -34,6 +34,18 @@ timeshow.innerHTML=hour+":"+min+":"+second;
  timeout= setInterval(countdown,1000);
 
 </script>
+<script>
+function Awardconfirm(buttonid,valueid) {
+    var con1 = confirm("确定兑换？");
+    if(con1 === true){
+        alert("恭喜你， "+document.getElementById(buttonid).innerHTML+" 兑换成功");
+        document.getElementById("valuecost").innerHTML="本次兑换花费 "+document.getElementById(valueid).innerHTML+"个奖励值！" ;
+        document.formname.value1.value=document.getElementById(valueid).innerText;
+        document.formname.submit();
+    }
+
+}
+</script>
 </head>
 <body>
 <h1>设置算术表达式的生成参数！</h1>
@@ -42,6 +54,8 @@ timeshow.innerHTML=hour+":"+min+":"+second;
 <form action="test_page.html" name="name" method="POST">
 <input type="submit" value="test123456789" class="sub">
 </form>
+
+<input type="button"  value="提交" onclick="" disabled>
 <!--<form name='timeshow'>-->
 <!--<input type="text" name="countdonw">-->
 <!--</form>-->
@@ -58,7 +72,15 @@ timeshow.innerHTML=hour+":"+min+":"+second;
 <p>
 <a href="/index.html">返回首页</a>&nbsp;&nbsp;&nbsp;|&nbsp;&nbsp;&nbsp;
 </p>
-
+<table><tr><th>奖励等级</th><th style="width:240px">奖励内容</th><th>所需兑换值</th><th>是否兑换</th></tr>
+<tr><td >等级1</td><td id="level1">玩具1个</td><td ><img src="../images/奖励.png"><span style="position:relative;top:-8px;left:2px"> × 5 </span></td><td style="display:none" id="value1">5</td><td ><input type="button" value="兑换" onclick="Awardconfirm('level1','value1')"  class="sub_td"></td></tr>
+<tr><td >等级2</td><td id="level2">游乐场1次</td><td ><img src="../images/奖励.png"> × 10 </td><td style="display:none" id="value2">10</td><td ><input type="button" value="兑换" onclick="Awardconfirm('level2','value2')" class="sub_td"></td></tr>
+<tr><td >等级2</td><td id="level3">外出旅游1次</td><td ><img src="../images/奖励.png"> × 20 </td><td style="display:none" id="value3">20</td><td ><input type="button" value="兑换" onclick="Awardconfirm('level3','value3')" disabled></td></tr>
+</table>
+<h2 id="valuecost"></h2>
+<form name="formname">
+    <input type="hidden" name="value1" value="">
+</form>
 <p>
 <a href="/index.html">返回首页</a>&nbsp;&nbsp;&nbsp;|&nbsp;&nbsp;&nbsp;<a href="../cgi-bin/WrongRecord.py">错题回顾</a>&nbsp;&nbsp;&nbsp;|&nbsp;&nbsp;&nbsp;
 </p>

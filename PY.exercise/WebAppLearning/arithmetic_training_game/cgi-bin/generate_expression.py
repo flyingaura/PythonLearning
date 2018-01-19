@@ -1,3 +1,4 @@
+#! /usr/local/bin/python3
 # -*- coding: utf-8 -*-
 """
 这是一个生成算术表述式并进行计算的页面

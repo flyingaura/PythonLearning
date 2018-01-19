@@ -1,3 +1,4 @@
+
 # -*- coding: utf-8 -*-
 # 生成游戏页面
 import sys

@@ -1,8 +1,9 @@
+#! /usr/local/bin/python3
 # -*- coding: utf-8 -*-
 
 import json, cgi, yate, time, sys, cgitb
 from collections import OrderedDict
-sys.path.append('F:/memory/python-learning/learning2017/LearnModule/')
+sys.path.append('/Users/flyingauraMac/PycharmProjects/PythonLearning/LearnModule/')
 import cal_time
 cgitb.enable()
 

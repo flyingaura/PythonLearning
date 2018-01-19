@@ -34,18 +34,25 @@ blockquote {
 table {
   margin-left:      20px;
   margin-right:     20px;
-  border:           thin solid black;
+  border:           solid white;
   caption-side:     bottom;
   border-collapse:  collapse;
 }
 
 td, th {
-  border:           thin dotted gray;
   padding:          5px;
+  width: 120px;
 }
 
 th {
+  border:           thin dotted ghostwhite;
   background-color: #cc6600;
+  color:ghostwhite;
+}
+
+td{
+  border:           thin dotted gray;
+  text-align: center;
 }
 
 caption {
@@ -92,6 +99,33 @@ li {
 .sub:hover{
   background-color: forestgreen;
   /*border:solid 2px #CCCCCC;*/
+}
+
+.sub_td {
+  font-size: 14px;
+  font-family: 微软雅黑,宋体,Arial,Helvetica,Verdana,sans-serif;
+  color: white;
+  width:75px;
+  height:25px;
+  line-height:25px;
+  background-color: #336699;
+  /*background:transparent url(背景图片地址) no-repeat;*/
+  border:none;
+}
+.sub_td:hover{
+  background-color: forestgreen;
+  /*border:solid 2px #CCCCCC;*/
+}
+
+input:disabled{
+  font-size: 14px;
+  font-family: 微软雅黑,宋体,Arial,Helvetica,Verdana,sans-serif;
+  width:75px;
+  height:25px;
+  line-height:25px;
+  border: 1px solid #DDD;
+  background-color: #F5F5F5;
+  color:#ACA899;
 }
 
 .input_control{

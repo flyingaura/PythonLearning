@@ -1,3 +1,6 @@
+#! /usr/local/bin/python3
+# -*- coding: utf-8 -*-
+
 import yate, cgi, json
 
 form_data = cgi.FieldStorage()

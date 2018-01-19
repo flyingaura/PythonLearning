@@ -1,3 +1,4 @@
+#! /usr/local/bin/python3
 # -*- coding: utf-8 -*-
 
 """
@@ -47,8 +48,7 @@ except FileNotFoundError:
 try:
     with open('data/ExamRecords.json', mode = 'r', encoding= 'utf-8') as settingfile:
         try:
-            jsonstring = json.loads(settingfile.read().strip())
-            AwardCount = int(jsonstring['AwardCount'])
+            AwardCount = int(json.loads(settingfile.read().strip())['AwardCount'])
         except json.decoder.JSONDecodeError:
             AwardCount = 0
         except KeyError:
@@ -91,9 +91,9 @@ print(yate.select_set('level',NumLevel, SelectedVals = level_checked))
 print(yate.input_hidden('NewSetting', 1))   #设置是否为新设置的标识（设置页面初始化为1）
 # print(yate.input_hidden('StartCal', 1))    #设置开始计算训练标识
 print(yate.para(''))
-print(yate.subbutton('自由练习', 'FreeExerAction()',  'sub'))
+print(yate.subbutton('自由练习', 'FreeExerAction()', style='sub'))
 print('&nbsp;' * 4)
-print(yate.subbutton('进行测验', 'ExamAction()',  'sub'))
+print(yate.subbutton('进行测验', 'ExamAction()',  style='sub'))
 print('</form>')
 
 # =====================设置页脚的链接（保持固定顺序）=====================

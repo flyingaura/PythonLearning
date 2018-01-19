@@ -1,3 +1,4 @@
+#! /usr/local/bin/python3
 # -*- coding: utf-8 -*-
 
 import arithmetic_training_games as ATG
