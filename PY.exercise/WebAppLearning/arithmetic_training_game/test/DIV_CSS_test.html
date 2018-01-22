@@ -1,0 +1,59 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta http-equiv="Content-Type" content="text/html; charset=utf-8">
+    <title>div + css 学习</title>
+    <script>
+        function inputname(selectid,selectvalue) {
+            var selected = document.getElementById(selectid);
+            var newname = document.getElementById('newname');
+            if(selected.options[selected.selectedIndex].value === selectvalue){
+                newname.style.display="";
+            }
+            else{
+             newname.style.display="none";
+             document.formname.name.options[selected.selectedIndex].submit();
+            }
+        }
+    </script>
+    <style>
+        .div1{
+            font-size:120%;
+            color:#cc6600;
+            font-style: italic;
+            text-decoration:none;
+        }
+        .sub1{
+            font-size:16px;
+            color:white;
+            background-color: #ff6666;
+            width:90px;
+            height:36px;
+        }
+        .sub1:hover{
+           font-size:16px;
+            color:white;
+            background-color: #336699;
+            width:90px;
+            height:36px;
+        }
+    </style>
+</head>
+<body>
+<h2 class="div1">下面是对DIV的学习</h2>
+<form name="formname" action="" method="post">
+    <select id="selectname" onchange="inputname('selectname','创建新用户')">
+        <option name="name" value="韦浩宇" id="name1">韦浩宇</option>
+        <option name="name" value="段云霞" id="name2">段云霞</option>
+        <option name="name" value="韦靓" id="name3">韦靓</option>
+        <option name="name" value="创建新用户" id="name4">创建新用户</option>
+    </select>
+    <div style="margin-top:20px;display:none" id="newname">
+        <input type="text" name="newname" value="输入用户名" onfocus="if(this.value==='输入用户名'){this.value='';}"
+               onblur="if(this.value===''){this.value='输入用户名';}" style="height: 30px;width: 200px;">
+        <input type="submit" value="确定" class="sub1" id="subnewname">
+    </div>
+</form>
+
+</body>
+</html>

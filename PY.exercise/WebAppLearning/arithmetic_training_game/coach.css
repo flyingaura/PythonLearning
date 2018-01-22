@@ -77,12 +77,19 @@ table table th {
 }
 
 li {
-  list-style-image: url(images/backpack.gif);
+  /*list-style-image: url(images/backpack.gif);*/
   padding-top:      5px;
   margin-left:      10px;
   font-size: 18px;
   font-weight: bolder;
-  color:#0099CC
+  color:#ff6666;
+}
+
+.li_error{
+  margin-left:      10px;
+  font-size: 16px;
+  font-weight: bolder;
+  color:#ff6666;
 }
 
 .sub {

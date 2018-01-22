@@ -89,7 +89,7 @@ print('</div>')
 # =====================设置页脚的链接（保持固定顺序）=====================
 FooterString = OrderedDict()
 FooterString['返回首页'] = '/index.html'
-FooterString['考试回顾'] = 'ExamRecords.py'
+FooterString['测验回顾'] = 'ExamRecords.py'
 print(yate.include_footer(FooterString))
 
 

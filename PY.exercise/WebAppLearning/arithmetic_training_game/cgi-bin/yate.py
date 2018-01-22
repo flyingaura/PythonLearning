@@ -150,3 +150,6 @@ def td_tag(td_text, td_css = '', id = '', display = True):
     else:
         display_string = ' style="display:none"'
     return '<td%s%s%s>%s</td>' % (id_string, display_string, td_css_string, td_text)
+
+def js_alert(alert_string):
+    return '<script>alert(\'%s\')</script>' % alert_string

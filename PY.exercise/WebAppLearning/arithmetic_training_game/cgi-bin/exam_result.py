@@ -46,34 +46,49 @@ try:
         if(len(ExamData) < 4):
             CalResult = None
         else:
-            CalResult = int(ExamData[3].value)
+            try:
+                CalResult = int(ExamData[3].value)
+            except ValueError:
+                CalResult = None
         instance_ER = ExamResult(int(ExamData[0].value), ExamData[1].value, int(ExamData[2].value), CalResult)
         instance_ER_List.append(instance_ER)
 except KeyError:
     exam_exist = 0
 
+# =================== 读取考试记录文件，判断文件是否存在并初始化考试奖励值 ===================
+data_string = time.strftime('%Y-%m-%d', time.localtime(time.time()))
+try:
+    with open(FilePath, mode='r', encoding='utf-8') as ExamRecFile:
+        try:
+            ExamRecJson = json.loads(ExamRecFile.read().strip())
+            AwardCount = int(ExamRecJson['AwardCount'])
+        except json.JSONDecodeError:
+            ExamRecJson = {}
+            AwardCount = 0
+        except KeyError:
+            AwardCount = 0
+
+except FileNotFoundError:
+    ExamRecJson = {}
+    AwardCount = 0
+
+# =================== 下面是用来区分两个不同表单按钮提交的js ===================
+Form_JS = 'function NewExam(){\
+    document.name.action="exam.py";\
+    document.name.submit();\
+}\
+function WrongCorrect(){\
+    document.name.action="WrongCorrect.py";\
+    document.name.submit();\
+}'
+
+submit_string = yate.subbutton('再来一次测验', 'NewExam()', style='sub') #初始化提交按钮标签代码
+
 # =================== 下面是输出考试成绩页面 ===================
 print(yate.start_response())
-print(yate.include_header('欢迎来到韦浩宇的算术运算训练营！'))
+print(yate.include_header_js('欢迎来到韦浩宇的算术运算训练营！', Form_JS))
 
 if(exam_exist):
-    # =================== 读考试记录文件，判断文件是否存在并初始化考试奖励值 ===================
-    data_string = time.strftime('%Y-%m-%d', time.localtime(time.time()))
-    try:
-        with open(FilePath, mode='r', encoding='utf-8') as ExamRecFile:
-            try:
-                ExamRecJson = json.loads(ExamRecFile.read().strip())
-                AwardCount = int(ExamRecJson['AwardCount'])
-            except json.JSONDecodeError:
-                ExamRecJson = {}
-                AwardCount = 0
-            except KeyError:
-                AwardCount = 0
-
-    except FileNotFoundError:
-        ExamRecJson = {}
-        AwardCount = 0
-
     # =================== 逐题判断答题结果是否正确并输出答题结果 ===================
     for AnInstance in instance_ER_List:
         if(AnInstance.IfRight()):
@@ -101,11 +116,13 @@ if(exam_exist):
         if(ExamTimeActSeconds <= ExamTimeInitSeconds):
             AwardCount += 1
             ThisExamAward += 1
+            AwardShowString = '这次考试在规定时间内全对，恭喜您获得奖励'
         if(ExamTimeActSeconds <= ExamTimeInitSeconds // 2):
             AwardCount += 1
             ThisExamAward += 1
+            AwardShowString = '这次考试全对且完成时间不到规定时间一半，恭喜您获得奖励'
         if(ThisExamAward):
-            print(yate.header('<span style="color:#FF6600; font-size:120%%;">这次考试在规定时间内全对，恭喜您获得奖励&nbsp;&nbsp;<img src="/images/奖励.png"> × %d</span>' % ThisExamAward, 2))
+            print(yate.header('<span style="color:#FF6600; font-size:120%%;">%s&nbsp;&nbsp;<img src="/images/奖励.png"> × %d</span>' % (AwardShowString, ThisExamAward), 2))
 
     # ====== 列出所有考试题和回答结果以及判分情况 ======
     # for AnInstance in sorted(instance_ER_List, key= lambda x:int(x.ExpNum)):
@@ -131,11 +148,12 @@ if(exam_exist):
             ExamRecJson['ExamRecords'][data_string][str(ExamNum)] = {'WrongRecords': []}
         except KeyError:
             ExamNum = 1
-            ExamRecJson['ExamRecords'] = {data_string: {str(ExamNum):{'WrongRecords': []}}}
+            ExamRecJson['ExamRecords'] = {data_string: {str(ExamNum): {'WrongRecords': []}}}
 
-        if(len(WrongExpList) != 0):
+        if(WrongExpList):
             for Arecord in WrongExpList:
                 ExamRecJson['ExamRecords'][data_string][str(ExamNum)]['WrongRecords'].append((Arecord.ExpNum, Arecord.ArithmeticExpress, Arecord.ShowCalResult()))  #保存题号、算术表达式、输入结果
+
         ExamRecJson['ExamRecords'][data_string][str(ExamNum)]['ExamCount'] = int(form_data['ExamCount'].value)    #保存测验题目数
         ExamRecJson['ExamRecords'][data_string][str(ExamNum)]['ExamTime'] = (ExamTimeInitSeconds, ExamTimeActSeconds)   #保存考试规定用时和实际用时
         ExamRecJson['AwardCount'] = AwardCount      #保存奖励数量
@@ -144,18 +162,30 @@ if(exam_exist):
 
 else:
     print(yate.header('本次考试出问题啦，请点击&nbsp;' + yate.a_link('/index.html', '返回首页') + '&nbsp;重新生成试题', 1))
-    AwardCount = 0
 
 # =================== 下面是将算术题参数回传 ===================
-print(yate.start_form('exam.py'))
+print(yate.start_form('exam.py', 'name'))
 print(yate.input_hidden('numlist', form_data['numlist'].value))
 for Operator in [x.value for x in form_data['operator']]:
     print(yate.input_hidden('operator', Operator))
 print(yate.input_hidden('level', form_data['level'].value))
 print(yate.input_hidden('NewSetting', form_data['NewSetting'].value))
+#下面是将错题传到表单里
+WrongQuestionJson = {}
+if(WrongExpList):
+    for AwrongQuestion in WrongExpList:
+        WrongQuestionJson[AwrongQuestion.ExpNum] = (AwrongQuestion.ArithmeticExpress, AwrongQuestion.FactResult)   #{题号：（表达式，正确答案）}
+    print(yate.input_hidden('WrongQuestions'))   #把错题数据做为一个JSON格式字符串传到表单
+    print('<script>var jsonString = JSON.stringify(%s); document.name.WrongQuestions.value=jsonString;</script>' % json.dumps(WrongQuestionJson))  #将json对象转换为JSON字符串
+    submit_string = yate.subbutton('错题更正', 'WrongCorrect()', style='sub') + '&nbsp;' * 4 + submit_string    # 如果有错题，就出“错题更正”按钮
 
-print(yate.end_form('再来一次测验', 'sub'))
+#下面是将最新奖励值传到表单
+print(yate.input_hidden('AwardCount', AwardCount))
+print(yate.para(''))
+print(submit_string)
+print('</form>')
 
+# print(yate.end_form('再来一次测验', 'sub'))
 # =====================设置页脚的链接（保持固定顺序）=====================
 FooterString = OrderedDict()
 FooterString['返回首页'] = '/index.html'

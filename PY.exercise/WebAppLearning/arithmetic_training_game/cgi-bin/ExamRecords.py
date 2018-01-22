@@ -3,7 +3,7 @@
 
 import yate,json,cgi,sys
 from collections import OrderedDict
-sys.path.append('F:/memory/python-learning/learning2017/LearnModule/')
+sys.path.append('/Users/flyingauraMac/PycharmProjects/PythonLearning/LearnModule')
 import cal_time
 
 RecordFilePath = 'data/ExamRecords.json'   #指定测验历史记录文件路径
@@ -18,9 +18,9 @@ try:
         jsonstring = json.loads(readfile.read().strip())
         ExamRecDict = OrderedDict()
         for Arec in sorted(jsonstring['ExamRecords'].keys(), reverse = True):
-            for AnExam in jsonstring[Arec]:
-                WrongCount = WrongCount + len(jsonstring[Arec][AnExam]['WrongRecords'])
-            ExamRecDict[Arec] = Arec + '(%d | %d)' %(len(jsonstring[Arec]), WrongCount)
+            for AnExam in jsonstring['ExamRecords'][Arec]:
+                WrongCount = WrongCount + len(jsonstring['ExamRecords'][Arec][AnExam]['WrongRecords'])
+            ExamRecDict[Arec] = Arec + '(%d | %d)' % (len(jsonstring['ExamRecords'][Arec]), WrongCount)
 
     print('<div id="topfixed">')
     print(yate.header('韦浩宇的算术训练营 -- 测验回顾', 1))
@@ -72,12 +72,16 @@ try:
 except FileNotFoundError:
     print(yate.img_tag('/images/miao1.jpg', title= '抱歉，目前没有测验记录！', align='center'))
     print(yate.header('目前没有测验记录！点击' + yate.a_link('expresssion_set.py', '开始一次测验吧'), 1))
+    # print('<script>alert(\'%s\')</script>' % 'FileNotFoundError')
 except json.JSONDecodeError:
     print(yate.img_tag('/images/miao1.jpg', title='抱歉，暂时无法读取测验记录！', align='center'))
     print(yate.header('暂时无法读取测验记录！点击' + yate.a_link('expresssion_set.py', '开始一次测验吧'), 1))
+    # print('<script>alert(\'%s\')</script>' % 'JSONDecodeError')
 except KeyError:
     print(yate.img_tag('/images/miao1.jpg', title='抱歉，暂时无法读取测验记录！', align='center'))
     print(yate.header('暂时无法读取测验记录！点击' + yate.a_link('expresssion_set.py', '开始一次测验吧'), 1))
+    # print('<script>alert(\'%s:%s\')</script>' % ('KeyError','123'))
+
 
 # =====================设置页脚的链接（保持固定顺序）=====================
 FooterString = OrderedDict()
