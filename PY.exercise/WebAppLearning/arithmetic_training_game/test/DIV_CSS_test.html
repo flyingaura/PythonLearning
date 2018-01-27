@@ -15,6 +15,29 @@
              document.formname.name.options[selected.selectedIndex].submit();
             }
         }
+        function addone(num) {
+            document.getnum.subtraction.disabled=false;
+            var MaxNum=parseInt(parseInt(num)/10);
+            var NowNum=parseInt(document.getnum.NumValue.value);
+            if(NowNum<MaxNum){
+                NowNum+=1;
+                document.getnum.NumValue.value=NowNum;
+            }
+            else{
+             document.getnum.add.disabled=true;
+            }
+        }
+        function subone() {
+            document.getnum.add.disabled=false;
+            var NowNum=parseInt(document.getnum.NumValue.value);
+            if(NowNum>0){
+                NowNum-=1;
+                document.getnum.NumValue.value=NowNum;
+            }
+            else{
+                document.getnum.subtraction.disabled=true;
+            }
+        }
     </script>
     <style>
         .div1{
@@ -37,9 +60,39 @@
             width:90px;
             height:36px;
         }
+        .buttonCS{
+            width:32px;
+            height:32px;
+            background-color: lightgreen;
+            font-size: 18px;
+            color:black;
+            text-align: center;
+            border: none;
+        }
+        .buttonCS:disabled{
+            width:32px;
+            height:32px;
+            background-color: darkgray;
+            font-size: 18px;
+            color:white;
+            text-align: center;
+            border: none;
+        }
+        .input_text{
+            width:120px;
+            height:28px;
+            /*border: 1px, , aquamarine;*/
+        }
     </style>
 </head>
 <body>
+<form name="getnum" action="" method="post">
+    <input type="button" value="-" name="subtraction" onclick="subone()" class="buttonCS">
+    <input type="text" name="NumValue" value="0" class="input_control">
+    <input type="button" value="+" name="add" onclick="addone('45')" class="buttonCS">
+    <input type="submit" value="确定" name="subAconfirm" class="sub">
+</form>
+<div id="test">123</div>
 <h2 class="div1">下面是对DIV的学习</h2>
 <form name="formname" action="" method="post">
     <select id="selectname" onchange="inputname('selectname','创建新用户')">

@@ -37,13 +37,13 @@ def end_form(submit_msg="Submit", style = None):
         style_string = ''
     return('<input type=submit value="' + submit_msg + '" ' + style_string + '></form>')
 
-def subbutton(subvalue, suburl , status = '', style = ''):
+def subbutton(subvalue, suburl, name= '', status = '', style = ''):
     if (style):
         style_string = 'class="' + style + '"'
     else:
         style_string = ''
 
-    return ('<input type="button" value="' + subvalue + '" onclick="' + suburl + '" ' + status + ' ' + style_string + '>')
+    return ('<input type="button" value="' + subvalue + '" name="' + name + '" onclick="' + suburl + '" ' + status + ' ' + style_string + '>')
 
 def radio_button(rb_name, rb_value):
     return('<input type="radio" name="' + rb_name +

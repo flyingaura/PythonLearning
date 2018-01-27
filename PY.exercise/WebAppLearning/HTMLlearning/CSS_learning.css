@@ -1,0 +1,28 @@
+body{
+    background-color: #888888;
+    font-family: 微软雅黑,宋体, Verdana, Geneva, Arial, sans-serif;
+    font-size: 15px;
+    color:#FF6666;
+}
+
+p a{
+    color:#AE02CC;
+    font-size:9px;
+}
+
+a{
+    font-size:150%;
+    color:burlywood;
+}
+#div1{
+    color:#ACA899;
+    background-color: #c8cccf;
+
+  }
+
+#div1 p{
+    color:#0022cc;
+    font-size:13px;
+    text-decoration: underline;
+}
+

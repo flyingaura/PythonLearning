@@ -1,0 +1,55 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8" content="text/html; charset=utf-8">
+    <link type="text/css" rel="stylesheet" href="../coach.css" />
+    <title>测试javascript方法</title>
+    <script>
+        function addone(minnum,maxnum) {
+            var Avalue = parseInt(document.formname.ExChange.value);
+            document.formname.ExChange.value = Avalue+1;
+            ExCase(minnum,maxnum);
+        }
+        function subone(minnum,maxnum) {
+            var Avalue = parseInt(document.formname.ExChange.value);
+            document.formname.ExChange.value = Avalue-1;
+            ExCase(minnum,maxnum);
+        }
+        function ExCase(minnum,maxnum) {
+            var nownum=parseInt(document.formname.ExChange.value);
+            var minValue = parseInt(parseInt(minnum)/10);
+            var maxValue=parseInt(parseInt(maxnum)/10);
+            if(nownum < minValue){
+                alert('输入的值太小啦！');
+                document.formname.substract.disabled=true;
+                document.formname.Exbutton.disabled=true;
+                document.formname.ExChange.value=minValue;
+            }else if(nownum > maxValue){
+                alert('输入的值太大啦！');
+                document.formname.add.disabled=true;
+                document.formname.Exbutton.disabled=false;
+                document.formname.ExChange.value=maxValue;
+            }else{
+                document.formname.add.disabled=false;
+                document.formname.substract.disabled=false;
+                document.formname.Exbutton.disabled=false;
+            }
+        }
+        function SubCase() {
+            var con1=confirm("确定要兑换"+document.formname.ExChange.value+"奖励值吗？");
+            if(con1===true){
+                document.formname.submit();
+            }
+        }
+    </script>
+</head>
+<body>
+<h2>测试一下</h2>
+<form name="formname" action="" method="post">
+    <input type="button" name="substract" value="-" onclick="subone('0','35')" disabled class="buttonCS">
+    <input type="text" name="ExChange" value="0" onchange="ExCase('0','35')" class="input_control">
+    <input type="button" name="add" value="+" onclick="addone('0','35')" class="buttonCS">
+    <input type="button" name="Exbutton" value="兑换" onclick="SubCase()" disabled class="AbuttonCS">
+</form>
+</body>
+</html>

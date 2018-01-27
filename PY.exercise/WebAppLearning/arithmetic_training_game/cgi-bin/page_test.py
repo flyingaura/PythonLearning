@@ -1,8 +1,10 @@
 #! /usr/local/bin/python3
 # -*- coding: utf-8 -*-
 
-import yate, cgi, json
+import yate, cgi, json, cgitb
+from collections import OrderedDict
 
+cgitb.enable()
 form_data = cgi.FieldStorage()
 score = 0    #初始化考试成绩
 RightNum = 0
@@ -10,24 +12,17 @@ RightNum = 0
 print(yate.start_response())
 print(yate.include_header('欢迎来到韦浩宇的算术运算训练营！'))
 
-print(yate.para('所用时间为%s秒' %(form_data['totaltime'].value)))
-instance_ER_List = []
-try:
-    exam_exist = 1
-    # testJson = '{"1": ["9 + 4", 13], "2": ["16 - 10", 6], "3": ["14 - 1", 13], "4": ["16 - 5", 11], "5": ["8 - 4", 4], "6": ["10 + 2", 12], "7": ["0 + 9 - 5", 4], "8": ["16 + 3", 19], "9": ["7 - 4", 3], "10": ["( 8 - ( 8 - 8 ) )", 8], "11": ["8 + 8", 16], "12": ["12 - 11 + 7", 8], "13": ["5 + 2", 7], "14": ["3 + ( 18 - 12 )", 9], "15": ["18 - 16", 2], "16": ["10 + 5 + 5", 20], "17": ["7 + ( 9 - 12 )", 4], "18": ["( 15 - 4 - 4 )", 7], "19": ["( 15 - ( 7 + 3 ) )", 5], "20": ["11 + 15 - 11", 15]}'
-    # ExpressList = json.loads(form_data['ExpressListJson'].value, encoding='utf-8')
-    # print(yate.para(form_data['ExamData'].value))
-    # print(yate.para(testJson))
-    for AnRecord in form_data['ExamData']:
-        Aninstance = json.loads(AnRecord.value, encoding='utf-8')
-        print(yate.para())
+print(yate.start_form('page_test.py'))
+print(yate.input_hidden('testlist', 'apple'))
+print(yate.input_hidden('testlist', 'banana'))
+print(yate.end_form('确定', 'sub'))
 
-    # ExpressList = json.loads(form_data['ExamData'].value)
-    # for AnExp in ExpressList:
-    #     print(yate.para(str(ExpressList[AnExp])))
+try:
+    for Afruit in form_data['testlist']:
+        print(yate.header('这是一个%s' % Afruit.value, 2))
 
 except KeyError:
-    exam_exist = 0
+    print('<script>alert(\'%s\')</script>' % ('发生错误，没有获取到任何一个水果！---->'))
 
 # =====================设置页脚的链接（保持固定顺序）=====================
 FooterString = OrderedDict()

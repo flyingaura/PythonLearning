@@ -56,21 +56,20 @@ except KeyError:
     exam_exist = 0
 
 # =================== 读取考试记录文件，判断文件是否存在并初始化考试奖励值 ===================
-data_string = time.strftime('%Y-%m-%d', time.localtime(time.time()))
 try:
     with open(FilePath, mode='r', encoding='utf-8') as ExamRecFile:
         try:
             ExamRecJson = json.loads(ExamRecFile.read().strip())
-            AwardCount = int(ExamRecJson['AwardCount'])
+            AwardCount = [int(x) for x in ExamRecJson['AwardCount']]
         except json.JSONDecodeError:
             ExamRecJson = {}
-            AwardCount = 0
+            AwardCount = [0,0]
         except KeyError:
-            AwardCount = 0
+            AwardCount = [0,0]
 
 except FileNotFoundError:
     ExamRecJson = {}
-    AwardCount = 0
+    AwardCount = [0,0]
 
 # =================== 下面是用来区分两个不同表单按钮提交的js ===================
 Form_JS = 'function NewExam(){\
@@ -114,11 +113,11 @@ if(exam_exist):
     if(RightNum == len(instance_ER_List) and int(form_data['numlist'].value) >= 40 and len(form_data['operator']) >= 2 and int(form_data['level'].value) >= 3):
         ThisExamAward = 0
         if(ExamTimeActSeconds <= ExamTimeInitSeconds):
-            AwardCount += 1
+            AwardCount[0] += 1
             ThisExamAward += 1
             AwardShowString = '这次考试在规定时间内全对，恭喜您获得奖励'
         if(ExamTimeActSeconds <= ExamTimeInitSeconds // 2):
-            AwardCount += 1
+            AwardCount[0] += 1
             ThisExamAward += 1
             AwardShowString = '这次考试全对且完成时间不到规定时间一半，恭喜您获得奖励'
         if(ThisExamAward):
@@ -142,6 +141,7 @@ if(exam_exist):
                       %(RightNum, len(instance_ER_List) - RightNum, score), 4))
 
 # =================== 下面是将错题保存到文件模块 ===================
+    data_string = time.strftime('%Y-%m-%d', time.localtime(time.time()))
     with open(FilePath, mode = 'w', encoding='utf-8') as ExamRecFile:
         try:
             ExamNum = sorted([int(x) for x in ExamRecJson['ExamRecords'][data_string].keys()])[-1] + 1
@@ -156,7 +156,7 @@ if(exam_exist):
 
         ExamRecJson['ExamRecords'][data_string][str(ExamNum)]['ExamCount'] = int(form_data['ExamCount'].value)    #保存测验题目数
         ExamRecJson['ExamRecords'][data_string][str(ExamNum)]['ExamTime'] = (ExamTimeInitSeconds, ExamTimeActSeconds)   #保存考试规定用时和实际用时
-        ExamRecJson['AwardCount'] = AwardCount      #保存奖励数量
+        ExamRecJson['AwardCount'] = AwardCount     #保存奖励数量
         record_string = json.dumps(ExamRecJson)
         ExamRecFile.write(record_string)
 
@@ -174,13 +174,14 @@ print(yate.input_hidden('NewSetting', form_data['NewSetting'].value))
 WrongQuestionJson = {}
 if(WrongExpList):
     for AwrongQuestion in WrongExpList:
-        WrongQuestionJson[AwrongQuestion.ExpNum] = (AwrongQuestion.ArithmeticExpress, AwrongQuestion.FactResult)   #{题号：（表达式，正确答案）}
+        WrongQuestionJson[AwrongQuestion.ExpNum] = (AwrongQuestion.ArithmeticExpress, AwrongQuestion.FactResult, 0)   #{题号：（表达式，正确答案, 错误标记）} --错误标记：错题修订成功后，该标记变成1
     print(yate.input_hidden('WrongQuestions'))   #把错题数据做为一个JSON格式字符串传到表单
     print('<script>var jsonString = JSON.stringify(%s); document.name.WrongQuestions.value=jsonString;</script>' % json.dumps(WrongQuestionJson))  #将json对象转换为JSON字符串
     submit_string = yate.subbutton('错题更正', 'WrongCorrect()', style='sub') + '&nbsp;' * 4 + submit_string    # 如果有错题，就出“错题更正”按钮
 
 #下面是将最新奖励值传到表单
-print(yate.input_hidden('AwardCount', AwardCount))
+print(yate.input_hidden('AwardCount', AwardCount[0]))
+print(yate.input_hidden('AwardCount', AwardCount[1]))
 print(yate.para(''))
 print(submit_string)
 print('</form>')
@@ -190,7 +191,8 @@ print('</form>')
 FooterString = OrderedDict()
 FooterString['返回首页'] = '/index.html'
 FooterString['考题回顾'] = 'ExamRecords.py'
-AwardString = yate.img_tag('/images/奖励.png') + '<span style="font-weight:bolder;color:#FF6666;"> × %d</span>' %(AwardCount)\
+AwardString = yate.img_tag('/images/奖励.png') + '<span style="font-weight:bolder;color:#FF6666;"> × %d</span> ' % (AwardCount[0])\
+              + ' + ' + yate.img_tag('/images/星.png') + '<span style="font-weight:bolder;color:#FF6666;"> × %d</span> ' % (AwardCount[1])\
               + '&nbsp;&nbsp;<span style="font-weight:bolder;color:#FF6666;">兑换奖励</span>'
 FooterString[AwardString] = 'AwardTable.py'
 print(yate.include_footer(FooterString))

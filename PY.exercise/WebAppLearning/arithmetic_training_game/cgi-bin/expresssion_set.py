@@ -48,14 +48,14 @@ except FileNotFoundError:
 try:
     with open('data/ExamRecords.json', mode = 'r', encoding= 'utf-8') as settingfile:
         try:
-            AwardCount = int(json.loads(settingfile.read().strip())['AwardCount'])
+            AwardCount = [int(x) for x in json.loads(settingfile.read().strip())['AwardCount']]
         except json.decoder.JSONDecodeError:
-            AwardCount = 0
+            AwardCount = [0, 0]
         except KeyError:
-            AwardCount = 0
+            AwardCount = [0, 0]
 
 except FileNotFoundError:
-    AwardCount = 0
+    AwardCount = [0, 0]
 
 #==================设置一段JS代码用来区分同一个表单的两个不同提交指向=================
 
@@ -101,7 +101,8 @@ FooterString = OrderedDict()
 FooterString['返回首页'] = '/index.html'
 FooterString['错题回顾'] = 'WrongRecord.py'
 FooterString['测验回顾'] = 'ExamRecords.py'
-AwardString = yate.img_tag('/images/奖励.png') + '<span style="font-weight:bolder;color:#FF6666;"> × %d</span>' %(AwardCount)\
+AwardString = yate.img_tag('/images/奖励.png') + '<span style="font-weight:bolder;color:#FF6666;"> × %d</span> ' % (AwardCount[0])\
+              + ' + ' + yate.img_tag('/images/星.png') + '<span style="font-weight:bolder;color:#FF6666;"> × %d</span> ' % (AwardCount[1])\
               + '&nbsp;&nbsp;<span style="font-weight:bolder;color:#FF6666;">兑换奖励</span>'
 FooterString[AwardString] = 'AwardTable.py'
 print(yate.include_footer(FooterString))
