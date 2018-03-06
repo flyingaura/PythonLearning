@@ -1,0 +1,131 @@
+<!DOCTYPE html>
+<html lang="cn">
+<head>
+    <meta http-equiv="Content-Type" content="text/html; charset=utf-8">
+    <link type="text/css" rel="stylesheet" href="CSS_WebSite_1.css">
+    <title>学习设计一个常规的网站布局</title>
+    <script type="text/javascript">
+        //加入首页的JS代码
+        function SetHome(obj,homepageURL) {
+            try{
+                obj.body.style.behavior='url(#default#homepage)';
+                obj.setHomePage(homepageURL);
+            }catch(e) {
+               if(window.netscape){
+                    try{
+                        netscape.security.PrivilegeManager.enablePrivilege("UniversalXPConnect");
+                    }catch(e){
+                        alert("抱歉，此操作被浏览器拒绝！\n\n请在浏览器地址栏输入“about:config”并回车然后将[signed.applets.codebase_principal_support]设置为'true'");
+                        }
+                    }else{
+                        alert("抱歉，您所使用的浏览器无法完成此操作。\n\n您需要手动将【"+homepageURL+"】设置为首页。");
+                    }
+                }
+            }
+        //加入收藏的JS代码
+        function AddFavorite(pageURL,title) {
+            try {
+                window.external.addFavorite(pageURL, title);
+            }catch (e) {
+                try {
+                    window.sidebar.addPanel(title, pageURL, "");
+                }catch (e) {
+                    alert("抱歉，您所使用的浏览器无法完成此操作。\n\n加入收藏失败，请使用Ctrl+D进行添加");
+                }
+            }}
+    </script>
+</head>
+<body>
+<div class="header_logo">
+    <a href="#" class="header_logo_home"><div class="logo_link" title="编程学习"></div>编程学习之家</a>
+    <table>
+        <tr>
+            <td><a onclick="SetHome(this,window.location)" href="javascript:void(0)" title="设为首页">设为首页</a></td>
+            <td><a onclick="AddFavorite(window.location,document.title)" href="javascript:void(0)" title="收藏网站">收藏网站</a></td>
+            <td style="border-right: none;"><a href="#">RSS订阅</a></td>
+        </tr>
+    </table>
+</div>
+<div class="clear"></div>
+<div class="header_menu">
+    <ul>
+        <li><a href="#" class="menu_css">HOME</a></li>
+        <li><a href="#" class="menu_css">PHOTOS</a></li>
+        <li><a href="#" class="menu_css">ABOUT</a></li>
+        <li><a href="#" class="menu_css">LINKS</a></li>
+        <li><a href="#" class="menu_css">CONTACT</a></li>
+    </ul>
+    <!--下面是一段控制菜单选中样式的JS　＝＝＝＝＝＝＝＝＝＝＝＝＝＝＝＝-->
+    <script type="text/javascript">
+        var tagsList = document.getElementsByClassName('menu_css');
+        for(var i=0;i< tagsList.length;i++){
+            tagsList[i].onclick=function() {
+                for (var k = 0; k < tagsList.length; k++) {
+                    // alert('k=' + k + '||' + tagsList[k].innerText);
+                    if (tagsList[k].getAttribute('style')) {
+                        tagsList[k].setAttribute('style', '');
+                        break;
+                    }
+                }
+                this.setAttribute('style', 'background-color: rgba(60,186,193,1);color: palegoldenrod;');
+            }
+    }
+    </script>
+    <!--＝＝＝＝＝＝＝＝＝＝＝＝＝＝＝＝＝＝＝＝＝＝＝＝＝＝＝＝＝＝＝＝＝＝-->
+</div>
+<div class="clear"></div>
+<div class="banner_1"></div>
+<div class="main_content">
+    <div class="content_left">
+        <div class="text_area">
+            <h1 class="tag_h1">CSS学习互动社区欢迎您！</h1>
+            <!--<hr class="line-style">-->
+            <p>我们是一群热爱页面前端技术并热衷于推广W3C标准的热心好友，如果您想学或者正在学DIV+CSS布局页面，加入我们！您会很快驯服并驾驭这匹烈马！</p>
+            <p>虽然我们的论坛正在起步，但是这里的每个人都很热爱页面前端技术并热衷于推广W3C标准在中国的运用，只要你有问题就可以问，一定会有人帮你解答！我们可能不是高手，但是我们都是很乐于帮助，乐于钻研。我们都很热心！</p>
+        </div>
+        <div class="text_area">
+            <h1 class="tag_h1">CSS学习互动社区欢迎您,跟KwooJan学习DIV+CSS只需2天,这是中国人发明的吗？显然这是的啊</h1>
+            <!--<hr class="line-style">-->
+            <p><img src="images/CSS_logo1.jpeg" alt="CSS LOGO">群上很多朋友在刚接触DIV+CSS的时候，很迷茫，不知道从何学起，看网上的教程吧，理论性的东西太多，越看越糊涂，再说时间上也不允许，也没有那个耐心，
+                其实KwooJan也不喜欢看这种视频教程，很枯燥，很乏味，即使耐着性子看完收获也不大，实用性不大，群上的一些朋友告诉我，他们学习DIV+CSS没有思路，
+                不知道怎么去学，如何去学，希望KwooJan能带着他们一步一步走，从今天开始我将写个教程，打算以例子为主，帮主大家更轻松的驾驭DIV+CSS。
+                好了，在这里我必须要给大家纠正一个错误，我们平时说的DIV+CSS其实是一种错误的说法，是中国人自己发明的，并不准确，不能够将所谓的页面布局思想说的很确切，其实应该说XHTML+CSS才对。</p>
+        </div>
+        <script type="text/javascript">
+            var text_h1_list=document.getElementsByClassName('tag_h1');
+            for(var n=0;n<text_h1_list.length;n++){
+                if(!text_h1_list[n].getAttribute('title')){
+                    text_h1_list[n].setAttribute('title',text_h1_list[n].innerText);
+                }
+            }
+        </script>
+    </div>
+    <div class = "content_right">
+        <div class="text_area">
+            <h1>加入我们！</h1>
+            <p style="text-indent: 0;margin-bottom: 5px;"><strong>CSS学习互动社区QQ群：</strong></p>
+            <table>
+                <tr>
+                    <td>1群：5505810</td>
+                    <td>2群：87951377</td>
+                </tr>
+                <tr>
+                    <td>3群：73513641</td>
+                    <td>4群：72263578</td>
+                </tr>
+            </table>
+            <p style="text-indent: 0;">希望有强烈进取精神和互助精神的朋友请加入！一块探讨一块交流一块学习！</p>
+            <p id="frame_text">群上很多朋友在刚接触DIV+CSS的时候，很迷茫，不知道从何学起，看网上的教程吧，理论性的东西太多，越看越糊涂，再说时间上也不允许，也没有那个耐心， 其实KwooJan也不喜欢看这种视频教程，
+                很枯燥，很乏味，即使耐着性子看完收获也不大，实用性不大，群上的一些朋友告诉我，他们学习DIV+CSS没有思路， 不知道怎么去学，如何去学，希望KwooJan能带着他们一步一步走，
+                从今天开始我将写个教程，打算以例子为主，帮主大家更轻松的驾驭DIV+CSS。 好了，在这里我必须要给大家纠正一个错误，我们平时说的DIV+CSS其实是一种错误的说法，
+                是中国人自己发明的，并不准确，不能够将所谓的页面布局思想说的很确切，其实应该说XHTML+CSS才对。</p>
+        </div>
+    </div>
+</div>
+<div class="clear"></div>
+<div class="web_footer">
+    <p>版权所有　&copy;噬影无霜工作室　盗版必究</p>
+    <p>联系方式：<a href="mailto:abc123@123.com">abc123@123.com</a>&nbsp;&nbsp;<a href="mailto:fdh445@123.com">fdh445@123.com</a></p>
+</div>
+</body>
+</html>

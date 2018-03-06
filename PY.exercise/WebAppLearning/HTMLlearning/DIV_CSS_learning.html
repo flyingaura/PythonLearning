@@ -4,8 +4,31 @@
     <meta http-equiv="Content-Type" content="text/html; charset=utf-8">
     <title>对于DIV+CSS的学习</title>
     <link type="text/css" rel="stylesheet" href="CSS_learning.css">
+    <style>
+        #div5{
+            width:300px;
+            margin:0 auto;
+            border: #999 5px solid;
+            background-color: antiquewhite;
+        }
+        #div5 p{
+            margin:5px 10px 5px 10px;
+            text-indent: 2em;
+            font-size:12px;
+            line-height: 25px;
+            color: #0000FF;
+        }
+    </style>
 </head>
 <body>
+<div id="div5">
+    <p>1.	制作一个宽度为300px，高度自适应，边框宽度为5像素且颜色为灰色(#999)的区域，id为div1；
+2.	在div1内部有两段文字，文字大小为12像素，这两段文字首行分别缩进两个文字；
+3.	CSS用内嵌方式；
+4.	暂不考虑页面对各种浏览器的兼容性，只在一种浏览器中实现上面效果就可以
+</p>
+    <p>CSS学习网,提倡资源共享“分享才能更快乐”，每个人在分享资源的时候，同时也获得了人气和尊重，你将会有更多的同行朋友，团结在你的周围，成为你的左膀右臂.</p>
+</div>
     <p>body的CSS对这里有效吗？</p>
     <div id="div1">
         <p>对div里的内容样式有效吗？</p>
@@ -16,7 +39,59 @@
     <p id="p1">在div1之外能生效吗？</br>不能生效</p>
     <p class="p1"><span >p之外的CSS能生效吗？</span></p>
 </div>
-<p class="p1">这个p的样式能生效吗？</p>
+<p class="p1">p中的class=p1这个p的样式能生效吗？</p>
 <p>原来的p样式是这样的 &nbsp;&nbsp;<a href="www.baidu.com" target="_blank">嵌套a的标签样式是这样的</a></p>
+<div class="div2">
+    <span>但是这时候的内联元素，虽然具有块状元素的特征，但是这两种有一点区别</span></div>
+<div class="div2">
+    <img src="../arithmetic_training_game/images/MyCat.jpg" alt="这是我家的一只猫" >
+</div>
+<div id="div3">
+    <p class="p1">但是这时候的内联元素，虽然具有块状元素的特征，但是这两种有一点区别</p>
+</div>
+<a class="div2">细心的同学会注意到，在IE6中红色方块距离浏览器的左边距并不是CSS代码中定义的20像素，而是40像素，如下图：</a>
+<div class="clear"></div>
+<div class="loggin">
+    <form name="logginform">
+        <div class="inputname">
+            <div class="prompt_text">用户名</div>
+            <input type="text" name="username" onfocus="if(this.value==='输入用户名'){this.value='';}"
+               onblur="if(this.value===''){this.value='输入用户名';}" class="input_area_1">
+        </div>
+        <div class="inputname">
+            <div class="prompt_text">密码</div>
+            <input type="password" name="passwd" onfocus="if(this.value==='输入密码'){this.value='';}"
+               onblur="if(this.value===''){this.value='输入密码';}" class="input_area_1">
+        </div>
+
+    </form>
+</div>
+
+<div class="bigframe">
+    <div title="红框" class="div2"></div>
+    <div title="蓝框" class="div3"></div>
+</div>
+<div class="clear"></div>
+<dl style="color: #0000FF">
+    <dt>这是一个什么标签“dt”</dt>
+    <ul>
+        <li>这是列表一1</li>
+        <li>这是列表二2</li>
+    </ul>
+    <dd>内容是什么样的？</dd>
+    <dl>
+        <ul>
+        <li>这是列表1</li>
+        <li>这是列表2</li>
+        </ul>
+        <dd>这回有什么？</dd>
+        <dd>看出什么不同了吗？</dd>
+    </dl>
+
+    <dd>发现什么好东西了?</dd>
+    <dd>也许很值得用呢？</dd>
+</dl>
 </body>
+
+
 </html>

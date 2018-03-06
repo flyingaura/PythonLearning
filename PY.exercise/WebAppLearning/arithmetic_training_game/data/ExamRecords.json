@@ -1,1 +1,1 @@
-{"ExamRecords": {"2018-01-25": {"1": {"WrongRecords": [[1, "61 + 12", "78"], [5, "36 + 22", "55"], [6, "85 + 8", "99"], [8, "76 + 19", "93"], [11, "19 + 77", "88"], [19, "51 + ( 86 - 64 )", "\u6ca1\u6709\u63d0\u4ea4\u7b54\u6848"]], "ExamCount": 20, "ExamTime": [600, 69]}}}, "AwardCount": [0, 1]}
+{"ExamRecords": {"2018-02-24": {"1": {"WrongRecords": [], "ExamCount": 20, "ExamTime": [600, 111]}, "2": {"WrongRecords": [], "ExamCount": 20, "ExamTime": [600, 80]}, "3": {"WrongRecords": [], "ExamCount": 20, "ExamTime": [600, 74]}}}, "AwardCount": [0, 1]}

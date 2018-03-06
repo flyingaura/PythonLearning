@@ -1,7 +1,8 @@
 # -*- coding: utf-8 -*-
 import random,numpy,math
 from string import Template
-import sys,msvcrt,json,time
+import sys,json,time
+# import msvcrt
 from collections import OrderedDict
 # sys.path.append('.\WebAppLearning')
 # from yate import yate
@@ -73,8 +74,46 @@ from collections import OrderedDict
 # print(sorted(test_dict.keys(), reverse=True))
 testdict = '{1:123}'
 # testjson = json.dumps(testdict)
-print('<span style="text-decoration:underline; color:#333333; font-size:150%%">韦浩宇</span>小朋友，'
-                      '本次考试你做对了<span style="color:#009966; font-size:150%%"> %d </span>道题，'
-                      '做错了 <span style="color:#FF0033; font-size:150%%"> %d </span> 道题，'
-                      '得分 <span style="color:#FF6600; font-size:150%%; text-decoration:underline"> %d </span> ，请继续努力哦！')
+js_string = 'function Awardconfirm(buttonid,valueid,AwardCountid){'\
+                'var con1 = confirm("确定兑换？");'\
+                'if(con1 === true){'\
+                    'var AwardCountJS = parseInt(document.getElementById(AwardCountid).innerText);'\
+                    'var AwardCostJS = parseInt(document.getElementById(valueid).innerText);'\
+                    'alert("恭喜你， "+document.getElementById(buttonid).innerHTML+" 兑换成功。剩余奖励值为："+(AwardCountJS-AwardCostJS));'\
+                    'document.formname.awardcost.value=AwardCostJS;'\
+                    'document.formname.submit();'\
+                '}}'\
+            'function addone(num) {'\
+                'document.getnum.subtraction.disabled=false;'\
+                'var MaxNum=parseInt(parseInt(num)/10);'\
+                'var NowNum=parseInt(document.getnum.NumValue.value);'\
+                'if(NowNum<MaxNum){'\
+                    'NowNum+=1;'\
+                    'document.getnum.NumValue.value=NowNum;'\
+                '}else{'\
+                 'document.getnum.add.disabled=true;'\
+            '}}'\
+            'function subone() {'\
+                'document.getnum.add.disabled=false;'\
+                'var NowNum=parseInt(document.getnum.NumValue.value);'\
+                'if(NowNum>0){'\
+                    'NowNum-=1;'\
+                    'document.getnum.NumValue.value=NowNum;'\
+                '}else{'\
+                    'document.getnum.subtraction.disabled=true;'\
+                '}}'\
+            'function LittleAwardConfirm(){'\
+                'var subValue=document.getnum.NumValue.value;'\
+                'var con1=confirm("确定要兑换 "+ subValue +" 个奖励值？");'\
+                'if(con1 === true){document.getnum.submit(); }}'\
 
+# print(js_string)
+
+print(list(range(1,11)))
+
+icount = 1
+
+for i in range(10):
+    icount *= 4
+
+print(icount)

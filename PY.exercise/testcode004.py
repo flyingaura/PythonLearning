@@ -49,32 +49,44 @@ from LearnModule import StringSplit,String_func
 #         print('good')
 #     else:
 #         print('bad')
-class aaa(object):
-    def __init__(self,i,j):
-        self.i = i
-        self.j = j
+# class aaa(object):
+#     def __init__(self,i,j):
+#         self.i = i
+#         self.j = j
+#
+#     def __str__(self):
+#         return '(%d,%d)' %(self.i, self.j)
+#
+# class bbb(object):
+#
+#     def __init__(self,i,j):
+#         self.i = i * i
+#         self.j = j * j
+#
+#     def __str__(self):
+#         return '[%d,%d]' %(self.i, self.j)
+#
+# alist = []
+# blist = []
+# cdict = {}
+# for i in 'abcde':
+#     cdict[i] = ord(i)
+#     # for j in range(3):
+#         # alist.append(aaa(i,j))
+#         # blist.append(bbb(i,j))
+#
+# print(cdict)
+# print(sorted(cdict.keys()))
 
-    def __str__(self):
-        return '(%d,%d)' %(self.i, self.j)
+# print({x:0 for x in 'ABCD'})
+# Adict = {'A':10, 'B':5, 'C':12, 'D':7}
+#
+# print(sorted(Adict.items(), key=lambda d:d[1],reverse=True)[0][0])
 
-class bbb(object):
+def test(Astring = ''):
+    return 'this is a test program ----> %s ' %Astring
 
-    def __init__(self,i,j):
-        self.i = i * i
-        self.j = j * j
+a = '123aaa'
+print(eval('test(a12)'))
 
-    def __str__(self):
-        return '[%d,%d]' %(self.i, self.j)
-
-alist = []
-blist = []
-cdict = {}
-for i in 'abcde':
-    cdict[i] = ord(i)
-    # for j in range(3):
-        # alist.append(aaa(i,j))
-        # blist.append(bbb(i,j))
-
-print(cdict)
-print(sorted(cdict.keys()))
 

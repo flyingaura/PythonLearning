@@ -1,0 +1,474 @@
+body, div, ul, li, a, p, h6, span, img, hr,table, tr ,td, form{
+    margin:0;
+    padding:0;
+}
+
+html, body {
+    height: 100%;
+    font-family: 微软雅黑,宋体, Verdana, Geneva, Arial, sans-serif;
+}
+
+.clear{
+    clear:both;
+}
+
+.container{
+    min-height:100%;
+    height:auto !important;
+    /*height:100%;!*ie6不识别min-height,如上述处理*!*/
+    position:relative;
+}
+
+.web_header{
+    height:50px;
+    width:100%;
+    background-color: #FF7073;
+}
+
+.web_header h2{
+    color: white;
+    font-size:18px;
+    line-height: 40px;
+    margin:5px 0 0 15px;
+    float:left;
+}
+
+.web_header_h6{
+    padding: 22px 0 0 20px;
+    color:white;
+    font-size: 14px;
+    display: block;
+    float:left;
+}
+
+.Special_font{
+    font-family: "Hiragino Sans GB","Helvetica Neue", Helvetica, Arial, "PingFang SC",  "Heiti SC", "Microsoft YaHei", "WenQuanYi Micro Hei", sans-serif;
+    color:gold;
+    font-size: 28px;
+}
+
+.web_header img{
+    height:50px;
+    width:auto;
+    float:right;
+
+}
+/*h2 {*/
+    /*color: #FF6666;*/
+    /*font-size: 15px;*/
+    /*margin:10px 0 0 10px;*/
+/*}*/
+.header_navmenu{
+    border: gold solid 1px;
+}
+.Nav_bar{
+    margin:0 auto;
+    height:40px;
+    width: 100%;
+    background-color: #DDDDDD;
+}
+.Nav_bar ul{
+    height: 40px;
+    width: 100%;
+}
+.Nav_bar ul li {
+    list-style: none;
+    float:left;
+}
+.top_nav_bar{
+    /*margin:0 0 0 20px;*/
+    padding: 0 15px 0 15px;
+    width: fit-content;
+    height: 40px;
+    line-height: 40px;
+    text-align: center;
+    color: black;
+    font-size:16px;
+    text-decoration: none;
+    display:block;
+    float:left;
+    overflow: hidden;
+}
+
+.icon {
+    margin:0 8px 0 0;
+    position: relative;
+    width: 32px;
+    height:40px;
+    float:left;
+    overflow: hidden;
+}
+.Nav_bar ul li a span{
+    padding:0 0 0 0;
+    line-height: 40px;
+    text-align: center;
+    color: black;
+    font-size:16px;
+}
+
+.top_nav_bar:hover, .menu_selected{
+    position: relative;
+    top:-5px;
+    background-color: #009966;
+    color: white;
+    height: 50px;
+    line-height: 50px;
+    text-decoration: none;
+    display: block;
+    float:top;
+}
+
+.top_nav_bar:hover .icon, .icon_selected{
+    height: 50px;
+    left:-52px;
+    border-right:0 solid transparent;
+    -webkit-filter:drop-shadow(52px 0 0px white);
+    filter:drop-shadow(52px 0 0px white);
+}
+
+.column_path{
+    height:30px;
+    width:auto;
+    line-height: 30px;
+    /*text-align: center;*/
+    margin:5px 0 5px 20px;
+    font-size: 12px;
+    position: absolute;
+}
+
+.column_path a {
+    text-decoration: none;
+    color: #333333;
+    line-height: 30px;
+}
+
+.column_path a:hover{
+    text-decoration: underline;
+    color: lightseagreen;
+}
+
+.column_path img{
+    height:16px;
+    width:auto;
+    line-height: 30px;
+    position: relative;
+    top:3px;
+    margin: 0 3px 0 0;
+
+}
+
+/*.Nav_bar ul li a:hover span{*/
+    /*color:white;*/
+/*}*/
+
+.NavText{
+    margin: 10px 15px 0 15px;
+}
+
+.users_show_list{
+    margin: 40px 0 0 0;
+    /*position:absolute;*/
+    background-color: #F5F5F5;
+    /*height: 100%;*/
+    min-height: 40px;
+    width:100%;
+    overflow: hidden;
+}
+
+.Special_font_2{
+    margin: 0 0 0 15px;
+    background:url("images/rank_list.png") no-repeat left;
+    background-size: 24px;
+    height:40px;
+    width:auto;
+    line-height: 40px;
+    font-size:18px;
+    color: firebrick;
+}
+
+.user_area{
+    margin:0 0 10px 10px;
+    width: 600px;
+    height: 360px;
+    background-color:rgba(255,102,102,0.3);
+    /*background-color: #ACA899;*/
+    /*filter:alpha(opacity=50);*/
+    /*opacity: 50;*/
+    overflow: hidden;
+    float:left;
+}
+
+.head_img{
+    margin:5px 5px 5px 5px;
+    background-color: rgba(245,245,245,0.5);
+    width: 240px;
+    height:300px;
+    border: solid 2px #FF6666;
+    overflow: hidden;
+    float:left;
+}
+
+.head_portrait_img, .footer_text{
+    position: relative;
+	top: 50%;
+	left: 50%;
+	-webkit-transform: translate(-50%, -50%);
+	-moz-transform: translate(-50%, -50%);
+	-ms-transform: translate(-50%, -50%);
+	-o-transform: translate(-50%, -50%);
+	transform: translate(-50%, -50%);
+    display: block;
+}
+
+.user_property_table{
+    display: block;
+    margin:5px 0 0 5px;
+    height:250px;
+    width:330px;
+    overflow: hidden;
+    float: left;
+}
+
+.username{
+    height: 40px;
+    width: 100%;
+    /*line-height:50px;*/
+    font-size: 20px;
+    color: #333333;
+    font-weight: bolder;
+    vertical-align: top;
+}
+
+.normal_td, .normal_td_text{
+    height: 45px;
+    width: 100%;
+    line-height: 45px;
+    font-size:16px;
+}
+
+.normal_td{
+    color: dimgray;
+}
+
+.normal_td_text{
+    color: #333333;
+}
+
+.exer_level{
+    height: 30px;
+    width: 100%;
+    margin:0 0 0 3px;
+    font-size: 24px;
+    line-height: 30px;
+    color: #FF0033;
+    font-weight: bolder;
+}
+
+.award_icon{
+    width:24px;
+    height:auto;
+    position: relative;
+    top:3px;
+}
+
+.award_value{
+    font-size: 18px;
+    font-weight: bolder;
+    color: #FF0033;
+}
+
+.Special_font_num{
+    font-size: 20px;
+    font-weight: bolder;
+    color: #FF0033;
+}
+
+.award_button, .bottom_button {
+    margin:0 0 0 5px;
+    width:80px;
+    height:30px;
+    line-height:30px;
+    font-size:14px;
+    color:white;
+    border:none;
+}
+
+.award_button{
+    background-color: #009966;
+}
+
+.bottom_button {
+    margin:24px 10px 0 5px;
+    background-color: dodgerblue;
+    display: block;
+    float:left;
+}
+
+.award_button:hover {
+    background-color: #336699;
+    color:white;
+}
+
+.bottom_button:hover{
+    background-color: #336699;
+    color:white;
+}
+
+.web_footer{
+    /*position:absolute;*/
+    /*bottom: 0;*/
+    height: 40px;
+    width: 100%;
+    /*margin-top:-40px;*/
+    background-color: #DDDDDD;
+    clear:both;
+}
+
+.footer_text{
+    font-size:14px;
+    line-height: 40px;
+    text-align: center;
+    color: black;
+}
+
+.footer_text a{
+    color: dimgray;
+    text-decoration: none;
+}
+
+.footer_text a:hover{
+    text-decoration: none;
+    color: #333333;
+}
+
+.footer_img{
+    position: relative;
+    top:3px;
+    margin:0 5px 0 8px;
+}
+
+#overlayer{
+    display: none;
+    position: absolute;
+    top: 90px;
+    left: 0;
+    width: 100%;
+    height: 91%;
+    background-color: black;
+    z-index:1001;
+    -moz-opacity: 0.8;
+    opacity:.80;
+    filter: alpha(opacity=88);
+}
+
+#user_register{
+    display: none;
+    position:absolute;
+    top:90px;
+    right:0;
+    width:550px;
+    height:320px;
+    background-color: white;
+    border: #009966 2px solid;
+    z-index: 1002;
+}
+
+.title_bar{
+    height: 30px;
+    /*width:100%;*/
+    background-color: lightseagreen;
+}
+
+.title_bar span{
+    position: relative;
+    display: block;
+    margin: 0 0 0 10px;
+    height: 30px;
+    line-height: 30px;
+    text-align: center;
+    font-size: 13px;
+    color: white;
+    float:left;
+}
+
+.close_button{
+    position: absolute;
+    top:0;
+    right:0;
+    width:24px;
+    height:24px;
+    line-height: 24px;
+    text-align: center;
+    font-size:16px;
+    background-color: #ACA899;
+    color:#444444;
+    cursor: pointer;
+}
+
+.close_button:hover{
+    background-color: firebrick;
+    color:white;
+}
+
+.register_content{
+    position: relative;
+    top:6%;
+    left:20%;
+}
+.register_content form ul li{
+    list-style: none;
+    margin:20px 0 20px 0;
+}
+
+.register_content form ul li span{
+    display: block;
+    color: #444444;
+    font-size: 14px;
+    width: 80px;
+    height: 36px;
+    line-height: 36px;
+    float:left;
+}
+
+.input_text{
+    width: 240px;
+    height: 30px;
+    font-size: 14px;
+    border: #009966 1px solid;
+}
+
+.sub_button_confirm, .sub_button_cancel{
+    position: absolute;
+    display: block;
+    width: 100px;
+    height: 36px;
+    line-height: 36px;
+    font-size: 14px;
+    text-align: center;
+    color: white;
+    top:115%;
+    cursor: pointer;
+}
+
+.sub_button_confirm{
+    background-color: #0099CC;
+}
+.sub_button_confirm:hover{
+    background-color: #FF6666;
+    border: #fcba7a 1px solid;
+}
+
+.sub_button_confirm:disabled{
+    background-color: #cccccc;
+    border: #eeeeee 1px solid;
+    cursor: default;
+}
+
+.sub_button_cancel{
+    background-color: #888888;
+}
+
+.sub_button_cancel:hover{
+    background-color: #444444;
+    border: #888888 1px solid;
+}

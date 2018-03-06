@@ -1,26 +1,89 @@
-<!DOCTYPE html>
-<html lang="en">
-<meta http-equiv="Content-Type" content="text/html; charset=utf-8">
-<head>
-    <title>第三个测试网页</title>
-
-</head>
-<body>
-<form>
-<select size="1">
-  <option value="volvo">Volvo</option>
-  <option value="saab">Saab</option>
-  <option value="opel">Opel</option>
-  <option value="audi">Audi</option>
-</select>
-
-<select name="vecoch" multiple>
-    <option value="baoma"><i><ins><del>宝马</del></ins></i></option>
-    <option value="benchi" dropzone="copy"><strong>奔驰</strong></option>
-    <option value="dazhong" selected="selected">大众</option>
-    <option value="buick" disabled><font style="font-size: 20;color: #443245;">别克</font></option>
-</select>
-</form>
-<p><a href="http://www.infcn.com.cn" target="_top">北京英富森软件股份有限公司</a> </p>
-</body>
+<html>
+<meta http-equiv="content-type" content="text/html charset=utf-8">
+<!--<meta http-equiv="refresh" content="5;url=http://news.sina.com.cn/china/xlxw/2017-12-23/doc-ifypvuqf2768753.shtml">-->
+    <head>
+        <title>点击文字弹出一个DIV层窗口代码</title>
+        <style>
+        html,body,div,a,p,span{
+            margin: 0;
+            padding: 0;
+        }
+        .clear{
+            clear:both;
+        }
+        .black_overlay{
+            display: none;
+            position: absolute;
+            top: 0;
+            left: 0;
+            width: 100%;
+            height: 100%;
+            background-color: black;
+            z-index:1001;
+            -moz-opacity: 0.8;
+            opacity:.80;
+            filter: alpha(opacity=88);
+        }
+        .white_content {
+            display: none;
+            position: absolute;
+            top: 25%;
+            left: 25%;
+            width: 50%;
+            height: 50%;
+            /*padding: 20px;*/
+            border: 1px solid #009966;
+            background-color: white;
+            z-index:1002;
+            overflow: auto;
+        }
+        .title_block{
+            height:40px;
+            width:100%;
+            background-color: #99CC99;
+            /*padding:0 20px 0 10px;*/
+            font-size: 13px;
+            line-height: 40px;
+            border-bottom: #888888 1px solid;
+            float:left;
+            overflow: hidden;
+        }
+        .close_button{
+            margin:2px 2px 0 0;
+            width:25px;
+            height:25px;
+            line-height: 25px;
+            text-align: center;
+            color:white;
+            font-size: 16px;
+            background-color: #888888;
+            float:right;
+        }
+        .close_button:hover{
+            background-color: red;
+        }
+        .close_button:active{
+            border:#FF6600 2px solid;
+        }
+        .content_block{
+            margin:5px 10px 5px 10px;
+            font-size: 16px;
+        }
+    </style>
+    <script>
+        function close_frame(id) {
+            document.getElementById(id).style.display="none";
+        }
+    </script>
+    </head>
+    <body>
+        <p>示例弹出层：<a href = "javascript:void(0)" onclick = "document.getElementById('light').style.display='block';document.getElementById('fade').style.display='block'">请点这里</a></p>
+        <div id="light" class="white_content">
+            <div class="title_block"><span style="margin-left:10px;">弹出窗口测试</span><div class="close_button" title="关闭" onclick="close_frame('light');close_frame('fade')">×</div></div>
+            <div class="clear"></div>
+            <div class="content_block">这是一个层窗口示例程序. <a href = "javascript:void(0)" onclick = "document.getElementById('light').style.display='none';document.getElementById('fade').style.display='none'">点这里关闭本窗口</a>
+            </div>
+        </div>
+        <div id="fade" class="black_overlay"></div>
+    </body>
 </html>

@@ -1,0 +1,221 @@
+html,body,div,ul,li,a,p, h1, hr,table,tr,td{
+    margin: 0;
+    padding:0;
+}
+
+html, body {
+    height:auto;
+    width: 100%;
+    font-family: 微软雅黑,宋体, Verdana, Geneva, Arial, sans-serif;
+}
+
+.clear{
+    clear: both;
+}
+
+.header_logo, .header_menu, .banner_1, .main_content, .web_footer{
+    width:100%;
+}
+
+.header_logo{
+    height:50px;
+    /*background-color: #009966;*/
+    border-bottom: #99CC99 solid 1px;
+    position: relative;
+}
+
+.header_logo_home{
+    line-height: 50px;
+    font-size: 16px;
+    font-weight: bolder;
+    margin:0 0 0 10px;
+    text-decoration: none;
+}
+
+.logo_link {
+    height: 40px;
+    width: 100px;
+    float:left;
+    margin:5px 0 5px 10px;
+    /*position: absolute;*/
+    /*top:5px;*/
+    /*bottom: 5px;*/
+    /*left:10px;*/
+    background: url('images/python学习.jpeg') no-repeat center;
+    background-size: 100px 40px;
+    overflow: hidden;
+}
+
+.header_logo table{
+    position: relative;
+    top: 13px;
+    right: 0;
+    color: #0099CC;
+    font-size: 14px;
+    float: right;
+}
+
+.header_logo table tr td{
+    padding:0 8px 0 8px;
+    border-right: #ACA899 1px solid;
+}
+
+.header_logo table tr td a{
+    display: block;
+    color: #0099CC;
+    font-size: 14px;
+    text-decoration: none;
+}
+
+.header_logo table tr td a:hover{
+    color: #0000FF;
+    text-decoration: underline;
+}
+
+.header_menu{
+    margin:0 auto;
+    height: 40px;
+    width: 100%;
+    background-color: #009966;
+    border-bottom: #3CBAC1 solid 1px;
+    overflow: hidden;
+}
+
+.header_menu ul{
+    height: 40px;
+    width: 100%;
+}
+
+.header_menu ul li{
+    list-style: none;
+}
+
+.header_menu ul li a{
+    height: 40px;
+    width:fit-content;
+    line-height: 40px;
+    padding:0 15px 0 15px;
+    color:white;
+    text-decoration: none;
+    float:left;
+    overflow: hidden;
+}
+
+.header_menu ul li a:hover{
+    background-color: #66CCFF;
+    color: palegoldenrod;
+}
+
+.header_menu ul li a:active{
+    color: #FF6699;
+}
+
+.banner_1{
+    height:150px;
+    width: 100%;
+    background: url('images/页眉图3.jpg') no-repeat center;
+    background-size: 100% 150px;
+}
+
+.web_footer{
+    margin: 10px 0 0 0;
+    padding: 5px 0;
+    text-align: center;
+    /*height: 50px;*/
+    width: 100%;
+    background-color: #99CCFF;
+    color: white;
+    font-size: 13px;
+}
+
+.web_footer p{
+    margin: 5px 5px 5px 5px;
+}
+
+.web_footer p a{
+    text-decoration: none;
+    color: white;
+}
+
+.web_footer p a:hover{
+    text-decoration: underline;
+    color: blue;
+}
+
+.main_content{
+    height:auto;
+    width:100%;
+    overflow: hidden;
+    background-color: #DBECF5;
+}
+
+.content_left{
+    height: auto;
+    width: 60%;
+    background-color: white;
+    float: left;
+}
+
+.content_right{
+    /*margin-bottom: -9999px;*/
+    /*height: 100%;*/
+    width:40%;
+    background-color: #DBECF5;
+    float: right;
+}
+
+.text_area{
+    margin-bottom: 10px;
+    height: auto;
+}
+
+.text_area h1 {
+    margin:0 10px 10px 10px;
+    height: 50px;
+    line-height: 50px;
+    font-size: 18px;
+    color: #0099CC;
+    border-bottom: #ACA899 1px dashed;
+    overflow: hidden;
+}
+
+.text_area p {
+    margin:0 10px 0 10px;
+    line-height: 20px;
+    text-indent: 2em;
+    font-size: 13px;
+}
+
+.text_area hr{
+    display: block;
+    margin: 0 10px 0 10px;
+    border: #ACA899 1px dashed;
+}
+
+.text_area p img{
+    width:200px;
+    height:auto;
+    margin: 0 10px 0 0;
+    float: left;
+
+}
+
+.text_area table{
+    margin: 0 10px 10px 10px;
+}
+
+.text_area table tr td{
+    padding: 0 20px 0 0;
+    font-size: 13px;
+    color: firebrick;
+    height: 20px;
+    line-height: 20px;
+}
+
+#frame_text{
+    margin-top: 10px;
+    padding:6px;
+    font-size: 13px;
+    border: #fcba7a 1px dashed;
+    /*background-color: #fcba7a;*/
+}

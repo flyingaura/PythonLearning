@@ -1,0 +1,213 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta http-equiv="Content-Type" content="text/html; charset=utf-8">
+    <link type="text/css" rel="stylesheet" href="Css_learning2.css">
+    <title>跟我学Div+CSS系列课程2</title>
+    <script type="text/javascript">
+        // 定义一个获取图片原始尺寸的JS函数
+        function getNaturalSize (DomElement) {
+             var natureSize = {};
+             if(DomElement.naturalWidth && DomElement.naturalHeight) {　//ie9以上兼容
+              natureSize.width = DomElement.naturalWidth;
+              natureSize.height = DomElement.naturalHeight;
+             } else {　　　//ie7和ie8兼容
+              var Nimg = new Image();
+              natureSize.width = DomElement.width;
+              natureSize.height = DomElement.height;
+              Nimg.src = DomElement.src;
+             }
+             return natureSize;
+        }
+        //定义一个打开弹出面板的方法
+        function open_layer(id) {
+            document.getElementById(id).style.display="block";
+        }
+        //定义一个关闭弹出面板的方法
+        function close_layer(id) {
+            document.getElementById(id).style.display="none";
+        }
+
+        //定义一个切换用户注册面板的方法
+        function get_register() {
+            if(document.getElementById('menu_a_8').getAttribute('class') === 'top_nav_bar'){
+                open_layer('overlayer');
+                open_layer('user_register');
+                document.getElementById('menu_a_8').setAttribute('class','top_nav_bar menu_selected');
+                document.getElementById('menu_icon_8').setAttribute('class','icon icon_selected');
+            }else{
+                close_layer('overlayer');
+                close_layer('user_register');
+                document.getElementById('menu_a_8').setAttribute('class','top_nav_bar');
+                document.getElementById('menu_icon_8').setAttribute('class','icon');
+            }
+
+        }
+    </script>
+</head>
+<body>
+<div class="container">
+<!--以下为页头-->
+<div class="web_header">
+    <!--<h2><span class="Special_font">&nbsp;数悦星空&nbsp;</span>算术训练营</h2>-->
+    <h2><span class="Special_font"><a href="#" style="text-decoration: none;color:gold;">&nbsp;数悦星空&nbsp;</a></span>算术训练营</h2>
+    <p class="web_header_h6">尽快的提升你的数学运算能力，尽情地享受数学的乐趣吧！</p>
+    <img src="images/页眉图3.jpg" title="学习使用">
+    <img src="images/页眉图4.jpeg" title="学习使用">
+</div>
+<hr class="header_navmenu">
+<div class="clear"></div>
+<!--<h2>学习做一个页面导航条</h2>-->
+<!--以下为页面上部导航栏-->
+<div class="Nav_bar">
+    <ul>
+        <li><a class="top_nav_bar" id="menu_a_1" href="#"><div class="icon" imgURL="images/首页.png"></div>首　页</a></li>
+        <li><a class="top_nav_bar" id="menu_a_2" href="http://www.baidu.com.cn"><div class="icon" imgURL="images/练习.png"></div>自由练习</a></li>
+        <li><a class="top_nav_bar" id="menu_a_3" href="http://www.sohu.com.cn"><div class="icon" imgURL="images/计时测验.png"></div>计时测验</a></li>
+        <li><a class="top_nav_bar" id="menu_a_4" href="http://www.tencent.com.cn"><div class="icon" imgURL="images/兑换奖励.png"></div>奖励兑换</a></li>
+        <li><a class="top_nav_bar" id="menu_a_5" href="http://www.163.com"><div class="icon" imgURL="images/错题回顾.png"></div>错题回顾</a></li>
+        <li><a class="top_nav_bar" id="menu_a_6" href="http://www.infcn.com.cn"><div class="icon" imgURL="images/个人空间.png"></div>个人空间（开发中...)</a></li>
+        <li style="float:right"><a class="top_nav_bar" id="menu_a_7" href="Div_Css_learning2.html"><div class="icon" imgURL="images/用户登录.png"></div>用户登录</a></li>
+        <li style="float:right"><a class="top_nav_bar" id="menu_a_8" href="javascript:void(0)" onclick="get_register()">
+            <div id="menu_icon_8" class="icon" imgURL="images/用户注册.png"></div>用户注册</a></li>
+
+    </ul>
+    <!--以下是一段用来控制导航栏背景图片和样式的JS代码-->
+    <script type="text/javascript">
+        for(var i=0;i<document.getElementsByClassName('icon').length;i++){
+                var elementI = document.getElementsByClassName('icon')[i];
+                if(!elementI.getAttribute('style')){
+                    elementI.setAttribute('style','background:url(' + elementI.getAttribute('imgURL') + ') no-repeat center;background-size: 24px auto;');
+                }
+            }
+    </script>
+</div>
+<div id="overlayer"></div>
+<!--下面是用户注册面板内容-->
+<div id="user_register">
+    <div class="title_bar"><span>用户注册</span><div class="close_button" title="关闭" onclick="get_register()">×</div></div>
+    <div class="register_content">
+        <form>
+            <ul>
+                <li><span>输入用户名</span><input type="text" name="input_username" class="input_text" value="请输入用户名..." onfocus="if(this.value==defaultValue){this.value='';this.style.color='gray';}" onblur="if(!value){value=defaultValue}"></li>
+                <li><span>输入密码</span><input type="password" name="input_passwd" class="input_text"></li>
+                <li><span>确认密码</span><input type="password" name="input_confirm_passwd" class="input_text" style="float:left;" onblur="var pw_confirm = document.getElementsByName('input_passwd')[0];if(value !== pw_confirm.value){document.getElementById('passwd_prompt').innerHTML='密码不一致';this.style.border='orangered 1px solid';document.getElementById('register_submit').disabled=true;}else{document.getElementById('passwd_prompt').innerHTML='';this.style.border='#009966 1px solid';document.getElementById('register_submit').disabled=false;}">
+                    <span style="color:red;margin-left:10px;" id="passwd_prompt"></span></li>
+            </ul>
+            <div class="clear"></div>
+            <input type="button" value="确定" class="sub_button_confirm" style="left:0" id="register_submit">
+            <input type="button" value="取消" class="sub_button_cancel" style="left:230px;" onclick="get_register()">
+        </form>
+    </div>
+</div>
+<!--下面是页面路径导航栏-->
+<div class="column_path"><a href="#"><img src="images/首页.png">首页</a></div>
+<!--<div class="clear"></div>-->
+<!--以下为首页显示内容区：用户显示列表-->
+<div class="users_show_list">
+    <div class="Special_font_2"><span style="padding-left:30px;">练习风云榜</span></div>
+    <!--第1个用户-->
+    <div class="user_area">
+    <div class="head_img" ><img src="images/head_portrait_cat1.jpeg" alt="" class="head_portrait_img"></div>
+    <table class="user_property_table">
+        <tr><td class="username">韦浩宇</td></tr>
+        <tr><td class="normal_td">学习等级：<span class="exer_level">5</span></td></tr>
+        <tr>
+            <td class="normal_td">奖励值：
+                <img src="images/奖励值.png" class="award_icon"><span class="award_value">&nbsp;×&nbsp;3</span>
+                &nbsp;&nbsp;<img src="images/星.png" class="award_icon"><span class="award_value">&nbsp;×&nbsp;6</span>
+                <input type="button" onclick="javascript:window.open('DIV_CSS_learning.html');" value="兑换奖励" class="award_button">
+            </td>
+        </tr>
+        <tr>
+            <td class="normal_td_text">已完成
+                <span class="Special_font_num">28</span>&nbsp;次测验，平均正确率&nbsp;<span class="Special_font_num">74%</span>&nbsp;
+            </td>
+        </tr>
+    </table>
+        <div class="bottom_button_div">
+            <input type="button" value="我要练习" onclick="javascript:window.open('DIV_CSS_learning.html');" class="bottom_button">
+            <input type="button" value="我要测验" onclick="javascript:window.open('DIV_CSS_learning.html');" class="bottom_button">
+        </div>
+    </div>
+    <!--第2个用户-->
+    <div class="user_area">
+    <div class="head_img"><img src="images/head_portrait_cat2.jpeg" alt="" class="head_portrait_img"></div>
+    <table class="user_property_table">
+        <tr><td class="username">段小飞</td></tr>
+        <tr><td class="normal_td">学习等级：<span class="exer_level">5</span></td></tr>
+        <tr>
+           <td class="normal_td">奖励值：
+                <img src="images/奖励值.png" class="award_icon"><span class="award_value">&nbsp;×&nbsp;4</span>
+                &nbsp;&nbsp;<img src="images/星.png" class="award_icon"><span class="award_value">&nbsp;×&nbsp;1</span>
+                <!--<input type="button" onclick="javascript:window.open('DIV_CSS_learning.html');" value="兑换奖励" class="award_button">-->
+            </td>
+        </tr>
+        <tr>
+            <td class="normal_td_text">已完成
+                <span class="Special_font_num">28</span>&nbsp;次测验，平均正确率&nbsp;<span class="Special_font_num">74%</span>&nbsp;
+            </td>
+        </tr>
+    </table>
+    </div>
+    <div class="clear"></div>
+    <!--第3个用户-->
+    <div class="user_area">
+    <div class="head_img"><img src="images/head_portrait_cat5.png" alt="" class="head_portrait_img"></div>
+    <table class="user_property_table">
+        <tr><td class="username">小星星</td></tr>
+        <tr><td class="normal_td">学习等级：<span class="exer_level">3</span></td></tr>
+        <tr>
+           <td class="normal_td">奖励值：
+                <img src="images/奖励值.png" class="award_icon"><span class="award_value">&nbsp;×&nbsp;2</span>
+                &nbsp;&nbsp;<img src="images/星.png" class="award_icon"><span class="award_value">&nbsp;×&nbsp;17</span>
+                <!--<input type="button" onclick="javascript:window.open('DIV_CSS_learning.html');" value="兑换奖励" class="award_button">-->
+            </td>
+        </tr>
+        <tr>
+            <td class="normal_td_text">已完成
+                <span class="Special_font_num">28</span>&nbsp;次测验，平均正确率&nbsp;<span class="Special_font_num">74%</span>&nbsp;
+            </td>
+        </tr>
+    </table>
+    </div>
+    <!--第4个用户-->
+    <div class="user_area">
+    <div class="head_img"><img src="images/head_portrait_cat4.jpeg" alt="" class="head_portrait_img"></div>
+    <table class="user_property_table">
+        <tr><td class="username">飞霜无华</td></tr>
+        <tr><td class="normal_td">学习等级：<span class="exer_level">99</span></td></tr>
+        <tr>
+           <td class="normal_td">奖励值：
+                <img src="images/奖励值.png" class="award_icon"><span class="award_value">&nbsp;×&nbsp;412</span>
+                &nbsp;&nbsp;<img src="images/星.png" class="award_icon"><span class="award_value">&nbsp;×&nbsp;811</span>
+                <!--<input type="button" onclick="javascript:window.open('DIV_CSS_learning.html');" value="兑换奖励" class="award_button">-->
+            </td>
+        </tr>
+        <tr>
+            <td class="normal_td_text">已完成
+                <span class="Special_font_num">2328</span>&nbsp;次测验，平均正确率&nbsp;<span class="Special_font_num">74.87%</span>&nbsp;
+            </td>
+        </tr>
+    </table>
+    </div>
+    <!--以下是一段用来控制用户头像背景图片和样式的JS代码-->
+    <script type="text/javascript">
+        for(var i=0;i<document.getElementsByClassName('head_portrait_img').length;i++){
+                var elementI = document.getElementsByClassName('head_portrait_img')[i];
+                var ImgNaturalSize=getNaturalSize(elementI);
+                // alert(ImgNaturalSize.width + '||' + ImgNaturalSize.height);
+                if(ImgNaturalSize.width>=ImgNaturalSize.height){
+                    elementI.setAttribute('style','width:240px;height:auto;');
+                }else{
+                    elementI.setAttribute('style','width:auto;height:300px;')
+                }
+
+            }
+    </script>
+</div>
+<div class="clear"></div>
+    <div class="web_footer"><span class="footer_text">版权不究 仅供学习 <a href="#">@数悦星空 |</a><a href="mailto:50962636@qq.com"><img src="images/邮箱16X16.png" class="footer_img">50962636@qq.com</a></span></div>
+</div>
+</body>
+</html>
